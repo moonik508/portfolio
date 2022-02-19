@@ -1,8 +1,8 @@
 :root{
   --main-bk-color: #212121;
   --secondary-bk-color: #303030;
-  --active-txt-color: #00edc7;
-  --active-bg-color: #006270;
+  --active-txt-color: #f60;
+  --active-bg-color: #121212;
 }
 
 /* common Layout */
@@ -15,7 +15,7 @@ a{text-decoration: none;}
 /* layout setting */
 .header{position: fixed; top: 0; left: 0; right: 0; z-index: 1500; padding-left: 20px; height: 120px; display: flex; align-items: center; background-color: var(--main-bk-color, #212121)}
 .header .main_txt{color: #fff; font-size: 36px; font-weight: 400}
-.content{min-height: calc(100vh -120px); background: #f8f8f8;}
+.content{margin-top: 120px; padding-bottom: 120px; min-height: calc(100vh - 120px); background: #f8f8f8;}
 
 /* component setting */
 .box{width: 100%;}
@@ -29,17 +29,47 @@ a{text-decoration: none;}
 .btn_more{color: #303030;}
 .box_title{font-size: 32px; font-weight: 900;}
 
+/* common interaction */
+.section_box_bar{position: absolute; bottom: 0; left: 0; width: 0; height: 1px; animation: workBarWidth 1s ease 0.5s forwards; background: #212121}
+.bar{position: absolute; transition: all 0.3s;}
+.bar.after{top: 0;  width: 0; height: 1px; background-color: var(--main-bk-color, #212121)}
+.bar.before{top: 0;  width: 1px; height: 0; background-color: var(--main-bk-color, #212121);}
+
+/* info */
+.infos{margin-top: 60px;}
+.info{position: relative; width: 50%; height: 450px; transition: all 0.3s;}
+.info .info_bar.after{right: 0; animation: workBarWidth 1s ease 0.5s forwards;}
+.info .info_bar.before{left: 0; animation: workBarHeight 1s ease 0.75s forwards;}
+.info_inner{padding: 16px; height: 100%;}
+.info_title{color:  var(--main-bk-color, #212121); font-size: 20px; font-weight: 600; }
+
+.info:nth-child(odd) .info_bar.before{display: none}
+
+.box_body.infos{position: relative;}
+.info_box{display: flex; align-items: stretch; flex-direction: column; height: 100%}
+.exp_list{display: flex; flex-direction: column; align-items: flex-start; justify-content: space-around; padding-top: 20px; height: 100%}
+.exp_list .exp_item{position: relative; padding-left: 20px; }
+.exp_list .exp_item:not(:last-child):before{content: ""; position: absolute; top: 15px; left: 7px; width: 1px; height: calc(100% + 10px); background-color:  var(--main-bk-color, #212121)}
+.exp_list .exp_item .txt{display: block; padding-left: 20px;  color: var(--main-bk-color, #212121); line-height: 1.5}
+.exp_list .exp_item .exp_period{position: relative; padding-left: 0; font-size: 17px; font-weight: 700}
+.exp_list .exp_item .exp_period:before,
+.exp_list .exp_item .exp_period:after{content:""; position: absolute; border-radius: 100%;}
+.exp_list .exp_item .exp_period:before{top: 3px; left: -20px; width: 10px; height: 10px; border: 2px solid var(--main-bk-color, #212121);}
+.exp_list .exp_item:first-child .exp_period:after{top: 7px; left: -16px; width: 6px; height: 6px; background-color: var(--active-txt-color, #f60)}
+
+.exp_list .exp_item .exp_company_nm{font-size: 16px;}
+.exp_list .exp_item .exp_company_class{color: #444; font-size: 16px;}
+
+
 /* work */
 .box.works{margin-top: 120px; }
 .box_body.works{position: relative; justify-content: left;}
-.work_box_bar{position: absolute; bottom: 0; left: 0; width: 0; height: 1px; animation: workBarWidth 1s ease 0.5s forwards; background: #212121}
 .work{position: relative; width: calc(100% / 4); height: 250px; transition: all 0.3s; background-color: transparent}
 .work .txt{color: var(--main-bk-color, #212121)}
 .btn_pop{position: absolute; top:0; left: 0; right: 0; bottom:0; width: 100%; height: 100%; background-color: transparent}
 
-.work .work_bar{position: absolute; transition: all 0.3s;}
-.work .work_bar.after{top: 0; left: 0; width: 0; height: 1px; animation: workBarWidth 1s ease 0.5s forwards; background-color: var(--main-bk-color, #212121)}
-.work .work_bar.before{top: 0; right: 0; width: 1px; height: 0; animation: workBarHeight 1s ease 0.75s forwards; background-color: var(--main-bk-color, #212121);}
+.work_bar.bar.after{left: 0; animation: workBarWidth 1s ease 0.5s forwards;}
+.work_bar.bar.before{right: 0; animation: workBarHeight 1s ease 0.75s forwards;}
 
 .work_inner{display: flex; align-items: center; justify-content: space-between; padding: 16px; height: 100%;}
 .work_info{display: flex; flex-direction: column; justify-content: space-between; width: 50%; height: 100%}
@@ -61,17 +91,19 @@ a{text-decoration: none;}
 .work_info .work_used .own .work_type{display: block; margin-top: 4px; margin-left: 4px;  font-size: 12px;}
 
 /* popup */
-.popup_wrap{display: none; overflow: auto; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; z-index: 5000; background-color: rgba(0, 0, 0, 0.75);}
+.popup_wrap{display: none;overflow: auto; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; z-index: 5000; background-color: rgba(0, 0, 0, 0.75);}
 .popup_wrap .close_popup{position: fixed; top: 60px; right: 60px; width: 60px; height: 60px; border: 0; outline: 0; background: transparent url("../../images/popup_close.png") no-repeat; cursor: pointer;}
 .popup_wrap .popup_box{display: none; position: absolute; top: 100px; left: 50%; z-index: 200; padding: 30px; transform: translateX(-50%); background: #fff;}
 
 /* media */
 @media screen and (min-width: 1024px) {
+
+  /* works */
   .btn_more{position: relative; transition: color 0.2s}
   .btn_more:after{content: ""; position: absolute; top: 100%; left: 0; width: 0; height: 1px; transition: width 0.2s; background-color: var(--main-bk-color, #212121)}
   .btn_more:hover:after{width: 100%;}
-  .work:hover{background-color: var(--active-bg-color, #006270)}
-  .work:hover .txt{color: var(--active-txt-color, #00edc7)}
+  .work:hover{background-color: var(--active-bg-color, #121212)}
+  .work:hover .txt{color: var(--active-txt-color, #f60)}
   .work:nth-child(4n):not(:first-child) .work_bar.before{display: none}
 }
 
@@ -80,6 +112,9 @@ a{text-decoration: none;}
   .work:nth-child(2n):not(:first-child) .work_bar.before{display: none}
 }
 @media screen and (max-width: 479px) {
+  .info{width: 100%; height: auto;}
+  .exp_list .exp_item:not(:last-child):before{height: calc(100% - 10px);}
+
   .work{width: 100%;}
   .work .work_bar.before{display: none;}
 }
