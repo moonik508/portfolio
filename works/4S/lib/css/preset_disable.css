@@ -1,0 +1,31 @@
+/* Editor css reset */
+.disable-css b,
+.disable-css strong,
+.disable-css em,
+.disable-css i,
+.disable-css span{
+	display: inline !important;
+}
+.disable-css b,
+.disable-css strong{
+	font-weight: bold !important;
+}
+.disable-css i,
+.disable-css em{
+	font-style: italic !important;
+}
+.disable-css td,
+.disable-css th{
+	border: 1px solid #000;
+}
+.disable-css ul li{
+	list-style: disc !important;
+	list-style-position: inside !important;
+}
+.disable-css ol li{
+	list-style: demical !important;
+	list-style-position: inside !important;	
+}
+.disable-css img{
+	display: inline;
+}

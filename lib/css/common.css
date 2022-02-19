@@ -1,0 +1,98 @@
+:root{
+  --main-bk-color: #212121;
+  --secondary-bk-color: #303030;
+  --active-txt-color: #00edc7;
+  --active-bg-color: #006270;
+}
+
+/* common Layout */
+html, body{width: 100%; height: 100%; letter-spacing: -0.5px;}
+html, body *{font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; }
+body.modal{overflow-y: hidden;}
+a{text-decoration: none;}
+.wrap{position: relative; width: 100%; height: 100%; overflow-y: auto;}
+
+/* layout setting */
+.header{position: fixed; top: 0; left: 0; right: 0; z-index: 1500; padding-left: 20px; height: 120px; display: flex; align-items: center; background-color: var(--main-bk-color, #212121)}
+.header .main_txt{color: #fff; font-size: 36px; font-weight: 400}
+.content{min-height: calc(100vh -120px); background: #f8f8f8;}
+
+/* component setting */
+.box{width: 100%;}
+.box_content{display: flex; align-items: stretch; justify-content: space-between; flex-direction: row; width: 100%; }
+.box_header{height: 60px;}
+.box_body{flex-wrap: wrap; height: auto;}
+
+.box_sm{display: flex; align-items: center; padding: 0 20px;}
+
+/* design component */
+.btn_more{color: #303030;}
+.box_title{font-size: 32px; font-weight: 900;}
+
+/* work */
+.box.works{margin-top: 120px; }
+.box_body.works{position: relative; justify-content: left;}
+.work_box_bar{position: absolute; bottom: 0; left: 0; width: 0; height: 1px; animation: workBarWidth 1s ease 0.5s forwards; background: #212121}
+.work{position: relative; width: calc(100% / 4); height: 250px; transition: all 0.3s; background-color: transparent}
+.work .txt{color: var(--main-bk-color, #212121)}
+.btn_pop{position: absolute; top:0; left: 0; right: 0; bottom:0; width: 100%; height: 100%; background-color: transparent}
+
+.work .work_bar{position: absolute; transition: all 0.3s;}
+.work .work_bar.after{top: 0; left: 0; width: 0; height: 1px; animation: workBarWidth 1s ease 0.5s forwards; background-color: var(--main-bk-color, #212121)}
+.work .work_bar.before{top: 0; right: 0; width: 1px; height: 0; animation: workBarHeight 1s ease 0.75s forwards; background-color: var(--main-bk-color, #212121);}
+
+.work_inner{display: flex; align-items: center; justify-content: space-between; padding: 16px; height: 100%;}
+.work_info{display: flex; flex-direction: column; justify-content: space-between; width: 50%; height: 100%}
+.work_info.detail{text-align: right;}
+
+.work_info .work_title{font-size: 22px; font-weight: 400}
+.work_info .work_title .desc{font-size: 16px;}
+.work_info .work_period{font-size: 14px; font-weight: 300}
+.work_info .work_client{font-size: 14px; font-weight: 300}
+.work_info .work_used .work_type{display: inline-block; vertical-align: middle; padding-left: 14px; font-size: 12px;}
+.work_info .work_used .own{display: flex; flex-direction: row; align-items: center; justify-content: right;}
+
+.work_info .work_used>.work_type{padding-left: 15px; }
+.work_info .work_used .work_type.html{background: url("../../images/ico_html.png") no-repeat left; background-size: 12px 12px}
+.work_info .work_used .work_type.jquery{background: url("../../images/ico_jquery.png") no-repeat left; background-size: 12px 12px}
+.work_info .work_used .work_type.jsp{background: url("../../images/ico_jsp.png") no-repeat left; background-size: 14px 14px}
+.work_info .work_used .work_type.vue{background: url("../../images/ico_vue.png") no-repeat left; background-size: 14px 14px}
+
+.work_info .work_used .own .work_type{display: block; margin-top: 4px; margin-left: 4px;  font-size: 12px;}
+
+/* popup */
+.popup_wrap{display: none; overflow: auto; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; z-index: 5000; background-color: rgba(0, 0, 0, 0.75);}
+.popup_wrap .close_popup{position: fixed; top: 60px; right: 60px; width: 60px; height: 60px; border: 0; outline: 0; background: transparent url("../../images/popup_close.png") no-repeat; cursor: pointer;}
+.popup_wrap .popup_box{display: none; position: absolute; top: 100px; left: 50%; z-index: 200; padding: 30px; transform: translateX(-50%); background: #fff;}
+
+/* media */
+@media screen and (min-width: 1024px) {
+  .btn_more{position: relative; transition: color 0.2s}
+  .btn_more:after{content: ""; position: absolute; top: 100%; left: 0; width: 0; height: 1px; transition: width 0.2s; background-color: var(--main-bk-color, #212121)}
+  .btn_more:hover:after{width: 100%;}
+  .work:hover{background-color: var(--active-bg-color, #006270)}
+  .work:hover .txt{color: var(--active-txt-color, #00edc7)}
+  .work:nth-child(4n):not(:first-child) .work_bar.before{display: none}
+}
+
+@media screen and (max-width: 767px) {
+  .work{width: 50%;}
+  .work:nth-child(2n):not(:first-child) .work_bar.before{display: none}
+}
+@media screen and (max-width: 479px) {
+  .work{width: 100%;}
+  .work .work_bar.before{display: none;}
+}
+
+
+/* keyframes */
+
+@keyframes workBarWidth {
+  0%{width: 0%;}
+  100%{width: 100%;}
+}
+
+@keyframes workBarHeight {
+  0%{Height: 0%;}
+  100%{Height: 100%;}
+}

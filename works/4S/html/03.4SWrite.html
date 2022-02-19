@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../lib/css/reset5.0.min.css">
+  <link rel="stylesheet" href="../lib/css/fonts.css">
+  <link rel="stylesheet" href="../lib/css/common.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+  <link rel="stylesheet" href="../lib/css/preset_disable.css">
+  <script src="../lib/jQuery/jQuery1.7.min.js"></script>
+  <title>4SWrite</title>
+  <script>
+    $(document).ready(function(){
+      $(".nav_txt").on("click", function(){
+        $(".nav_txt").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".depth_txt02").on("click", function(){
+        $(".depth_txt02").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".depth_txt03").on("click", function(){
+        $(".depth_txt03").removeClass("active");
+        $(this).addClass("active");
+      });
+    })
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Left -->
+    <aside class="left_nav">
+      <div class="logo_box">
+        <a href="javascript: void(0)" class="main_logo">
+          4S sales
+        </a>
+      </div>
+      <!-- Nav -->
+      <nav class="main_nav">
+
+        <ul class="nav_list">
+          <!-- use Flex -->
+          <li class="nav_item sales_write">
+
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>영업작성</span>
+            </a>
+
+            <!-- 2Depth -->
+            <ul class="main_depth02">
+
+              <li class="depth_item02">
+
+
+                <a href="javascript:void(0)" class="depth_txt02">
+                  <span>Item 01</span>
+                </a>
+
+
+                <!-- 3Depth -->
+                <ul class="main_depth03">
+
+                  <li class="depth_item03">
+                    <a href="javascript:void(0)" class="depth_txt03">
+                      <span>subItem01</span>
+                    </a>
+                  </li>
+                  <li class="depth_item03">
+                    <a href="javascript:void(0)" class="depth_txt03">
+                      <span>subItem02</span>
+                    </a>
+                  </li>
+
+                </ul>
+                <!-- //3Depth -->
+
+              </li>
+
+
+              <li class="depth_item02">
+                
+                <a href="javascript:void(0)" class="depth_txt02">
+                  <span>Item 02</span>
+                </a>
+
+              </li>
+
+            </ul>
+            <!-- //2Depth -->
+
+          </li>
+          <li class="nav_item sales_manage">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>영업관리</span>
+            </a>
+          </li>
+          <li class="nav_item sales_appr">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>계약관리</span>
+            </a>
+          </li>
+          <li class="nav_item sales_info">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>정보관리</span>
+            </a>
+          </li>
+          <li class="nav_item sales_set">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>SALES 관리</span>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+      <!-- //Nav -->
+
+      <!-- footer -->
+      <footer class="footer">
+
+        <div class="footer_box">
+        
+          <b class="company_name">
+            Four S Sales Service 
+          </b>
+          <address class="copyright">
+            Copyright © 2022 FOURLAB<br>All Rights Reserved.
+          </address>
+        
+        </div>
+
+      </footer>
+      <!-- footer -->
+
+    </aside>
+    <!-- //Left -->
+
+    <!-- header -->
+    <header class="header">
+
+      <div class="inner">
+        
+        <nav class="head_nav">
+
+          <div class="title_wrapper">
+            <p class="page_title">인트라넷</p>
+          </div>
+  
+          <div class="private_wrapper">
+            <a href="#" class="private_item profile">사용자 이미지</a>
+            <div class="profile_txtbox">
+              <!-- 사용자 이름 영역 -->
+              <span class="user_name">홍길동</span>
+              <!-- //사용자 이름 영역 -->
+              님
+              <a href="#" class="drop_arrow"><img src="../images/ico_btn_drops.png" alt=""></a>
+            </div>
+          </div>
+        
+        </nav>
+
+      </div>
+
+    </header>
+    <!-- //header -->
+
+    <!-- Container -->
+    <div class="container">
+      <div class="inner_frame">
+
+        <div class="box">
+
+          <!-- boxheader 영역 -->
+          <div class="box_header">
+
+            <div class="box_header_left">
+
+              <p class="box_title">
+                <span class="box_title_txt">회의록</span>
+              </p>
+
+            </div>
+
+          </div>
+          <!-- //boxheader 영역 -->
+
+          <!-- boxbody 영역 -->
+          <div class="box_body">
+
+            <!-- flex table -->
+            <!-- thead 가 없는 형식의 테이블은 not_head 추가 -->
+            <div class="table_box flex_table not_head">
+              
+              <!-- 
+                flex_row == tr  
+              -->
+
+              <div class="flex_row">
+                <div class="flex_row_box">
+                  <div class="flex_col head_col w12p"><span>제목</span></div>
+                  <div class="flex_col w88p">
+                    <div class="input_box w100p">
+                      <input type="text" class="input_txt">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="flex_row">
+
+                <div class="flex_row_box">
+
+                  <div class="flex_col head_col w12p"><span>미팅일자</span></div>
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <input type="text" class="input_txt">
+                    </div>
+                  </div>
+                  <div class="flex_col head_col w12p"><span>미팅장소</span></div>
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <input type="text" class="input_txt">
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="flex_row">
+
+                <div class="flex_row_box">
+
+                  <div class="flex_col head_col w12p"><span>참여업체</span></div>
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <input type="text" class="input_txt">
+                    </div>
+                  </div>
+                  <div class="flex_col head_col w12p"><span>참여자</span></div>
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <input type="text" class="input_txt">
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="flex_row">
+
+                <div class="flex_row_box">
+
+                  <div class="flex_col head_col w12p"><span>주제</span></div>
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <input type="text" class="input_txt">
+                    </div>
+                  </div>
+                  <div class="flex_col head_col w12p"><span>주관업체</span></div>
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <input type="text" class="input_txt">
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="flex_row">
+
+                <!-- textarea 사용시 flex_row_box에 text_col 클래스 사용 -->
+                <div class="flex_row_box text_col">
+
+                  <div class="flex_col head_col w12p"><span>내용</span></div>
+
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <textarea class="textarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="flex_col head_col w12p"><span>이슈</span></div>
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <textarea class="textarea"></textarea>
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="flex_row">
+
+                <div class="flex_row_box">
+
+                  <div class="flex_col head_col w12p"><span>다음미팅</span></div>
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <input type="text" class="input_txt">
+                    </div>
+                  </div>
+                  <div class="flex_col head_col w12p"><span>검토사항</span></div>
+                  <div class="flex_col w38p">
+                    <div class="input_box w100p">
+                      <input type="text" class="input_txt">
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- flex table -->
+
+          </div>
+          <!-- // boxbody 영역 -->
+
+          <!-- box_footer 영역 -->
+          <div class="box_footer">
+
+            <div class="btn_box center_box pt20 pb20">
+    
+              <button class="btn btn_primary">등록</button>
+              <button class="btn btn_cancel ml10">취소</button>
+    
+            </div>
+
+          </div>
+          <!-- //box_footer 영역 -->
+
+        </div>
+
+      </div>
+    </div>
+    <!-- //Container -->
+
+  </div>
+</body>
+</html>
