@@ -114,6 +114,7 @@ a{text-decoration: none;}
 }
 @media screen and (max-width: 479px) {
   .info{width: 100%; height: auto;}
+  .info .info_bar{display: none;}
   .exp_list .exp_item:not(:last-child):before{height: calc(100% - 10px);}
 
   .work{width: 100%;}
