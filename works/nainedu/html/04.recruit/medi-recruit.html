@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/3.1.1/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>나인에듀</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 20211108 헤더 관련 작업, common.js 에 스크립트도 작업됨 -->
+         
+        <header>
+            <div class="inner">
+                <!-- 20211108 pc로고 모바일 로고 분리 -->
+                <h1 class="logo pc"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo.png" alt="대치나인에듀 로고"></a></h1>
+                <h1 class="logo mo"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo_m.png" alt="대치나인에듀 로고"></a></h1>
+                <a href="javascript:void(0)" class="hamburger"></a>
+                <!-- 헤더를 분리하신다면 각 페이지에 맞는 global-nav-item에 클래스명 on을 추가 부탁드립니다. -->
+                <nav class="global-nav">
+                    <a href="javascript:void(0)" class="btn-nav-close">닫기</a>
+                    <ul>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">학원소개</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/intro.html">대치나인에듀학원</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/life.html">학원생활</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/grade.html">성적향상</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/notice.html">공지사항</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">나인학습 Solution</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-care.html">능력별 CARE</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-blackdown.html">학습관리 블랙다운</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-exactly.html">정확한 대입 관리</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-add.html">학습 능력 강화</a></li>
+                                        <!-- <li class="sub-depth-nav-item"><a href="#">학부모 전상서</a></li> -->
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                             <a href="javascript:void(0)">나인에듀강사진</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/03.teacher/teacher_info.html">강사진</a></li>
+                                        <li class="sub-depth-nav-item"><a href="javascript:void(0)">슬기로운 질의응답</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01 on">
+                            <a href="javascript:void(0)">모집요강</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/basic-recruit.html">2023 수능 기초반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/ready-recruit.html">2023 수능 준비반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/regular-recruit.html">재수정규반</a></li>
+                                        <li class="sub-depth-nav-item on"><a href="/html/04.recruit/medi-recruit.html">2023 영과고 수능 MEDICAL CASTLE</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="hamburger"><img src="../../image/NAINEDU/common/hamburger.png" alt=""></a>                
+            </div>
+        </header>
+        <div class="breadcrumb-box">
+            <div class="inner">
+                <ul class="breadcrumb">
+                    <li>HOME</li>
+                    <li>모집요강</li>
+                    <li><span>영과고 수능 Medical Castle</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container medi">
+            <div class="visual-box medi-visual">
+                <div class="inner">
+                    <div class="visual-txt"><img src="../../image/NAINEDU/recruit/recruit_banner_txt04.png" alt=""></div>
+                </div>
+            </div>
+            
+            <div class="tab-box">
+                <div class="inner">
+                    <a href="javascript:void(0)" class="btn-tab medi-tab w25p active">모집 요강</a>
+                    <a href="javascript:void(0)" class="btn-tab medi-tab w25p">학습 목적</a>
+                    <a href="javascript:void(0)" class="btn-tab medi-tab w25p">표준 시간표</a>
+                    <a href="javascript:void(0)" class="btn-tab medi-tab w25p">과목별 진도표</a>
+                </div>
+            </div>
+            
+
+            <div class="tab-content">
+                
+                <!-- 모집 요강 -->
+                <div class="basic-content-box inner-tab-box active">
+                    <div class="inner">
+                        <!-- 
+                            section-tit, recruit-row, recruit-tit, recruit-txt 공통 클래스 
+                         -->
+                        <div class="bg-box mt80">
+                            <p class="section-tit medi-tit">영과고 수능 Medical Castle 모집요강</p>
+                        </div>
+                        <div class="recruit-row medi-row">
+                            <p class="recruit-tit">개강일</p>
+                            <p class="recruit-txt"><b>2022년 1월 3일(월) 오전 8:00(1차 개강), 1월 11일(월) 오전 8:00(2차 개강)</b></p>
+                        </div>
+                        <div class="recruit-row medi-row">
+                            <p class="recruit-tit">교육기간</p>
+                            <p class="recruit-txt"><b>2022년 1월 3일 ~ 수능까지</b></p>
+                        </div>
+                        <div class="recruit-row medi-row">
+                            <p class="recruit-tit">교육대상</p>
+                            <p class="recruit-txt"><b>2023학년도 상위권 및 의치약한 대학 입학을 준비하는 학생, 수능 정시를 처음 도전하는 학생</b></p>
+                        </div>
+                        <div class="recruit-row medi-row">
+                            <p class="recruit-tit">교육방법</p>
+                            <p class="recruit-txt"><b>통학형 또는 기숙형(선택)</b></p>
+                        </div>
+                        <div class="recruit-row medi-row">
+                            <p class="recruit-tit">모집인원</p>
+                            <p class="recruit-txt"><b>2개반 (반당 10명 내외)</b></p>
+                        </div>
+                        <div class="recruit-row medi-row">
+                            <p class="recruit-tit">예약금 입금</p>
+                            <p class="recruit-txt multi">
+                                <span>예약금  <b>: 30만원</b></span>
+                                <span>입금계좌 <b>: 우리은행 1005-581-201362</b></span>
+                                <span>예금주 <b>: 대치나인에듀</b></span>
+                            </p>
+                        </div>
+                        <div class="recruit-row medi-row">
+                            <p class="recruit-tit">수강료</p>
+                            <p class="recruit-txt multi">
+                                <span>수강료 <b>: 298만원</b></span>
+                                <span>교재비 <b>: 대입 기초반 자체 교재 / 유료</b></span>
+                                <span>모의고사비 <b>: 정규반 시작 때 적용</b></span>
+                                <span class="red-txt">※환불규정 : 교육인적자원부 학원의 설립 운영 및 과외 교습에 관한 법률 시행령 제18조 3항에 근거합니다. </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 모집 요강 -->
+                
+                <!-- 학습 목적 -->
+                <div class="basic-content-box inner-tab-box">
+                    <div class="inner">
+                        <div class="slogan mt120">
+                            <p class="slogan-txt">“ 단단한 학습 능력을 수능형으로 전환하기”</p>
+                        </div>
+                    </div>
+                    <div class="bg-box mt120">
+                        <p class="section-desc mt0">
+                            수능형 학습 방법으로의 전환으로<br>
+                            대한민국 0.3%의 자존감 회복 프로그램<br>
+                            <p class="section-tit">영과고  Medical Castle</p>
+                        </p>
+                    </div>
+                    <div class="inner">
+                        
+                        <div class="basic-number-box medi-number-box">
+                            <div class="basic-number-tit recruit-number-tit">
+                                <p class="basic-numbering">1</p>
+                                <p class="basic-number-tit-txt">특성화된 구성</p>
+                            </div>
+                            <div class="basic-number-txt-box">
+                                <p class="basic-number-txt">&middot;· 영과고 학생으로만 구성이 되는 <b>대한민국 최초의 재수 정규반</b></p>
+                                <p class="basic-number-txt">&middot;· 학생 퀄리티에 따른 <b>불필요한 시간을 줄이는</b> 최적의 구성</p>
+                                <p class="basic-number-txt">&middot;· 영과고 학생들의 수능을 위한 <b>학습 습관의 형성</b>(수틀 테스트)</p>
+                                <p class="basic-number-txt">&middot;· 영과고 학생을 위한 <b>의예과와 서울대 입학을 위한</b> 최적의 학습 프로그램 구성</p>
+                            </div>
+                        </div>
+
+                        <div class="basic-number-box medi-number-box">
+                            <div class="basic-number-tit recruit-number-tit">
+                                <p class="basic-numbering">2</p>
+                                <p class="basic-number-tit-txt">전문화된 학습 방법</p>
+                            </div>
+                            <div class="basic-number-txt-box">
+                                <p class="basic-number-txt">&middot;학생별 연간 로드맵 작성과 성적 분석을 통한 <b>개인별 학습 코딩</b></p>
+                                <p class="basic-number-txt">&middot;<b>메가스터디</b>와 <b>EBS</b> 출신의 대치동 강사진</p>
+                                <p class="basic-number-txt">&middot;수능 연계 교재와 강사가 직접 집필한 나인에듀만의 <b>특별한 수제 교재</b></p>
+                                <p class="basic-number-txt">&middot;연간 스케줄에 따른 <b>과목별 학습 스케줄</b> 구성</p>
+                                <p class="basic-number-txt">&middot;<b>1:1 클리닉</b> 또는 <b>소수반 특강을</b> 통한 나만의 약점 보강</p>
+                                <p class="basic-number-txt">&middot;<b>수능 시험에 맞춘</b> 학습 습관 형성</p>
+                                <p class="basic-number-txt">&middot;알 때까지 물어보는 강사와의 <b>무한 질의응답</b></p>
+                                <p class="basic-number-txt">&middot;학습과 자습 공간의 분리</p>
+                            </div>
+                        </div>
+                        
+                        <div class="basic-number-box medi-number-box">
+                            <div class="basic-number-tit recruit-number-tit">
+                                <p class="basic-numbering">3 </p>
+                                <p class="basic-number-tit-txt">빈틈없는 생활 관리</p>
+                            </div>
+                            <div class="basic-number-txt-box">
+                                <p class="basic-number-txt">&middot;<b>출결 체크</b> 및 <b>부모 알림 서비스</b></p>
+                                <p class="basic-number-txt">&middot;<b>쉬는 시간 정숙</b>을 보장하는 생활 관리</p>
+                                <p class="basic-number-txt">&middot;독서실 책장 넘기는 소리만 들리는 <b>정숙함</b> 유지</p>
+                                <p class="basic-number-txt">&middot;따돌림이 없는 <b> 교우 관계</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- // 학습 목적 -->
+                
+                <!-- 표준 시간표 -->
+                <div class="basic-content-box inner-tab-box">
+                    
+                    <div class="schedule-inner">
+                        
+                        <div class="bg-box mt80 mb80">
+                            <p class="section-tit schedule-tit">정규반 시간표</p>
+                        </div>
+
+                        <div class="schedule-img-box">
+                            <!-- 시간표 이미지 -->
+                            <img src="../../image/NAINEDU/recruit/medi-time.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- // 표준 시간표 -->
+                
+                <!-- 과목별 진도표 -->
+                <div class="basic-content-box inner-tab-box">
+                    
+                    <div class="inner">
+                        <div class="bg-box mt80 mb80">
+                            <p class="section-tit g-fonts">영과고 Medical Castle 연간 스케줄</p>
+                        </div>
+
+                        <div class="medi-table-box">
+
+                            <div class="medi-table-row-box">
+
+                                <div class="medi-table-hd kor">
+                                
+                                    <div class="class-tit mt60">
+                                        <p class="class-tit-txt">국어</p>
+                                    </div>
+    
+                                </div>
+                                <div class="medi-table-bd">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>1월</th>
+                                                <th>2월</th>
+                                                <th>3월</th>
+                                                <th>4월</th>
+                                                <th>5월</th>
+                                                <th>6월</th>
+                                                <th>7월</th>
+                                                <th>8월</th>
+                                                <th>9월</th>
+                                                <th>10월</th>
+                                                <th>11월</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" style="background: #f8f8f8">고전문학 기초 완성</td>
+                                                <td colspan="3" style="background: #f8f8f8">고전문학 활용 및 문제 적용</td>
+                                                <td colspan="3" rowspan="2">문학 실전 적용 심화</td>
+                                                <td colspan="2" style="background: #f8f8f8">총정리+약점보완</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="background: #f8f8f8">현대 문학의 기초 완성</td>
+                                                <td colspan="3" style="background: #f8f8f8">현대 문학 활용 및 문제 적용</td>
+                                                <td colspan="2" style="background: #f8f8f8">총정리+약점보완</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="background: #aaa;">독서기초</td>
+                                                <td colspan="3" style="background: #d5d5d5;">독서심화</td>
+                                                <td colspan="3" style="background: #e0dfdf">독서 실전 적용 심화</td>
+                                                <td colspan="2" style="background: #aaa;">총정리+약점보완</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5">풀이 타임 결정 및 연습 과정</td>
+                                                <td colspan="3" style="background: #f8f8f8">풀이 타임 확정 과정</td>
+                                                <td colspan="2" style="background: #f8f8f8">시험 관리 강화기</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="10" style="color: #fff; background: #df3674">약점을 보완하고 개념을 재확인하며 특화된 훈련을 중점적으로 하는 국어 클리닉 실시</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            
+                            <div class="medi-table-row-box">
+
+                                <div class="medi-table-hd math">
+                                
+                                    <div class="class-tit">
+                                        <p class="class-tit-txt">수학</p>
+                                    </div>
+    
+                                </div>
+                                <div class="medi-table-bd">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" style="background: #f8f8f8">기초 개념+연산확인 과정</td>
+                                                <td colspan="3" style="background: #f8f8f8">개념 완성 및 심화 연산 확인</td>
+                                                <td colspan="3">실전 적용 심화</td>
+                                                <td colspan="2" style="background: #f8f8f8">총정리+약점보완</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5" style="background: #f8f8f8">92점 완성과정</td>
+                                                <td colspan="3">100점 완성 과정</td>
+                                                <td colspan="2" style="background: #f8f8f8">100점 유지+약점보완</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="10" style="color: #fff; background: #b3c43f">약점을 보완하고 특화된 훈련을 중점적으로 하는 수학 클리닉 실시</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <div class="medi-table-row-box">
+
+                                <div class="medi-table-hd eng">
+                                
+                                    <div class="class-tit">
+                                        <p class="class-tit-txt">영어</p>
+                                    </div>
+    
+                                </div>
+                                <div class="medi-table-bd">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" style="background: #f8f8f8">1등급 기초 형성 과정</td>
+                                                <td colspan="3" style="background: #f8f8f8">1등급 완성 과정</td>
+                                                <td colspan="5">1등급 유지 과정</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="10" style="color: #fff; background: #fbb03b">약점을 보완하고 특화된 훈련을 중점적으로 하는 영어 클리닉 실시</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <div class="medi-table-row-box">
+
+                                <div class="medi-table-hd sci">
+                                
+                                    <div class="class-tit">
+                                        <p class="class-tit-txt">과탐</p>
+                                    </div>
+    
+                                </div>
+                                <div class="medi-table-bd">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" style="background: #f8f8f8">기본 개념 과정</td>
+                                                <td colspan="3" style="background: #f8f8f8">개념 확인 및 적용 과정(45점 반)</td>
+                                                <td colspan="3">실전 확인 과정(만점 반)</td>
+                                                <td colspan="2" style="color: #fff; background: #3b9efb">만점 유지 과정</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            
+                            <div class="medi-table-row-box">
+
+                                <div class="medi-table-hd essay">
+                                
+                                    <div class="class-tit">
+                                        <p class="class-tit-txt">수리<br>논술</p>
+                                    </div>
+    
+                                </div>
+                                <div class="medi-table-bd">
+                                    <table>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td style="background: #f8f8f8"></td>
+                                                <td style="background: #f8f8f8">의예 기초 논술</td>
+                                                <td colspan="3" style="background: #f8f8f8">의예 유형 개념 정복 과정</td>
+                                                <td colspan="4">의예 실전 적용 과정</td>
+                                                <td style="color: #fff; background: #9e3bfb">유지 확인</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <div class="medi-d-day-box">
+                                <p class="g-fonts">수능</p>
+                            </div>
+
+                        </div>
+                        
+                        <p class="medi-table-support-txt">※ 연간스케줄은 학생들의 학업 성취도에 따라서 과목별 시간표와 함께 탄력적으로 변경이 이루어집니다.</p>
+
+                        <div class="support-table">
+                            <div class="support-hd-row">
+                                <!-- 20211108 br 클래스 추가 -->
+                                <div class="support-col"><p>영과고 <br class="pc">학습틀 <br class="pc">깨기</p></div>
+                                <div class="support-col"><p>수능 개념 다지기</p></div>
+                                <div class="support-col"><p>수능 실전 능력 완성</p></div>
+                                <div class="support-col"><p>수능 완성+컨설팅</p></div>
+                            </div>
+                            <div class="support-bd-row">
+                                <div class="support-col">
+                                    <p>
+                                        수능 만점을 방해하는<br>
+                                        영과고생의 학습 습관 깨기
+                                    </p>
+                                    <p class="desc">    
+                                        수학 암산하는 습관<br>
+                                        국어 자기 주관으로 내용 독해<br>
+                                        영어 감으로 지문 읽기
+                                    </p>
+                                    <p>
+                                        매주 국어, 수학, 영어 수능틀 테스트<br>
+                                        완벽하게  깨뜨립니다.
+                                    </p>
+                                </div>
+                                <div class="support-col">
+                                    <p>수능 만점을 향한 힘찬 진군</p>
+
+                                    <p class="desc">
+                                        반복적인 학습 확인<br>
+                                        누적 복습 강화<br>
+                                        수능형 사고 전환
+                                    </p>
+
+                                    <p>
+                                        수능형 사고의 시작과<br>
+                                        개념을 만들어 갑니다
+                                    </p>
+                                </div>
+                                <div class="support-col">
+                                    <p>수능 실전에 가까운 환경 만들기</p>
+
+                                    <p class="desc">
+                                        실전 응용력 키우기<br>
+                                        수능 시험 시간 블록 관리<br>
+                                        킬러형의 완변학 완성
+                                    </p>
+
+                                    <p>완성하고 또 확인합니다. </p>
+                                </div>
+                                <div class="support-col">
+                                    <p>파이널 약점 지우기</p>
+                                    
+                                    <p class="desc">
+                                        부동심의 유지<br>
+                                        필승 불패의 의예과 정시 상담
+                                    </p>
+
+                                    <p>오직 합격만을 위한 과정입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- // 과목별 진도표 -->
+
+            </div>
+
+        </div>
+        <!-- 20211108 푸터변경 -->
+        <footer>
+            <div class="inner">
+                <p class="logo footer"><img src="../../image/NAINEDU/common/footer-logo.png" alt="대치에스학원 하단 로고"></p>
+                <!-- 20211108 footer desc pc, 모바일 추가 -->
+                <article class="footer-desc pc">
+                    <p><span>대치나인에듀 대표: 조범희</span><span>사업자 등록번호 : 624-92-01362</span><span>학원설립 : 서울강남서초 제4691호</span></p>
+                    <p><span>상담문의 : 02-555-3003</span><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+                <article class="footer-desc mo">
+                    <p><span>상담문의 : 02-555-3003</span><span>대치나인에듀 대표: 조범희</span></p>
+                    <p><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>사업자 등록번호 : 624-92-01362</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

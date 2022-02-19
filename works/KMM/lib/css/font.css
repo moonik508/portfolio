@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Kia_Gothic';
+    font-weight: 200;
+    font-style: normal;
+    src: url('./font/KIAL.ttf') format('truetype'),
+    url('./font/KIA_Light.eot?iefix') format('embedded-opentype'),
+    url('./font/KIA_Light.woff2') format('woff2'),
+    url('./font/KIAL.woff') format('woff'),
+    url('./font/KIAL.svg') format('svg');
+}
+@font-face {
+  font-family: 'Kia_Gothic';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./font/KIAM.ttf') format('truetype'),
+  url('./font/KIA_Medium.eot?iefix') format('embedded-opentype'),
+  url('./font/KIA_Medium.woff2') format('woff2'),
+  url('./font/KIAM.woff') format('woff'),
+  url('./font/KIAM.svg') format('svg');
+}
+@font-face {
+  font-family: 'Kia_Gothic';
+  font-weight: 600;
+  font-style: normal;
+  src: url('./font/KIAB.ttf') format('truetype'),
+  url('./font/KIA_Bold.eot?iefix') format('embedded-opentype'),
+  url('./font/KIA_Bold.woff2') format('woff2'),
+  url('./font/KIAB.woff') format('woff'),
+  url('./font/KIAB.svg') format('svg');
+}

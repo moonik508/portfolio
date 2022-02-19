@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <link rel="stylesheet" href="../../lib/jquery/js/plugin/mCustomScrollBar/mCustomScrollbar.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <script src="../../lib/jquery/js/plugin/mCustomScrollBar/jquery.mCustomScrollbar.min.js"></script>
+    <title>회원가입</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header join-box">
+            <div class="inner">
+                <p class="logo"><img src="../../static/images/logo-color.png" alt=""></p>
+                <div class="service-title">
+                    <span class="logo-txt">Toki</span>
+                    <span>개발자센터</span>
+                </div>
+            </div>
+        </header>
+        <div class="container join-box">
+            <div class="inner">
+                <div class="component-box">
+                    <p class="section-title pt40">이용약관</p>
+                    <div class="terms-txt disable-css scroll-box">
+                        <span>123</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                    </div>
+                    <label class="input-box type-chk txt-r">
+                        <input type="checkbox" class="input-chk">
+                        <span class="chk-frame"></span>
+                        <span class="chk-label">약관에 동의합니다.</span>
+                    </label>
+                </div>
+                <div class="component-box">
+                    <p class="section-title">개인정보 수집 / 이용 동의</p>
+                    <div class="terms-txt disable-css scroll-box">
+                        <span>123</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                        <span>123</span><br>
+                    </div>
+                    <label class="input-box type-chk txt-r">
+                        <input type="checkbox" class="input-chk">
+                        <span class="chk-frame"></span>
+                        <span class="chk-label">개인정보수집 및 이용에 동의합니다.</span>
+                    </label>
+                </div>
+                <div class="btn-box txt-c mt40 join-btn-box">
+                    <input type="button" value="취소" class="input-btn btn-trans">
+                    <input type="button" value="다음" class="input-btn btn-primary">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="copyright">Copyrifght 2020. Hancom Inc. all rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        // 아래 스크립트를 화면사이즈 768 이상일때만 적용되게 부탁드립니다.
+	    (function($){
+            $(window).on("load",function(){
+                $(".scroll-box").mCustomScrollbar({
+                    theme:"minimal-dark",
+                    documentTouchScroll: true
+                });
+            });
+	    })(jQuery);
+    </script>
+</body>
+</html>

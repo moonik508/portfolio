@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mypage addinfo</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                m-mypage-box - mypage 공통 클래스
+                mypage-gy - mypage 배경 컬러 값에 대한 공통클래스
+             -->
+
+             <div class="m-component-box m-mypage-box mypage-wh">
+                <div class="m-inner">
+
+                    <!-- detail profile 수정 관련 컴포넌트 요소 -->
+                    <div class="mypage-common-box">
+                        <div class="mypage-detail-content-box">
+                            <!-- 
+                                타이틀 요소가 있는 경우  
+                                profile-element-title
+                                detail-profile-element 
+                                순서로 사용
+                            -->
+                            <p class="profile-element-title">
+                                이름
+                            </p>
+
+                            <!-- 
+                                input 이 반복되는 페이지를 구성할땐 detail-input-row 를 사용
+                             -->
+                            <div class="detail-input-row">
+                                <input type="text" class="m-input-txt dis-ib w100p" placeholder="이름을 입력하세요.">
+                            </div>
+
+                            <p class="profile-element-title">
+                                생년월일
+                            </p>
+                            <div class="detail-input-row birth">
+                                <div class="m-input-box dis-ib">
+                                    <select name="" id="" class="mypage-select">
+                                        <option value="">년도</option>
+                                    </select>
+                                </div>
+                                <div class="m-input-box dis-ib">
+                                    <select name="" id="" class="mypage-select">
+                                        <option value="">월</option>
+                                    </select>
+                                </div>
+                                <div class="m-input-box dis-ib">
+                                    <select name="" id="" class="mypage-select">
+                                        <option value="">일</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <p class="profile-element-title">
+                                연락처
+                            </p>
+                            <div class="detail-input-row">
+                                <input type="text" class="m-input-txt dis-ib w75p" placeholder="연락처를 입력하세요.">
+                                <input type="button" value="실명인증" class="m-input-btn active btn-min dis-ib ml3p">
+                            </div>
+
+                            <p class="profile-element-title">
+                                배송정보
+                            </p>
+                            <div class="detail-input-row">
+                                <input type="button" value="주소검색" class="m-input-btn active btn-min dis-ib mr3p">
+                                <input type="text" class="m-input-txt dis-ib w75p" readonly placeholder="검색을 통해 기본주소를 선택하세요.">
+                                <input type="text" class="m-input-txt dis-ib w100p mt3p" placeholder="상세주소를 입력하세요.">
+                            </div>
+
+                            <div class="btn-box">
+                                <input type="button" value="정보수정" class="m-input-btn w100p primary">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //detail profile 수정 관련 컴포넌트 요소 -->
+
+                </div>
+             </div>             
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <img src="../static/images/logo.png" alt="한컴로보틱스 로고">
+                </h1>
+                <div class="input-box hamburger">
+                    <img src="../static/images/h_menu.jpg" alt="좌측메뉴보기 버튼" class="more">
+                    <img src="../static/images/m_close.png" alt="좌측메뉴닫기 버튼" class="close">
+                </div>
+                <!-- 메인 검색바 사용자 이름 줄바뀜 현상 일어나는 것에 대한 조치로 클래스명 w50p -> w40p 로 변경 -->
+                <div class="input-box serch-box main txt-l w40p">
+                    <input type="text" class="input-txt w90p" placeholder="검색하실 키워드 입력 후 검색아이콘을 클릭하세요.">
+                    <input type="button" class="btn main-search">
+                </div>
+                <div class="personal-area txt-c">
+                    <div class="personal-name-box">
+                        <!-- 
+                            name-txt 을 클릭시 클래스명 active 토글되게 조정해주시면 됩니다.
+                         -->
+                        <span class="name-txt"><i>홍길동</i> 님 (슈퍼관리자)</span>
+                        <ul class="name-box-list">
+                            <li class="name-box-list-item">
+                                <a href="#">
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li class="name-box-list-item">
+                                <a href="#">
+                                    <span>2</span>
+                                </a>
+                            </li>
+                            <li class="name-box-list-item">
+                                <a href="#">
+                                    <span>3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn logout">로그아웃</a>
+                </div>
+            </div>
+        </header>
+        <aside class="left-nav">
+            <h2 class="nav-logo">
+                <img src="../static/images/toki.png" alt="한컴로보틱스 토키 아이콘">
+                <span>H2</span>
+            </h2>
+            <nav class="nav-list">
+                <ul class="left-first-depth">
+                    <!-- 선택된 li 태그에 active 클래스 추가 / 하위메뉴 열림-->
+                    <li class="left-item first-depth dashboard active">
+                        <a href="#">대시보드</a>
+                    </li>
+                    <li class="left-item first-depth active">
+                        <a href="#">회원관리</a>
+                        <div class="second-depth">
+                            <ul>
+                                <!-- 하위메뉴 선택시 li에 클래스명 on 추가 -->
+                                <li class="on">
+                                    <span>123</span>
+                                    <!-- 2021.02.16 3depth 추가  -->
+                                    <ul class="third-depth">
+                                        <!-- 선택된 페이지에 해당하는 li에 클래스명 on 추가 -->
+                                        <li class="on">
+                                            <span>3depth 01</span>
+                                        </li>
+                                        <li>
+                                            <span>3depth 02</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span>456</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">로봇관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">A/S관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">주문/배송관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">유통사관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">콘텐츠관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">알림관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">설정</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="content-wrap">
+            <div class="inner">
+                <div class="box w30p"></div>
+                <div class="box w70p"></div>
+                <div class="box w100p"></div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="copyright">한컴로보틱스 Toki H2 Administrator</p>
+        </footer>
+    </div>
+</body>
+</html>

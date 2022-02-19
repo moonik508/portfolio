@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/jquery/swiperJS/swiper.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/swiperJS/swiper.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>calendar time</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            <!-- <header class="m-header">
+                <div class="m-component-box">
+                    <div class="m-header-box">
+                        <input type="button" class="m-input-btn back-btn">
+                        <p class="m-title hd-title">앨범</p>
+                        <div class="m-header-btn-box">
+                            <input type="button" class="m-input-btn btn-user-info">
+                        </div>
+                    </div>
+                </div>
+            </header> -->
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+             -->
+            <!-- 
+                toki-common-item swiper-slide
+                슬라이더가 반복되는 형태
+                    toki-content-box 클래스에
+                    사용중 class = robot-connected
+                    대기 class = robot-wait
+                    바쁨 = robot-busy
+                    off = robot-disconnected
+                    에 따라서 클래스 변경
+             -->
+            <div class="m-component-box m-component-box-bg">
+                <div class="m-inner">
+                    <div class="sec-top-content-box">
+                        <p class="sec-top-title">날짜와 시간을 선택하세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="m-component-box">
+                <div class="m-inner pt0">
+                    <div class="sec-bottom-content-box">
+                        <div class="sec-input-box mt0">
+                            <div class="sec-input-box-title">
+                                <p>날짜를 선택하세요.</p>
+                            </div>
+                            <div class="sec-input-box-content">
+                                <div class="select-item dis-ib">
+                                    <select>
+                                        <option>년</option>
+                                    </select>
+                                </div>
+                                <div class="select-item dis-ib center-box">
+                                    <select>
+                                        <option>월</option>
+                                    </select>
+                                </div>
+                                <div class="select-item dis-ib">
+                                    <select >
+                                        <option>일</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sec-input-box-text">
+                                <p>입력칸을 터치하시면 날짜를 설정할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="sec-input-box">
+                            <div class="sec-input-box-title">
+                                <p>시간을 선택하세요.</p>
+                            </div>
+                            <div class="sec-input-box-content">
+                                <div class="select-item dis-ib">
+                                    <select>
+                                        <option>시</option>
+                                    </select>
+                                </div>
+                                <div class="select-item dis-ib center-box">
+                                    <select>
+                                        <option>분</option>
+                                    </select>
+                                </div>
+                                <div class="select-item dis-ib">
+                                    <select>
+                                        <option>오전</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sec-input-box-text">
+                                <p>입력칸을 터치하시면 시간을 설정할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="m-btn-box">
+                            <input type="button" value="다음" class="m-input-btn w100p primary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>             
+    </div>
+</body>
+</html>

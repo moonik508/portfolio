@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mypage-detail</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                m-mypage-box - mypage 공통 클래스
+                mypage-gy - mypage 배경 컬러 값에 대한 공통클래스
+             -->
+
+             <div class="m-component-box m-mypage-box mypage-gy">
+
+                    <!-- 디테일페이지의 각 항목의 컨텐츠는 mypage-detail-content-box에 뿌려지는 형태 -->
+                    <!-- 고객센터의 경우는 inner 없이 진행 -->
+                    <div class="mypage-common-box cs-center-box cs-center-top-box">
+                        <p class="profile-element-title">
+                            의견보내기
+                            <span class="profile-element-desc">
+                                AI로봇 TOKI에 대한 의견 혹은 TOKI 모바일앱에 대한<br>
+                                다양한 의견을 수집하여 수렴하고자 합니다.<br>
+                                의견을 보내주시면 확인 후 반영할 수 있도록 하겠습니다. 
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="cs-write-box">
+                        <div class="input-box">
+                            <input type="text" value="제목을 30자 이내로 입력하세요." maxlength="30" class="m-input-txt">
+                        </div>
+                        <div class="input-box">
+                            <select class="mypage-select quest-select">
+                                <option value="">사용기기 선택</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <textarea class="mypage-textarea" placeholder="의견을 남겨주시면 확인 후 반영할 수 있도록 하겠습니다."></textarea>
+                        </div>
+                        <div class="input-box write-confirm">
+                            <input type="button" value="의견보내기" class="m-input-btn primary w100p">
+                        </div>
+                    </div>
+
+             </div>             
+
+        </div>
+    </div>
+    
+</body>
+</html>

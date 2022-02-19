@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap&subset=korean" rel="stylesheet"> -->
+    <title>SKC Paperless</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 200210 로고 변경 -->
+        <h1 class="topLogo">
+            전자작업일지
+        </h1>
+        <!-- // 200210 로고 변경 -->
+        <nav class="g_navi">
+            <div class="nav_btn">메뉴</div>
+            <ul class="on"> <!--nav_btn 을 클릭시 ul에 class명 on 을 추가/제거-->
+                <li>메인</li>
+                <li>작업 이력 조회</li>
+                <li>로그아웃</li>
+            </ul>
+        </nav>
+        <!-- 200210 구조변경 select 태그 > div, ul, li 태그로 변경 -->
+        <!-- main_selectBox를 클릭시  selectBox_menu에 클래스명 on을 추가 제거-->
+        <div class="main_selectBox"> 
+            <p>사업장 선택</p>            
+            <ul class="selectBox_menu on">
+                <li>진천 TPI</li>
+                <li>진천 TPI</li>
+                <li>진천 TPI</li>
+            </ul>
+        </div>
+        <!-- 200210 -->
+        <div class="contBox main">
+            <div class="box">
+                <div class="leftBox">
+                    <ul class="list">
+                        <li class="on">최근 작성 문서</li>
+                        <li>중합</li>
+                        <li>제막</li> <!-- 선택된 항목에 class명 on을 추가/제거-->
+                        <li>EM</li>
+                        <li>물류</li>
+                        <li>QC</li>
+                    </ul>
+                </div>
+                <div class="rightBox">
+                    <!-- 최근 작성 문서일 경우 200108 수정 -->
+                    <!--
+                    <div class="box">
+                        <h3>최근 작성 양식</h3>
+                        <p class="listTit">
+                            <span class="fontCrack">호기</span>
+                            <span class="fontCrack">서식명</span>
+                        </p>
+                        <div class="listBox">
+                            <ul class="list">
+                                <li>
+                                    <span class="itemTit">1호기</span>
+                                    <span class="itemName">JTPI 제막 CHECK SHEET</span>
+                                </li>
+                                <li>
+                                    <span class="itemTit">1호기</span>
+                                    <span class="itemName">JTPI 제막 WINDER CHECK SHEET</span>
+                                </li>
+                                <li>
+                                    <span class="itemTit">1호기</span>
+                                    <span class="itemName">JTPI ANNEALING CHECK SHEET</span>
+                                </li>
+                                <li>
+                                    <span class="itemTit">1호기</span>
+                                    <span class="itemName">JTPI SLITTER CHECK SHEET</span>
+                                </li>
+                                <li>
+                                    <span class="itemTit">1호기</span>
+                                    <span class="itemName">JTPI 제막 설비 점검 Check Sheet</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>최근 작성 문서</h3>
+                        <p class="listTit">
+                            <span class="fontCrack">호기</span>
+                            <span class="fontCrack">서식명</span>
+                        </p>
+                        <div class="listBox">
+                            <ul class="list">
+                                <li>
+                                    <span class="itemTit">1호기</span>
+                                    <span class="itemName">JTPI 제막 CHECK SHEET</span>
+                                </li>
+                                <li>
+                                    <span class="itemTit">1호기</span>    
+                                    <span class="itemName">JTPI 제막 CHECK SHEET</span>
+                                </li>
+                                <li>
+                                    <span class="itemTit">1호기</span>   
+                                    <span class="itemName">JTPI 제막 CHECK SHEET</span>
+                                </li>
+                                <li>
+                                    <span class="itemTit">1호기</span>  
+                                    <span class="itemName">JTPI 제막 설비 점검 Check Sheet</span>
+                                </li>
+                                <li>
+                                    <span class="itemTit">1호기</span> 
+                                    <span class="itemName">JTPI 제막 설비 점검 Check Sheet</span>
+                                </li>
+                            </ul>                            
+                        </div>
+                    </div>
+                    -->
+                    <!--// 최근 작성 문서일 경우-->
+                    <!-- 각 문서 종별일 경우 200108 수정 -->
+                    <div class="box formType">
+                        <div class="selectDiv">
+                            <span class="selTitle">호기 선택</span>
+                            <!-- <select name="">
+                                <option value="" selected>1호기</option>
+                                <option value="">2호기</option>
+                                <option value="">3호기</option>
+                            </select> -->
+                            <!-- 20200225 셀렉트 박스 변경, 필요시 사용-->
+                            <div class="main_selectBox"> 
+                                <p>공통</p>            
+                                <ul class="selectBox_menu on">
+                                    <li>진천 TPI</li>
+                                    <li>진천 TPI</li>
+                                    <li>진천 TPI</li>
+                                </ul>
+                            </div>
+                            <!-- //20200225 셀렉트 박스 변경, 필요시 사용-->
+                        </div>
+                        <h3>서식 목록</h3>
+                        <ul class="list">
+                            <li>JTPI 제막 CHECK SHEET</li>
+                            <li>JTPI 제막 CHECK SHEET</li>
+                            <li>JTPI 제막 CHECK SHEET</li>
+                            <li>JTPI 제막 설비 점검 Check Sheet</li>
+                            <li>JTPI 제막 설비 점검 Check Sheet</li>
+                        </ul>
+                    </div>
+                    <!-- //각 문서 종별일 경우 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

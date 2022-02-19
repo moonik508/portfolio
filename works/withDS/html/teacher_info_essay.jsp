@@ -1,0 +1,144 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+	String ctxPath = request.getContextPath();
+%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="stylesheet" href="<%=ctxPath%>/css/reset.css">
+    <link rel="stylesheet" href="<%=ctxPath%>/css/font.css">
+    <link rel="stylesheet" href="<%=ctxPath%>/css/style.css">
+    <script src="<%=ctxPath%>/js/3.1.1/jquery.min.js"></script>
+    <script src="<%=ctxPath%>/js/common.js"></script>
+    <title>대치에스</title>
+    <script>
+    	$(document).ready(function(){
+    		parent.onResize($(document).height());
+    	})
+    </script>
+</head>
+<body>
+    <!-- 과목별로 teach-section content 반복 -->
+    <div class="teach-section content">
+        <div class="inner">
+            <h2 class="section-title">논술</h2>
+            <ul class="teacher-list">
+                <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                <li class="teacher-item first-line">
+                    <a href="javascript:void(0)" class="teacher-pic">
+                        <div class="pic"><img src="../image/content/essay_kimkeeho.png" alt="김기호 선생님 사진"></div>
+                        <div class="item-dim">
+                            <span class="teacher-name">김기호 선생님</span>
+                        </div>
+                        <p class="teacher-eng-name-first"><span>Kim Kiho</span></p>
+                    </a>
+                    <!-- 선생님 상세 -->
+                    <div class="teacher-item-more">
+                        <a href="javascript:void(0)" class="btn_close"><img src="../image/m/ic-close-wh.png" alt=""></a>
+                        <div class="bg-angle"></div>
+                        <div class="teacher-info">
+                            <p class="teacher-main-txt"><span>"수업만 따라오면 합격한다!"</span></p><br>
+                            <p class="teacher-locate"><span class="location"></span> <span class="teacher-name">인문논술 김기호 선생님</span></p>
+                            <p class="teacher-career">
+                                <span class="career-title">학력 및 약력</span>
+                                <span>- 서울대학교 대학원 철학과</span>
+                                <span>- 현) 대치에스학원 </span>
+                                <span>- 현) 세정학원 한영외고반</span>
+                                <span>- 현) 이투스 용인247 기숙학원</span>
+                                <span>- 전) 대치명인학원</span>
+                                <span>- 전) 이투스 온라인 김기호 논술</span>
+                                <span>- 전) 대치 하이퍼논술 인문논술 대표강사</span>
+                                <a href="javascript:void(0)" class="btn_youtube"><img src="../image/content/btn_youtube.png" alt=""></a>
+                                <a href="https://blog.naver.com/dcsghm/221744942926" target="_blank" class="btn_blog"><img src="../image/content/btn_blog.png" alt=""></a>
+                            </p>
+                            <div class="teacher-pic-more"><img src="../image/content/essay_kimkeeho.png" alt="김기호 선생님 사진"></div>
+                            <p class="teacher-eng-name">Kim Kiho</p>
+                        </div>
+                    </div>
+                    <!-- //선생님 상세 -->
+                </li>
+                <!-- // item -->
+                <!-- item -->
+                <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                <li class="teacher-item second-line">
+                    <a href="javascript:void(0)" class="teacher-pic">
+                        <div class="pic"><img src="../image/content/essay_kwanak_yooseungyong.png" alt="인문논술 유승용 선생님 사진"></div>
+                        <div class="item-dim">
+                            <span class="teacher-name">유승용 선생님</span>
+                        </div>
+                        <p class="teacher-eng-name-first"><span>Yoo Seungyong</span></p>
+                    </a>
+                    <!-- 선생님 상세 -->
+                    <div class="teacher-item-more">
+                        <a href="javascript:void(0)" class="btn_close"><img src="../image/m/ic-close-wh.png" alt=""></a>
+                        <div class="bg-angle"></div>
+                        <div class="teacher-info">
+                            <p class="teacher-main-txt"><span>"차원이 다른 논술을 체험하라!"</span></p><br>
+                            <p class="teacher-locate"><span class="location">관악캠퍼스</span> <span class="teacher-name">유승용 선생님</span></p>
+                            <p class="teacher-career">
+                                <span class="career-title">학력 및 약력</span>
+                                <span>- 현) 대치에스 관악캠퍼스</span>
+                                <span>- 전) 에듀토피아학원 인문논술</span>
+                                <span>- 전) 메디치토론논술</span>
+                                <span>- 전) 시마학원 인문논술</span>
+                                <span>- 전) 용문고 교사대상 자소서 특강</span>
+                                <a href="javascript:void(0)" class="btn_youtube"><img src="../image/content/btn_youtube.png" alt=""></a>
+                                <a href="http://blog.naver.com/heyum0610/221753347163" target="_blank" class="btn_blog"><img src="../image/content/btn_blog.png" alt=""></a>
+                            </p>
+                            <div class="teacher-pic-more"><img src="../image/content/essay_kwanak_yooseungyong.png" alt="인문논술 유승용 사진"></div>
+                            <p class="teacher-eng-name">Yoo Seungyong</p>
+                        </div>
+                    </div>
+                    <!-- //선생님 상세 -->
+                </li>
+                <!-- // item -->
+                <!-- item -->
+                <!-- item -->
+                <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                <li class="teacher-item third-line">
+                    <a href="javascript:void(0)" class="teacher-pic">
+                        <div class="pic"><img src="../image/content/essay_choiyoungcheol.png" alt="최영철 선생님 사진"></div>
+                        <div class="item-dim">
+                            <span class="teacher-name">최영철 선생님</span>
+                        </div>
+                        <p class="teacher-eng-name-first"><span>Choi Youngchul</span></p>
+                    </a>
+                    <!-- 선생님 상세 -->
+                    <div class="teacher-item-more">
+                        <a href="javascript:void(0)" class="btn_close"><img src="../image/m/ic-close-wh.png" alt=""></a>
+                        <div class="bg-angle"></div>
+                        <div class="teacher-info">
+                            <p class="teacher-main-txt"><span>"수리논술 Bridge"</span></p><br>
+                            <p class="teacher-locate"><span class="location"></span> <span class="teacher-name">수리논술 최영철 선생님</span></p>
+                            <p class="teacher-career">
+                                <span class="career-title">학력 및 약력</span>
+                                <span>연세대 교육대학원 수학교육</span>
+                                <span>대치에스에듀 대표</span>
+                                <span>대치에스수리연구소 소장</span>
+                                <span>전) 이투스 온라인 수리논술</span>
+                                <span>전) 양명고 수리논술 초청강사</span>
+                                <span>전) 서초 메가스터디학원 수학과 팀장</span>
+                                <span>전) 팀스터디 경시 및 특목고 입시팀장</span>
+                                <span>전) 하이논술 인문수리논술</span>
+                                <a href="javascript:void(0)" class="btn_youtube"><img src="../image/content/btn_youtube.png" alt=""></a>
+                                <a href="https://blog.naver.com/dcsghm/221744942926" target="_blank" class="btn_blog"><img src="../image/content/btn_blog.png" alt=""></a>
+                            </p>
+                            <div class="teacher-pic-more"><img src="../image/content/essay_choiyoungcheol.png" alt="최영철 선생님 사진"></div>
+                            <p class="teacher-eng-name">Choi Youngchul</p>
+                        </div>
+                    </div>
+                    <!-- //선생님 상세 -->
+                </li>
+                <!-- // item -->
+            </ul>
+            <!-- 과목 구분선 -->
+            <div class="line"></div>
+            <!-- 과목 구분선 -->
+        </div>
+    </div>
+    <!-- 과목별로 teach-section content 반복 -->
+</body>
+</html>

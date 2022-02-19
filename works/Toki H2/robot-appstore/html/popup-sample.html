@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="component-box">
+                <div class="search-box">
+                    <input type="button" class="input-btn back-btn">
+                    <p class="title hd-title"></p>
+                    <div class="header-btn-box">
+                        <input type="button" class="input-btn search-btn">
+                        <input type="button" class="input-btn more-btn">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content-wrap">
+
+            <div class="component-box type-appdetail">
+                
+                <div class="app-info-box">
+                    <div class="app-card">
+                        <div class="card-top">
+                            <div class="thumb"></div>
+                            <div class="app-info-txt">
+                                <p class="card-title">윤선생</p>
+                                <p class="card-developer">제작자명</p>
+                                <p class="card-caption">
+                                    <span>교재 미포함</span>
+                                    <span>인앱 구매</span>
+                                </p>
+                            </div>
+                            <div class="btn-box">
+                                <span class="badge price">￦23,800</span>
+                                <input type="button" value="찜하기" class="input-btn price">
+                                <input type="button" value="다운로드" class="input-btn price">
+                                <input type="button" value="찜삭제" class="input-btn delete">
+                            </div>
+                        </div>
+                        <div class="card-bot">
+                            <div class="card-desc">
+                                <p>평점  ★ <i>4.0</i> (리뷰 <i>000</i>개)</p>
+                                <p>000 명 다운로드</p>
+                                <p>0세 이상 (부모 지도 필요)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 
+                앱 스크린 샷 영역 
+                클래스명 component-box 와 type-gallery를 같이 사용
+             -->
+             <div class="component-box type-gallery">
+                <div class="item-list">
+                    <div class="item-rail">
+                        <div class="item-box">
+                            <div class="item-img"><img src="../static/images/image_none.png" alt=""></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //앱 스크린 샷 영역-->
+
+            <!-- 
+                앱 정보 영역
+             -->
+             <div class="component-box">
+                <div class="title-box txt-l">
+                    <!-- 
+                        상세페이지에서 항목의 타이틀은 detail-title 로 사용
+                     -->
+                    <p class="detail-title">앱정보</p>
+                    <a href="#" class="btn-arrow">
+                        <img src="../static/images/arrow_02.png" alt="">
+                    </a>
+                </div>
+                <div class="app-info-desc">
+                    <p>
+                        등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.등록된 앱 소개 내용 중 간단 설명 내용이 노출됩니다.
+                    </p>
+                </div>
+                
+            </div>
+            <!-- // 앱 정보 영역 -->
+
+            <!-- 
+                평점 영역
+            -->
+            <div class="component-box">
+                <div class="title-box txt-l">
+                    <p class="detail-title">평점</p>
+                    <a href="#" class="btn-arrow">
+                        <img src="../static/images/arrow_02.png" alt="">
+                    </a>
+                </div>
+                <div class="app-info-desc">
+                    <div class="rating-box">
+                        <div class="rating-t mb40">
+                            <p class="dis-ib f48p">4.7</p>
+                            <div class="dis-ib">
+                                <div class="rating-img"></div>
+                                <p>(리뷰 <span>000</span>개)</p>
+                            </div>
+                        </div>
+                        <input type="button" value="평가등록" class="input-btn regist">
+                    </div>
+                    <div class="rating-box ml90">
+                        <div class="rating-item">
+                            <p class="rating-average-number">5</p>
+                            <!-- 
+                                평점의 평균 퍼센트를 rating-graph에 width값으로 넣어주세요.
+                             -->
+                            <div class="rating-graph-rail">
+                                <div class="rating-graph" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                        <div class="rating-item">
+                            <p class="rating-average-number">4</p>
+                            <div class="rating-graph-rail">
+                                <div class="rating-graph" style="width: 25%;"></div>
+                            </div>                            
+                        </div>
+                        <div class="rating-item">
+                            <p class="rating-average-number">3</p> 
+                            <div class="rating-graph-rail">
+                                <div class="rating-graph" style="width: 25%;"></div>
+                            </div>                                            
+                        </div>
+                        <div class="rating-item">
+                            <p class="rating-average-number">2</p>
+                            <div class="rating-graph-rail">
+                                <div class="rating-graph" style="width: 25%;"></div>
+                            </div>                           
+                        </div>
+                        <div class="rating-item">
+                            <p class="rating-average-number">1</p>
+                            <div class="rating-graph-rail">
+                                <div class="rating-graph" style="width: 25%;"></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 평점 영역 -->
+
+            <!-- 
+                개발자의 다른 앱 type-semilar 를 사용
+             -->
+             <div class="component-box type-semilar">
+                <div class="title-box txt-l">
+                    <!-- 
+                        상세페이지에서 항목의 타이틀은 detail-title 로 사용
+                     -->
+                    <p class="detail-title">개발자의 다른 앱</p>
+                </div>
+                <div class="item-list">
+                    <div class="item-rail">
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 개발자의 다른 앱 -->
+
+
+            <!-- 
+                개발자 연락처 영역
+             -->
+             <div class="component-box">
+                <div class="title-box txt-l">
+                    <!-- 
+                        상세페이지에서 항목의 타이틀은 detail-title 로 사용
+                     -->
+                    <p class="detail-title">개발자 연락처</p>
+                </div>
+                <div class="developer-info-desc">
+                    <div class="info-row">
+                        <span>웹사이트</span>
+                        <span>
+                            <a href="#">http://www.naver.com</a>
+                        </span>
+                    </div>
+                    <div class="info-row">
+                        <span>이메일</span>
+                        <span>
+                            <a href="#">abcde@hancom.co.kr</a>
+                        </span>
+                    </div>
+                    <div class="info-row">
+                        <span>연락처</span>
+                        <span>
+                            <a href="#">1600-1600</a>
+                        </span>
+                    </div>
+                    <div class="info-row">
+                        <span>주소</span>
+                        <span>
+                            <a href="#">서울시 강남구 강남동 강남 오피스</a>
+                        </span>
+                    </div>
+                    <div class="info-row">
+                        <span>개인정보처리방침</span>
+                        <span>
+                            <a href="#">서울시 강남구 강남동 강남 오피스</a>
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- // 개발자 연락처 영역 -->
+            <!-- 레이어팝업 영역 -->
+             <div class="popup-wrap">
+                <!-- 별점 등록 팝업 -->
+
+                <!-- <div class="popup-box">
+                    <div class="popup-content">
+                        <p class="popup-title hp-title">평가를 남겨주세요</p>
+                        <div class="score-box">
+                            <input type="radio" name="appscore" id="appscore1" class="appscore-data01 hidden">
+                            <input type="radio" name="appscore" id="appscore2" class="appscore-data02 hidden">
+                            <input type="radio" name="appscore" id="appscore3" class="appscore-data03 hidden">
+                            <input type="radio" name="appscore" id="appscore4" class="appscore-data04 hidden">
+                            <input type="radio" name="appscore" id="appscore5" class="appscore-data05 hidden">
+                            <label for="appscore1" class="score-btn score-btn01"></label>
+                            <label for="appscore2" class="score-btn score-btn02"></label>
+                            <label for="appscore3" class="score-btn score-btn03"></label>
+                            <label for="appscore4" class="score-btn score-btn04"></label>
+                            <label for="appscore5" class="score-btn score-btn05"></label>
+                            <div class="score-item"></div>
+                        </div>
+                    </div>
+                    <div class="btn-box mt70 txt-c">
+                        <input type="button" class="input-btn cancel" value="아니요">
+                        <input type="button" class="input-btn apply ml40" value="평가하기">
+                    </div>
+                </div> -->
+                
+                <!-- //별점 등록 팝업 -->
+                <!-- 기본 팝업 -->
+                
+                <!-- <div class="popup-box">
+                    <div class="popup-content">
+                        <div class="popup-top"><img src="../static/images/question.png" alt=""></div>
+                        <p class="popup-title">앱을 구매하시겠습니까?</p>
+                    </div>
+                    <div class="btn-box mt40 txt-c">
+                        <input type="button" class="input-btn cancel" value="아니요">
+                        <input type="button" class="input-btn apply ml40" value="좋아요">
+                    </div>
+                </div> -->
+                
+                <!-- // 기본 팝업 -->
+                
+                <!-- 추가 팝업 휴대폰번호 입력 -->
+                
+                <div class="popup-box">
+                    <div class="popup-content">
+                        <p class="popup-title hp-title">휴대폰번호 입력</p>
+                        <div class="popup-input-box">
+                            <div class="popup-input-row txt-c">
+                                <input type="text" class="popup-input-txt input-xs">
+                                <span class="dashed">-</span>
+                                <input type="text" class="popup-input-txt input-sm">
+                                <span class="dashed">-</span>
+                                <input type="text" class="popup-input-txt input-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box mt40 txt-c big-pop-btn-box">
+                        <input type="button" class="input-btn cancel" value="처음으로 돌아가기">
+                        <input type="button" class="input-btn apply ml40" value="수락">
+                    </div>
+                </div>
+                
+                <!-- // 추가 팝업 휴대폰번호 입력 -->
+
+                <div class="dim"></div>
+             </div>
+            <!-- //레이어팝업 영역 -->
+        </div>
+
+    </div>
+</body>
+</html>

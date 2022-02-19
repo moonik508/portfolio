@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/3.1.1/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>나인에듀</title>
+    <script>
+        $(document).ready(function(){
+        // 선생님 정보 펼치기 
+        $(".teacher-pic").on("click", function(){
+            var box = $(this).parent(".teacher-item");
+            if(box.hasClass("on")){
+                $(".teacher-item").removeClass("on");
+            }else{
+                $(".teacher-item").removeClass("on");
+                box.addClass("on")
+                $( 'html, body' ).animate( { scrollTop : box.offset().top }, 200 );
+            }
+        });
+        $(".teach_class_btn").on("click", function(){
+            if($(this).hasClass("math")){
+                $(".teach-section.content").css("display", "none");
+                $(".teach-section.content.math").css("display", "block");
+            } else if($(this).hasClass("kor")){
+                $(".teach-section.content").css("display", "none");
+                $(".teach-section.content.kor").css("display", "block");
+            } else if($(this).hasClass("eng")){
+                $(".teach-section.content").css("display", "none");
+                $(".teach-section.content.eng").css("display", "block");
+            } else if($(this).hasClass("society")){
+                $(".teach-section.content").css("display", "none");
+                $(".teach-section.content.society").css("display", "block");
+            } else if($(this).hasClass("science")){
+                $(".teach-section.content").css("display", "none");
+                $(".teach-section.content.science").css("display", "block");
+            } else if($(this).hasClass("consult")){
+                $(".teach-section.content").css("display", "none");
+                $(".teach-section.content.consult").css("display", "block");
+            } else if($(this).hasClass("mm1")){
+                $(".teach-section.content").css("display", "none");
+                $(".teach-section.content.mm1").css("display", "block");
+            }
+        });
+    })
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 20211108 헤더 관련 작업, common.js 에 스크립트도 작업됨 -->
+         
+        <header>
+            <div class="inner">
+                <!-- 20211108 pc로고 모바일 로고 분리 -->
+                <h1 class="logo pc"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo.png" alt="대치나인에듀 로고"></a></h1>
+                <h1 class="logo mo"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo_m.png" alt="대치나인에듀 로고"></a></h1>
+                <a href="javascript:void(0)" class="hamburger"></a>
+                <!-- 헤더를 분리하신다면 각 페이지에 맞는 global-nav-item에 클래스명 on을 추가 부탁드립니다. -->
+                <nav class="global-nav">
+                    <a href="javascript:void(0)" class="btn-nav-close">닫기</a>
+                    <ul>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">학원소개</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/intro.html">대치나인에듀학원</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/life.html">학원생활</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/grade.html">성적향상</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/notice.html">공지사항</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">나인학습 Solution</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-care.html">능력별 CARE</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-blackdown.html">학습관리 블랙다운</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-exactly.html">정확한 대입 관리</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-add.html">학습 능력 강화</a></li>
+                                        <!-- <li class="sub-depth-nav-item"><a href="#">학부모 전상서</a></li> -->
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01 on">
+                             <a href="javascript:void(0)">나인에듀강사진</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item on"><a href="/html/03.teacher/teacher_info.html">강사진</a></li>
+                                        <li class="sub-depth-nav-item"><a href="javascript:void(0)">슬기로운 질의응답</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">모집요강</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/basic-recruit.html">2023 수능 기초반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/ready-recruit.html">2023 수능 준비반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/regular-recruit.html">재수정규반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/medi-recruit.html">2023 영과고 수능 MEDICAL CASTLE</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="hamburger"><img src="../../image/NAINEDU/common/hamburger.png" alt=""></a>                
+            </div>
+        </header>
+        <div class="breadcrumb-box">
+            <div class="inner">
+                <ul class="breadcrumb">
+                    <li>HOME</li>
+                    <li>나인학습 Solutiion</li>
+                    <li><span>나인에듀 강사진</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="teach-section top">
+                <div class="inner">
+                    <h2 class="teacher-section-title">대치 나인에듀 강사진</h2>
+                </div>
+            </div>
+            <nav class="teacher-sub-nav">
+                <div class="inner">
+                    <ul>
+                        <li><a href="javascript:void(0)" class="teach_class_btn math">수학</a></li>
+                        <li><a href="javascript:void(0)" class="teach_class_btn kor">국어</a></li>
+                        <li><a href="javascript:void(0)" class="teach_class_btn eng">영어</a></li>
+                        <li><a href="javascript:void(0)" class="teach_class_btn society">사탐</a></li>
+                        <li><a href="javascript:void(0)" class="teach_class_btn science">과탐</a></li>
+                        <li><a href="javascript:void(0)" class="teach_class_btn consult">입시 컨설팅</a></li>
+                        <li><a href="javascript:void(0)" class="teach_class_btn mm1">MM1</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- iframe 영역 -->
+
+            <!-- 과목별로 teach-section content 반복 -->
+            <div class="teach-section content math" style="display: block;">
+                <div class="inner">
+                    <h2 class="section-title">수학</h2>
+                    <ul class="teacher-list">
+                        <!-- item -->
+                        <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                        <li class="teacher-item first-line on">
+                            <a href="javascript:void(0)" class="teacher-pic none">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/math/01_songgab.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>Song gab seok</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>개념 유형화의 설계자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">송갑석</span></p>
+                                    <p class="teacher-career">
+                                        <span>수능 출제 정확한 개념</span>
+                                        <span>수능 경향의 논리적 전개</span>
+                                        <span>수능식 개념 정리의 끝판왕</span>
+                                    </p>
+                                    </p>
+                                    <div class="teacher-pic-more none"><img src="../../image/NAINEDU/teacher/math/01_songgab.png" alt=""></div>
+                                    <p class="teacher-eng-name">Song gab seok</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                        <li class="teacher-item second-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/math/02_parkhan.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>park han il</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>킬러형의 마법사</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">박한일</span></p>
+                                    <p class="teacher-career">
+                                        <span>만점을 위한 필수 개념 정리</span>
+                                        <span>출제 경향 분석의 마법사</span>
+                                        <span>수능 사고로 문제 해결 능력</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/math/02_parkhan.png" alt=""></div>
+                                    <p class="teacher-eng-name">park han il</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+
+                        <li class="teacher-item third-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/math/03_kimwoo.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>kim woo hyoung</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>만점 사고력의 완성자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">김우형</span></p>
+                                    <p class="teacher-career">
+                                        <span>기본에서 심화까지</span>
+                                        <span>생각하는 수학</span>
+                                        <span>사고력 향상으로 만점을 만들기</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/math/03_kimwoo.png" alt=""></div>
+                                    <p class="teacher-eng-name">kim woo hyoung</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+
+                        <li class="teacher-item fourth-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/math/04_kimyou.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>kim young min</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>재미있는 수학의 전도사</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">김영민</span></p>
+                                    <p class="teacher-career">
+                                        <span>정확한 핵심 개념 정리</span>
+                                        <span>출제되는 것만 잡아주는</span>
+                                        <span>출제 원리의 완성</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/math/04_kimyou.png" alt=""></div>
+                                    <p class="teacher-eng-name">kim young min</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        
+                        <li class="teacher-item first-line">
+                            <a href="javascript:void(0)" class="teacher-pic none">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/math/05_namjae.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>nam jae eon</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>수능 유형의 해결사</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">남재언</span></p>
+                                    <p class="teacher-career">
+                                        <span>명쾌한 문제 풀이</span>
+                                        <span>킬러형도 기본처럼</span>
+                                        <span>점수를 올리는 해결 수학</span>
+                                    </p>
+                                    </p>
+                                    <div class="teacher-pic-more none"><img src="../../image/NAINEDU/teacher/math/05_namjae.png" alt=""></div>
+                                    <p class="teacher-eng-name">nam jae eon</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                        <li class="teacher-item second-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/math/06_parktae.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>park tae seok</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>문제 해결의 마법사</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">박태석</span></p>
+                                    <p class="teacher-career">
+                                        <span>개념의 무한 복습</span>
+                                        <span>문제 설계의 달인</span>
+                                        <span>정확한 문제 해석으로 정답까지</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/math/06_parktae.png" alt=""></div>
+                                    <p class="teacher-eng-name">park tae seok</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+
+                        <li class="teacher-item third-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/math/07_gujary.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>koo ja ryong</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>킬러형 지배자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">구자룡</span></p>
+                                    <p class="teacher-career">
+                                        <span>킬러형의 깔끔한 정리</span>
+                                        <span>기본으로 정리하는 킬러형</span>
+                                        <span>사고의 전환</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/math/07_gujary.png" alt=""></div>
+                                    <p class="teacher-eng-name">koo ja ryong</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+
+                        <li class="teacher-item fourth-line">
+                            <a href="javascript:void(0)" class="teacher-pic none">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/math/08_leejeo.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>lee jung bong</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>풀이 설계의 해결사</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">이정봉</span></p>
+                                    <p class="teacher-career">
+                                        <span>수능 출제 원리의 깔끔한 정리</span>
+                                        <span>출제 원리에 따른 문제 해석</span>
+                                        <span>문제 조건의 정복</span>
+                                    </p>
+                                    <div class="teacher-pic-more none"><img src="../../image/NAINEDU/teacher/math/08_leejeo.png" alt=""></div>
+                                    <p class="teacher-eng-name">lee jung bong</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+
+                    </ul>
+                    <!-- 과목 구분선 -->
+                    <div class="line"></div>
+                    <!-- 과목 구분선 -->
+                </div>
+            </div>
+            <!-- 과목별로 teach-section content 반복 -->
+            
+            <!-- 과목별로 teach-section content 반복 -->
+            <div class="teach-section content kor">
+                <div class="inner">
+                    <h2 class="section-title">국어</h2>
+                    <ul class="teacher-list">
+                        <!-- item -->
+                        <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                        <li class="teacher-item first-line on">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/kor/00_parksang.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>Park sang jin</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>슬기로운 언어</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">박상진</span></p>
+                                    <p class="teacher-career">
+                                        <span>수능 언어의 원리 파악</span>
+                                        <span>국어의 기준적 해석 전달</span>
+                                        <span>출제자의 문제 제작 원리 안내법</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/kor/00_parksang.png" alt=""></div>
+                                    <p class="teacher-eng-name">Park sang jin</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                        <li class="teacher-item second-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/kor/01_leegang.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>lee kang woo</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>문학의 종결자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">이강우</span></p>
+                                    <p class="teacher-career">
+                                        <span>고전 문학의 체계적 접근</span>
+                                        <span>현대 문학의 원리 파악</span>
+                                        <span>문학 출제 원리의 철저 분석</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/kor/01_leegang.png" alt=""></div>
+                                    <p class="teacher-eng-name">lee kang woo</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <li class="teacher-item third-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/kor/02_hayoung.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>ha young seok</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>문제 유형의 종결자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">하영석</span></p>
+                                    <p class="teacher-career">
+                                        <span>색다른 기출 분석</span>
+                                        <span>사고력의 향상</span>
+                                        <span>고난도 문제의 쉬운 접근법</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/kor/02_hayoung.png" alt=""></div>
+                                    <p class="teacher-eng-name">ha young seok</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <li class="teacher-item fourth-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"></div>
+                                <p class="teacher-eng-name-first"><span>kim jin kyoung</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>수능 문제 해결의 종결자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">김진경</span></p>
+                                    <p class="teacher-career">
+                                        <span>재미있는 국어 공부</span>
+                                        <span>매일 하게 만드는 국어</span>
+                                        <span>수능 문제 해결의 길잡이</span>
+                                    </p>
+                                    <div class="teacher-pic-more"></div>
+                                    <p class="teacher-eng-name">kim jin kyoung</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                    </ul>
+                    <!-- 과목 구분선 -->
+                    <div class="line"></div>
+                    <!-- 과목 구분선 -->
+                </div>
+            </div>
+            <!-- 과목별로 teach-section content 반복 -->
+            
+            <!-- 과목별로 teach-section content 반복 -->
+            <div class="teach-section content eng">
+                <div class="inner">
+                    <h2 class="section-title">영어</h2>
+                    <ul class="teacher-list">
+                        <!-- item -->
+                        <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                        <li class="teacher-item first-line on">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/eng/01.choiseongwoo.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>Choi seung woo</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>문제 적중 헌터</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">최승우</span></p>
+                                    <p class="teacher-career">
+                                        <span>지문에서 쉽게 읽히는 영단어</span>
+                                        <span>지문 해석의 간결</span>
+                                        <span>유형으로 문제 해결</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/eng/01.choiseongwoo.png" alt=""></div>
+                                    <p class="teacher-eng-name">Choi seung woo</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                        <li class="teacher-item second-line">
+                            <a href="javascript:void(0)" class="teacher-pic none">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/eng/02.choijaehoon.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>choi jae hoon</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>1등급 나눔의 전도사</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">최재훈</span></p>
+                                    <p class="teacher-career">
+                                        <span>단어에서 구문의 연결</span>
+                                        <span>문장 구조에 따른 추론</span>
+                                        <span>합리적 영어 학습 투자</span>
+                                    </p>
+                                    <div class="teacher-pic-more none"><img src="../../image/NAINEDU/teacher/eng/02.choijaehoon.png" alt=""></div>
+                                    <p class="teacher-eng-name">choi jae hoon</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <li class="teacher-item third-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/eng/03.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>baek hyoung seok</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>실전 영어의 강자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">백형석</span></p>
+                                    <p class="teacher-career">
+                                        <span>올바른 독해의 표본</span>
+                                        <span>영어 출제 원리 접근</span>
+                                        <span>논리적 사고의 철저 훈련</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/eng/03.png" alt=""></div>
+                                    <p class="teacher-eng-name">baek hyoung seok</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <li class="teacher-item fourth-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/eng/04.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>kim dae kun</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>수능 영어의 지배자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">김대건</span></p>
+                                    <p class="teacher-career">
+                                        <span>등급 향상의 달인</span>
+                                        <span>문장 독해 능력 향상</span>
+                                        <span>출제 문장 구조의 유형화</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/eng/04.png" alt=""></div>
+                                    <p class="teacher-eng-name">kim dae kun</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                    </ul>
+                    <!-- 과목 구분선 -->
+                    <div class="line"></div>
+                    <!-- 과목 구분선 -->
+                </div>
+            </div>
+            <!-- 과목별로 teach-section content 반복 -->
+            
+            <!-- 과목별로 teach-section content 반복 -->
+            <div class="teach-section content society">
+                <div class="inner">
+                    <h2 class="section-title">사탐</h2>
+                    <ul class="teacher-list">
+                        <!-- item -->
+                        <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                        <li class="teacher-item first-line on">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/society/01.jobumhee.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>jo bum hee</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>생활과 윤리, 윤리와 사상</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">조범희</span></p>
+                                    <p class="teacher-career">
+                                        <span>빠르게 끝내는 간결한 강의</span>
+                                        <span>기출문제로 족집게 핵심강의</span>
+                                        <span>틀리기 쉬운 문제 바로잡기</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/society/01.jobumhee.png" alt=""></div>
+                                    <p class="teacher-eng-name">jo bum hee</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                        <li class="teacher-item second-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/society/02.leegaheum.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>lee ga heum</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>사회문화</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">이가흠</span></p>
+                                    <p class="teacher-career">
+                                        <span>핵심 개념에 대한 쉬운 이해</span>
+                                        <span>대표적인 문제 유형에 대한 쉬운 접근법</span>
+                                        <span>만점으로 가는 완전정복</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/society/02.leegaheum.png" alt=""></div>
+                                    <p class="teacher-eng-name">lee ga heum</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <li class="teacher-item third-line">
+                            <a href="javascript:void(0)" class="teacher-pic none">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/society/03.kangyongsung.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>kang yong sung</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>한국지리, 세계지리</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">강용성</span></p>
+                                    <p class="teacher-career">
+                                        <span>꼼꼼한 수업, 지루하지 않는 수업</span>
+                                        <span>원포인트 수업, 약점만 콕콕</span>
+                                        <span>단원별 집중 몰입 수업</span>
+                                    </p>
+                                    <div class="teacher-pic-more none"><img src="../../image/NAINEDU/teacher/society/03.kangyongsung.png" alt=""></div>
+                                    <p class="teacher-eng-name">kang yong sung</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <li class="teacher-item fourth-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/society/04.yoonminhyeok.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>yoon min hyeok</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>한국사, 세계사, 동아시아사</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">윤민혁</span></p>
+                                    <p class="teacher-career">
+                                        <span>수업을 듣다보면 역사가 보인다</span>
+                                        <span>외우지 않아도 암기가 되는 수업</span>
+                                        <span>한편의 이야기 같은 수업</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/society/04.yoonminhyeok.png" alt=""></div>
+                                    <p class="teacher-eng-name">yoon min hyeok</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- item -->
+                        <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                        <li class="teacher-item first-line">
+                            <a href="javascript:void(0)" class="teacher-pic none">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/society/05.kimyongtaek.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>kim yong taek</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>법과 정치</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">김용택</span></p>
+                                    <p class="teacher-career">
+                                        <span>어려운 용어 쉽게 이해하기</span>
+                                        <span>이해가 되면 암기가 빨라진다</span>
+                                        <span>킬러문제 쉽게 정복하기</span>
+                                    </p>
+                                    <div class="teacher-pic-more none"><img src="../../image/NAINEDU/teacher/society/05.kimyongtaek.png" alt=""></div>
+                                    <p class="teacher-eng-name">kim yong taek</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                    </ul>
+                    <!-- 과목 구분선 -->
+                    <div class="line"></div>
+                    <!-- 과목 구분선 -->
+                </div>
+            </div>
+            <!-- 과목별로 teach-section content 반복 -->
+            
+            <!-- 과목별로 teach-section content 반복 -->
+            <div class="teach-section content science">
+                <div class="inner">
+                    <h2 class="section-title">과탐</h2>
+                    <ul class="teacher-list">
+                        <!-- item -->
+                        <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                        <li class="teacher-item first-line on">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/science/01.jowoonho.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>jo woon ho</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>물리 I, 물리 II</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">조운호</span></p>
+                                    <p class="teacher-career">
+                                        <span>계산, 이해 빠르게 끝내기</span>
+                                        <span>쉽게 외우고 쉽게 이해하기</span>
+                                        <span>외울 필요없는 물리 공식</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/science/01.jowoonho.png" alt=""></div>
+                                    <p class="teacher-eng-name">jo woon ho</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                        <li class="teacher-item second-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/science/02.jokwanyong.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>jo kwan yong</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>생물 I, 생물 II</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">조관용</span></p>
+                                    <p class="teacher-career">
+                                        <span>섬세한 개념과 문제풀이</span>
+                                        <span>쉽게 이해되는 간결한 강의</span>
+                                        <span>변화하는 경향에 대비하는 준비된 수업</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/science/02.jokwanyong.png" alt=""></div>
+                                    <p class="teacher-eng-name">jo kwan yong</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <li class="teacher-item third-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/science/03.ryujaekyung.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>ryu jae kyung</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>화학 I, 화학 II</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">류재경</span></p>
+                                    <p class="teacher-career">
+                                        <span>빠르게 끝내는 화학개념</span>
+                                        <span>수능 화학의 계산은 없다</span>
+                                        <span>몰입도 높은 수업 쉽게 얻는 1등급</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/science/03.ryujaekyung.png" alt=""></div>
+                                    <p class="teacher-eng-name">ryu jae kyung</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <li class="teacher-item fourth-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/science/04.jungnakhoon.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>jung nak hoon</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>지구과학 I, 지구과학 II</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">정낙훈</span></p>
+                                    <p class="teacher-career">
+                                        <span>빠르게 1등급으로 올리는 강의</span>
+                                        <span>다시 봐도 이해되는 강의</span>
+                                        <span>준비된 수업, 준비된 문제</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/science/04.jungnakhoon.png" alt=""></div>
+                                    <p class="teacher-eng-name">jung nak hoon</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                    </ul>
+                    <!-- 과목 구분선 -->
+                    <div class="line"></div>
+                    <!-- 과목 구분선 -->
+                </div>
+            </div>
+            <!-- 과목별로 teach-section content 반복 -->
+            
+            <!-- 과목별로 teach-section content 반복 -->
+            <div class="teach-section content consult">
+                <div class="inner">
+                    <h2 class="section-title">입시 컨설팅</h2>
+                    <ul class="teacher-list">
+                        <!-- item -->
+                        <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                        <li class="teacher-item first-line on">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/consult/01.parkyungkeun.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>park yung keun</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>수시 컨설팅의 최고봉</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">박영근</span></p>
+                                    <p class="teacher-career long">
+                                        <span>학교 유형에 따른 정확한 생기부 분석</span>
+                                        <span>퍼팩트한 학과 선택</span>
+                                        <span>대치동 대입 컨설팅 전문가</span>
+                                        <span>현) 메사인재 입시연구소장</span>
+                                        <span>현) 대치나인에듀 입시연구소</span>
+                                        <span>현) 공감 프리미엄 입시 컨설턴트</span>
+                                        <span>전) 대치미래탐구 입시센터 센터장</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/consult/01.parkyungkeun.png" alt=""></div>
+                                    <p class="teacher-eng-name">park yung keun</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                        <li class="teacher-item second-line">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/consult/01.jobumhee.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>jo bum hee</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>정시 컨설팅의 설계자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">조범희</span></p>
+                                    <p class="teacher-career long">
+                                        <span>의예 입학 설계</span>
+                                        <span>정확한 합격 예측</span>
+                                        <span>대치동 대입 컨설팅 전문가</span>
+                                        <span>현) 대치나인에듀학원 원장</span>
+                                        <span>전) 메가스터디학원</span>
+                                        <span>전) SKY 학원 컨설턴트</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/consult/01.jobumhee.png" alt=""></div>
+                                    <p class="teacher-eng-name">jo bum hee</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                    </ul>
+                    <!-- 과목 구분선 -->
+                    <div class="line"></div>
+                    <!-- 과목 구분선 -->
+                </div>
+            </div>
+            <!-- 과목별로 teach-section content 반복 -->
+            
+            <!-- 과목별로 teach-section content 반복 -->
+            <div class="teach-section content mm1">
+                <div class="inner">
+                    <h2 class="section-title">MM1</h2>
+                    <ul class="teacher-list">
+                        <!-- item -->
+                        <!-- 클릭한 선생님 .teacher-item 에 on 추가 -->
+                        <li class="teacher-item first-line on">
+                            <a href="javascript:void(0)" class="teacher-pic">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/mm1/00_choi.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>Choi ra im</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>의예 면접의 지배자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">최라임</span></p>
+                                    <p class="teacher-career">
+                                        <span>의예과 면접의 해답 제시</span>
+                                        <span>상황에 따른 대처 방법 제시</span>
+                                        <span>합격의 1:1 면접</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/mm1/00_choi.png" alt=""></div>
+                                    <p class="teacher-eng-name">Choi ra im</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                        <!-- // item -->
+                        <li class="teacher-item second-line">
+                            <a href="javascript:void(0)" class="teacher-pic none">
+                                <div class="pic"><img src="../../image/NAINEDU/teacher/mm1/mm1.png" alt=""></div>
+                                <p class="teacher-eng-name-first"><span>lee han wool</span></p>
+                            </a>
+                            <!-- 선생님 상세 -->
+                            <div class="teacher-item-more"> 
+                                <div class="bg-angle"></div>
+                                <div class="teacher-info">
+                                    <p class="teacher-main-txt"><span>의예 면접의 조력자</span></p><br>
+                                    <p class="teacher-locate"><span class="teacher-name">이한울</span></p>
+                                    <p class="teacher-career">
+                                        <span>포커페이스 면접의 양성</span>
+                                        <span>면접관의 사로잡는 대답 비법</span>
+                                        <span>상황을 지배하는 훈련</span>
+                                        <span>합격을 도와주는 조력자</span>
+                                    </p>
+                                    <div class="teacher-pic-more"><img src="../../image/NAINEDU/teacher/mm1/mm1.png" alt=""></div>
+                                    <p class="teacher-eng-name">lee han wool</p>
+                                </div>
+                            </div>
+                            <!-- //선생님 상세 -->
+                        </li>
+                    </ul>
+                    <!-- 과목 구분선 -->
+                    <div class="line"></div>
+                    <!-- 과목 구분선 -->
+                </div>
+            </div>
+            <!-- 과목별로 teach-section content 반복 -->
+            
+            <!-- //iframe 영역 -->
+        </div>
+        <!-- 20211108 푸터변경 -->
+        <footer>
+            <div class="inner">
+                <p class="logo footer"><img src="../../image/NAINEDU/common/footer-logo.png" alt="대치에스학원 하단 로고"></p>
+                <!-- 20211108 footer desc pc, 모바일 추가 -->
+                <article class="footer-desc pc">
+                    <p><span>대치나인에듀 대표: 조범희</span><span>사업자 등록번호 : 624-92-01362</span><span>학원설립 : 서울강남서초 제4691호</span></p>
+                    <p><span>상담문의 : 02-555-3003</span><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+                <article class="footer-desc mo">
+                    <p><span>상담문의 : 02-555-3003</span><span>대치나인에듀 대표: 조범희</span></p>
+                    <p><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>사업자 등록번호 : 624-92-01362</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

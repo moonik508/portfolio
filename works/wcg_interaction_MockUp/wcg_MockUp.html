@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/keyFrames.css">
+    <script src="./jQuery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var center = $(".float-content.center");
+            var news = $(".float-content.news");
+            var art = $(".float-content.art-play");
+            var event = $(".float-content.event");
+            var tournament = $(".float-content.tournament");
+            var players = $(".float-content.players");
+
+            center.hide();
+            news.hide();
+            art.hide();
+            event.hide();
+            tournament.hide();
+            players.hide();
+
+            center.delay(400).fadeIn(400);
+            news.delay(1000).fadeIn(300);
+            art.delay(1200).fadeIn(300);
+            event.delay(1400).fadeIn(300);
+            tournament.delay(1600).fadeIn(300);
+            players.delay(1800).fadeIn(300);
+        });
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="test-wrap">
+        <div class="inner">
+            <!-- Plane -->
+            <div class="float-content plane"><img src="./img/img_plane.png" alt=""></div>
+            <!-- // Plane -->
+            <!-- Center -->
+            <div class="float-content center">
+                <div class="center-item marker"><img src="./img/img_marker.png" alt=""></div>
+                <div class="center-item effect"><img src="./img/Center/blocks.png" alt=""></div>
+                <div class="center-item logo"><img src="./img/Center/WCG_logo.png" alt=""></div>
+                <div class="center-item blend-gradient"></div>
+                <div class="center-item blend-item blend-rec01"><img src="./img/Center/blend01.png" alt=""></div>
+                <div class="center-item blend-item blend-rec02"><img src="./img/Center/blend02.png" alt=""></div>
+                <div class="center-item blend-item blend-rec03"><img src="./img/Center/blend03.png" alt=""></div>
+                <div class="center-item blend-item blend-rec04"><img src="./img/Center/blend04.png" alt=""></div>
+                <div class="center-item blend-item blend-rec05"><img src="./img/Center/blend05.png" alt=""></div>
+                <div class="center-item blend-item blend-rec06"><img src="./img/Center/blend06.png" alt=""></div>
+                <div class="center-item blend-item blend-rec07"><img src="./img/Center/blend07.png" alt=""></div>
+                <div class="center-item base"><img src="./img/Center/logo_base.png" alt=""></div>
+            </div>
+            <!-- //Center -->
+            <!-- News -->
+            <div class="float-content news">
+                <div class="float-item">
+                    <div class="detail-float-item watch-human"><img src="./img/News/watch-human.png" alt=""></div>
+                    <div class="detail-float-item base-phone">
+                        <div class="base-phone-card card01"><img src="./img/News/card.png" alt=""></div>
+                        <div class="base-phone-card card02"><img src="./img/News/card.png" alt=""></div>
+                        <div class="base-phone-card card03"><img src="./img/News/card.png" alt=""></div>
+                        <div class="base-phone-card card01 on-card"><img src="./img/News/card_active01.png" alt=""></div>
+                        <div class="base-phone-card card02 on-card"><img src="./img/News/card_active02.png" alt=""></div>
+                        <div class="base-phone-card card03 on-card"><img src="./img/News/card_active03.png" alt=""></div>
+                        <img src="./img/News/base-phone.png" alt="">
+                    </div>                    
+                    <div class="detail-float-item bulb"><img src="./img/News/bulb.png" alt=""></div>
+                    <div class="detail-float-item bulb_shadow"><img src="./img/News/bulb_shadow.png" alt=""></div>
+                    <div class="detail-float-item chart"><img src="./img/News/chart.png" alt=""></div>
+                    <div class="detail-float-item magnify"><img src="./img/News/magnify.png" alt=""></div>
+                    <div class="detail-float-item speaker"><img src="./img/News/speaker.png" alt=""></div>
+                    <div class="news-base"><img src="./img/News/base.png" alt=""></div>
+                </div>
+                <div class="float-title news"><img src="./img/title_news.png" alt=""></div>
+            </div>
+            <!-- //News -->
+            <!-- Players -->
+            <div class="float-content players">
+                <div class="float-item">
+                    <div class="detail-float-item hands"><img src="./img/Players/cross_hands.png" alt=""></div>
+                    <div class="detail-float-item human01"><img src="./img/Players/rope-human.png" alt=""></div>
+                    <div class="detail-float-item human02"><img src="./img/Players/standing-human.png" alt=""></div>
+                    <div class="detail-float-item human03"><img src="./img/Players/stretch-human.png" alt=""></div>
+                    <div class="detail-float-item human04"><img src="./img/Players/rope-child.png" alt=""></div>
+                    <div class="detail-float-item move-block01"><img src="./img/Players/move_block01.png" alt=""></div>
+                    <div class="detail-float-item move-block02">
+                        <img src="./img/Players/move_block02.png" alt="">
+                        <div class="tails"><img src="./img/Players/move_block02_tails.png" alt=""></div>
+                    </div>
+                    <div class="detail-float-item move-block03"><img src="./img/Players/move_block03.png" alt=""></div>
+                    <div class="detail-float-item move-block04">
+                        <img src="./img/Players/move_block04.png" alt="">
+                        <div class="tails"><img src="./img/Players/move_block04_tails.png" alt=""></div>
+                    </div>
+                    <div class="detail-float-item base-block"><img src="./img/Players/bottom_block.png" alt=""></div>
+                    <div class="players-base"><img src="./img/Players/base.png" alt=""></div>
+                </div>
+                <div class="float-title players"><img src="./img/title_players.png" alt=""></div>
+                <div class="item-thumb thumb03"><img src="./img/img_thumb_01.png" alt=""></div>
+            </div>
+            <!--// Players -->
+            <!-- Tournament -->
+            <div class="float-content tournament">
+                <div class="float-item">
+                    <div class="detail-float-item star-base">
+                        <div class="board-item star01"><img src="./img/Tournament/star_01.png" alt=""></div>
+                        <div class="board-item star02"><img src="./img/Tournament/star_02.png" alt=""></div>
+                        <div class="board-item star03"><img src="./img/Tournament/star_03.png" alt=""></div>
+                        <div class="board-item btn01"><img src="./img/Tournament/btn_start.png" alt=""></div>
+                        <div class="board-item btn01 btn-on"><img src="./img/Tournament/btn_start_on.png" alt=""></div>
+                        <div class="board-item btn02"><img src="./img/Tournament/btn_settings.png" alt=""></div>
+                        <div class="board-item btn02 btn-on"><img src="./img/Tournament/btn_settings_on.png" alt=""></div>
+                        <div class="board-item btn03"><img src="./img/Tournament/btn_exit.png" alt=""></div>
+                        <div class="board-item btn03 btn-on"><img src="./img/Tournament/btn_exit_on.png" alt=""></div>
+                        <div class="star-board"><img src="./img/Tournament/star_base.png" alt=""></div>
+                    </div>
+                    <div class="detail-float-item human01"><img src="./img/Tournament/human_01.png" alt=""></div>
+                    <div class="detail-float-item human02"><img src="./img/Tournament/human_02.png" alt=""></div>
+                    <div class="detail-float-item human03"><img src="./img/Tournament/human_03.png" alt=""></div>
+                    <div class="detail-float-item gauge01">
+                        <p class="half"><img src="./img/Tournament/player_01_end.png" alt=""></p>
+                    </div>
+                    <div class="detail-float-item gauge02">
+                        <p class="half"><img src="./img/Tournament/player_02_end.png" alt=""></p>
+                    </div>
+                    <div class="detail-float-item table">
+                        <p class="play-screen"><img src="./img/Tournament/monitor.gif" alt=""></p>
+                        <img src="./img/Tournament/play_01.png" alt="">
+                    </div>
+                    <div class="detail-float-item table02">
+                        <img src="./img/Tournament/play_02.png" alt="">
+                    </div>
+                    <div class="detail-float-item trophy">
+                        <div class="shine-point shine01"><img src="./img/Tournament/trophy_style01.png" alt=""></div>
+                        <div class="shine-point shine02"><img src="./img/Tournament/trophy_style02.png" alt=""></div>
+                        <div class="shine-point shine03"><img src="./img/Tournament/trophy_style03.png" alt=""></div>
+                        <div class="shine-point shine04"><img src="./img/Tournament/trophy_style04.png" alt=""></div>
+                        <img src="./img/Tournament/trophy.png" alt="">
+                    </div>
+                    <div class="tournament-base"><img src="./img/Tournament/tournament_bg.png" alt=""></div>
+                </div>
+                <div class="float-title tournament"><img src="./img/title_tournament.png" alt=""></div>
+                <div class="item-thumb thumb04"><img src="./img/img_thumb_04.png" alt=""></div>
+            </div>
+            <!-- //Tournament -->
+            <!-- ArtPlay -->
+            <div class="float-content art-play">
+                <div class="float-item">
+                    <div class="detail-float-item art-play-human"><img src="./img/ArtPlay/human.png" alt=""></div>
+                    <div class="detail-float-item art-play-effect"><img src="./img/ArtPlay/effect.png" alt=""></div>
+                    <div class="detail-float-item art-play-bar01"><img src="./img/ArtPlay/bar01.png" alt=""></div>
+                    <div class="detail-float-item art-play-bar02"><img src="./img/ArtPlay/bar02.png" alt=""></div>
+                    <div class="detail-float-item art-play-bar03"><img src="./img/ArtPlay/bar03.png" alt=""></div>
+                    <div class="detail-float-item art-play-bar04"><img src="./img/ArtPlay/bar04.png" alt=""></div>
+                    <div class="detail-float-item art-play-device"><img src="./img/ArtPlay/device.png" alt=""></div>
+                    <div class="art-play-base"><img src="./img/ArtPlay/base.png" alt=""></div>
+                </div>
+                <div class="item-thumb thumb01"><img src="./img/img_thumb_02.png" alt=""></div>
+                <div class="item-thumb thumb02"><img src="./img/img_thumb_03.png" alt=""></div>
+                <div class="float-title art-play"><img src="./img/title_art_play.png" alt=""></div>
+            </div>
+            <!-- //ArtPlay -->
+            <!-- Event -->
+            <div class="float-content event">
+                <div class="float-item">
+                    <div class="detail-float-item machine01">
+                        <p class="game-screen"><img src="./img/Event/monitor_02.gif" alt=""></p>
+                        <img src="./img/Event/game_01.png" alt="">
+                    </div>
+                    <div class="detail-float-item machine02">
+                        <p class="game-item blue-item"><img src="./img/Event/monster_01.png" alt=""></p>
+                        <p class="game-item red-item"><img src="./img/Event/monster_02.png" alt=""></p>
+                        <p class="game-item rocket"><img src="./img/Event/rocket.png" alt=""></p>
+                        <img src="./img/Event/game_02.png" alt="">
+                    </div>
+                    <div class="detail-float-item human01"><img src="./img/Event/human_01.png" alt=""></div>
+                    <div class="detail-float-item human02"><img src="./img/Event/human_02.png" alt=""></div>
+                    <div class="detail-float-item human03"><img src="./img/Event/human_03.png" alt=""></div>
+                    <div class="detail-float-item human04"><img src="./img/Event/human_04.png" alt=""></div>
+                    <div class="event-base"><img src="./img/Event/event_base.png" alt=""></div>
+                </div>
+                <div class="float-title event"><img src="./img/title_event.png" alt=""></div>
+                <div class="item-thumb thumb05"><img src="./img/img_thumb_05.png" alt=""></div>
+            </div>
+            <!-- //Event  -->
+            <!-- Sponsor -->
+            <div class="float-content sponsor">
+                <img src="./img/img_sponsor.png" alt="">
+            </div>
+            <!-- // Sponsor -->
+            <!-- Cloud-box -->
+            <div class="cloud-box01">
+                <div class="cloud-item left01"><img src="./img/img_left_cloud_01.png" alt=""></div>
+                <div class="cloud-item left02"><img src="./img/img_left_cloud_02.png" alt=""></div>
+                <div class="cloud-item left03"><img src="./img/img_left_cloud_03.png" alt=""></div>
+            </div>
+            <!-- // Cloud-box -->
+            <!-- Cloud-box -->
+            <div class="cloud-box02">
+                <div class="cloud-item right01"><img src="./img/img_right_cloud_01.png" alt=""></div>
+                <div class="cloud-item right02"><img src="./img/img_right_cloud_02.png" alt=""></div>
+                <div class="cloud-item right03"><img src="./img/img_right_cloud_03.png" alt=""></div>
+            </div>
+            <!-- // Cloud-box -->
+            <!-- main-bg -->
+            <div class="float-content main-bg">
+                <div class="float-block block01"><img src="./img/bg_box_01.png" alt=""></div>
+                <div class="float-block block02"><img src="./img/bg_box_02.png" alt=""></div>
+                <div class="float-block block03"><img src="./img/bg_box_03.png" alt=""></div>
+                <img src="./img/main_bg.png" alt="">
+            </div>
+            <!-- //main-bg -->
+        </div>
+    </div>
+</body>
+</html>

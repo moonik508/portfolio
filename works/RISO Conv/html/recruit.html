@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../lib/css/reset.css">
+  <link rel="stylesheet" href="../lib/css/fonts.css">
+  <link rel="stylesheet" href="../lib/css/common.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+  <script src="../lib/js/3.1.1/jquery.min.js"></script>
+  <script src="../lib/js/common.js"></script>
+  <title>RECRUIT</title>
+  <script>
+    $(document).ready(function(){
+
+      //다른페이지에서 넘어올 때
+      var url = $(location).attr("href").split("#");
+      var code = "";
+      if(url[1] != null && url[1] != ""){
+        code = url[1];
+        tablink("recruit", code);
+      }
+
+      //해당 페이지에서 사용할 때
+      $(".tab_item a").on('click',function(e){
+        var datacode = $(this).attr("data-code");
+        tablink("recruit",datacode);
+        return false;
+      })
+
+      //해당 페이지에서 해당페이지로의 이동 
+      $(".sub_nav_item a").on("click", function(){
+        var thisUrl = $(this).attr("href").split("#");
+        var code = "";
+        if(thisUrl[1] != null && thisUrl[1] != ""){
+          code = thisUrl[1];
+          tablink("recruit", code);
+        };
+      });
+
+    });
+
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <!-- header -->
+    <header class="header">
+
+      <nav class="header_top_nav">
+        <div class="inner">
+          <h1 class="logo">
+            <a href="./index.html">
+              리소 컨버젼스 메인 로고
+            </a>
+          </h1>
+          <a href="javascript:void(0)" class="btn_m_nav">
+            <i></i>
+            <i></i>
+            <i></i>
+          </a>
+          <ul class="main_nav">
+            <li class="main_nav_item">
+              <a href="#">ABOUT US</a>
+
+              <nav class="sub_nav sub01">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./aboutus.html#01">인사말</a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a href="./aboutus.html#02">경영이념</a>
+                  </li>
+                  <!-- <li class="sub_nav_item">
+                    <a href="./aboutus.html#03">보유특허</a>
+                  </li> -->
+                  <li class="sub_nav_item">
+                    <a href="./aboutus.html#03">오시는길</a>
+                  </li>
+                </ul>
+              </nav>
+
+            </li>
+            <li class="main_nav_item">
+              <a href="#">BUSINESS</a>
+
+              <nav class="sub_nav sub02">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./business.html#01">리사이클링</a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a href="./business.html#02">자연정화</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="main_nav_item">
+              <a href="#">PLATFORM</a>
+
+              <nav class="sub_nav sub03">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./platform.html#01">리사이클링 DASHBOARD</a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a href="./platform.html#02">데이터 융합 A.I</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="main_nav_item">
+              <a href="#">RISO LAB</a>
+
+              <nav class="sub_nav sub04">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./lab.html#01">연구분야</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="main_nav_item">
+              <a href="#">RECRUIT</a>
+
+              <nav class="sub_nav sub05">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./recruit.html#01">채용안내</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+
+          <ul class="m_main_nav">
+            <li><a href="./aboutus.html">About US</a></li>
+            <li><a href="./business.html">Business</a></li>
+            <li><a href="./platform.html">Platform</a></li>
+            <li><a href="./lab.html">riso lab</a></li>
+            <li><a href="./recruit.html">recruit</a></li>
+          </ul>
+          <div class="dim"></div>
+
+        </div>
+      </nav> 
+
+    </header>
+    <!-- //header -->
+
+    <!-- container -->
+    <div class="container recruit">
+
+
+      <!-- visual box -->
+      <div class="visual_box">
+
+        <div class="inner">
+          <p class="visual_txt">
+            <b class="visual_title">RECRUIT</b>
+            We grow together by being together. <br>
+            R.I.S.O convergence의 입사는 서로 발전하는 키워드입니다.
+          </p>
+        </div>
+
+      </div>
+      <!-- // visual box --> 
+      
+      <div class="content">
+
+        <!-- tab_box -->
+        <div class="tab_box">
+          <div class="inner">
+
+            <ul class="tab_list">
+              <li class="tab_item active"><a data-code="recruit01" href="#">채용안내</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- // tab_box -->
+
+        <div class="content_box" id="recruit01">
+
+          <div class="area_box recruit_tab">
+            <div class="inner">
+    
+              <ul class="sel_tab">
+                <li class="sel_tab_01tab">
+                  <a href="#">리소의 특별한 복지</a>
+                </li>
+                <li class="sel_tab_02tab">
+                  <a href="#">모집공고</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            
+          <div class="area_box gy_box"> 
+            <div class="recruit_item">
+              <div class="inner">
+    
+                <div class="items">
+                  <ul class="item_row">
+                    <li class="item_row01">
+                      <h2>주 5일 근무</h2>
+                      <p>워라밸이 보장되고, <br>
+                      자기계발이 원할할 수 있는 <br>
+                      주 5일 근무를 원칙으로 하고있습니다.
+                      </p>
+                      <div class="item_img2">
+                        <img src="/RISO Conv/image/recruit/ico_recruit_01.png" alt="">
+                      </div>
+                    </li>
+                    <li class="item_row02">
+                      <h2>해외 워크샵</h2>
+                      <p>직원들의 친목을 도모하고, <br>
+                      재충전의 시간을 갖도록 지원합니다.
+                      </p>
+                      <div class="item_img">
+                        <img src="/RISO Conv/image/recruit/ico_recruit_02.png" alt="">
+                      </div>
+                    </li>
+                    <li class="item_row03">
+                      <h2>교육지원</h2>
+                      <p>업무 전문성 강화를 위한 <br>
+                        사내·외 교육을 적극 지원합니다.
+                      </p>
+                      <div class="item_img">
+                        <img src="/RISO Conv/image/recruit/ico_recruit_03.png" alt="">
+                      </div>
+                    </li>
+                    <li class="item_row04">
+                      <h2>인센티브</h2>
+                      <p>연봉 외 별도 평가를 통해 <br>
+                      개인별 연 1~2회 인센티브를 지급합니다.
+                      </p>
+                      <div class="item_img">
+                        <img src="/RISO Conv/image/recruit/ico_recruit_04.png" alt="">
+                      </div>
+                    </li>
+                    <li class="item_row01">
+                      <h2>경조사</h2>
+                      <p>경조사 발생 시 경조 휴가 및<br>
+                      경조사 지원제도를 운영중입니다.
+                      </p>
+                      <div class="item_img">
+                        <img src="/RISO Conv/image/recruit/ico_recruit_05.png" alt="">
+                      </div>
+                    </li>
+                    <li class="item_row02">
+                      <h2>REFRESH 휴가</h2>
+                      <p>연차휴가 이외 별도의 refresh 휴가를 <br>
+                        성과에 따라 지급합니다.
+                      </p>
+                      <div class="item_img">
+                        <img src="/RISO Conv/image/recruit/ico_recruit_06.png" alt="">
+                      </div>
+                    </li>
+                    <li class="item_row03">
+                      <h2>HAPPY WEEK</h2>
+                      <p>매월 4주차 중 <br>
+                        하루 오후4시에 자율 퇴근하는 제도를 <br>
+                        운영중입니다.
+                      </p>
+                      <div class="item_img2">
+                        <img src="/RISO Conv/image/recruit/ico_recruit_07.png" alt="">
+                      </div>
+                    </li>
+                    <li class="item_row04">
+                      <h2>기타 복지</h2>
+                      <p>명절, 생일, 우수사원 포상 등 <br>
+                        다양한 복지제도를 운영중입니다.
+                      </p>
+                      <div class="item_img">
+                        <img src="/RISO Conv/image/recruit/ico_recruit_08.png" alt="">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="inner">
+        <address>
+          T: 02.881.5738   F: 02.881.5739  127 Bubwonro, Songpa-gu, Seoul, Daemyoung valleyon knowledge biz center 4F, 403<br>
+          Copyright (C) 2022 R.I.S.O All Rights Reserved.
+        </address>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </div>
+</body>
+</html>

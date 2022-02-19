@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mypage-detail</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                m-mypage-box - mypage 공통 클래스
+                mypage-gy - mypage 배경 컬러 값에 대한 공통클래스
+             -->
+
+             <div class="m-component-box m-mypage-box mypage-wh">
+
+                    <!-- 디테일페이지의 각 항목의 컨텐츠는 mypage-detail-content-box에 뿌려지는 형태 -->
+                    <!-- 고객센터의 경우는 inner 없이 진행 -->
+                    <div class="mypage-common-box cs-center-box cs-center-top-box">
+                        <p>
+                            <span class="cs-center-title">Toki 고객센터</span>
+                            09:00~18:00, 주말, 공휴일 제외
+                        </p>
+                        <div class="btn-box">
+                            <input type="button" value="0000-0000" class="m-input-btn btn-cs-center">
+                        </div>
+                    </div>
+                    <div class="cs-center-tab-box">
+                        <input type="button" value="문의 내역" class="m-btn-tab active">
+                        <input type="button" value="자주하는 질문" class="m-btn-tab">
+                    </div>
+                    <div class="mypage-common-box cs-center-box cs-center-bot-box">
+
+                        <div class="request-btn-box">
+                            <p class="request-txt">
+                                문의를 남기시려면<br>
+                                오른쪽 버튼을 터치해 주세요. 
+                            </p>
+                            <input type="button" value="문의하기" class="m-input-btn btn-request">
+                        </div>
+
+                        <!-- 
+                            검색결과가 없을 시에는 아래 search-none-item 만 호출해주시면 됩니다.
+                        -->
+                        <!--
+                        <div class="cs-center-list-box">
+                            <div class="cs-item search-none-item">
+                               <p>작성된 문의 내역이 없습니다.</p>
+                           </div>
+                        </div> -->
+
+                        <div class="cs-center-list-box">
+                            <!-- 선택된 quest-tab-btn 에 클래스명 active를 붙여주세요. -->
+                            <div class="cs-center-quest-tab">
+                                <input type="button" value="문의중" class="quest-tab-btn active">
+                                <input type="button" value="답변완료" class="quest-tab-btn">
+                            </div>
+                            <!-- 
+                                선택한 항목에는 active 클래스를 넣어주세요.
+                             -->
+                            <div class="cs-item active">
+                                <div class="cs-border-box">
+                                    <div class="cs-item-top">
+                                        <!-- 답변완료인 경우 status에 answer 클래스를 붙여주세요. -->
+                                        <p class="cs-date-txt">
+                                            00-00 오전 00:00
+                                            <i class="status">문의중</i>
+                                        </p>
+                                        <p class="cs-center-item-title">등록된 제목이 노출됩니다.</p>
+                                    </div>
+
+                                    <!-- 사용자 질문 영역 -->
+                                    <div class="cs-item-quest-box">
+                                        <div class="cs-quest-img-item">
+                                            <img src="../../static/m_images/cs-dummy.png" alt="">
+                                        </div>
+                                        <p class="cs-quest-txt">
+                                            <span class="quest-category">[유형명] (토키원)</span>
+                                            등록된 내용이 노출됩니다.
+                                        </p>
+                                        <div class="cs-quest-btn-box">
+                                            <input type="button" value="삭제" class="m-input-btn">
+                                            <input type="button" value="수정" class="m-input-btn active">
+                                        </div>
+                                    </div>
+                                    <!-- // 사용자 질문 영역 -->
+
+                                    <!-- 답변 영역 -->
+                                    <div class="cs-answer-item-box">
+                                        <p class="cs-answer-item-txt">등록된 답변이 노출됩니다.</p>
+                                        <p class="cs-answer-date-txt">00-00 오전 00:00</p>
+                                    </div>
+                                    <!-- // 답변 영역 -->
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+             </div>             
+
+        </div>
+    </div>
+    
+</body>
+</html>

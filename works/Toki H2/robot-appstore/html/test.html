@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>test</title>
+    <style>
+        .box{margin: 100px auto; width: 1200px; font-size: 0; text-align: left;}
+        .child{display: inline-block; width: 120px; height: 100px;  background: #fc0;}
+        .child:nth-child(2){background: #0cf;}
+        .child:nth-child(3){background: #c0f;}
+        .child:nth-child(4){background: #d00;}
+        .child:nth-child(5){background: #a0c;}
+        .child:nth-child(6){background: #cc0;}
+        .child:nth-child(7){background: #00a;}
+        .child:nth-child(8){background: #0a0;}
+        .child:nth-child(9){background: #a0a;}
+        .child:nth-child(10){background: #afa;}
+        .child:nth-child(11){background: #0f0;}
+        .child:nth-child(12){background: #adf;}
+        .child:nth-child(13){background: #ad9;}
+        .child+.child{border-left: 0;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".btnbtn").on("click", function(){
+                var cd = $(".child");
+                var boxWidth = $(".box").width();
+                
+                var tot = 0;
+
+                for(var i = 0; i < cd.length; i++){
+                //console.log(i, $(".child").eq(i).outerWidth())
+                tot += $(".child").eq(i).outerWidth();   
+                }
+                
+                console.log('오브젝트 총합', tot)
+
+                if(tot > boxWidth){
+                    console.log(123)
+                    var cdWidth = boxWidth/cd.length;
+                    console.log(cdWidth)
+                    cd.width(Number(cdWidth))
+                } else {
+                    console.log(100)
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="btnbtn" style="position: fixed; top: 10px; left: 100px; width: 120px; height: 30px; background: #fcc0d0"></div>
+    <div class="box">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

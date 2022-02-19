@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".g_nav_cars>a").on("click", function(){
+                $(".sub_depth").slideToggle(300);
+            })
+        });
+    </script>
+    <title>KMM</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container main">
+            <div class="inner">
+                <div class="box left gnav">
+                    <h1 class="logo"><img src="../image/logo.png" alt="kia logo"></h1>
+                    <nav class="g_nav">
+                        <!-- <ul class="login_nav">
+                            <li><a href="javascript:void(0)">Login</a></li>
+                            <li><a href="javascript:void(0)">Sign up</a></li>
+                        </ul> -->
+                        <!-- 아래는 로그인 완료 후 사용자 네비게이션입니다. -->
+                        <ul class="login_nav">
+                            <li>
+                                <a href="javascript:void(0)" class="setting">
+                                    <img src="../image/main_setting.png" alt="">
+                                    <span>Setting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="logout">
+                                    <img src="../image/main_logout.png" alt="">
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--  -->
+                        <ul class="g_nav_list">
+                            <li><a href="./businesscard.html">Business card</a></li>
+                            <li class="g_nav_cars">
+                                <a href="javascript:void(0)">Company Cars</a>
+                                <ul class="sub_depth">
+                                    <li><a href="javascript:void(0)">Accident Report</a></li>
+                                    <li><a href="javascript:void(0)">Car Maintenance</a></li>
+                                    <li><a href="javascript:void(0)">Pool Car Reservation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0)">Taxi Request</a></li>
+                            <li><a href="javascript:void(0)">IT Devices</a></li>
+                            <li><a href="javascript:void(0)">Post Office</a></li>
+                            <li><a href="javascript:void(0)">System management</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="box center">
+                    <div class="cover_box">
+                        <div class="content_box white show">
+                            <a href="javascript:void(0)">
+                                <span class="badge">1</span>
+                                <p class="icon">
+                                    <img src="../image/main_icon_01.png" alt="">
+                                </p>
+                                <p class="con_tit">Approval request</p>
+                            </a>
+                        </div>
+                        <div class="content_box red">
+                            <a href="javascript:void(0)">
+                                <p class="icon">
+                                    <img src="../image/main_icon_02.png" alt="">
+                                </p>
+                                <p class="con_tit"> Docs to Approve</p>
+                            </a>
+                        </div>
+                        <div class="content_box red">
+                            <a href="javascript:void(0)">
+                                <p class="icon">
+                                    <img src="../image/main_icon_03.png" alt="">
+                                </p>
+                                <p class="con_tit">Completed Docs</p>
+                            </a>
+                        </div>
+                        <div class="content_box white">
+                            <a href="javascript:void(0)">
+                                <p class="icon">
+                                    <img src="../image/main_icon_04.png" alt="">
+                                </p>
+                                <p class="con_tit">Rejected Docs</p>
+                            </a>
+                        </div>
+                        <div class="content_box full">
+                            <div class="bg"></div>
+                            <div class="noti_con">
+                                <p class="tit notice">Notice</p>
+                                <a href="javascript:void(0)" class="noti_more">more ></a>
+                                <ul class="noti_list">
+                                    <li><a href="javascript:void(0)">Lorem ipsum dolor sit amet,consectetur adipiscing elit</a></li>
+                                    <li><a href="javascript:void(0)">Fusce ut neque mollis turpis varius condimentum nec sed mauris</a></li>
+                                    <li><a href="javascript:void(0)">Sed interdum dui et erat ultrices ultricies.</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box right">
+                    <!-- 20201105 텍스트 이미지로 변경 -->
+                    <p class="design_txt">
+                        <img src="../image/main_right_p.png" alt="">
+                    </p>
+                    <!-- //20201105 텍스트 이미지로 변경 -->
+                </div>
+                <footer>
+                    <address>
+                        ©COPYRIGHT. DERECHOS DE AUTOR 2020 KIA MOTORS CORP. TODOS LOS DERECHOS RESERVADOS.
+                    </address>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

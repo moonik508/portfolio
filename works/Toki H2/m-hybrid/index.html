@@ -1,0 +1,50 @@
+<h2 style="margin: 0; padding-top: 30px; text-align: center;">퍼블리싱 페이지</h2>
+<ul style="margin: 40px auto 0; padding: 0; width: 800px; line-height: 40px; list-style: none;">
+    <li onmouseover="$(this).find('img').addClass('over')" onmouseout="$(this).find('img').removeClass('over')">
+        <a href="00.app-index.html" target="_blank" style="display: block; font-size: 0;">
+            <span>앱 공통 인덱스 (00.app-index.html)</span>
+            <img src="./sc/0010-app-main-connect.png" alt="">
+        </a>
+    </li>
+    <li onmouseover="$(this).find('img').addClass('over')" onmouseout="$(this).find('img').removeClass('over')">
+        <a href="01.mypage-index.html" target="_blank" style="display: block; font-size: 0;">
+            <span>마이페이지 인덱스 (01.mypage-index.html)</span>
+            <img src="./sc/1000-mypage-main.png" alt="">
+        </a>
+    </li>
+    <li onmouseover="$(this).find('img').addClass('over')" onmouseout="$(this).find('img').removeClass('over')">
+        <a href="02.toki-index.html" target="_blank" style="display: block; font-size: 0;">
+            <span>토키 인덱스 (02.toki-index.html)</span>
+            <img src="./sc/2000-toki-main.png" alt="">
+        </a>
+    </li>
+    <li onmouseover="$(this).find('img').addClass('over')" onmouseout="$(this).find('img').removeClass('over')">
+        <a href="03.sec-index.html" target="_blank" style="display: block; font-size: 0;">
+            <span>일정 페이지 (03.sec-index.html)</span>
+            <img src="./sc/3000-sec-main.png" alt="">
+        </a>
+    </li>
+</ul>
+
+<script src="lib/jquery/js/3.1.1/jquery.min.js"></script>
+<style>
+    li {
+        overflow: hidden; padding: 0 10px; height: 450px; border: 1px solid #ccc; background: #fff;
+    }
+
+    li:nth-child(0) {
+        border-top: 0;
+    }
+
+    li span {
+        display: inline-block; vertical-align: top; width: 25%; font-size: 16px;
+    }
+
+    img {
+        display: inline-block; vertical-align: top; padding: 20px; width: 35%; border-left: 1px solid #ccc; box-sizing: border-box
+    }
+
+    img.over {
+        width: 100%;
+    }
+</style>

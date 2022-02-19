@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mypage</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                m-mypage-box - mypage 공통 클래스
+                mypage-gy - mypage 배경 컬러 값에 대한 공통클래스
+             -->
+
+             <div class="m-component-box m-mypage-box mypage-gy">
+                <div class="m-inner">
+                    <!-- 기본적으로 내용은  mypage-common-box 로 감싸고 구획 구분이 필요한 경우 다른 클래스명과 함께 사용 -->
+                    <div class="mypage-common-box">
+                        <!-- 
+                            mypage-title-box 사용시 아래처럼 사용 
+                            desc가 필요 없는 경우 title-desc를 삭제사용
+                        -->
+                        <div class="mypage-title-box">
+                            <p class="mypage-title">
+                                최근 받은 알림
+                            </p>
+                            <!-- 
+                                편집과 삭제의 경우 상황에 맞게 hidden 클래스를 붙였다가 떼어주세요.
+                                기본으로는 편집이 보이는 게 맞으며
+                                편집을 눌러서 편집모드로 진입시 편집은 hidden 클래스를 가지고 취소 버튼은 hidden 클래스가 빠집니다.
+                                아이템을 하나라도 선택했을 시 취소와 편집은 hidden 클래스를 가지고, 삭제버튼은 hidden 클래스가 빠집니다. 
+                             -->
+                            <a href="javascript:void(0)" class="mypage-all-view none-arrow">편집</a>
+                            <a href="javascript:void(0)" class="mypage-all-view none-arrow mode-del hidden">취소</a>
+                            <a href="javascript:void(0)" class="mypage-all-view none-arrow mode-del hidden">삭제</a>
+                        </div>
+                        <div class="input-box alarm-tab">
+                            <input type="button" value="일반 알림" class="m-input-btn primary">
+                            <input type="button" value="경비 알림" class="m-input-btn">
+                        </div>
+                    </div>
+
+                    <div class="mypage-common-box">
+                        <!-- 
+                            alarm-list-detail 
+                            alarm-list-detail 의 경우 항상 노출이 아닌 최근 받은 알림이 있는 경우 노출
+                        -->
+                        <div class="mypage-detail-box alarm-list-detail">
+                            <!-- alarm-item 이 반복 -->
+                            <div class="alarm-item none-item">
+                                <p>받은 알림이 없습니다.</p>
+                            </div>
+                        </div>
+                        <!-- // alarm-list-detail -->
+                    </div>
+
+                </div>
+             </div>             
+
+        </div>
+    </div>
+    
+</body>
+</html>

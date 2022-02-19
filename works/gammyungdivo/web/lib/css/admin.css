@@ -1,0 +1,723 @@
+/* 怨듯넻 */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.5px;
+}
+.inner{
+    margin: 0 auto;
+}
+.inner:after,
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.m0{
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+.mb20{
+    margin-bottom: 20px !important;
+}
+.hidden{
+    display: none !important;
+}
+
+/* 踰꾪듉 �삎�떇 怨듯넻 */
+.btnBox{
+    font-size: 0;
+    text-align: center;
+}
+.btnBox.right{
+    text-align: right !important;
+}
+.btnBox.left{
+    text-align: left !important;
+}
+.btn{
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #2f2f2f;
+    border-radius: 6px;
+    transition: background 0.3s;
+    background: #2f2f2f;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #000;
+}
+.btn.btn_cancel{
+    color: #2f2f2f;
+    background: #fff;
+}
+.btn.btn_cancel:hover{
+    background: #ddd;
+}
+.btn.btn_mod{
+    color: #2f2f2f;
+    background: #d5d5d5;
+}
+.btn.btn_mod:hover{
+    background: #aaa;
+}
+.btn.btn_file_upload{
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 0 !important;
+    border: 1px solid #777;
+    background: #ccc;
+}
+.btn.btn_file_upload:hover{
+    color: #f8f8f8;
+    background: #555;
+}
+.btnBox .btn+.btn{
+    margin-left: 10px;
+}
+
+/* 泥댄겕 �삎�떇 怨듯넻*/
+.radioBox{
+    height: 40px; 
+    font-size: 0;
+}
+.radioBox:after{
+	content: "";
+	clear: both;
+	display: block; 
+}
+.radioBox label{
+    position: relative;
+	float: left;
+    padding-left: 40px; 
+    width: 156px; 
+    height: 100%;    
+}
+.radioBox label [type="checkbox"],
+.radioBox label [type="radio"]{
+    display: none;
+}
+.radioBox label .bullet{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px; 
+    transform: translateY(-50%);
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: #fff;   
+}
+.radioBox label .bullet:after{
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    background: #333;
+}
+.radioBox label :checked+.bullet:after{
+    display: block;
+}
+.radioBox label .txt{
+    display: inline-block;
+    margin-left: 10px; 
+    font-size: 16px;
+    line-height: 40px;
+}
+/* 湲고� 怨듯넻 */
+.txtCenter{
+    text-align: center !important;
+}
+.badge{
+    padding: 3px 10px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 17px; 
+    border-radius: 3px;
+    background: #eee;
+}
+
+/* select tag reset */
+select{
+    position: relative;
+    padding-left: 10px; 
+    height: 30px;
+    font-size: 14px;
+    line-height: 28px;
+    border: 1px solid #aaa;
+    vertical-align: 2px;
+    background-image: url("../../images/bg_arrow.png");
+    background-repeat: no-repeat;
+    background-size: 7px 4px;
+    background-position: 95% 50%;
+    -moz-appearance:none; /* Firefox */  
+    -webkit-appearance:none; /* Safari and Chrome */  
+    appearance:none;
+}
+select::-ms-expand {display:none;}
+
+/* login */
+.login_container{
+    position: relative;
+    height: 100vh;
+    background: #eee;
+}
+.loginbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 60px 30px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4)
+}
+.loginbox img{
+    display: block; 
+    margin: 0 auto 50px; 
+}
+.loginbox label{
+    display: block; 
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 300px;
+    font-size: 0;
+    border-bottom: 1px solid #999;
+}
+.loginbox label+label{
+    margin: 10px auto 0;
+}
+.loginbox span{
+    float: left;
+    width: 20%;
+    font-size: 16px;
+    line-height: 30px;;
+}
+.loginbox input{
+    float: right;
+    padding: 0;
+    width: 78%;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px; 
+    border: 0;
+}
+.loginbox .btnbox{
+    margin: 60px auto 0;  
+    width: 300px; 
+    text-align: center;
+}
+.loginbox .btnbox .btn_login{
+    width: 100%;
+    height: 50px; 
+}
+
+/* sub */
+/*GNB*/
+.ad_gnb{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+    width: 200px;
+    border-right: 1px solid #2f2f2f;
+    background-color: #fff;
+}
+.ad_gnb .logo{
+    margin: 17px auto;
+    width: 168px;
+    height: 56px;
+    font-size: 0;
+    background: url("../../images/side_logo.png");
+}
+.ad_gnb .right_nav{
+    margin: 33px auto;
+    width: 160px;
+    border-width: 1px 0;
+    border-color: #333;
+    border-style: solid
+}
+.ad_gnb .right_nav li{
+    padding: 0 20px;
+    text-align: left;
+    transition: background 0.2s;
+}
+.ad_gnb .right_nav li:hover{
+    background: #ddd;
+}
+.ad_gnb .right_nav li+li{
+    border-top: 1px solid #777;
+}
+.ad_gnb .right_nav li a{
+    display: block;
+    color: #555;
+    font-size: 16px;
+    line-height: 50px;
+    transition: color 0.2s, line-height 0.2s;
+}
+.ad_gnb .right_nav li a:hover{
+    color: #2f2f2f;
+    font-weight: 500;
+    line-height: 80px;
+}
+.ad_gnb .right_nav li.on{
+    background: #777
+}
+.ad_gnb .right_nav li.on a{
+    color: #fff;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+/* header */
+.ad_header,
+.ad_container{
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    margin-left: 200px;
+}
+.ad_header{
+    height: 90px; 
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+.ad_header nav{
+    float:left; 
+    padding: 0 30px; 
+}
+.ad_header nav li{
+    position: relative;
+    float: left;
+}
+.ad_header nav li+li{
+    margin-left: 30px;
+}
+.ad_header nav li.on,
+.ad_header nav li:hover{
+    font-weight: bold;
+}
+.ad_header nav li:after{
+    display:none;
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: -5px;
+    right: -5px;
+    height: 1px;
+    background: #2f2f2f;
+}
+.ad_header nav li:hover:after,
+.ad_header nav li.on:after{
+    display: block;
+}
+.ad_header nav li a{
+    display: block;
+    color: #2f2f2f;
+    font-size: 16px; 
+    line-height: 90px;
+}
+.ad_header .btn_logout{
+    float: right; 
+    margin-top: 26px;
+    margin-right: 30px;
+    padding: 10px; 
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #999;
+    border-radius: 5px;
+    transition: border-color 0.3s, color 0.3s, background 0.3s;
+    background: #fff;
+}
+.ad_header .btn_logout:hover{
+    color: #fff;
+    border-color: #2f2f2f;
+    background: #2f2f2f;
+}
+
+/* container */
+.ad_container{
+    padding: 30px 0 0 30px;
+    height: calc(100vh - 91px);
+}
+.ad_container .ad_first_title{
+    position: relative;
+    padding-left: 20px; 
+    font-size: 26px;
+}
+.ad_container .ad_first_title:before{
+    content: "";
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    width: 4px; 
+    height: 26px;
+    transform: translateY(-50%);
+    background: #000;
+}
+.ad_container .ad_conBox{
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+}
+.ad_container .ad_conBox .leftBox,
+.ad_container .ad_conBox .rightBox{
+    padding-top: 30px; 
+}
+.ad_container .ad_conBox .leftBox{
+    float: left;
+    width: 15%; 
+}
+.ad_container .ad_conBox .rightBox{
+    float: left; 
+    width: 85%;
+    padding: 30px 60px 60px 30px; 
+    border-left: 1px solid #ddd;
+    background: #f7f7f7;
+}
+.ad_container .ad_conBox .leftBox .menu_title{
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ad_container .ad_conBox .rightBox .edit_context{
+    padding: 20px; 
+    height: calc(100vh - 340px);
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #ddd;
+    overflow-y:scroll;
+    background:#fff;
+}
+.edit_context{
+	width: 100%;
+	resize: none;
+}
+.ad_container .ad_conBox .btnBox{
+    margin-top: 20px;
+    font-size: 0;
+    text-align: center;
+}
+
+/* �쉶�깮 - 蹂��샇�궗 */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.ad_container .ad_conBox .tableBox{
+    position: relative;
+    padding: 20px 40px 20px 20px; 
+    height: calc(100vh - 198px);
+    font-size: 16px;
+    line-height: 22px;
+}
+.ad_container .ad_conBox .tableBox table{
+    border-top: 1px solid #aaa;
+    width: 100%;
+}
+.ad_container .ad_conBox .tableBox table .btn{
+    padding: 5px 20px; 
+    font-size: 14px;
+    line-height: 20px;
+}
+.ad_container .ad_conBox .tableBox table .btn+.btn{
+    margin-left: 10px; 
+}
+.ad_container .ad_conBox .tableBox table thead{
+    border-bottom: 1px solid #aaa;
+}
+.ad_container .ad_conBox .tableBox table thead tr th{
+    font-size: 16px;
+    line-height: 40px; 
+    background: #ddd;
+    vertical-align: middle;
+    border-bottom: 1px solid #aaa;
+}
+.ad_container .ad_conBox .tableBox table thead tr th+th,
+.ad_container .ad_conBox .tableBox table tbody tr td+td{
+    border-left: 1px solid #aaa;
+}
+.ad_container .ad_conBox .tableBox table tbody tr td{
+    position: relative;
+    padding: 0 10px; 
+    font-size: 14px;
+    line-height: 40px;
+    border-bottom: 1px solid #aaa;
+    background: #fff;
+    vertical-align: middle;
+}
+.ad_container .ad_conBox .tableBox table tbody tr td.mod{
+    text-align: center;
+}
+.ad_container .ad_conBox .tableBox .paging{
+    margin-top: 20px;
+    font-size: 0;
+    text-align: center;
+}
+.ad_container .ad_conBox .tableBox .paging a{
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    color: #999;
+    font-size: 16px;
+}
+.ad_container .ad_conBox .tableBox .paging .arrow{}
+.ad_container .ad_conBox .tableBox .paging a:first-child,
+.ad_container .ad_conBox .tableBox .paging a:last-child{
+    color: #333;
+    font-weight: bold;
+}
+.ad_container .ad_conBox .tableBox .paging a.active{
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+}
+
+/* 蹂��샇�궗 �벑濡� */
+.ad_container .ad_conBox .tableBox table tbody tr td.edit_title{
+    font-weight: 500; 
+    background :#ddd;
+}
+.ad_container .ad_conBox .tableBox table tbody tr td .edit_txt{
+    padding-left: 10px; 
+    width: 300px; 
+    height: 20px;
+    line-height: 18px;  
+    vertical-align: middle;
+}
+.ad_container .ad_conBox .tableBox table tbody tr td ::placeholder{
+    color: #aaa
+}
+.ad_container .ad_conBox .tableBox table tbody tr td .btnBox{
+    vertical-align: middle;
+}
+.ad_container .ad_conBox .tableBox table tbody tr td .btnBox .btn{
+    vertical-align: middle;
+}
+.ad_container .ad_conBox .tableBox table tbody tr td .btnBox .btn+.btn{
+    border-left: 0;
+}
+.ad_container .ad_conBox .tableBox table tbody tr td .btnBox .desc{
+    display: inline-block;
+    margin-left: 10px; 
+    color: #aaa;
+    font-size: 12px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.ad_container .ad_conBox .infotxt{
+    margin: 10px 0;
+    padding: 5px 10px; 
+    width: 90%; 
+    height: 250px; 
+    vertical-align: middle;
+    resize: none;    
+}
+.ad_container .ad_conBox .addBox{
+    vertical-align: middle;
+}
+.ad_container .ad_conBox .addBox .bullet{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    width: 24px;
+    height: 24px; 
+    font-size: 20px; 
+    line-height: 22px;
+    text-align: center; 
+    border: 1px solid #555;
+    border-radius: 12px;
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.ad_container .ad_conBox .addBox .bullet.delete{
+    font-size: 30px;
+}
+
+/* �뼵濡좊낫�룄 */
+.ad_container .ad_conBox .tableBox td.news_txt_typeboard{
+    padding: 10px 10px;
+    height: 65px;
+    line-height: 22px;
+}
+
+/* �닔�뻾�궗濡� */
+.select_Case{
+    width: 80%;
+}
+.case .select_Case{
+    width: 200px;
+}
+.case .infotxt{
+    height: 80px !important;
+}
+
+/* �긽�떞臾몄쓽 */
+.searchBox{
+    margin-bottom: 10px; 
+}
+.searchBox .resulttxt{
+    vertical-align: middle;
+}
+.searchBox .searchtxt{
+	position: relative;
+    float:right;
+    padding: 5px 30px 5px 0px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    background-image: url("../../images/ico_search.png");
+    background-size: 16px 16px;
+    background-position: 95% 8px;
+    background-repeat: no-repeat;
+}
+.searchBox .searchtxt input{
+    padding-left: 10px; 
+    vertical-align: 2px;
+    border: 0;
+    font-size: 16px;
+    line-height: 100%;
+}
+.searchBox .searchtxt #btnSearch2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 30px;
+	font-size: 0;
+	cursor: pointer;
+	background: transparent;
+}
+.badge.answer{
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    color: #fff;
+    transform: translateY(-50%);
+    background: #ea2222;
+}
+.result_none{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+}
+.questBox{
+    margin-bottom: 60px; 
+    padding: 0 10px; 
+}
+.questBox .box{
+    padding: 20px 10px; 
+    border-bottom: 1px solid #aaa;
+}
+.questBox .box.txt{
+    min-height: 120px;
+}
+.questBox .box .semi_title{
+    font-size: 16px;
+    line-height: 20px;
+}
+.questBox .box .quest_info{
+    color: #333;
+    font-size: 16px;
+}
+.questBox .box .quest_info.cus_info{
+    margin-top: 10px; 
+    font-size: 14px;
+}
+.questBox .box .quest_info.cus_info span{
+    margin-right: 14px; 
+}
+.titleBox{
+    margin-bottom: 10px;
+}
+.titleBox .title{
+    float: left;
+    font-size: 18px;
+}
+.titleBox .btnBox{
+    float: right;
+}
+.counsel .select_Case{
+    width: 200px;
+}
+.counsel .infotxt{
+    height: 100px !important;
+}
+
+/* �뙘�뾽 */
+.popwrap{}
+.popwrap .popheader{
+    position: relative;
+    background: #111;
+}
+.popwrap .popheader h1{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+}
+.popwrap .popheader button{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    font-size: 0;
+    width: 14px;
+    height: 14px;
+    transform: translateY(-50%);
+    background: url("../../images/pop_close_btn.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.popwrap .popbody{
+    position: relative;
+    margin-top: 60px; 
+    border-top: 1px solid #999;
+    background: #fff;
+}
+.popwrap .popbody h2{
+    position: absolute;
+    left: 30px; 
+    bottom: 100%;
+    padding: 0 20px;
+    height: 36px;
+    line-height: 30px;
+    border: 1px solid #999;
+    border-bottom: 0;
+    background: #fff;
+}
+.popwrap .popbody .location{
+    padding: 30px 20px; 
+}
+.popwrap .popbody .location input{
+    display: inline-block;
+    width: 80%;
+    height: 26px; 
+    vertical-align: middle;
+}
+.popwrap .popbody .location .btn{
+    width: 18%;
+    height: 32px;
+    vertical-align: middle;
+}
+.popwrap .btnBox{
+    margin-top: 20px;
+}
+.popwrap .btnBox .btn{
+    
+}

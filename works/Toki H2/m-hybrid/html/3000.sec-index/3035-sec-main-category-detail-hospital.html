@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/jquery/swiperJS/swiper.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/swiperJS/swiper.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>calendar category hospital</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            <!-- <header class="m-header">
+                <div class="m-component-box">
+                    <div class="m-header-box">
+                        <input type="button" class="m-input-btn back-btn">
+                        <p class="m-title hd-title">앨범</p>
+                        <div class="m-header-btn-box">
+                            <input type="button" class="m-input-btn btn-user-info">
+                        </div>
+                    </div>
+                </div>
+            </header> -->
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+             -->
+            <!-- 
+                toki-common-item swiper-slide
+                슬라이더가 반복되는 형태
+                    toki-content-box 클래스에
+                    사용중 class = robot-connected
+                    대기 class = robot-wait
+                    바쁨 = robot-busy
+                    off = robot-disconnected
+                    에 따라서 클래스 변경
+             -->
+            <div class="m-component-box m-component-box-bg">
+                <div class="m-inner">
+                    <div class="sec-top-content-box">
+                        <p class="sec-top-title">날짜/시간</p>
+                        <p class="sec-top-text">00월 00일 | 00시 00분 AM</p>
+                    </div>
+                    <div class="sec-top-content-box">
+                        <p class="sec-top-title">대상</p>
+                        <p class="sec-top-text">O*O, O*O</p>
+                    </div>
+                    <div class="sec-top-content-box">
+                        <p class="sec-top-title">카테고리를 선택하세요.</p>
+                        <p class="sec-top-text">병원 > 세부 카테고리를 선택하세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="m-component-box">
+                <div class="m-inner pt0">
+                    <div class="sec-bottom-content-box">
+                        <div class="sec-image-box">
+                            <div class="sec-image-list">
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">치과</span>
+                                        <img src="../../static/m_images/ic-dentist.png" alt="" class="dentist">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">물리치료</span>
+                                        <img src="../../static/m_images/ic-physical.png" alt="" class="physical">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">내과</span>
+                                        <img src="../../static/m_images/ic-medicine.png" alt="" class="medicine">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sec-image-list">
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">외과</span>
+                                        <img src="../../static/m_images/ic-surgery.png" alt="" class="surgery">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">안과</span>
+                                        <img src="../../static/m_images/ic-eye.png" alt="" class="eye">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">이비인후과</span>
+                                        <img src="../../static/m_images/ic-ear.png" alt="" class="ear">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sec-image-list">
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">정신과</span>
+                                        <img src="../../static/m_images/ic-psychiatry.png" alt="" class="psychiatry">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">동물병원</span>
+                                        <img src="../../static/m_images/ic-animal.png" alt="" class="animal">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">검강검진</span>
+                                        <img src="../../static/m_images/ic-healthscreen.png" alt="" class="healthscreen">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-btn-box">
+                            <input type="button" value="뒤로" class="m-input-btn w45p float-l">
+                            <input type="button" value="다음" class="m-input-btn w45p primary float-r">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>             
+    </div>
+</body>
+</html>

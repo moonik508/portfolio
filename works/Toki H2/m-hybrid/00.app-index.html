@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/css/reset.css">
+    <link rel="stylesheet" href="./lib/css/common.css">
+    <link rel="stylesheet" href="./lib/css/font.css">
+    <link rel="stylesheet" href="./lib/css/style.css">
+    <script src="./lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="./lib/jquery/js/common.js"></script>
+    <title>robotapp Publish</title>
+    <style>
+        .index{margin: 0 auto; padding: 20px 60px 200px; width: 100%; height: 100%; max-width: 1060px; background: #238e96;}
+        .index-title{color: #fff; font-size: 18px; font-weight: 600;}
+        ul{margin: 20px auto 0;}
+        ul li{position: relative; z-index: 10; font-size: 0; border: 1px solid #eee; background: #fff;}
+        ul li+li{border-top: 0;}
+        ul li:hover{z-index: 20;}
+        ul li .index-box{display: inline-block; vertical-align: middle; position: relative; z-index: 100; padding: 20px; width: 70%; height: auto; vertical-align: middle;}
+        ul li .index-box p{padding: 6px 0; color: #333; font-size: 12px; }
+        ul li .img-box{display: inline-block; vertical-align: middle; position: relative; z-index: 100; padding: 10px;  width: 30%; height: 300px; vertical-align: middle;  border-left: 1px solid #eee;}
+        ul li .img-box>img{margin: auto; height: 100%; }
+        ul li .popup-con{display: none; position: absolute; z-index: 120; top: -80px; right: 100%; margin-right: 10px; padding: 20px; border: 1px solid #978989; background: #fff; box-shadow: 0px 4px 8px rgba(0,0,0,0.3);}
+        ul li .popup-con img{width: 500px; border: 1px solid #e5e5e5;}
+        ul li .img-box:hover .popup-con{display: block;}
+    </style>
+</head>
+<body>
+    <div class="index">
+        <p class="index-title">로봇앱 퍼블리싱</p>
+        <p style="margin-top:30px; font-size: 0;">
+            <span class="dis-ib w70p" style="color: #fff; font-size: 16px; font-weight: 600;">파일명 &amp; 페이지 이름</span>
+            <span class="dis-ib w30p" style="color: #fff; font-size: 16px; font-weight: 600;">스크린 샷</span>
+        </p>
+        <ul>
+            <li class="index-item">
+                <a href="./html/0000.app-index/0010-app-main-connect.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">0010-app-main-connect.html</p>
+                        <p class="file-name-locale">로봇앱 연결하기</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/0010-app-main-connect.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/0010-app-main-connect.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/0000.app-index/0020-app-main-guide.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">0020-app-main-guide.html</p>
+                        <p class="file-name-locale">로봇앱 Toki 사용자가이드</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/0020-app-main-guide.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/0020-app-main-guide.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+<script src="lib/jquery/js/3.1.1/jquery.min.js"></script>
+</html>

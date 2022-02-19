@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../lib/js/jQuery1.7.min.js"></script>
+    <script src="../lib/js/common.js"></script>
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/fonts.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <title>(주) 포랩</title>
+    <script>
+        $(document).ready(function(){
+            $(".btn_hamburger").on("click", function(){
+                $(".wrap").addClass("nav_on getModal")
+            });
+            $(".btn_nav_close").on("click", function(){
+                $(".wrap").removeClass("nav_on getModal")
+            });
+            $(".work_item_info").on("click", function(){
+                $(this).next(".work_pop").addClass("active");
+                $(".page_dim").addClass("active");
+                $(".wrap").addClass("getModal");
+            });
+            $(".btn_work_pop_close").on("click", function(){
+                $(this).parent(".work_pop").removeClass("active");
+                $(".page_dim").removeClass("active");
+                $(".wrap").removeClass("getModal");
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo"><a href="../index.html"><img src="../lib/img/m/logo_wh.png" alt="주식회사 포랩 상단 로고"></a></h1>
+                <button class="btn_hamburger"><img src="../lib/img/m/hamburger.png" alt=""></button>
+            </div>
+            <!-- 팝업을 위한 dim 처리 -->
+            <div class="page_dim"></div>
+        </header>
+        <nav class="global_nav">
+            <button class="btn_nav_close"><img src="../lib/img/m/btn_nav_close.png" alt=""></button>
+            <ul>
+                <li><a href="./m-overview.html">OVERVIEW</a></li>
+                <li><a href="./m-work.html">WORKS</a></li>
+                <li><a href="./m-solution.html">SOLUTION</a></li>
+                <li><a href="./m-recruit.html">RECRUIT</a></li>
+                <li><a href="./m-contact.html">CONTACT</a></li>
+                <li><a href="./lib/download/Fourlab_Profile_2021ver.pdf" download class="company_porfile">회사소개서<img src="../lib/img/ic-pdf.png" alt="ic-pdf"></a></li>
+				<li><a href="http://www.4-lab.com/inc/explain/html/" target="_blank" class="company_porfile">회사소개서 Web<img src="../lib/img/ic-web.png" alt="ic-web"></a></li>
+            </ul>
+            <div class="outer_link_group">
+                <a href="http://risoconv.com" target=_blank>
+                    <div class="box riso">
+                        <i><img src="../lib/img/ic_riso.png" alt=""></i>
+                        <span>리소컨버전스 바로가기</span>
+                    </div>
+                </a>
+                <a href="http://mydatalab.co.kr/" target="_blank">
+                    <div class="box mydatalab">
+                        <i><img src="../lib/img/ic_mydata.png" alt=""></i>
+                        <span>마이데이터랩 바로가기</span>
+                    </div>
+                </a>
+            </div>
+            <div class="clear_dim"></div>
+        </nav>
+        <div class="m_continer">
+            <div class="m_content recruit">
+                <div class="contnet_head">
+                    <div class="inner">
+                        <h2 class="content_head_title">RECRUIT</h2>
+                    </div>
+                </div>
+                <div class="content_body">
+                    <div class="content_box careers">
+                        <div class="inner">
+                            <h3 class="content_box_title">CAREERS<span>.</span></h3>
+                            <div class="content_box_image careers">
+                                <div class="careers_box">
+                                    <img src="../lib/img/i-recruit-1.png" alt="">
+                                    <div class="careers_txt">
+                                        <h5>전자문서 LAB</h5>
+                                        <p>표준 업무 프로세스</p>
+                                        <span>IT 개발실</span>
+                                        <span class="fill_txt">00명 충원중</span>
+                                    </div>
+                                </div>
+                                <div class="careers_box">
+                                    <img src="../lib/img/i-recruit-2.png" alt="">
+                                    <div class="careers_txt">
+                                        <h5>모바일 LAB</h5>
+                                        <p>Native, Hybrid WEB/APP 제작</p>
+                                        <span>모바일팀</span>
+                                        <span class="fill_txt">00명 충원중</span>
+                                    </div>
+                                </div>
+                                <div class="careers_box">
+                                    <img src="../lib/img/i-recruit-3.png" alt="">
+                                    <div class="careers_txt">
+                                        <h5>솔루션 LAB</h5>
+                                        <p>스마트 업무지원 솔루션 기획</p>
+                                        <span>R&D팀, 기획팀</span>
+                                        <span class="fill_txt">00명 충원중</span>
+                                    </div>
+                                </div>
+                                <div class="careers_box">
+                                    <img src="../lib/img/i-recruit-4.png" alt="">
+                                    <div class="careers_txt">
+                                        <h5>유지보수 LAB</h5>
+                                        <p>WEB/APP 유지보수</p>
+                                        <span>기술지원팀</span>
+                                        <span class="fill_txt">00명 충원중</span>
+                                    </div>
+                                </div>
+                                <div class="careers_box">
+                                    <img src="../lib/img/i-recruit-5.png" alt="">
+                                    <div class="careers_txt">
+                                        <h5>디자인 LAB</h5>
+                                        <p>WEB/APP 디자인 업무</p>
+                                        <span>디자인팀</span>
+                                        <span class="fill_txt">00명 충원중</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="linked_box">
+                                <a href="https://www.jobkorea.co.kr/company/43456747/Recruit">
+                                    입사지원하기
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_box welfare">
+                        <div class="inner">
+                            <h3 class="content_box_title">WELFARE<span>.</span></h3>
+                            <div class="content_box_image welfare">
+                                <div>
+                                    <div class="welfare_image_box top">
+                                        <img src="../lib/img/i-recruit-6.png" alt="">
+                                    </div>
+                                    <h5>주 5일 근무</h5>
+                                    <p>워라벨이 보장되고, 자기계발이 원활할 수 있는</p>
+                                    <p>주 5일 근무를 원칙으로 하고 있습니다.</p>
+                                </div>
+                                <div>
+                                    <div class="welfare_image_box right">
+                                        <img src="../lib/img/i-recruit-7.png" alt="">
+                                    </div>
+                                    <h5>해외 워크샵</h5>
+                                    <p>직원들의 친목을 도모하고,</p>
+                                    <p>재충전의 시간을 갖도록 지원합니다.</p>
+                                </div>
+                                <div>
+                                    <div class="welfare_image_box bottom">
+                                        <img src="../lib/img/i-recruit-8.png" alt="">
+                                    </div>
+                                    <h5>교육지원</h5>
+                                    <p>업무 전문성 강화를 위한</p>
+                                    <p>사내·외 교육을 적극 지원합니다.</p>
+                                </div>
+                                <div>
+                                    <div class="welfare_image_box left">
+                                        <img src="../lib/img/i-recruit-9.png" alt="">
+                                    </div>
+                                    <h5>인센티브</h5>
+                                    <p>연봉 외 별도 평가를 통해</p>
+                                    <p>개인별 연 1~2회 인센티브를 지급힙니다.</p>
+                                </div>
+                                <div>
+                                    <div class="welfare_image_box top">
+                                        <img src="../lib/img/i-recruit-10.png" alt="">
+                                    </div>
+                                    <h5>경조사</h5>
+                                    <p>경조사 발생 시 경조 휴가 및 경조사에 적합한</p>
+                                    <p>지원제도를 운영중입니다.</p>
+                                </div>
+                                <div>
+                                    <div class="welfare_image_box right">
+                                        <img src="../lib/img/i-recruit-11.png" alt="">
+                                    </div>
+                                    <h5>REFRESH 휴가</h5>
+                                    <p>연차휴가 이외 별도의 refresh 휴가를</p>
+                                    <p>성과에 따라 지급합니다.</p>
+                                </div>
+                                <div>
+                                    <div class="welfare_image_box bottom">
+                                        <img src="../lib/img/i-recruit-12.png" alt="">
+                                    </div>
+                                    <h5>PLAY SHOP</h5>
+                                    <p>연 2회에 걸쳐 재충전의 시간을</p>
+                                    <p>가지도록 레저 및 문화활동을 지원합니다.</p>
+                                </div>
+                                <div>
+                                    <div class="welfare_image_box left">
+                                        <img src="../lib/img/i-recruit-13.png" alt="">
+                                    </div>
+                                    <h5>기타복지</h5>
+                                    <p>명절, 생일, 우수사원 포상 등</p>
+                                    <p>다양한 복지제도를 운영중입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="page_top">TOP</button>
+        <footer class="footer">
+            <div class="inner">
+                <div class="footer_logo"><img src="../lib/img/m/footer_logo.png" alt="주식회사 포랩 하단 로고"></div>
+                <address>
+                    <b>서울시 송파구 송파대로201 송파테라타워2 A동 411, 412호</b>
+                    Copyright ⓒ 2021 FourLAB.  All Rights Reserved.
+                </address>
+            </div>
+            <!-- 팝업을 위한 dim 처리 -->
+            <div class="page_dim"></div>
+        </footer>
+        <button class="btn_request" onclick="location.href='./m-contact.html'">
+            <span>프로젝트 문의하기</span>
+            <img src="../lib/img/m/bg_request.png" alt="">
+            <!-- 팝업을 위한 dim 처리 -->
+            <div class="page_dim"></div>
+        </button>
+    </div>
+</body>
+</html>

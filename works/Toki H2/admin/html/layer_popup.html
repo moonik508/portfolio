@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>Toki H2 Admin</title>
+</head>
+<body>
+    <div class="wrap">
+        <form action="">
+            <div class="login-wrap">
+                <div class="box">
+                    <div class="login-logo v-mid"><img src="../static/images/logo.png" alt="한컴로보틱스 로고"></div>
+                    <div class="service-logo v-mid">
+                        <img class="v-mid" src="../static/images/toki.png" alt="Toki H2 이미지">
+                        <span class="v-mid txt-primary">H2 관리자 로그인</span>
+                    </div>
+                </div>
+                <div class="input-box mt20">
+                    <span class="input-desc w20p">아이디</span>
+                    <input type="text" class="input-txt w80p">
+                </div>
+                <div class="input-box mt20">
+                    <span class="input-desc w20p">패스워드</span>
+                    <input type="password" class="input-txt w80p">
+                </div>
+                <div class="btn-box txt-c mt20">
+                    <input type="button" class="btn primary w100p login" value="관리자 로그인">
+                </div>
+                <div class="btn-box txt-c mt20">
+                    <a href="#" class="btn">아이디 찾기</a>
+                    <a href="#" class="btn vertical">비밀번호 찾기</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="popup-wrap">
+        
+        <!-- 
+            일반 알림성 팝업
+         -->
+        <!-- 
+            * 팝업 공통 사항 
+            팝업컨텐츠는 popup-close 아래쪽으로 나열 
+            테이블을 사용해야할 경우에는 popup-box에 style="" 로 필요한 width 값을 지정
+        -->
+        
+        <div class="popup-box">
+            <a href="#" class="popup-close">닫기</a>
+            <div class="popup-content">
+                <p class="popup-title">로그인 오류 : 1회</p>
+                <p class="popup-txt txt-c">
+                    등록하신 아이디와 비밀번호를 확인하신 후<br>다시 시도하여 주시기 바랍니다.
+                </p>
+                <p class="popup-desc mt30">(5회 이상 오류시 잠금상태로 전환됩니다.)</p>
+            </div>
+            <div class="btn-box txt-c mt30">
+                <input type="button" class="btn primary" value="확인">
+            </div>
+        </div>
+        
+         <!-- 
+            테이블 이용시 팝업 
+            테이블이 팝업을 사용할 시에는 popup-box에 클래스명 table 추가
+        -->
+        <!-- <div class="popup-box table">
+            <a href="#" class="popup-close">닫기</a>
+            <div class="popup-content">
+                 <div class="table-box">
+                    <div class="table-head">
+                        <div class="table-row">
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">번호</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">구분</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">구분</p>
+                            </div>
+                            <div class="table-col w40p">
+                                <p class="ellipsis w100p">아이디 (이메일)</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">연락처</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">등록일</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">최근 접속일</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="table-row">
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">1</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">2</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">3</p>
+                            </div>
+                            <div class="table-col w40p">
+                                <select name="" id=""></select>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">5</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">6</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">7</p>
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">1</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">2</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">3</p>
+                            </div>
+                            <div class="table-col w40p">
+                                <p class="ellipsis w100p">4</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">5</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">6</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box txt-c mt30">
+                <input type="button" class="btn primary" value="확인">
+            </div>
+        </div> -->
+        
+        <div class="dim"></div>
+    </div>
+</body>
+</html>

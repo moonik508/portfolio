@@ -1,0 +1,275 @@
+*{margin: 0; padding: 0;}
+.test-wrap{overflow: hidden; margin: auto; width: 100%; height: 1080px; background: url("../img/main_bg_pattern.jpg") repeat-x; background-position: center center}
+.inner{position: relative; margin: 0 auto; padding: 0 20px; max-width: 1920px; height: 100%;}
+/* .test-wrap .inner{overflow: hidden; } */
+
+/* 
+    애니메이션 축약형 법칙 
+    animation-name animation-duration animation-delay animation-iteration-count animation-timing-function animation-direction fill-mode play-state;
+*/
+
+/* layout Common */
+.float-content{position: absolute;}
+.item-thumb{position: absolute;}
+.float-title{position: absolute;}
+.float-item{position: relative; top: 0; transition: top 0.3s; }
+.detail-float-item{position: absolute;}
+.main-bg{top: 5.4%; left: 51.8%; z-index: 50; width: 110%; transform: translateX(-50%); transition: width 0.2s, top 0.2s;}
+.main-bg .float-block{position: absolute;}
+.main-bg .block01{bottom: 23%; left: 4.5%;}
+.main-bg .block02{bottom: 19%; left: 17.3%;}
+.main-bg .block03{bottom: 26.5%; right: 9.3%;}
+.main-bg img{display: block; width: 100%;}
+
+/* Common hover Action */
+.float-content:hover .float-item{top: -10px;}
+
+/* Simple layout */
+.float-content.marker{top: 136px; left: 46%; z-index: 110; }
+.float-content.plane{top: -80px; right: 50%; z-index: 100; animation: rightPlaneMove 14s ease-out forwards;}
+.float-content.sponsor{top: -30%; left: 50%; z-index: 110; width: 20%; animation: sponsorMove 14s 0.5s linear forwards;}
+.float-content.sponsor img{width: 100%}
+
+/* Logo & Center 그라데이션 빼고 사이즈 완료 그라데이션은 미디어쿼리로 제어 예정 */
+.float-content.center{top: 40.2%; left: 36.5%; z-index: 110; width: 24.8%; max-width: 476px; transition: width 0.2s, top 0.2s;}
+.float-content.center img{display: block; width: 100%;}
+.center .center-item{position: absolute;}
+.center .center-item.base{position: relative; z-index: 100; width: 100%; max-width: 476px; }
+.center .center-item.marker{bottom: 100%; left: 50%; z-index: 250; margin-bottom: 20%; width: 25.84%; max-width: 123px; transform: translateX(-50%); animation: markerMove 2.4s ease-in-out infinite;}
+.center .center-item.logo{bottom: 51%; left: 50%; z-index: 300; margin-left: -6px; width: 42.86%; max-width: 204px; transform: translateX(-50%)}
+.center .center-item.effect{bottom: 70.5%; left: 50%; z-index: 400; margin-left: 6px; width: 56.72%; max-width: 270px; transform: translateX(-50%); animation: blockMove 3s ease-in-out infinite;}
+.center .center-item.blend-item{left: 50%; transform: translateX(-50%)}
+.center .center-item.blend-rec01{opacity: 1; bottom: 41%; z-index: 120; width: 55.46%; max-width: 264px}
+.center .center-item.blend-rec02{opacity: 1; bottom: 55%; z-index: 110; width: 59.66%; max-width: 284px}
+.center .center-item.blend-rec03{opacity: 1; bottom: 70%; z-index: 111; width: 63.87%; max-width: 304px}
+.center .center-item.blend-rec04{opacity: 1; bottom: 85%; z-index: 112; width: 68.07%; max-width: 324px}
+.center .center-item.blend-rec05{opacity: 1; bottom: 100%; z-index: 113; width: 71.85%; max-width: 342px}
+.center .center-item.blend-rec06{opacity: 1; bottom: 115%; z-index: 114; width: 76.05%; max-width: 362px}
+.center .center-item.blend-rec07{opacity: 1; bottom: 130%; z-index: 115; width: 80.25%; max-width: 382px}
+.blend-gradient{top: 16%; left: 34.5%; z-index: 250; width: 145px; height: 145px; border-top-left-radius: 16px; border-bottom-right-radius: 16px; transform: rotate(45deg) skew(-15deg, -14.5deg); transition: width 0.2s, height 0.2s, top 0.2s; background: linear-gradient(45deg, #f2c942, #3269b3, #3269b3); background-size: 500% 500%; background-position: 15% 50%;}
+
+/* Logo & Center Hover Action*/
+.float-content.center:hover .center-item.blend-rec02{animation: OpacityUp 1s ease-out forwards;}
+.float-content.center:hover .center-item.blend-rec03{animation: OpacityUp 1.3s ease-out forwards;}
+.float-content.center:hover .center-item.blend-rec04{animation: OpacityUp 1.6s ease-out forwards;}
+.float-content.center:hover .center-item.blend-rec05{animation: OpacityUp 1.9s ease-out forwards;}
+.float-content.center:hover .center-item.blend-rec06{animation: OpacityUp 2.1s ease-out forwards;}
+.float-content.center:hover .center-item.blend-rec07{animation: OpacityUp 2.4s ease-out forwards;}
+.float-content.center:hover .blend-gradient{animation: gradient 3s ease-in-out infinite;}
+
+/* Art Play 사이즈작업 완료 */
+.float-content.art-play{top: 48.8%; left: 9.2%; z-index: 100; width: 16.66%; max-width: 320px; transition: width 0.2s, top 0.2s, left 0.2s;}
+.float-content.art-play img{display: block; width: 100%;}
+.float-title.art-play{top: 71%; left: 73%; width: 74.69%; max-width: 239px;}
+.art-play-base{width: 100.00%; max-width: 320px;}
+.item-thumb.thumb01{top: -5%; left: 3%; z-index: 110; width: 30.31%; max-width: 97px; animation: thumbMove01 2.5s ease-in-out infinite;}
+.item-thumb.thumb02{top: -33%; left: 5%; z-index: 110; width: 23.75%; max-width: 76px; animation: thumbMove02 2.6s ease-in-out infinite;}
+.art-play .float-item{position: relative;}
+.art-play .float-item .detail-float-item.art-play-human{opacity: 1; top: 16%; left: 40%; z-index: 200; width: 17.19%; max-width: 55px;}
+.art-play .float-item .detail-float-item.art-play-effect{top: 30.5%; left: 32.7%; z-index: 200; width: 2.81%; max-width: 9px;}
+.art-play .float-item .detail-float-item.art-play-bar01{opacity: 1; top: 6.8%; left: 35.2%; z-index: 150; width: 21.88%; max-width: 70px;}
+.art-play .float-item .detail-float-item.art-play-bar02{opacity: 1; top: 12.8%; left: 38.7%; z-index: 150; width: 21.88%; max-width: 70px;}
+.art-play .float-item .detail-float-item.art-play-bar03{opacity: 1;top: 22.8%; left: 35.2%; z-index: 150; width: 21.88%; max-width: 70px;}
+.art-play .float-item .detail-float-item.art-play-bar04{opacity: 1;top: 30.2%; left: 35.2%; z-index: 150; width: 21.88%; max-width: 70px;}
+.art-play .float-item .detail-float-item.art-play-device{opacity: 1; top: 1.15%; left: 33.1%; z-index: 100; width: 21.56%; max-width: 69px;}
+
+/* Art Play - hover Action */
+.art-play:hover .detail-float-item.art-play-device{animation: DeviceUp 0.5s ease-out forwards;}
+.art-play:hover .detail-float-item.art-play-human{animation: humanMove 0.8s ease-out forwards;}
+.art-play:hover .detail-float-item.art-play-bar01{animation: Appear 1.4s ease-out forwards;}
+.art-play:hover .detail-float-item.art-play-bar02{animation: AppearMove 1.8s ease-out forwards;}
+.art-play:hover .detail-float-item.art-play-bar03{animation: Appear 2.2s ease-out forwards;}
+.art-play:hover .detail-float-item.art-play-bar04{animation: Appear 2.6s ease-out forwards;}
+
+/* News 사이즈 작업 완료 */
+.float-content.news{top: 8%; left: 21.5%; z-index: 110; padding-top: 7%; width: 19.06%; max-width: 366px; transition: width 0.2s, top 0.2s, left 0.2s;}
+.float-content.news img{display: block; width: 100%;}
+.float-title.news{top: 80%; left: 58%; width: 42.08%; max-width: 154px;}
+.detail-float-item.watch-human{bottom: 50.5%; left: 52%; z-index: 120; width: 20.22%; max-width: 74px;}
+.detail-float-item.base-phone{opacity: 1; bottom: 61.2%; right: 20%; z-index: 110; width: 27.05%; max-width: 99px;}
+.detail-float-item.base-phone .base-phone-card{position: absolute; width: 67.68%; max-width: 67px; z-index: 110;}
+.detail-float-item.base-phone .card01{top: 24%; left: 9%; }
+.detail-float-item.base-phone .card02{top: 41.5%; left: 9%;}
+.detail-float-item.base-phone .card03{top: 59%; left: 9%;}
+.detail-float-item.base-phone .on-card{opacity: 0;}
+.detail-float-item.bulb{bottom: 63.5%; right: 9%; z-index: 110; width: 10.11%; max-width: 37px;}
+.detail-float-item.bulb_shadow{bottom: 50.5%; right: 10%; z-index: 110; width: 7.65%; max-width: 28px;}
+.detail-float-item.chart{bottom: 23.5%; right: 35.2%; z-index: 110; width: 11.48%; max-width: 42px;}
+.detail-float-item.magnify{bottom: 100%; left: 26.5%; z-index: 110; margin-bottom: 3px; width: 18.85%; max-width: 69px; transform-origin: 100% 100%; }
+.detail-float-item.speaker{bottom: 95%; left: 84%; z-index: 110; width: 24.86%; max-width: 91px; transform-origin: 0 100%;}
+.float-content.news .news-base{position: relative; z-index: 100; width: 100.00%; max-width: 366px;}
+
+/* News - hover Action */
+.float-content.news:hover .detail-float-item.chart{animation: Appear 1s ease-out forwards;}
+.float-content.news:hover .detail-float-item.watch-human{animation: HumanMove 0.6s ease-out forwards;}
+.float-content.news:hover .detail-float-item.bulb_shadow{animation: ShadowZoom 3s ease-out infinite;}
+.float-content.news:hover .detail-float-item.bulb{animation: bulb 3s ease-out infinite;}
+.float-content.news:hover .detail-float-item.magnify{animation: magnifyMove 1s ease-out forwards;}
+.float-content.news:hover .detail-float-item.base-phone{animation: DropsPhone 0.8s ease-out forwards;}
+.float-content.news:hover .detail-float-item.base-phone .card01:not(.on-card){animation: PhoenBannerTop 1.2s ease-out forwards;}
+.float-content.news:hover .detail-float-item.base-phone .card02:not(.on-card){animation: PhoenBannerMid 1.4s ease-out forwards;}
+.float-content.news:hover .detail-float-item.base-phone .card03:not(.on-card){animation: PhoenBannerBot 1.6s ease-out forwards;}
+.float-content.news:hover .detail-float-item.base-phone .card01.on-card{animation: CardChng 0.8s 1.2s ease-out forwards;}
+.float-content.news:hover .detail-float-item.base-phone .card02.on-card{animation: CardChng 0.8s 1.8s ease-out forwards;}
+.float-content.news:hover .detail-float-item.base-phone .card03.on-card{animation: CardChng 0.8s 2.2s ease-out forwards;}
+.float-content.news:hover .detail-float-item.speaker{animation: SpeakMove 0.2s 0.8s ease-out forwards;}
+
+/* Players 사이즈 아직 */
+.float-content.players{top: 11.5%; right: 28%; z-index: 110; padding-top: 3%; width: 15.2%; max-width: 292px; transition: width 0.2s, top 0.2s, right 0.2s;}
+.float-content.players img{display: block; width: 100%;}
+.float-title.players{top: 73.5%; left: 48%; width: 86.30%; max-width: 252px;}
+.item-thumb.thumb03{top: 76%; left: 30%; z-index: 110; width: 19.52%; max-width: 57px; animation: CommonThumbMove 2.6s ease-out infinite;}
+.float-content.players .hands{top: 0%; right: 4.5%; z-index: 110; width: 29.45%; max-width: 86px;}
+.float-content.players .human01{bottom: 72%; left: 12%; z-index: 110; width: 57.88%; max-width: 169px;}
+.float-content.players .human02{bottom: 80%; right: 6.5%; z-index: 110; width: 22.60%; max-width: 66px;}
+.float-content.players .human03{bottom: 78%; right: 70%; z-index: 110; width: 37.33%; max-width: 109px;}
+.float-content.players .human04{bottom: 50%; left: 72%; z-index: 110; width: 57.19%; max-width: 167px;}
+.float-content.players .move-block01{top: 23.5%; left: 47.5%; z-index: 120; width: 14.04%; max-width: 41px;}
+.float-content.players .move-block02{bottom: 58.5%; left: 31%; z-index: 140; width: 16.44%; max-width: 48px;}
+.float-content.players .move-block02 .tails{opacity: 0; position: absolute; top: 14%; left: 8%; width: 11.76%; max-width: 6px; transition: opacity 0.2s 1.6s; }
+.float-content.players .move-block03{top: 10.5%; left: 31%; z-index: 110; width: 16.44%; max-width: 48px;}
+.float-content.players .move-block04{top: 17.5%; left: 23%; z-index: 130; width: 16.44%; max-width: 48px;}
+.float-content.players .move-block04 .tails{opacity: 0; position: absolute; top: 14%; left: 78%; width: 11.76%; max-width: 6px; transition: opacity 0.2s 1s; }
+.float-content.players .base-block{bottom: 41%; right: 24%; z-index: 150; width: 26.71%; max-width: 78px;}
+.players .float-item .players-base{position: relative; z-index: 100; width: 100.00%; max-width: 410px;}
+
+/* Players - hover Action */
+.float-content.players:hover .detail-float-item.base-block{animation: BaseBlocks 1s ease-in-out forwards; }
+.float-content.players:hover .detail-float-item.move-block01{animation: YellowBlock 1.4s ease-in-out forwards; }
+.float-content.players:hover .detail-float-item.move-block02{animation: VioletBlock 1.8s ease-in-out forwards; }
+.float-content.players:hover .detail-float-item.move-block02 .tails{animation: VioletBlockTails 1.8s ease-in-out forwards; }
+.float-content.players:hover .detail-float-item.move-block03{animation: SkyBlock 1.2s ease-in-out forwards; }
+.float-content.players:hover .detail-float-item.move-block04{animation: MagentaBlock 0.8s ease-in-out forwards; }
+.float-content.players:hover .detail-float-item.move-block04 .tails{animation: MagentaBlockTails 0.8s ease-in-out forwards; }
+
+/* Tournament 사이즈 완료 */
+.float-content.tournament{top: 19%; right: 2.75%; z-index: 100; padding-top: 10%; width: 27.34%; max-width: 525px; transition: width 0.2s, top 0.2s, right 0.2s;}
+.float-content.tournament img{display: block; width: 100%; }
+.float-title.tournament{top: 67%; left: 36%; z-index: 110; width: 69.52%; max-width: 365px;}
+.item-thumb.thumb04{top: -10%; right: 34%; z-index: 110; width: 15.05%; max-width: 79px; animation: CommonThumbMove 4.2s ease-out infinite;}
+.float-content.tournament .tournament-base{position: relative; z-index: 100; width: 100%; max-width: 525px;}
+.float-content.tournament .star-base{bottom: 97.2%; right: 6.4%; z-index: 150; width: 16.95%; max-width: 89px;}
+.float-content.tournament .star-base .board-item{position: absolute;}
+.float-content.tournament .star-base .board-item.btn01{top: 27.4%; left: 13%; z-index: 110; width: 74.16%; max-width: 66px;}
+.float-content.tournament .star-base .board-item.btn01.btn-on{opacity: 0; z-index: 120; transition: opacity 0.6s 0.3s;}
+.float-content.tournament .star-base .board-item.btn02{top: 46.4%; left: 13%; z-index: 110; width: 74.16%; max-width: 66px;}
+.float-content.tournament .star-base .board-item.btn02.btn-on{opacity: 0; z-index: 120; transition: opacity 0.6s 0.6s;}
+.float-content.tournament .star-base .board-item.btn03{top: 64%; left: 13%; z-index: 110; width: 74.16%; max-width: 66px;}
+.float-content.tournament .star-base .board-item.btn03.btn-on{opacity: 0; z-index: 120; transition: opacity 0.6s 0.9s;}
+.float-content.tournament .star-base .star01{top: -7%; left: -15%; width: 42.70%; max-width: 38px;}
+.float-content.tournament .star-base .star02{top: -1%; right: 29%; width: 43.82%; max-width: 39px;}
+.float-content.tournament .star-base .star03{top: 15.5%; right: -12%; width: 42.70%; max-width: 38px;}
+.float-content.tournament .trophy{top: 8%; left: 43%; z-index: 140; width: 15.62%; max-width: 82px;}
+.float-content.tournament .shine-point{position: absolute;}
+.float-content.tournament .shine01{bottom: 92%; left: 3%; width: 12.20%; max-width: 10px;}
+.float-content.tournament .shine02{top: 26%; right: 30.5%; width: 10.98%; max-width: 9px;}
+.float-content.tournament .shine03{top: 20%; left: 16%; width: 18.29%; max-width: 15px;}
+.float-content.tournament .shine04{top: 49.5%; left: 27%; width: 15.85%; max-width: 13px;}
+.float-content.tournament .gauge01{top: 3%; left: 17.2%; z-index: 110; width: 20.38%; max-width: 107px;}
+.float-content.tournament .gauge02{bottom: 97.8%; right: 28.2%; z-index: 110; width: 20.57%; max-width: 108px;}
+.float-content.tournament .human01{top: 21.5%; left: 3.5%; z-index: 110; width: 8.19%; max-width: 43px;}
+.float-content.tournament .human02{bottom: 41.5%; right: 21.5%; z-index: 140; width: 17.33%; max-width: 91px;}
+.float-content.tournament .human03{top: -10.5%; right: 3%; z-index: 160; width: 11.62%; max-width: 61px;}
+.float-content.tournament .table{bottom: 35.6%; left: 21.4%; z-index: 150; width: 27.43%; max-width: 144px;}
+.float-content.tournament .table .play-screen{opacity: 0; position: absolute; top: 2%; left: 43.4%; width: 35.42%; max-width: 51px; transition: opacity 0.3s;}
+.float-content.tournament .table02{bottom: 61.6%; right: 18.5%; z-index: 130; width: 26.67%; max-width: 140px;}
+
+/* Tournament - hover Action */
+.float-content.tournament:hover .table .play-screen{opacity: 1;}
+.float-content.tournament:hover .shine01{animation: Twinkle 1.2s ease-in-out infinite; }
+.float-content.tournament:hover .shine02{animation: Twinkle 0.8s  ease-in-out infinite; }
+.float-content.tournament:hover .shine03{animation: Twinkle 2s  ease-in-out infinite; }
+.float-content.tournament:hover .shine04{animation: Twinkle 2.6s ease-in-out infinite; }
+.float-content.tournament:hover .star-base .board-item.btn01.btn-on,
+.float-content.tournament:hover .star-base .board-item.btn02.btn-on,
+.float-content.tournament:hover .star-base .board-item.btn03.btn-on{opacity: 1;}
+
+/* Event 사이즈 완료 */
+.float-content.event{bottom: 4%; right: 26.8%; z-index: 110; padding-top: 5%; width: 21.6%; max-width: 415px; transition: width 0.2s, bottom 0.2s, right 0.2s;}
+.float-content.event img{display: block; width: 100%;}
+.float-title.event{top: 68%; left: 46%; z-index: 150; width: 48.43%; max-width: 201px;}
+.item-thumb.thumb05{top: 64%; right: 98%; z-index: 110; width: 13%; animation: CommonThumbMove 3s ease-in-out infinite; }
+.float-content.event .machine01{bottom: 42.5%; left: 6%; z-index: 110; width: 30.36%; max-width: 126px}
+.float-content.event .game-screen{opacity: 0; position: absolute; top: 26.5%; left: 31.5%; width: 46.83%; max-width: 59px;}
+.float-content.event .machine02{bottom: 60.5%; right: 36%; z-index: 110; width: 30.84%; max-width: 128px;}
+.float-content.event .game-item{position: absolute; z-index: 120;}
+.float-content.event .blue-item{top: 27%; left: 30%; width: 42.97%; max-width: 55px;}
+.float-content.event .red-item{top: 22%; left: 33%; width: 32.03%; max-width: 41px;}
+.float-content.event .rocket{top: 33%; left: 52%; width: 8.59%; max-width: 11px;}
+.float-content.event .human01{bottom: 42%; left: 17%; z-index: 110; width: 23.13%; max-width: 96px;}
+.float-content.event .human02{bottom: 59.5%; right: 29%; z-index: 110; width: 20.72%; max-width: 86px;}
+.float-content.event .human03{bottom: 23.5%; right: 38%; z-index: 110; width: 16.63%; max-width: 69px;}
+.float-content.event .human04{bottom: 61.5%; right: 3.5%; z-index: 110; width: 21.2%; max-width: 88px;}
+.float-content.event .event-base{position: relative; z-index: 100;}
+
+/* Tournament - hover Action */
+.float-content.event:hover .game-screen{animation: Appear 0.5s ease-in-out forwards;}
+.float-content.event:hover .blue-item{animation: Appear 1s ease-in-out infinite;}
+.float-content.event:hover .red-item{animation: Appear 1.5s ease-in-out infinite;}
+.float-content.event:hover .rocket{animation: RocketMove 2s ease-in-out infinite}
+
+/* Cloud */
+.cloud-box01{position: absolute; z-index: 50; top: 0; left: 0; right: 0; bottom: 0; }
+.cloud-box02{position: absolute; z-index: 50; top: 0; left: 0; right: 0; bottom: 0; }
+.cloud-item{position: absolute; z-index: 100;}
+.cloud-item.left01{top: 8%; left: 16%; animation: leftMidCloud 12s ease-in-out infinite;}
+.cloud-item.left02{top: 6%; left: 10.5%; animation: leftSmCloud 12s ease-in-out infinite;}
+.cloud-item.left03{top: 17%; left: 2%; animation: leftBigCloud 12s ease-in-out infinite;}
+.cloud-item.right01{top: 10.5%; right: 20.3%; animation: rightMidCloud 12s ease-in-out infinite;}
+.cloud-item.right02{top: 3%; right: 25.8%; transform: scale(70%); animation: rightSmCloud 12s ease-in-out infinite;}
+.cloud-item.right03{top: 2.5%; right: 12.5%; transform: scale(70%); animation: rightBigCloud 12s ease-in-out infinite;}
+
+@media screen and (max-width: 1680px) {
+    .main-bg{width: 126%; }
+    .float-content.center{top: 40%; width: 26%;}
+    .blend-gradient{top: 17%; width: 132px; height: 132px;}
+    .float-content.event{bottom: 2%; width: 22%;}
+    .float-content.art-play{top: 48%; left: 2%; width: 20%;}
+    .float-content.news{top: 8%; left: 14%; width: 24%;}
+    .float-content.tournament{top: 28%; right: 2%; width: 30%;}
+    .float-content.players{top: 13%; right: 24%; width: 16%;}
+}
+@media screen and (max-width: 1440px) {
+    .main-bg{width: 140%; }
+    .float-content.center{top: 40%; width: 26%;}
+    .blend-gradient{top: 17%; width: 113px; height: 113px;}
+    .float-content.event{bottom: 7%; width: 24%;}
+    .float-content.art-play{top: 48%; left: 1%;}
+    .float-content.news{top: 10%; left: 12%;}
+    .float-content.tournament{top: 32%; right: 1%; width: 32%;}
+    .float-content.players{top: 15%; right: 24%; width: 18%;}
+}
+@media screen and (max-width: 1280px) {
+    .blend-gradient{width: 100px; height: 100px;}
+    .float-content.art-play{top: 42%;}
+    .float-content.event{bottom: 13%}
+}
+
+@media screen and (max-width: 760px) {
+    /* 모바일 */
+    .test-wrap{height: 100vh; background-size: 110% 100%;}
+
+    .main-bg{top: 42.7vw; width: 160vw;}
+    .main-bg .block01{bottom: 0; left: 30vw; width: 20vw;}
+    .main-bg .block02{bottom: -5%; left: 50vw; width: 20vw;}
+    .main-bg .block03{bottom: 8vw; right: 36vw; width: 16vw;}
+
+    .float-content.center{top: 68vw; width: 31vw; left: 50%; transform: translateX(-50%);}
+    .blend-gradient{display: none;}
+    .float-content.news{top: 46vw; left: 10vw;}
+    .float-content.event{top: 100vw; bottom: unset !important; right: 30vw; }
+    .float-content.art-play{top: 79vw; left: 2vw;}
+    .float-content.players{top: 46vw; right: 22vw;}
+    .float-content.tournament{top: 70vw; right: 4vw;}
+
+    .float-content.plane{display: none !important; transform: scale(0.5); animation: rightPlaneMove_M 10s ease-in-out infinite;}
+    .float-content.sponsor{width: 30vw; animation: sponsorMove_M 14s ease-in-out infinite;}
+
+    .cloud-item.left01{transform: scale(0.4); animation: leftSmCloud_M 12s ease-in-out infinite; }
+    .cloud-item.left02{transform: scale(0.5); animation: leftMidCloud_M 12s ease-in-out infinite; }
+    .cloud-item.left03{transform: scale(0.3); animation: leftBigCloud_M 12s ease-in-out infinite; }
+
+    .cloud-item.right01{transform: scale(0.5); animation: rightSmCloud_M 12s ease-in-out infinite; }
+    .cloud-item.right02{transform: scale(0.65); animation: rightMidCloud_M 12s ease-in-out infinite; }
+    .cloud-item.right03{transform: scale(0.2); animation: rightBigCloud_M 12s ease-in-out infinite; }
+}

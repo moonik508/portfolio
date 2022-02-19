@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/3.1.1/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>나인에듀</title>
+    <script>
+        $(document).ready(function(){
+            $(".solution-card").on("click", function(){
+                $(".solution-card").removeClass("active");
+                $(this).addClass("active")
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 20211108 헤더 관련 작업, common.js 에 스크립트도 작업됨 -->
+         
+        <header>
+            <div class="inner">
+                <!-- 20211108 pc로고 모바일 로고 분리 -->
+                <h1 class="logo pc"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo.png" alt="대치나인에듀 로고"></a></h1>
+                <h1 class="logo mo"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo_m.png" alt="대치나인에듀 로고"></a></h1>
+                <a href="javascript:void(0)" class="hamburger"></a>
+                <!-- 헤더를 분리하신다면 각 페이지에 맞는 global-nav-item에 클래스명 on을 추가 부탁드립니다. -->
+                <nav class="global-nav">
+                    <a href="javascript:void(0)" class="btn-nav-close">닫기</a>
+                    <ul>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">학원소개</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/intro.html">대치나인에듀학원</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/life.html">학원생활</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/grade.html">성적향상</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/notice.html">공지사항</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01 on">
+                            <a href="javascript:void(0)">나인학습 Solution</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-care.html">능력별 CARE</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-blackdown.html">학습관리 블랙다운</a></li>
+                                        <li class="sub-depth-nav-item on"><a href="/html/02.solution/solution-exactly.html">정확한 대입 관리</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-add.html">학습 능력 강화</a></li>
+                                        <!-- <li class="sub-depth-nav-item"><a href="#">학부모 전상서</a></li> -->
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                             <a href="javascript:void(0)">나인에듀강사진</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/03.teacher/teacher_info.html">강사진</a></li>
+                                        <li class="sub-depth-nav-item"><a href="javascript:void(0)">슬기로운 질의응답</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">모집요강</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/basic-recruit.html">2023 수능 기초반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/ready-recruit.html">2023 수능 준비반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/regular-recruit.html">재수정규반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/medi-recruit.html">2023 영과고 수능 MEDICAL CASTLE</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="hamburger"><img src="../../image/NAINEDU/common/hamburger.png" alt=""></a>                
+            </div>
+        </header>
+        <div class="breadcrumb-box">
+            <div class="inner">
+                <ul class="breadcrumb">
+                    <li>HOME</li>
+                    <li>나인학습 Solutiion</li>
+                    <li><span>정확한 대입 관리</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container solution03">
+            <div class="visual-box basic-visual solution-visual03">
+                <div class="inner">
+                    <div class="solution-txt-img"><img src="../../image/NAINEDU/solution/banner-txt03.png" alt=""></div>
+                </div>
+                <div class="visual-bg bg-01"><img src="../../image/NAINEDU/solution/banner-bg-item031.png" alt=""></div>
+                <div class="visual-bg bg-02"><img src="../../image/NAINEDU/solution/banner-bg-item032.png" alt=""></div>
+            </div>
+            
+            <div class="tab-box">
+                <div class="inner">
+                    <a href="javascript:void(0)" class="btn-tab solution03-tab w33p active">모의고사 관리</a>
+                    <a href="javascript:void(0)" class="btn-tab solution03-tab w34p">테스트 관리</a>
+                    <a href="javascript:void(0)" class="btn-tab solution03-tab w33p ">수시 관리</a>
+                </div>
+            </div>            
+
+            <div class="tab-content">
+                
+                <!-- 모의고사 관리 -->
+                <div class="basic-content-box inner-tab-box active">
+                    <div class="inner">
+                        <!-- 
+                            section-tit, recruit-row, recruit-tit, recruit-txt 공통 클래스 
+                         -->
+                        <p class="solution-txt mt30 mb30">
+                            모의고사는 시험에 대한 불안감을 적응하고<br>
+                            시간 관리에 대한 훈련을 하여 수능에서 자신을 실력을 발휘하기 위한 훈련과정입니다.
+                        </p>
+                        
+                        <p class="solution-tab-bg-title mt50">
+                            <span class="exactly-title-desc">01</span>
+                            모의고사 실시
+                        </p>
+
+                        <div class="exactly-box">
+                            <div class="exactly-row">
+                                <div class="exactly-item left-item">
+                                    <p>
+                                        ① 대성, 이투스 사설 모의고사를 매월 2회 실시합니다.<br>
+                                        ② 고3 시·도 교육청 모의고사는 시험 다음날 실시합니다.<br>
+                                        ③ 6월과 9월 모의평가 시험은 학원에서 실시합니다.<br>
+                                        ④ 모의고사 성적표는 모두 집으로 발송이 됩니다.
+                                    </p>
+                                </div>
+                                <div class="exactly-item right-item">
+                                    <img src="../../image/NAINEDU/solution/exactly-img01.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="solution-tab-bg-title mt50">
+                            <span class="exactly-title-desc">02</span>
+                            모의고사 상담
+                        </p>
+
+                        <div class="exactly-box">
+                            <div class="exactly-row">
+                                <div class="exactly-item left-item">
+                                    <p>
+                                        ① 모의고사 후 학생이 모의고사에 대한 총평이 작성됩니다.<br>
+                                        ② 작성된 총평을 가지고 담임 강사의 학습 상담이 진행됩니다.<br>
+                                        ③ 6월과 9월 모의평가는 과목별 강사의 리포트가 작성이 됩니다.<br>
+                                        ④ 모의고사 성적으로 매월 1회 대입컨설팅 실시
+                                    </p>
+                                </div>
+                                <div class="exactly-item right-item">
+                                    <img src="../../image/NAINEDU/solution/exactly-img02.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="solution-tab-bg-title mt50">
+                            <span class="exactly-title-desc">03</span>
+                            모의고사 활용
+                        </p>
+
+                        <div class="exactly-box">
+                            <div class="exactly-row">
+                                <div class="exactly-item full-item">
+                                    <p>
+                                        ① 대입 컨설팅 상담 자료<br>
+                                        ② 모의고사 시험 다시 정리하기 지도로 학생을 수능식 사고로 전환합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exactly-img-box">
+                            <img src="../../image/NAINEDU/solution/exactly-img03.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- // 모의고사 관리 -->
+                
+                <!-- 테스트관리 -->
+                <div class="basic-content-box inner-tab-box">
+                    <div class="inner">
+                        <p class="solution-test-txt mt60 mb60">
+                            나인에듀 학원의 모든 테스트는<br>
+                            <b>학부모 전상서를 통해서 매주 결과를 확인</b>하실수 있습니다.
+                        </p>
+
+                        <!-- 20211108 pc, moible 추가 -->
+                        <div class="exactly-img-box pc">
+                            <img src="../../image/NAINEDU/solution/exactly-img04.png" alt="">
+                        </div>
+                        
+                        <!-- 20211108 pc, moible 추가 -->
+                        <div class="exactly-img-box mobile">
+                            <img src="../../image/NAINEDU/solution/mo-exactly-img04.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- // 테스트관리 -->
+             
+                <!-- 수시 관리 -->
+                <div class="basic-content-box inner-tab-box">
+                    <div class="inner">
+                        <p class="solution-test-txt mt60 mb60">
+                            나인에듀의 수시 상담은<br>
+                            대입 일정에 따라 <b>정확하게</b> 이루어집니다.
+                        </p>
+
+                        <div class="exactly-img-box">
+                            <img src="../../image/NAINEDU/solution/exactly-img05.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <!-- // 수시 관리 -->
+
+            </div>
+
+        </div>
+        <!-- 20211108 푸터변경 -->
+        <footer>
+            <div class="inner">
+                <p class="logo footer"><img src="../../image/NAINEDU/common/footer-logo.png" alt="대치에스학원 하단 로고"></p>
+                <!-- 20211108 footer desc pc, 모바일 추가 -->
+                <article class="footer-desc pc">
+                    <p><span>대치나인에듀 대표: 조범희</span><span>사업자 등록번호 : 624-92-01362</span><span>학원설립 : 서울강남서초 제4691호</span></p>
+                    <p><span>상담문의 : 02-555-3003</span><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+                <article class="footer-desc mo">
+                    <p><span>상담문의 : 02-555-3003</span><span>대치나인에듀 대표: 조범희</span></p>
+                    <p><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>사업자 등록번호 : 624-92-01362</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

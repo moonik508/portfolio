@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <link rel="stylesheet" href="../lib/jquery/swiperJS/swiper.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="content-wrap">
+            <!--
+                앱스토어와 전체적인 구조는 거의 비슷하지만 팝업 dim 과 관련된 이슈로 인해
+                header를 content-wrap 안으로 종속시켯습니다.
+            -->
+            <header class="header">
+                <div class="component-box">
+                    <div class="search-box hd-title-box">
+                        <input type="button" class="input-btn back-btn">
+                        <p class="title">앨범</p>
+                        <div class="header-btn-box">
+                            <!-- 
+                                각 메뉴가 선택되면 해당하는 버튼에 클래스명 active 를 붙여주세요. 
+                            -->
+                            <input type="button" class="input-btn btn-pic active">
+                            <input type="button" class="input-btn btn-movie">
+                        </div>
+                    </div>
+                    <p class="hd-sub-title">
+                        앨범 이용 현황 <span>7.4</span>GB / 100GB (<span>40%</span>)
+                    </p>
+                </div>
+            </header>
+            <div class="component-box list-box">
+                
+                <!-- 앨범에 등록된 이미지 혹은 영상이 없는 경우 클래스명 desc에 텍스트를 변경해서 사용 -->
+                
+                <div class="list-item img-none">
+                    <img src="../static/images/img-none.png" alt="">
+                    <p class="desc">사진이 없어요</p>
+                    <!-- <p class="desc">영상이 없어요</p> -->
+                </div>
+                
+                <!-- //앨범에 등록된 이미지 혹은 영상이 없는 경우 클래스명 desc에 텍스트를 변경해서 사용 -->
+                
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

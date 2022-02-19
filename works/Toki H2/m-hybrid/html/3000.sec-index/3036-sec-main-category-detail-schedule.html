@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/jquery/swiperJS/swiper.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/swiperJS/swiper.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>calendar category personal schedule</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            <!-- <header class="m-header">
+                <div class="m-component-box">
+                    <div class="m-header-box">
+                        <input type="button" class="m-input-btn back-btn">
+                        <p class="m-title hd-title">앨범</p>
+                        <div class="m-header-btn-box">
+                            <input type="button" class="m-input-btn btn-user-info">
+                        </div>
+                    </div>
+                </div>
+            </header> -->
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+             -->
+            <!-- 
+                toki-common-item swiper-slide
+                슬라이더가 반복되는 형태
+                    toki-content-box 클래스에
+                    사용중 class = robot-connected
+                    대기 class = robot-wait
+                    바쁨 = robot-busy
+                    off = robot-disconnected
+                    에 따라서 클래스 변경
+             -->
+            <div class="m-component-box m-component-box-bg">
+                <div class="m-inner">
+                    <div class="sec-top-content-box">
+                        <p class="sec-top-title">날짜/시간</p>
+                        <p class="sec-top-text">00월 00일 | 00시 00분 AM</p>
+                    </div>
+                    <div class="sec-top-content-box">
+                        <p class="sec-top-title">대상</p>
+                        <p class="sec-top-text">O*O, O*O</p>
+                    </div>
+                    <div class="sec-top-content-box">
+                        <p class="sec-top-title">카테고리를 선택하세요.</p>
+                        <p class="sec-top-text">개인일정 > 세부 카테고리를 선택하세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="m-component-box">
+                <div class="m-inner pt0">
+                    <div class="sec-bottom-content-box">
+                        <div class="sec-image-box">
+                            <div class="sec-image-list">
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">약복용</span>
+                                        <img src="../../static/m_images/ic-drug.png" alt="" class="drug">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">책읽기</span>
+                                        <img src="../../static/m_images/ic-read.png" alt="" class="read">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">약속</span>
+                                        <img src="../../static/m_images/ic-booking.png" alt="" class="booking">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sec-image-list">
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">회의</span>
+                                        <img src="../../static/m_images/ic-conference.png" alt="" class="conference">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">어버이날</span>
+                                        <img src="../../static/m_images/ic-father.png" alt="" class="father">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">면접</span>
+                                        <img src="../../static/m_images/ic-interview.png" alt="" class="interview">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sec-image-list">
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">브런치</span>
+                                        <img src="../../static/m_images/ic-brunch.png" alt="" class="brunch">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">아침식사</span>
+                                        <img src="../../static/m_images/ic-breakfast.png" alt="" class="breakfast">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">점심식사</span>
+                                        <img src="../../static/m_images/ic-lunch.png" alt="" class="lunch">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="sec-image-list">
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">저녁식사</span>
+                                        <img src="../../static/m_images/ic-dinner.png" alt="" class="dinner">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                                <div class="sec-image-item">
+                                    <label class="sec-image-lable">
+                                        <input type="radio" name="imgfocus">
+                                        <span class="sec-image-text">방문</span>
+                                        <img src="../../static/m_images/ic-visit.png" alt="" class="visit">
+                                        <div class="image-item-border"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-btn-box">
+                            <input type="button" value="뒤로" class="m-input-btn w45p float-l">
+                            <input type="button" value="다음" class="m-input-btn w45p primary float-r">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>             
+    </div>
+</body>
+</html>

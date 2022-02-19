@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/3.1.1/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>나인에듀</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 20211108 헤더 관련 작업, common.js 에 스크립트도 작업됨 -->
+         
+        <header>
+            <div class="inner">
+                <!-- 20211108 pc로고 모바일 로고 분리 -->
+                <h1 class="logo pc"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo.png" alt="대치나인에듀 로고"></a></h1>
+                <h1 class="logo mo"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo_m.png" alt="대치나인에듀 로고"></a></h1>
+                <a href="javascript:void(0)" class="hamburger"></a>
+                <!-- 헤더를 분리하신다면 각 페이지에 맞는 global-nav-item에 클래스명 on을 추가 부탁드립니다. -->
+                <nav class="global-nav">
+                    <a href="javascript:void(0)" class="btn-nav-close">닫기</a>
+                    <ul>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">학원소개</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/intro.html">대치나인에듀학원</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/life.html">학원생활</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/grade.html">성적향상</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/notice.html">공지사항</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">나인학습 Solution</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-care.html">능력별 CARE</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-blackdown.html">학습관리 블랙다운</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-exactly.html">정확한 대입 관리</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-add.html">학습 능력 강화</a></li>
+                                        <!-- <li class="sub-depth-nav-item"><a href="#">학부모 전상서</a></li> -->
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                             <a href="javascript:void(0)">나인에듀강사진</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/03.teacher/teacher_info.html">강사진</a></li>
+                                        <li class="sub-depth-nav-item"><a href="javascript:void(0)">슬기로운 질의응답</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01 on">
+                            <a href="javascript:void(0)">모집요강</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/basic-recruit.html">2023 수능 기초반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/ready-recruit.html">2023 수능 준비반</a></li>
+                                        <li class="sub-depth-nav-item on"><a href="/html/04.recruit/regular-recruit.html">재수정규반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/medi-recruit.html">2023 영과고 수능 MEDICAL CASTLE</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="hamburger"><img src="../../image/NAINEDU/common/hamburger.png" alt=""></a>                
+            </div>
+        </header>
+        <div class="breadcrumb-box">
+            <div class="inner">
+                <ul class="breadcrumb">
+                    <li>HOME</li>
+                    <li>모집요강</li>
+                    <li><span>2023 수능 정규반</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container regular">
+            <div class="visual-box regular-visual">
+                <div class="inner">
+                    <div class="visual-txt"><img src="../../image/NAINEDU/recruit/recruit_banner_txt03.png" alt=""></div>
+                </div>
+            </div>
+            
+            <div class="tab-box">
+                <div class="inner">
+                    <a href="javascript:void(0)" class="btn-tab regular-tab w25p active">모집 요강</a>
+                    <a href="javascript:void(0)" class="btn-tab regular-tab w25p">학습 목적</a>
+                    <a href="javascript:void(0)" class="btn-tab regular-tab w25p">표준 시간표</a>
+                    <a href="javascript:void(0)" class="btn-tab regular-tab w25p">과목별 진도표</a>
+                </div>
+            </div>
+            
+
+            <div class="tab-content">
+                
+                <!-- 모집 요강 -->
+                <div class="basic-content-box inner-tab-box active">
+                    <div class="inner">
+                        <!-- 
+                            section-tit, recruit-row, recruit-tit, recruit-txt 공통 클래스 
+                         -->
+                        <div class="bg-box mt80">
+                            <p class="section-tit regular-tit">수능 정규반 모집요강</p>
+                        </div>
+                        <div class="recruit-row regular-row">
+                            <p class="recruit-tit">개강일</p>
+                            <p class="recruit-txt"><b>2022년 2월 14일(월) 오전 8:00(1차 개강), 2월 28일(월) 오전 8:00(2차 개강)</b></p>
+                        </div>
+                        <div class="recruit-row regular-row">
+                            <p class="recruit-tit">교육기간</p>
+                            <p class="recruit-txt"><b>2022년 2월 14일 ~ 수능까지</b></p>
+                        </div>
+                        <div class="recruit-row regular-row">
+                            <p class="recruit-tit">교육대상</p>
+                            <p class="recruit-txt"><b>2023학년도 상위권 및 의치약한 대학 입학을 준비하는 학생, 수능 정시를 처음 도전하는 학생</b></p>
+                        </div>
+                        <div class="recruit-row regular-row">
+                            <p class="recruit-tit">모집인원</p>
+                            <p class="recruit-txt"><b>4개반 (반당 10명 내외)</b></p>
+                        </div>
+                        <div class="recruit-row regular-row">
+                            <p class="recruit-tit">예약금 입금</p>
+                            <p class="recruit-txt multi">
+                                <span>예약금  <b>: 30만원</b></span>
+                                <span>입금계좌 <b>: 우리은행 1005-581-201362</b></span>
+                                <span>예금주 <b>: 대치나인에듀</b></span>
+                            </p>
+                        </div>
+                        <div class="recruit-row regular-row">
+                            <p class="recruit-tit">수강료</p>
+                            <p class="recruit-txt multi">
+                                <span>수강료 <b>: 208만원</b></span>
+                                <span>교재비 <b>: 대입 정규반 자체 교재 + EBS 교재 / 유료</b></span>
+                                <span>모의고사비 <b>: 별도 납부(유료 / 월2회, 3회 실시)</b></span>
+                                <span class="red-txt">※환불규정 : 교육인적자원부 학원의 설립 운영 및 과외 교습에 관한 법률 시행령 제18조 3항에 근거합니다. </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 모집 요강 -->
+                
+                <!-- 학습 목적 -->
+                <div class="basic-content-box inner-tab-box">
+                    <div class="inner">
+                        <div class="slogan mt120">
+                            <p class="slogan-txt">“수능 기초를 단단하게 다지는 슬기로운 수능 공부”</p>
+                        </div>
+                    </div>
+                    <div class="bg-box mt120">
+                        <p class="section-desc mt0">
+                            뿌리 깊은 나무는 가뭄에도 마르지 않습니다. <br>
+                            학생들 성적에 따른 수능 개념을 단단하게 만들는 슬기로운 재수<br>
+                            <p class="section-tit">수능 정규반</p>
+                        </p>
+                    </div>
+                    <div class="inner">
+                        
+                        <div class="basic-number-box regular-number-box">
+                            <div class="basic-number-tit recruit-number-tit">
+                                <p class="basic-numbering">1</p>
+                                <p class="basic-number-tit-txt">특성화된 학습 커리</p>
+                            </div>
+                            <div class="basic-number-txt-box">
+                                <p class="basic-number-txt">&middot;수능에 필요한 개념을 만나 수능 실전을 만나는 <b>국어</b></p>
+                                <p class="basic-number-txt">&middot;수능에 연계된 중등 수학과 수능 기초를 형성하는 <b>수학</b></p>
+                                <p class="basic-number-txt">&middot;수능 기초인 어휘와 문법을 단문에 적용하는 <b>영어</b></p>
+                                <p class="basic-number-txt">&middot;<b>총정리</b>를 통한 수업의 정리와 확인</p>
+                            </div>
+                        </div>
+
+                        <div class="basic-number-box regular-number-box">
+                            <div class="basic-number-tit recruit-number-tit">
+                                <p class="basic-numbering">2</p>
+                                <p class="basic-number-tit-txt">전문화된 학습 방법</p>
+                            </div>
+                            <div class="basic-number-txt-box">
+                                <p class="basic-number-txt">&middot;<b>메가스터디</b>와 <b>EBS</b> 출신의 대치동 강사진</p>
+                                <p class="basic-number-txt">&middot;강사가 직접 집필한 나인에듀만의 <b>특별한 수제 교재</b></p>
+                                <p class="basic-number-txt">&middot;학습의 집중력 최강 <b>소수반</b></p>
+                                <p class="basic-number-txt">&middot;<b>1:1 클리닉</b>을 통한 나만의 약점 보강</p>
+                                <p class="basic-number-txt">&middot;<b>매일 과제</b>를 통한 공부 습관 형성</p>
+                                <p class="basic-number-txt">&middot;알 때까지 물어보는 강사와의 <b>무한 질의응답</b></p>
+                                <p class="basic-number-txt">&middot;학습과 자습 공간의 분리</p>
+                            </div>
+                        </div>
+                        
+                        <div class="basic-number-box regular-number-box">
+                            <div class="basic-number-tit recruit-number-tit">
+                                <p class="basic-numbering">3 </p>
+                                <p class="basic-number-tit-txt">빈틈없는 생활 관리</p>
+                            </div>
+                            <div class="basic-number-txt-box">
+                                <p class="basic-number-txt">&middot;<b>출결 체크</b> 및 <b>부모 알림 서비스</b></p>
+                                <p class="basic-number-txt">&middot;<b>쉬는 시간 정숙</b>을 보장하는 생활 관리</p>
+                                <p class="basic-number-txt">&middot;독서실 책장 넘기는 소리만 들리는 <b>정숙함</b> 유지</p>
+                                <p class="basic-number-txt">&middot;따돌림이 없는 <b> 교우 관계</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- // 학습 목적 -->
+                
+                <!-- 표준 시간표 -->
+                <div class="basic-content-box inner-tab-box">
+                    
+                    <div class="schedule-inner">
+                        
+                        <div class="bg-box mt80 mb80">
+                            <p class="section-tit schedule-tit">정규반 시간표</p>
+                        </div>
+
+                        <div class="schedule-img-box">
+                            <!-- 시간표 이미지 -->
+                            <img src="../../image/NAINEDU/recruit/regular-time.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- // 표준 시간표 -->
+                
+                <!-- 과목별 진도표 -->
+                <div class="basic-content-box inner-tab-box">
+                    
+                    <div class="table-type-inner">
+                        <div class="bg-box mt80">
+                            <p class="section-tit">수능 정규반 과목별 진도 계획표</p>
+                        </div>
+
+                        <!-- 1과목 -->
+                        <div class="class-box type-table math">
+
+                            <div class="class-tit">
+                                <p class="class-tit-txt">수학</p>
+                                <p class="class-tit-sm-desc">
+                                    대입정규반에서는 학생 개개인에 맞는 목표를 심어주고 함께 성취해가는 과정입니다. 
+                                    <span>EBS연계교재를 중심으로 하되, 학생들의 수준에 맞게 난이도별 자체교재를 병행하여 수업을 진행합니다.</span>
+                                </p>
+                            </div>
+
+                            <div class="class-table-box">
+
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 기초반</p>
+                                        <p class="class-table-hd-desc">1학기 (12/3 ~ 1/2)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 수학 기초 학습 – 수학 기초 연산능력 배양</li>
+                                            <li>· 중등 도형, 수학1, 수학2</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 준비반</p>
+                                        <p class="class-table-hd-desc">2학기 (1/4 ~ 2/12)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 기본 개념 익히기 – 공식 정리 등의 증명 및 활용</li>
+                                            <li>· 기본 : 수학1, 수학2, 미적분, 확률과 통계,기하</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">3학기 (2/14 ~ 5/16)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 기본 개념 익히기, 기출 유형 학습 – 공식 암기 및 적용 훈련, 기출문제 연습</li>
+                                            <li>· 문과:수학1, 수학2,  확률과 통계</li>
+                                            <li>· 이과:수학1, 수학2, 미적분/기하</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            수능특강/<br>본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">4학기 (5/16 ~ 6/11)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 6월 대수능 모의 평가 올인 학기제(4주)</li>
+                                            <li>· 6월 대수능 준비 및 전과목 분석 및 총정리</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">5학기 (6/14 ~ 8/20)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 실전 연습 – 문제해결력 배양, 고난도 문제 집중 공략</li>
+                                            <li>· 문과:수학1, 수학2,  확률과 통계</li>
+                                            <li>· 이과:수학1, 수학2, 미적분/기하</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            수능특강/<br>본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">6학기 (8/22 ~ 9/8)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 9월 대수능 모의 평가 올인 학기제(4주)</li>
+                                            <li>· 9월 대수능 준비 및 전과목 분석 및 총정리</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">7학기 (9/13 ~ 10/22)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 수능 실전을 위한 파이널 문제 정복 단계(5주)</li>
+                                            <li>· 실전을 통한 마무리 수능 개념 정리 – 기본 개념 총정리, 약점 문항 집중공략</li>
+                                            <li>· 문과:수학1, 수학2,  확률과 통계</li>
+                                            <li>· 이과:수학1, 수학2, 미적분/기하</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            EBS 교재/<br>본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">8학기 (10/24 ~ 수능전일)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 개인별 취약점 마무리 보완 학기(4주)</li>
+                                            <li>· 최종마무리 – 오답노트를 통한 약점 문항 집중 공략</li>
+                                            <li>· 문과:수학1, 수학2,  확률과 통계</li>
+                                            <li>· 이과:수학1, 수학2, 미적분/기하</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="class-table-arrow">
+                                <p class="arrow-img"><img src="../../image/NAINEDU/recruit/math-d-arrow.png" alt=""></p>
+                                <p class="table-arrow-desc">수능 시험 및 대입 합격</p>
+                            </div>
+
+                        </div>
+                        <!-- //1과목 -->
+
+                        <!-- 2과목 -->
+                        <div class="class-box type-table kor">
+
+                            <div class="class-tit">
+                                <p class="class-tit-txt">국어</p>
+                                <p class="class-tit-sm-desc">
+                                    "연계교재를 본격적으로 학습하는 과정입니다.<br>
+                                    아울러 국어과목 정복을 위한 개인별 솔루션을 제공하여 장기적인 학습의 효율을 극대화합니다."
+                                </p>
+                            </div>
+                            
+                            <div class="class-table-box">
+
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 기초반</p>
+                                        <p class="class-table-hd-desc">1학기 (12/3 ~ 1/2)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 국어의 기본 개념 습득하기</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 준비반</p>
+                                        <p class="class-table-hd-desc">2학기 (1/4 ~ 2/12)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 수능 국어의 개념 익히기</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">3학기 (2/14 ~ 5/16)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 수능 국어의 원리 파악하기</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            수능특강/<br>본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">4학기 (5/16 ~ 6/11)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 6월 대수능 모의 평가 올인 학기제(4주)</li>
+                                            <li>· 6월 대수능 준비 및 전과목 분석 및 총정리</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">5학기 (6/14 ~ 8/20)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 수능 국어의 원리 적용하기</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            수능특강/<br>본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">6학기 (8/22 ~ 9/8)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 9월 대수능 모의 평가 올인 학기제(4주)</li>
+                                            <li>· 9월 대수능 준비 및 전과목 분석 및 총정리</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">7학기 (9/13 ~ 10/22)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 수능 실전을 위한 파이널 문제 정복 단계(5주)</li>
+                                            <li>· 수능 실전 유형에 접근하기</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            EBS 교재/<br>본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">8학기 (10/24 ~ 수능전일)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 개인별 취약점 마무리 보완 학기(4주)</li>
+                                            <li>· 유형별 약점 보완하기</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="class-table-arrow">
+                                <p class="arrow-img"><img src="../../image/NAINEDU/recruit/kor-d-arrow.png" alt=""></p>
+                                <p class="table-arrow-desc">수능 시험 및 대입 합격</p>
+                            </div>
+
+                        </div>
+                        <!-- //2과목 -->
+
+                        <!-- 3과목 -->
+                        <div class="class-box type-table eng">
+
+                            <div class="class-tit">
+                                <p class="class-tit-txt">영어</p>
+                                <p class="class-tit-sm-desc">
+                                    "EBS교재를 중심으로 각 학기별로 1등급 공략을 위한 학생 수준별 학습법과 해결책을 제시합니다.<br>
+                                    특히 빈칸, 문장 순서, 문장 넣기, 어법 등 약점 체크를 중점적으로 해서 수능에서 자신감을 가질 수 있습니다."
+                                </p>
+                            </div>
+                            
+                            <div class="class-table-box">
+
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 기초반</p>
+                                        <p class="class-table-hd-desc">1학기 (12/3 ~ 1/2)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 독해를 위한 기본문법 정리</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 준비반</p>
+                                        <p class="class-table-hd-desc">2학기 (1/4 ~ 2/12)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 고급 수능 문법</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">3학기 (2/14 ~ 5/16)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 까다로운 문장 독해하기</li>
+                                            <li>· 한 문장씩 정확하게 독해하기</li>
+                                            <li>· 글의 논리구조 파악하며 독해하기</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            수능특강/<br>본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">4학기 (5/16 ~ 6/11)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 6월 대수능 모의 평가 올인 학기제(4주)</li>
+                                            <li>· 6월 대수능 준비 및 전과목 분석 및 총정리</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">5학기 (6/14 ~ 8/20)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 논리 독해와 유형별 공략하기</li>
+                                            <li>· 까다로운 유형 공략하기</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            수능특강/<br>본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">6학기 (8/22 ~ 9/8)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 9월 대수능 모의 평가 올인 학기제(4주)</li>
+                                            <li>· 9월 대수능 준비 및 전과목 분석 및 총정리</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">7학기 (9/13 ~ 10/22)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 수능 실전을 위한 파이널 문제 정복 단계(5주)</li>
+                                            <li>· 고난도 유형 집중훈련하기</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            EBS 교재/<br>본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="class-table-row">
+
+                                    <div class="class-table-hd">
+
+                                        <p class="class-table-hd-tit">대입 정규반</p>
+                                        <p class="class-table-hd-desc">8학기 (10/24 ~ 수능전일)</p>
+
+                                    </div>
+                                    <div class="class-table-bd">
+                                        <ul class="class-table-left-bd">
+                                            <li>· 개인별 취약점 마무리 보완 학기(4주), 약점 파악하고 공략하기</li>
+                                            <li>· 유형 독해 300제</li>
+                                        </ul>
+                                        <p class="class-table-right-bd">
+                                            본원교재/<br>프린트
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="class-table-arrow">
+                                <p class="arrow-img"><img src="../../image/NAINEDU/recruit/eng-d-arrow.png" alt=""></p>
+                                <p class="table-arrow-desc">수능 시험 및 대입 합격</p>
+                            </div>
+
+                        </div>
+                        <!-- //3과목 -->
+                        
+                    </div>
+
+                </div>
+                <!-- // 과목별 진도표 -->
+
+            </div>
+
+        </div>
+        <!-- 20211108 푸터변경 -->
+        <footer>
+            <div class="inner">
+                <p class="logo footer"><img src="../../image/NAINEDU/common/footer-logo.png" alt="대치에스학원 하단 로고"></p>
+                <!-- 20211108 footer desc pc, 모바일 추가 -->
+                <article class="footer-desc pc">
+                    <p><span>대치나인에듀 대표: 조범희</span><span>사업자 등록번호 : 624-92-01362</span><span>학원설립 : 서울강남서초 제4691호</span></p>
+                    <p><span>상담문의 : 02-555-3003</span><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+                <article class="footer-desc mo">
+                    <p><span>상담문의 : 02-555-3003</span><span>대치나인에듀 대표: 조범희</span></p>
+                    <p><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>사업자 등록번호 : 624-92-01362</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

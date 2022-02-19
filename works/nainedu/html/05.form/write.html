@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../js/swiperjs/swiper.min.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/3.1.1/jquery.min.js"></script>
+    <script src="../../js/swiperjs/swiper.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>글쓰기</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <!-- 20211108 pc로고 모바일 로고 분리 -->
+                <h1 class="logo pc"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo.png" alt="대치나인에듀 로고"></a></h1>
+                <h1 class="logo mo"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo_m.png" alt="대치나인에듀 로고"></a></h1>
+                <a href="javascript:void(0)" class="hamburger"></a>
+                <!-- 헤더를 분리하신다면 각 페이지에 맞는 global-nav-item에 클래스명 on을 추가 부탁드립니다. -->
+                <nav class="global-nav">
+                    <a href="javascript:void(0)" class="btn-nav-close">닫기</a>
+                    <ul>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">학원소개</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item on"><a href="/html/01.intro/intro.html">대치나인에듀학원</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/life.html">학원생활</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/grade.html">성적향상</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/notice.html">공지사항</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">나인학습 Solution</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-care.html">능력별 CARE</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-blackdown.html">학습관리 블랙다운</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-exactly.html">정확한 대입 관리</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-add.html">학습 능력 강화</a></li>
+                                        <!-- <li class="sub-depth-nav-item"><a href="#">학부모 전상서</a></li> -->
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                             <a href="javascript:void(0)">나인에듀강사진</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/03.teacher/teacher_info.html">강사진</a></li>
+                                        <li class="sub-depth-nav-item"><a href="javascript:void(0)">슬기로운 질의응답</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">모집요강</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/basic-recruit.html">2023 수능 기초반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/ready-recruit.html">2023 수능 준비반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/regular-recruit.html">재수정규반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/medi-recruit.html">2023 영과고 수능 MEDICAL CASTLE</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="hamburger"><img src="../../image/NAINEDU/common/hamburger.png" alt=""></a>                
+            </div>
+        </header>
+        <div class="container">
+            
+            <div class="inner">
+                <p class="section_title">
+                    공지사항 작성
+                    <span class="title_desc">공지사항의 내용을 입력합니다.</span>
+                </p>
+                <div class="write_table_box">
+
+                    <table>
+                        <colgroup>
+                            <col class="w15p mw30p">
+                            <col class="w85p mw70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="table_head_col">
+                                    <span class="table_txt">
+                                        제목
+                                        <i class="red_txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table_col">
+                                    <div class="input_box">
+                                        <input type="text" class="input_txt" placeholder="제목을 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table_head_col">
+                                    <span class="table_txt">
+                                        작성자
+                                        <i class="red_txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table_col">
+                                    <div class="input_box">
+                                        <input type="text" class="input_txt" placeholder="작성자의 이름을 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table_head_col">
+                                    <span class="table_txt">
+                                        카테고리
+                                        <i class="red_txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table_col">
+                                    <div class="input_box dis_ib">
+                                        <select class="input_select">
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table_head_col">
+                                    <span class="table_txt">
+                                        내용
+                                        <i class="red_txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table_col">
+                                    <div class="show_text_length">
+                                        <textarea class="input_textarea"></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                                <td class="table_head_col">
+                                    <span class="table_txt">
+                                        파일첨부
+                                    </span>
+                                </td>
+                                <td class="table_col">
+                                    <a href="#" class="anchor_txt ml16">첨부하기</a>
+                                </td>
+                            </tr>
+                        </tr>
+                            <td class="table_head_col">
+                                <span class="table_txt">
+                                    체크, 라디오 샘플
+                                </span>
+                            </td>
+                            <td class="table_col">
+                                <label class="input_box dis_ib">
+                                    <input type="radio" name="log">
+                                    <span class="radio_frame"></span>
+                                    <span class="chk_label">라디오</span>
+                                </label>
+                                <label class="input_box dis_ib">
+                                    <input type="checkbox" name="lang" checked="">
+                                    <span class="chk_frame"></span>
+                                    <span class="chk_label">체크</span>
+                                </label>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="btn_box txt_c mt40">
+                    <input type="button" value="취소" class="input_btn btn_trans">
+                    <input type="button" value="저장" class="input_btn btn_primary">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="inner">
+                <p class="logo footer"><img src="../../image/NAINEDU/common/footer-logo.png" alt="대치에스학원 하단 로고"></p>
+                <!-- 20211108 footer desc pc, 모바일 추가 -->
+                <article class="footer-desc pc">
+                    <p><span>대치나인에듀 대표: 조범희</span><span>사업자 등록번호 : 624-92-01362</span><span>학원설립 : 서울강남서초 제4691호</span></p>
+                    <p><span>상담문의 : 02-555-3003</span><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+                <article class="footer-desc mo">
+                    <p><span>상담문의 : 02-555-3003</span><span>대치나인에듀 대표: 조범희</span></p>
+                    <p><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>사업자 등록번호 : 624-92-01362</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header main">
+            <div class="component-box">
+                <div class="search-box">
+                    <input type="button" class="input-btn back-btn">
+                    <p class="title hd-title">전체 앱 목록</p>
+                    <div class="header-btn-box">
+                        <input type="button" class="input-btn search-btn">
+                        <input type="button" class="input-btn more-btn hidden">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content-wrap main">
+            <!-- 
+                component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+                추가하는 클래스명에 따라 컴포넌트의 크기 모양, 버튼의 가림처리유무 등이 알아서 처리됨.
+             -->
+            <div class="component-box type-wide-rec">
+                <div class="title-box txt-l">
+                    <p class="title">타이틀</p>
+                    <a href="#" class="btn-arrow">
+                        <img src="../static/images/arrow_02.png" alt="">
+                    </a>
+                </div>
+                <div class="item-list">
+                    <div class="item-rail">
+                        <div class="item-box">
+                            <!-- 리스트상 이미지가 없을 경우 우선은 아래 이미지를 사용해주세요. -->
+                            <div class="item-img">
+                                <img src="../static/images/image_none.png" alt="">
+                            </div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <!-- 
+                                        버튼의 종류는 총 4가지 + a
+                                        + a = 찜 버튼 클래스명 add-list
+                                        가격 표시 버튼은 클래스명 price 
+                                        다운로드 버튼은 클래스명 download
+                                        앱 삭제 버튼은 클래스명 delete
+                                        무료 다운로드 버튼은 클래스명 free-dl
+                                     -->
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+                프로모션 배너 영역 -> 추천앱으로 변경
+                이에 따른 타이틀 항목 추가
+                클래스명 component-box 와 type-promo를 같이 사용
+             -->
+            <div class="component-box type-promo">
+                <div class="title-box txt-l">
+                    <p class="title">추천앱</p>
+                </div>
+                <div class="item-list">
+                    <div class="item-rail">
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //프로모션 배너 영역 -->
+            <!-- 
+                각 카테고리 메인 리스트
+                클래스명 component-box 와 type-square 를 같이 사용
+             -->
+
+            <div class="component-box type-square">
+                <div class="title-box txt-l">
+                    <p class="title">카테고리 메인리스트</p>
+                    <a href="#" class="btn-arrow">
+                        <img src="../static/images/arrow_02.png" alt="">
+                    </a>
+                </div>
+                <div class="item-list">
+                    <div class="item-rail">
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p><span>ENTERTAINMENT</span><i>★ 4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <!-- 
+                                        버튼의 종류는 총 3가지 + a
+                                        + a = 찜 버튼 클래스명 add-list
+                                        가격 표시 버튼은 클래스명 price 
+                                        다운로드 버튼은 클래스명 download
+                                        앱 삭제 버튼은 클래스명 delete
+                                     -->
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //카테고리 메인리스트 -->
+            <!-- 
+                패키지 리스트 영역 
+                클래스명 component-box 와 type-pack를 같이 사용
+             -->
+            <div class="component-box type-pack">
+                <div class="title-box txt-l">
+                    <p class="title">패키지 리스트</p>
+                    <a href="#" class="btn-arrow">
+                        <img src="../static/images/arrow_02.png" alt="">
+                    </a>
+                </div>
+                <div class="item-list">
+                    <div class="item-rail">
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p><span>패키지</span> <i>★4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <!-- 
+                                        버튼의 종류는 총 3가지 + a
+                                        + a = 찜 버튼 클래스명 add-list
+                                        가격 표시 버튼은 클래스명 price 
+                                        다운로드 버튼은 클래스명 download
+                                        앱 삭제 버튼은 클래스명 delete
+                                     -->
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //패키지 리스트 -->
+
+            <!-- 
+                인기유료, 인기무료 리스트 공통
+                탑 3개만 노출됨
+                클래스명 component-box 와 type-top3 를 같이 사용
+             -->
+
+            <div class="component-box type-top3">
+                <div class="title-box txt-l">
+                    <p class="title">인기 유료</p>
+                    <a href="#" class="btn-arrow">
+                        <img src="../static/images/arrow_02.png" alt="">
+                    </a>
+                </div>
+                <div class="item-list">
+                    <div class="item-rail">
+                        <div class="item-box">
+                            <!-- 리스트상 이미지가 없을 경우 우선은 아래 이미지를 사용해주세요. -->
+                            <div class="item-img">
+                                <img src="../static/images/image_none.png" alt="">
+                            </div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <!-- 
+                                        버튼의 종류는 총 3가지 + a
+                                        + a = 찜 버튼 클래스명 add-list
+                                        가격 표시 버튼은 클래스명 price 
+                                        다운로드 버튼은 클래스명 download
+                                        앱 삭제 버튼은 클래스명 delete
+                                     -->
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생 교재 패키지</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>패키지 ★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 인기유료, 인기무료 리스트 공통 -->
+
+            <!-- 
+                찜 목록 리스트
+                카테고리 메인 리스트와 궤는 같이하지만 버튼 노출의 종류가 다름
+             -->
+            <div class="component-box type-wishlist">
+                <div class="title-box txt-l">
+                    <p class="title">찜 목록 리스트</p>
+                    <a href="#" class="btn-arrow">
+                        <img src="../static/images/arrow_02.png" alt="">
+                    </a>
+                </div>
+                <div class="item-list">
+                    <div class="item-rail">
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <!-- 
+                                        버튼의 종류는 총 3가지 + a
+                                        + a = 찜 버튼 클래스명 add-list
+                                        가격 표시 버튼은 클래스명 price 
+                                        다운로드 버튼은 클래스명 download
+                                        앱 삭제 버튼은 클래스명 delete
+                                     -->
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 찜 목록 리스트 -->
+
+            <!-- 
+                개발자의 다른 앱 type-semilar 를 사용
+             -->
+             <div class="component-box type-semilar">
+                <div class="title-box txt-l">
+                    <p class="title">개발자의 다른 앱</p>
+                    <a href="#" class="btn-arrow">
+                        <img src="../static/images/arrow_02.png" alt="">
+                    </a>
+                </div>
+                <div class="item-list">
+                    <div class="item-rail">
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="item-img"></div>
+                            <p class="item-name">윤선생</p>
+                            <div class="item-desc">
+                                <div class="item-aver-score">
+                                    <p>★ <i>4.5</i></p>
+                                </div>
+                                <div class="btn-box item-info">
+                                    <input type="button" value="￦23,800" class="input-btn price">
+                                    <input type="button" value="찜" class="input-btn add-list">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 개발자의 다른 앱 -->
+
+        </div>
+        <nav class="global-nav">
+            <div class="component-box">
+                <div class="nav-box">
+                    <!-- 
+                        선택된 메뉴의 nav-item에 active 클래스 추가
+                     -->
+                    <div class="nav-item active"><span>카테고리 / 전체</span></div>
+                    <div class="nav-item"><span>패키지</span></div>
+                    <div class="nav-item"><span>찜목록</span></div>
+                    <div class="nav-item"><span>내 앱 목록</span></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

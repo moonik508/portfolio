@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>main</title>
+</head>
+<body>
+    <div class="wrap default">
+        <nav class="left-nav">
+            <div class="inner">
+                <h1 class="logo white">
+                    <img src="../../static/images/logo-wh.png" alt="">
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="active dash-nav">대시보드</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">앱관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정산조회</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">패키지 주문관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">사용자관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <!-- 선택된 main-nav-item 의 a 클래스에 active 클래스명 추가 -->
+                        <a href="javascript:void(0)" class="sdk-nav">SDK 센터</a>
+                        <ul class="sub-nav">
+                            <li class="sub-nav-item">
+                                <!-- 현재 선택된 2뎁스 메뉴에도 sub-nav-item의 a태그에 클래스명 active 추가 -->
+                                <a href="javascript:void(0)" class="active">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">공지사항</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">문의하기</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정보변경</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="left-nav-dim"></div>
+        <div class="content-wrap">
+            <div class="content-header">
+                <div class="inner">
+                    <!-- btn-hamburger 를 선택시 left-nav에 클래스명 active를 추가해주세요. -->
+                    <input type="button" class="btn-hamburger">
+                    <div class="logo white"><img src="../../static/images/logo-wh.png" alt=""></div>
+                    <div class="service-title">
+                        <span class="logo-txt">Toki</span>
+                        <span>개발자센터</span>
+                    </div>
+                    <!-- 유저 정보 박스 -->
+                    <div class="user-info-box">
+                        <p class="user-name">홍길동님</p>
+                        <div class="btn-box">
+                            <input type="button" value="로그아웃" class="input-btn">
+                        </div>
+                    </div>
+                    <!-- // 유저 정보 박스 -->
+                </div>
+            </div>
+            <div class="inner">
+                <p class="section-title">
+                    대시보드
+                    <span class="title-desc">현재 출시한 앱의 상태를 확인할 수 있습니다.</span>
+                </p>
+                <div class="top-notice-box">
+                    <div class="notice-title">
+                        <span>공지사항</span>
+                    </div>
+                    <div class="notice-txt-box">
+                        <p class="notice-txt">SDK 버전 업데이트 안내</p>
+                        <p class="notice-date">2021 - 02 - 02</p>
+                    </div>
+                </div>
+                <div class="common-box">
+                    <!-- 
+                        box-item이 반복
+                     -->
+                    <div class="box-item">
+                        <div class="thumb">
+                            <img src="../../static/images/ic-app-dummy01.png" alt="">
+                        </div>
+                        <div class="item-info">
+                            <p class="app-name">앱 이름</p>
+                            <p class="app-id">
+                                <span>com.nane.app-ID</span>
+                                <span class="status-ready">출시됨</span>
+                            </p>
+                            <div class="app-detail">
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">총 다운로드 수</span>
+                                    <span class="detail-cnt">100,000</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">전일 다운로드 수</span>
+                                    <span class="detail-cnt">100,000</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">평점</span>
+                                    <span class="detail-cnt">5.0</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">수익(KRW)</span>
+                                    <span class="detail-cnt">10,000원</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">수익(USD)</span>
+                                    <span class="detail-cnt">$10,000</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dash-btn-box">
+                            <input type="button" value="앱관리" class="ic-input-btn btn-app-edit">
+                            <input type="button" value="대시보드" class="ic-input-btn btn-app-dassbd">
+                        </div>
+                    </div>
+                    <div class="box-item">
+                        <div class="thumb">
+                            <img src="../../static/images/ic-app-dummy02.png" alt="">
+                        </div>
+                        <div class="item-info">
+                            <p class="app-name">앱 이름</p>
+                            <p class="app-id">
+                                <span>com.nane.app-ID</span>
+                                <span class="status-ready">출시됨</span>
+                            </p>
+                            <div class="app-detail">
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">총 다운로드 수</span>
+                                    <span class="detail-cnt">100,000</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">전일 다운로드 수</span>
+                                    <span class="detail-cnt">100,000</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">평점</span>
+                                    <span class="detail-cnt">5.0</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">수익(KRW)</span>
+                                    <span class="detail-cnt">10,000원</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">수익(USD)</span>
+                                    <span class="detail-cnt">$10,000</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dash-btn-box">
+                            <input type="button" value="앱관리" class="ic-input-btn btn-app-edit">
+                            <input type="button" value="대시보드" class="ic-input-btn btn-app-dassbd">
+                        </div>
+                    </div>
+                    <div class="box-item">
+                        <div class="thumb">
+                            <img src="../../static/images/ic-app-dummy03.png" alt="">
+                        </div>
+                        <div class="item-info">
+                            <p class="app-name">앱 이름</p>
+                            <p class="app-id">
+                                <span>com.nane.app-ID</span>
+                                <span class="status-ready">출시됨</span>
+                            </p>
+                            <div class="app-detail">
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">총 다운로드 수</span>
+                                    <span class="detail-cnt">-</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">전일 다운로드 수</span>
+                                    <span class="detail-cnt">-</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">평점</span>
+                                    <span class="detail-cnt">-</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">수익(KRW)</span>
+                                    <span class="detail-cnt">-</span>
+                                </p>
+                                <p class="app-detail-item">
+                                    <span class="detail-nm">수익(USD)</span>
+                                    <span class="detail-cnt">-</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dash-btn-box">
+                            <input type="button" value="앱관리" class="ic-input-btn btn-app-edit">
+                            <input type="button" value="대시보드" class="ic-input-btn btn-app-dassbd">
+                        </div>
+                    </div>
+                    <!-- pagination의 위치는 component-box의 제일 마지막 자식요소여도 되고 그 뒤의 형제요소여도 무관 -->
+                    <div class="pagination-box">
+                        <ul>
+                            <!-- pagination의 버튼을 숨길 경우 li 태그에 클래스명 hidden 추가 -->
+                            <li>
+                                <input type="button" class="btn-page btn-first">
+                            </li>
+                            <li>
+                                <input type="button" class="btn-page btn-prev">
+                            </li>
+                            <li class="active">
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <span>2</span>
+                            </li>
+                            <li>
+                                <span>3</span>
+                            </li>
+                            <li>
+                                <input type="button" class="btn-page btn-next">
+                            </li>
+                            <li>
+                                <input type="button" class="btn-page btn-last">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="content-footer">
+            <p class="copyright">Copyrifght 2020. Hancom Inc. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

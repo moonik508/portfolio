@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/jquery/swiperJS/swiper.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/swiperJS/swiper.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>calendar confirm</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            <!-- <header class="m-header">
+                <div class="m-component-box">
+                    <div class="m-header-box">
+                        <input type="button" class="m-input-btn back-btn">
+                        <p class="m-title hd-title">앨범</p>
+                        <div class="m-header-btn-box">
+                            <input type="button" class="m-input-btn btn-user-info">
+                        </div>
+                    </div>
+                </div>
+            </header> -->
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+             -->
+            <div class="m-component-box m-component-box-bg m-component-vh">
+                <div class="m-inner">
+                    <div class="sec-personal">
+                        <div class="sec-top-content-box pb0">
+                            <p class="sec-top-title">등록정보 확인</p>
+                            <p class="sec-top-sub-title">개인일정</p>
+                        </div>
+                        <div class="sec-checked-box">
+                            <!--
+                                sec-checked-item 이 반복되는 형태
+                                right-zero 클래스로 .input-box.delete-box 의
+                                삭제 버튼을 제어 클래스를 추가하면 right 0 이 되면서 오른쪽에서
+                                왼쪽으로 오는 형태
+                            -->
+                            <div class="sec-checked-item right-zero">
+                                <div class="sec-checked-content">
+                                    <div class="sec-img-box"><img src="../../static/m_images/img-thumnail.png" alt="thumnail"></div>
+                                    <div class="sec-text-box">
+                                        <p class="sec-personal-day"><span>2021.01.25</span><span>17:00</span></p>
+                                        <p class="sec-personal-calendar">저녁식사</p>
+                                    </div>
+                                </div>
+                                <div class="input-box delete-box">
+                                    <input type="button" value="삭제" class="input-btn delete">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-alarm">
+                        <div class="sec-top-content-box pb0">
+                            <p class="sec-top-sub-title mt0">알람대상</p>
+                        </div>
+                        <div class="sec-input-box mt0">
+                            <div class="sec-input-box-content">
+                                <div class="checked-item">
+                                    <div class="toki-family-item my">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (<span>그룹회원</span>)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checked-item">
+                                    <div class="toki-family-item">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (<span>그룹회원</span>)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-btn-box">
+                        <input type="button" value="수정" class="m-input-btn w45p modify float-l">
+                        <input type="button" value="확인" class="m-input-btn w45p active float-r">
+                    </div>
+                </div>
+            </div>
+        </div>             
+    </div>
+</body>
+</html>

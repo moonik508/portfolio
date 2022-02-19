@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <!-- plugin css -->
+    <link rel="stylesheet" href="../lib/jquery/swiperJS/swiper.css">
+    <!-- //plugin css -->
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 
+            패키지 앱 구매 페이지에는 header에 package-process 클래스명을 추가해주세요.
+         -->
+        <header class="header package-process">
+            <div class="component-box">
+                <div class="search-box">
+                    <input type="button" class="input-btn back-btn">
+                    <p class="title hd-title">패키지 앱 구매</p>
+                    
+                    <div class="header-btn-box">
+                        <input type="button" class="input-btn search-btn">
+                        <input type="button" class="input-btn more-btn hidden">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content-wrap">
+            <!-- 개인정보 동의 팝업 -->
+            
+            <div class="package-box">
+                <div class="package-content">
+                    <div class="package-border-content">
+                        <p class="package-border-content-title">개인정보 제3자 제공 동의</p>
+                        <p class="package-border-content-txt">
+                            안녕하세요. 한컴로보틱스입니다.<br>
+                            저희는 Toki의 사용자 경험을 최적화하기 위해 메뉴 사용 통계 등 사용자의 사용 사례 일부를 수집하고 있습니다.<br>
+                            개인정보 보호정책에 어긋난 개인정보와 관련된 것은 전혀 수집하지 않으니 안심하세요!<br>
+                        </p>
+                    </div>
+                    <label class="private-agree-chk">
+                        <input type="checkbox">
+                        <span>동의합니다.</span>
+                    </label>
+                </div>
+                <div class="btn-box mt40 txt-c">
+                    <input type="button" class="input-btn cancel" value="아니요">
+                    <input type="button" class="input-btn apply ml30" value="좋아요">
+                </div>
+            </div>
+            
+            <!-- // 개인정보 동의 팝업 -->  
+
+        </div>
+        <!-- 
+        <nav class="global-nav">
+            <div class="component-box">
+                <div class="nav-box">
+                    <div class="nav-item active"><span>카테고리 / 전체</span></div>
+                    <div class="nav-item"><span>패키지</span></div>
+                    <div class="nav-item"><span>찜목록</span></div>
+                    <div class="nav-item"><span>내 앱 목록</span></div>
+                </div>
+            </div>
+        </nav>
+         -->
+    </div>
+
+    <!-- plugin js -->
+    <script src="../lib/jquery/swiperJS/swiper.min.js"></script>
+    <!-- //plugins js -->
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+        el: '.swiper-pagination',
+        },
+    });
+    </script>
+
+</body>
+</html>

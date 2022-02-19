@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <!-- 팝업 호출시 m-header 에 클래스 popup을 추가해주세요. -->
+        <header class="m-header">
+            <div class="m-component-box">
+                <div class="m-search-box">
+                    <input type="button" class="m-input-btn back-btn">
+                    <p class="m-title hd-title">앱스토어</p>
+                    <div class="m-header-btn-box">
+                        <input type="button" class="m-input-btn search-btn">
+                        <input type="button" class="m-input-btn more-btn">
+                    </div>
+                </div>
+                <!-- 
+                    connect-robot-info 와 상태값에 따라 아래 클래스 추가
+                    사용중 class = robot-connected
+                    대기 class = robot-wait
+                    바쁨 = robot-busy
+                    off = robot-disconnected
+                 -->
+                <div class="connect-robot-info robot-connected">
+                    <p class="robot-name">Toki#1_hancom</p>
+                </div>
+            </div>
+            <div class="dimmed"></div>
+        </header>
+        <!-- 
+            header 의 more-btn 선택시(클릭시)
+            m-sub-nav 에 클래스명 on 을 추가하게 제이쿼리 작업되어있습니다.
+
+            dimmed 영역 선택시 m-sub-nav 에 클래스명 on 을 제거하게 제이쿼리 작업 되어있습니다. 
+            == common.js
+
+            list-item 선택시 해당하는 메뉴를 제외한 나머지 list-item 은 접게 제이쿼리 되어있습니다.
+         -->
+        <aside class="m-sub-nav">
+            <nav class="m-sub-nav-box">
+                <ul class="nav-depth01">
+                    <li class="list-item">
+                        <span>패키지</span>
+                    </li>
+                    <li class="list-item">
+                        <span>교육</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>퀴즈</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>음악</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>만화</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>건강</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>돌봄</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>게임</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>이용안내</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>이용약관</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>문제신고</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>서비스 문의</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="dimmed"></div>
+        </aside>
+        <div class="m-content-wrap">
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+             -->
+             <div class="m-component-box m-cnt-search-box">
+                 <div class="m-search-content">
+                    <input type="button" class="m-input-btn back-btn">
+                    <input type="text" class="m-input-txt cnt-search-input">
+                    <input type="button" class="m-input-btn search-btn">
+                 </div>
+             </div>
+
+             <!-- 
+                 m-component-box 가 한 영역을 나타냄
+                 타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+                 검색결과영역
+              -->
+              <div class="m-component-box type-search-result">
+                  
+                <!-- 
+                    m-app-detail-box 가 반복 
+                -->
+                <div class="m-app-detail-box">
+
+                    <div class="m-app-info-box">
+                        <div class="m-app-info-top">
+                            <div class="thumb"><img src="../../static/m_images/ic-dummy01.png" alt=""></div>
+                            <div class="m-app-info-txt">
+                                <p class="m-app-info-title">윤선생</p>
+                                <p class="m-app-info-sub-title">앱 부제목</p>
+                                <p class="m-app-info-developer">제작자명</p>
+                            </div>
+                            <div class="m-btn-box detail-btn-box">
+                                <input type="button" value="찜하기" class="m-input-btn add-list-detail">
+                            </div>
+                        </div>
+                        <div class="m-app-info-desc">
+                            <p class="aver-score-desc">
+                                평가 <i>4.0</i>
+                                <span class="aver-score-desc-img"><img src="../../static/m_images/stars/star_050.png" alt=""></span>
+                            </p>
+                            <p class="count-dl"><span>000</span>다운로드</p>
+                            <p class="caption"><span>0세 이상</span>(부모 지도 필요)</p>
+                        </div>
+                    </div>
+                    <div class="m-component-box type-gallery">
+                        <div class="m-item-list">
+                            <div class="m-item-rail">
+                                <div class="m-item-box">
+                                    <div class="m-item-img"><img src="../../static/images/image_none.png" alt=""></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+                </div>
+
+
+                <div class="m-app-detail-box">
+
+                    <div class="m-app-info-box">
+                        <div class="m-app-info-top">
+                            <div class="thumb"><img src="../../static/m_images/ic-dummy01.png" alt=""></div>
+                            <div class="m-app-info-txt">
+                                <p class="m-app-info-title">윤선생</p>
+                                <p class="m-app-info-sub-title">앱 부제목</p>
+                                <p class="m-app-info-developer">제작자명</p>
+                            </div>
+                            <div class="m-btn-box detail-btn-box">
+                                <input type="button" value="찜하기" class="m-input-btn add-list-detail">
+                            </div>
+                        </div>
+                        <div class="m-app-info-desc">
+                            <p class="aver-score-desc">
+                                평가 <i>4.0</i>
+                                <span class="aver-score-desc-img"><img src="../../static/m_images/stars/star_050.png" alt=""></span>
+                            </p>
+                            <p class="count-dl"><span>000</span>다운로드</p>
+                            <p class="caption"><span>0세 이상</span>(부모 지도 필요)</p>
+                        </div>
+                    </div>
+                    <div class="m-component-box type-gallery">
+                        <div class="m-item-list">
+                            <div class="m-item-rail">
+                                <div class="m-item-box">
+                                    <div class="m-item-img"><img src="../../static/images/image_none.png" alt=""></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 검색결과 없을시 아래 주석 해제하여 사용 -->
+
+                <!-- <div class="search-result-none">
+                    <p>검색결과가 없습니다.</p>
+                </div> -->
+ 
+              </div>
+              <!-- 
+                  검색영역 디테일 상단과 동일하게 사용
+               -->
+        </div>
+        <!-- 하단공통네비는 네이티브로 띄우기로 했습니다. -->
+        <nav class="m-global-nav"></nav>
+    </div>
+    
+</body>
+</html>

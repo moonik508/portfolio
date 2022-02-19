@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mypage joinout detail</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                m-mypage-box - mypage 공통 클래스
+                mypage-gy - mypage 배경 컬러 값에 대한 공통클래스
+             -->
+
+             <div class="m-component-box m-mypage-box mypage-wh">
+                <div class="m-inner">
+
+                    <!-- detail profile 수정 관련 컴포넌트 요소 -->
+                    <div class="mypage-common-box">
+                        <div class="mypage-detail-content-box">
+
+                            <p class="profile-element-title">
+                                아이디
+                            </p>
+                            <!-- 
+                                input 요소도 무엇도 없는 row는 
+                                detail-plain-row 로 감싸기
+                             -->
+                            <div class="detail-plain-row">
+                                <p class="id-preset">pete***on@4-l**.com ( 마스터 회원 )</p>
+                            </div>
+
+                            <p class="profile-element-title">
+                                회원탈퇴를 하시는 이유가 뭔가요?
+                            </p>
+
+                            <div class="detail-input-row join-out">
+                                <label class="m-input-radio-box txt-l">
+                                    <input type="radio">
+                                    <span class="input-frame-label">사생활 기록 삭제</span>
+                                </label>
+                                <label class="m-input-radio-box txt-l">
+                                    <input type="radio">
+                                    <span class="input-frame-label">이벤트, 프로모션 목적으로 한 시 사용함</span>
+                                </label>
+                                <label class="m-input-radio-box txt-l">
+                                    <input type="radio">
+                                    <span class="input-frame-label">서비스 기능 불편</span>
+                                </label>
+                                <label class="m-input-radio-box txt-l">
+                                    <input type="radio">
+                                    <span class="input-frame-label">제재조치로 인한 이용제한</span>
+                                </label>
+                                <label class="m-input-radio-box txt-l">
+                                    <input type="radio">
+                                    <span class="input-frame-label">개인정보 및 보안 우려</span>
+                                </label>
+                                <label class="m-input-radio-box txt-l">
+                                    <input type="radio">
+                                    <span class="input-frame-label">기타</span>
+                                </label>
+                            </div>
+
+                            <div class="detail-input-row join-out-etc">
+                                <textarea class="m-textarea mypage-textarea"></textarea>
+                            </div>
+
+                            <div class="btn-box">
+                                <input type="button" value="확인" class="m-input-btn w100p primary">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //detail profile 수정 관련 컴포넌트 요소 -->
+
+                </div>
+             </div>             
+
+        </div>
+    </div>
+    
+</body>
+</html>

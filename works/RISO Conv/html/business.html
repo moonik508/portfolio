@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../lib/css/reset.css">
+  <link rel="stylesheet" href="../lib/css/fonts.css">
+  <link rel="stylesheet" href="../lib/css/common.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+  <script src="../lib/js/3.1.1/jquery.min.js"></script>
+  <script src="../lib/js/common.js"></script>
+  <title>BUSINESS</title>
+  <script>
+    $(document).ready(function(){
+
+      //다른페이지에서 넘어올 때
+      var url = $(location).attr("href").split("#");
+      var code = "";
+      if(url[1] != null && url[1] != ""){
+        code = url[1];
+        tablink("business", code);
+      }
+
+      //해당 페이지 탭메뉴에서 사용할 때
+      $(".tab_item a").on('click',function(e){
+        var datacode = $(this).attr("data-code");
+        tablink("business",datacode);
+        return false;
+      })
+
+      //해당 페이지에서 해당페이지로의 이동 
+      $(".sub_nav_item a").on("click", function(){
+        var thisUrl = $(this).attr("href").split("#");
+        var code = "";
+        if(thisUrl[1] != null && thisUrl[1] != ""){
+          code = thisUrl[1];
+          tablink("business", code);
+        };
+      });
+
+    });
+
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <!-- header -->
+    <header class="header">
+
+      <nav class="header_top_nav">
+        <div class="inner">
+          <h1 class="logo">
+            <a href="./index.html">
+              리소 컨버젼스 메인 로고
+            </a>
+          </h1>
+          <a href="javascript:void(0)" class="btn_m_nav">
+            <i></i>
+            <i></i>
+            <i></i>
+          </a>
+          <ul class="main_nav">
+            <li class="main_nav_item">
+              <a href="#">ABOUT US</a>
+
+              <nav class="sub_nav sub01">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./aboutus.html#01">인사말</a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a href="./aboutus.html#02">경영이념</a>
+                  </li>
+                  <!-- <li class="sub_nav_item">
+                    <a href="./aboutus.html#03">보유특허</a>
+                  </li> -->
+                  <li class="sub_nav_item">
+                    <a href="./aboutus.html#03">오시는길</a>
+                  </li>
+                </ul>
+              </nav>
+
+            </li>
+            <li class="main_nav_item">
+              <a href="#">BUSINESS</a>
+
+              <nav class="sub_nav sub02">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./business.html#01">리사이클링</a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a href="./business.html#02">자연정화</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="main_nav_item">
+              <a href="#">PLATFORM</a>
+
+              <nav class="sub_nav sub03">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./platform.html#01">리사이클링 DASHBOARD</a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a href="./platform.html#02">데이터 융합 A.I</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="main_nav_item">
+              <a href="#">RISO LAB</a>
+
+              <nav class="sub_nav sub04">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./lab.html#01">연구분야</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="main_nav_item">
+              <a href="#">RECRUIT</a>
+
+              <nav class="sub_nav sub05">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./recruit.html#01">채용안내</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+
+          <ul class="m_main_nav">
+            <li><a href="./aboutus.html">About US</a></li>
+            <li><a href="./business.html">Business</a></li>
+            <li><a href="./platform.html">Platform</a></li>
+            <li><a href="./lab.html">riso lab</a></li>
+            <li><a href="./recruit.html">recruit</a></li>
+          </ul>
+          <div class="dim"></div>
+
+        </div>
+      </nav> 
+
+    </header>
+    <!-- //header -->
+
+    <!-- container -->
+    <div class="container business">
+
+      <!-- visual box -->
+      <div class="visual_box">
+
+        <div class="inner">
+          <p class="visual_txt">
+            <b class="visual_title">Business</b>
+            NEW NATURAL CIRCULATION<br>
+            R.I.S.O CONVERGENCE가 SMART CIRCULATION을 제시합니다
+          </p>
+        </div>
+
+      </div>
+      <!-- // visual box -->      
+      
+      <div class="content">
+        <!-- tab_box -->
+        <div class="tab_box">
+          <div class="inner">
+
+            <ul class="tab_list">
+              <li class="tab_item active"><a data-code="business01" href="#">리사이클링</a></li>
+              <li class="tab_item"><a data-code="business02" href="#">자연 정화</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- // tab_box -->
+
+        <!-- 리사이클링 -->
+        <div class="content_box" id="business01">
+
+          <div class="area_box">
+            <div class="inner">
+              <div class="txt_box business">
+                <p class="main_txt">
+                  R.I.S.O가 연구한 <br class="mbr">새로운 순환구조
+                </p>
+                <p class="txt">
+                  문명의 발달로 인해 소모가 되어진 자연에 <br class="mbr">현재 문명을 기반으로 한 순환구조가 필요하다고<br class="mbr"> 판단하고<br class="pbr">
+                  새로운 순환구조는 SMART해야 함을 <br class="mbr">기본으로 연구를 진행하고 있습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="area_box gy_box clearfix">
+            <div class="inner">
+              
+              <div class="txt_box business">
+                <p class="main_txt">
+                  R.I.S.O가 제시하는 <br class="mbr">SMART CIRCULATION
+                </p>
+                <p class="txt business_txt">
+                  리소는 재활용을 시작하는 단계는 <br class="mbr">사람이 수거 및 투하를 한다면,<br>
+                  이 이후의 단계부터는 SMART가 접목되어야 <br class="mbr">하는 것을 BASIC FLOW로 진행하였습니다.<br>
+                  수거된 재활용품들은 <br class="mbr">세척 > 연소/분해/분쇄 과정을 거치는데 있어 <br class="mbr">이것이 가능한 용기에 대해 연구를 진행, <br class="mbr">대형에서부터 소형까지의 범위로 진행중입니다.<br>
+                  다양하게 디자인되어 나오는 용기들의 분석과 <br class="mbr">사용을 통해 세척과정에 대한 확보<br>
+                  연소 혹은 분해, 분쇄가 가능한 구조를 <br class="mbr">소화할 수 있는 재활용 Container, BOX 등을 <br class="mbr">연구하고 있습니다.
+                </p>
+              </div>
+              
+              <div class="smart_circul_box">
+                <div class="smart_circul_item">
+                  <img src="../image/business/trash_01.png" alt="종이 분리수거 쓰레기통">
+                </div>
+                <div class="smart_circul_item">
+                  <img src="../image/business/trash_02.png" alt="플라스틱 분리수거 쓰레기통">
+                </div>
+                <div class="smart_circul_item">
+                  <img src="../image/business/trash_03.png" alt="유리 분리수거 쓰레기통">
+                </div>
+              </div>
+              
+              <div class="txt_box business">
+                <p class="main_txt">
+                  R.I.S.O가 만드는 <br class="mbr">SMART CIRCULATION
+                </p>
+                <p class="txt business_txt">
+                  리소는 재활용 Container, 재활용 BOX를 <br class="mbr">출시할 예정입니다.<br>
+                  다양한 크기별 Container/BOX를 출시, <br class="mbr">재활용품을 모으는 것으로만 <br class="mbr">역할을 다하는 것이 아닌<br>
+                  세척구조 혹은 연소 & 분해 구조를 구현한 버전, <br class="mbr">세척구조 & 분쇄구조를 구현한 버전 등 <br class="mbr">다양한 버전들을 준비하고 있습니다.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- 리사이클링 -->
+
+        <!-- 자연정화 -->
+        <div class="content_box" id="business02" style="display: none;">
+
+          <div class="area_box">
+            <div class="inner">
+              <div class="txt_box business">
+                <p class="main_txt">
+                  R.I.S.O가 주목한 습지의 <br class="mbr">자정작용기반 생태계
+                </p>
+                <p class="txt">
+                  습지는 또 다른 말로 CO2 저장고라고도 불립니다.<br>
+                  육상 생태계와 물 생태계의 경계를 기준으로 <br class="mbr">다양한 동식물이 살고 있고,<br class="mbr"> 습지식물은 어패류의 먹이가 되며,<br>
+                  어느 생태계보다 동식물이 잘 성장하기 때문에 <br class="mbr">거대한 먹이사슬을 형성할 수 있습니다.<br>
+                  또한 습지는 빗물을 저장해 홍수를 조절하고 <br class="mbr">지하수도 보충하는 역할을 합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="area_box gy_box">
+            <div class="inner">
+
+              <div class="infograph_box">
+                <div class="infograph_item">
+                  <p class="infograph_desc">석탄(일부)</p>
+                  <p class="infograph_img"><img src="../image/business/ico_business_01.png" alt="석탄(일부) 이미지"></p>
+                </div>
+                <div class="infograph_item">
+                  <p class="infograph_desc">시간</p>
+                  <p class="infograph_img"><img src="../image/business/ico_business_02.png" alt="시간 이미지"></p>
+                </div>
+                <div class="infograph_item">
+                  <p class="infograph_desc">CO2</p>
+                  <p class="infograph_img"><img src="../image/business/ico_business_03.png" alt="CO2 이미지"></p>
+                </div>
+                <div class="infograph_item">
+                  <p class="infograph_desc">자정활동</p>
+                  <p class="infograph_img"><img src="../image/business/ico_business_04.png" alt="자정활동 이미지"></p>
+                </div>
+                <div class="infograph_item">
+                  <p class="infograph_desc">생태계</p>
+                  <p class="infograph_img"><img src="../image/business/ico_business_05.png" alt="생태계 이미지"></p>
+                </div>
+                <div class="infograph_item">
+                  <p class="infograph_desc">동물/어패류</p>
+                  <p class="infograph_img"><img src="../image/business/ico_business_06.png" alt="동물/어패류 이미지"></p>
+                </div>
+              </div>
+              
+              <div class="txt_box business">
+                <p class="txt business_txt">
+                  리소는 습지의 생태계와 자정활동을 연구하여 <br class="mbr">이를 시스템화 할 수 있는 하드웨어 플랫폼을 <br class="mbr">구현하고자 합니다.<br>
+                  이를 실현하는데 있어 배출되는 가스 등 <br class="mbr">역시 다시 재사용이 가능한 자원으로서의 <br class="mbr">역할을 부여하기 위해 <br class="mbr">최선의 연구를 진행하고 있습니다.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- 자연정화 -->
+
+      </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="inner">
+        <address>
+          T: 02.881.5738   F: 02.881.5739  127 Bubwonro, Songpa-gu, Seoul, Daemyoung valleyon knowledge biz center 4F, 403<br>
+          Copyright (C) 2022 R.I.S.O All Rights Reserved.
+        </address>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </div>
+</body>
+</html>

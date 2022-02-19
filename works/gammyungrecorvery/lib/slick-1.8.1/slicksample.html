@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <script src="../js/3.1.1/jquery.min.js"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <title>sample</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        .inner:after,
+        .clearfix:after{content: ""; display: block; clear:both; }
+        .big_box .inner{position: relative; width:1200px; margin:0 auto; padding: 0; }
+        .big_box{height: 1243px; background-color: #f6f6f6;}
+        .big_slider{width: 1200px; margin: 0 auto;}
+        .big_slider .slider_items{position: relative; height: 620px; text-align:left; box-sizing: border-box;}
+        .big_slider .slider_items.one{background-color: #c0ff;}
+        .big_slider .slider_items.two{background-color: #fc0;}
+        .big_slider .slider_items.three{background-color: #0fc;}
+        .big_slider .slider_items.four{background-color: #00f;}
+        .big_slider .slider_items .left_box,
+        .big_slider .slider_items .right_box{float: left; height: 620px; background-color: #fff;}
+        .big_slider .slider_items .left_box{width: 760px;}
+        .big_slider .slider_items .right_box{width: calc(1200px - 760px)}
+        
+        .big_slider .slick-prev{top: 55px; left: 638px; border: 1px solid #cfcfcf;}
+        .big_slider .slick-next{top: 55px; right: 483px; border: 1px solid #cfcfcf;}
+        .slick-prev:before,
+        .slick-next:before,
+        .slick-prev:hover:before,
+        .slick-next:hover:before{opacity: 0; color: #000;}
+
+        .sub_slider{width: 600px; margin: 0 auto;}
+        .sub_slider .slider_items{height: 200px; margin-right: 20px;}
+        .sub_slider .slider_items.one{background-color: #c0ff;}
+        .sub_slider .slider_items.two{background-color: #fc0;}
+        .sub_slider .slider_items.three{background-color: #0fc;}
+        .sub_slider .slider_items.four{background-color: #00f;}
+
+        .slick-prev,
+        .slick-next{z-index: 100; width: 40px; height: 40px; background: #fff;}
+        .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{background: #fff;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".big_slider").slick({
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                touchMove : false,
+                draggable : false,
+                asNavFor: '.sub_slider'
+            });
+            $(".sub_slider").slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                touchMove : false,
+                draggable : false,
+                asNavFor: '.big_slider'
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="big_box">
+        <div class="big_slider">
+            <div class="slider_items one">
+                <div class="inner">
+                    <div class="left_box">
+                        <p>L</p>
+                    </div>
+                    <div class="right_box">
+                        <p>R</p>
+                    </div>
+                </div>
+                <div class="slider_items_desc">
+                    oh!
+                </div>
+            </div>
+            <div class="slider_items two">
+                <div class="inner">
+                    <div class="left_box">
+                        <p>L</p>
+                    </div>
+                    <div class="right_box">
+                        <p>R</p>
+                    </div>
+                </div>
+                <div class="slider_items_desc">
+                    oh!
+                </div>
+            </div>
+            <div class="slider_items three">
+                <div class="inner">
+                    <div class="left_box">
+                        <p>L</p>
+                    </div>
+                    <div class="right_box">
+                        <p>R</p>
+                    </div>
+                </div>
+                <div class="slider_items_desc">
+                    oh!
+                </div>
+            </div>
+            <div class="slider_items four">
+               <div class="inner">
+                   <div class="left_box">
+                       <p>L</p>
+                    </div>
+                   <div class="right_box">
+                       <p>R</p>
+                    </div>
+               </div>
+                <div class="slider_items_desc">
+                    oh!
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="sub_slider">
+        <li class="slider_items one">1</li>
+        <li class="slider_items two">2</li>
+        <li class="slider_items three">3</li>
+        <li class="slider_items four">4</li>
+        <li class="slider_items one">5</li>
+        <li class="slider_items two">6</li>
+        <li class="slider_items three">7</li>
+        <li class="slider_items four">8</li>
+    </ul>
+</body>
+</html>

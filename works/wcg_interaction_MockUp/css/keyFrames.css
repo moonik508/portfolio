@@ -1,0 +1,268 @@
+/* keyframe */
+
+/* Bg & Object frame */
+
+@keyframes rightPlaneMove {
+    0%{top: -8%; right: 50%;}
+    25%{top: 2%; right: 40%;}
+    40%{top: 2%; right: 40%;}
+    100%{top: 20%; right: -40%;}
+}
+@keyframes leftSmCloud {
+    0%{top: 6%; left: 10.5%;}
+    50%{top: 3%; left: 14%;}
+    100%{top: 6%; left: 10.5%;}
+}
+@keyframes leftMidCloud {
+    0%{top: 8%; left: 16%;}
+    50%{top: 6.5%; left: 18%;}
+    100%{top: 8%; left: 16%;}
+}
+@keyframes leftBigCloud {
+    0%{top: 17%; left: 2%;}
+    50%{top: 12%; left: 6%;}
+    100%{top: 17%; left: 2%;}
+}
+@keyframes rightSmCloud {
+    0%{top: 3%; right: 25.8%;}
+    50%{top: 7%; right: 20%;}
+    100%{top: 3%; right: 25.8%;}
+}
+@keyframes rightMidCloud {
+    0%{top: 10.5%; right: 20.3%;}
+    50%{top: 14%; right: 16%;}
+    100%{top: 10.5%; right: 20.3%;}
+}
+@keyframes rightBigCloud {
+    0%{top: 2.5%; right: 12.5%;}
+    50%{top: 4%; right: 10%;}
+    100%{top: 2.5%; right: 12.5%;}
+}
+@keyframes sponsorMove {
+    0%{top: -30%; left: 50%}
+    50%{top: 10%; left: 5%;}
+    100%{top: 50%; left: -45%;}
+}
+
+/* mobile move */
+@keyframes leftSmCloud_M {
+    0%{top: 8vw; left: 20vw;}
+    50%{top: 10vw; left: 14vw;}
+    100%{top: 8vw; left: 20vw;}
+}
+@keyframes leftMidCloud_M {
+    0%{top: 2vw; left: 6vw;}
+    50%{top: 0vw; left: 10vw;}
+    100%{top: 2vw; left: 6vw;}
+}
+@keyframes leftBigCloud_M {
+    0%{top: 2vw; left: -10vw;}
+    50%{top: 6vw; left: -14vw;}
+    100%{top: 2vw; left: -10vw;}
+}
+@keyframes rightSmCloud_M {
+    0%{top: 8vw; right: 0;}
+    50%{top: 0vw; right: 10vw;}
+    100%{top: 8vw; right: 0;}
+}
+@keyframes rightMidCloud_M {
+    0%{top: 20vw; right: 10vw;}
+    50%{top: 24vw; right: 2vw;}
+    100%{top: 20vw; right: 10vw;}
+}
+@keyframes rightBigCloud_M {
+    0%{top: -2vw; right: 15vw;}
+    50%{top: 2vw; right: 6vw;}
+    100%{top: -2vw; right: 15vw;}
+}
+@keyframes rightPlaneMove_M {
+    0%{top: -10vw; right: 60vw;}
+    40%{top: 30vw; right: 30vw;}
+    100%{top: 20%; right: -40vw;}
+}
+@keyframes sponsorMove_M {
+    0%{top: -50vw; left: 130vw}
+    100%{top: 40vw; left: -40vw;}
+}
+
+/* Center frames */
+
+@keyframes markerMove{
+    0%{margin-bottom: 20%;}
+    50%{margin-bottom: 17%;}
+    100%{margin-bottom: 20%;}
+}
+@keyframes OpacityUp {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes blockMove {
+    0%{bottom: 70.5%;}
+    50%{bottom: 72%;}
+    100%{bottom: 70.5%;}
+}
+@keyframes gradient {
+	0% {background-position: 15% 50%;}
+	50% {background-position: 100% 50%;}
+	100% {background-position: 0% 50%;}
+}
+
+/* ArtPlay frames */
+
+@keyframes DeviceUp {
+    0%{opacity: 0; top: 100%;}
+    100%{opacity: 1; top: 1.15%; }
+}
+@keyframes humanMove {
+    0%{opacity: 0; left: 44%;}
+    50%{opacity: 0; left: 44%;}
+    75%{opacity: 0.7; left: 41%;}
+    100%{opacity: 1; left: 40%;}
+}
+@keyframes Appear {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0.7;}
+    100%{opacity: 1;}
+}
+@keyframes AppearMove {
+    0%{opacity: 0; top: 14.8%; left: 35.2%;}
+    50%{opacity: 0;}
+    75%{opacity: 0.7;}
+    85%{top: 14.8%; left: 35.2%;}
+    100%{opacity: 1; top: 12.8%; left: 38.7%;}            
+}
+@keyframes thumbMove01 {
+    0%{top: -10%;}
+    50%{top: -5%;}
+    100%{top: -10%;}
+}
+@keyframes thumbMove02 {
+    0%{top: -36%;}
+    50%{top: -33%;}
+    100%{top: -36%;}
+}
+@keyframes CommonThumbMove {
+    0%{margin-top: 0;}
+    50%{margin-top: -10px;}
+    100%{margin-top: 0;}
+}
+/* Players frames */
+
+@keyframes BaseBlocks {
+    /* 100% = 1s, 2s, 3s ... n * 1s */
+    0%{opacity: 0; bottom: 46%;}
+    20%{opacity: 1; bottom: 46%;}
+    100%{opacity: 1; bottom: 41%;}
+}
+@keyframes YellowBlock {
+    /* 100% = 1.4s, 2.8s, 4.2s ... n * 1.4s */
+    0%{opacity: 0; top: 8.5%; left: 43.5%;}
+    28%{opacity: 1; top: 8.5%; left: 43.5%;}
+    75%{top: 20.5%; left: 43.5%;}
+    100%{top: 23.5%; left: 47.5%;}
+}
+@keyframes SkyBlock{
+    /* 100% = 1.2s */
+    0%{opacity: 0; top: 7%; }
+    30%{opacity: 1;}
+    60%{top: 7%; }
+    100%{top: 10.5%; }
+}
+@keyframes MagentaBlock{
+    /* 100% = 0.8s */
+    0%{opacity: 0; top: 10%;}
+    30%{opacity: 1;}
+    70%{top: 10%;}
+    100%{top: 17.5%;}
+}
+@keyframes MagentaBlockTails{
+    /* 100% = 0.8s */
+    0%{opacity: 0;}
+    30%{opacity: 1;}
+    70%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes VioletBlock{
+    /* 100% =  1.6s*/
+    0%{opacity: 0; bottom: 62.5%;}
+    16%{opacity: 1;}
+    80%{bottom: 62.5%;}
+    100%{bottom: 58.5%;}
+}
+@keyframes VioletBlockTails{
+    /* 100% =  1.6s*/
+    0%{opacity: 0;}
+    16%{opacity: 1;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+/* News frame */
+@keyframes bulb {
+    0%{bottom: 63.5%;}
+    50%{bottom: 68.5%;}
+    100%{bottom: 63.5%;}
+}
+@keyframes ShadowZoom {
+    0%{opacity: 1;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+@keyframes magnifyMove {
+    0%{opacity: 0; bottom: 90%; transform: rotate(-25deg);}
+    50%{opacity: 1; bottom: 95%; transform: rotate(-25deg);}
+    75%{opacity: 1; bottom: 95%; transform: rotate(-25deg);}
+    100%{opacity: 1; bottom: 100%; transform: rotate(0deg);}
+}
+@keyframes HumanMove {
+    0%{opacity: 0; left: 35%;}
+    40%{opacity: 0; left: 35%;}
+    100%{opacity: 1; left: 52%;}
+}
+@keyframes DropsPhone {
+    0%{opacity: 0; bottom: 200%;}
+    100%{opacity: 1; bottom: 61.2%;}
+}
+@keyframes PhoenBannerTop {
+    /* 1.2 */
+    0%{opacity: 0; top: 28%;}
+    66%{opacity: 0; top: 28%;}
+    100%{opacity: 1; top: 24%;}
+}
+@keyframes PhoenBannerMid {
+    /* 1.4 */
+    0%{opacity: 0; top: 45.5%;}
+    57%{opacity: 0; top: 45.5%;}
+    100%{opacity: 1; top: 41.5%;}
+}
+@keyframes PhoenBannerBot {
+    /* 1.6 */
+    0%{opacity: 0; top: 62%;}
+    50%{opacity: 0; top: 62%;}
+    100%{opacity: 1; top: 59%;}
+}
+@keyframes SpeakMove {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(-10deg);}
+}
+@keyframes CardChng {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* Tournament */
+@keyframes Twinkle {
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+/* Event */
+@keyframes RocketMove {
+    0%{top: 33%; left: 52%;}
+    25%{top: 32%; left: 51%;}
+    50%{top: 34%; left: 50%;}
+    75%{top: 34%; left: 54%;}
+    100%{top: 33%; left: 52%;}
+}

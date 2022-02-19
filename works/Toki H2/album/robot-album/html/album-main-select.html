@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <link rel="stylesheet" href="../lib/jquery/swiperJS/swiper.css">
+    <link rel="stylesheet" href="../lib/jquery/mCustomscrollbar/mCustomScrollbar.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/mCustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <title>앨범</title>
+    <script>
+        (function($){
+            $(window).on("load",function(){
+                $(".list-item-box").mCustomScrollbar();
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="content-wrap">
+            <!--
+                앱스토어와 전체적인 구조는 거의 비슷하지만 팝업 dim 과 관련된 이슈로 인해
+                header를 content-wrap 안으로 종속시켰습니다.
+            -->
+            <header class="header">
+                <div class="component-box">
+                    <div class="search-box hd-title-box">
+                        <input type="button" class="input-btn back-btn">
+                        <p class="title">앨범</p>
+                        <div class="header-btn-box">
+                            <!-- 
+                                각 메뉴가 선택되면 해당하는 버튼에 클래스명 active 를 붙여주세요. 
+                            -->
+                            <input type="button" class="input-btn btn-pic active">
+                            <input type="button" class="input-btn btn-movie">
+                        </div>
+                    </div>
+                    <p class="hd-sub-title">
+                        앨범 이용 현황 <span>7.4</span>GB / 100GB (<span>40%</span>)
+                    </p>
+                </div>
+            </header>
+            <div class="component-box list-container">
+                
+                <!-- 
+                    선택버튼을 눌렀을 때 list-box 에 클래스명 active 를 추가해주세요
+                -->
+
+                <div class="list-box active">
+                    <div class="btn-box dis-ib w50p txt-l">
+                        <input type="button" value="전체선택" class="input-btn btn-item-all-sel">
+                    </div>
+                    <div class="btn-box dis-ib w50p txt-r">
+                        <input type="button" value="선택" class="input-btn btn-item-sel">
+                        <input type="button" value="취소" class="input-btn btn-item-cancel">
+                        <input type="button" class="input-btn btn-item-del ml30">
+                    </div>
+
+                    <div class="list-item-box">
+                        <div class="list-item-row">
+                            <p class="title">2020년 12월 18일</p>
+                            <div class="item-img-box">
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-item-row">
+                            <p class="title">2020년 12월 18일</p>
+                            <div class="item-img-box">
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                                <div class="item-img">
+                                    <label class="img-sel">
+                                        <input type="checkbox">
+                                        <span class="frame"></span>
+                                        <div class="dim"></div>
+                                    </label>
+                                    <img src="../static/images/img-dummy.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

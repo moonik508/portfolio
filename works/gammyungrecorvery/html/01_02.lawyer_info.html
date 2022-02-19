@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/bxslider/jquery.bxslider.js"></script>
+    <script src="../lib/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/js/common.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/bxslider/jquery.bxslider.css">
+    <link rel="stylesheet" href="../lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../lib/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <title>법무법인 감명</title>
+    <script>
+        $(document).ready(function(){
+            $(".big_slider").slick({
+                // autoplay: true,
+                // autoplaySpeed: 2000,
+                touchMove : false,
+                draggable : false,
+                fade: true,
+                asNavFor: '.sub_slider'
+            });
+            $(".sub_slider").slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                touchMove : false,
+                draggable : false,
+                focusOnSelect: true,
+                asNavFor: '.big_slider'
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 0410 수정 -->
+        <header>
+            <div class="inner">
+                <h1 class="logo">logo</h1>
+                <nav class="G_nav clearfix">
+                    <ul>
+                        <li>
+                            <a href="#">감명 소개</a>
+                            <ul class="G_nav_drops">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">상담 안내</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">감명 변호사</a>
+                        </li>
+                        <li>
+                            <a href="#">업무분야</a>
+                            <ul class="G_nav_drops">
+                                <li><a href="#">법인회생</a></li>
+                                <li><a href="#">일반회생</a></li>
+                                <li><a href="#">법인파산</a></li>
+                                <li><a href="#">개인회생/파산</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">수행사례</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="G_nav_drops">
+                                <li><a href="./04_01.onlineconsult.html">온라인 상담</a></li>
+                                <li><a href="./05.FAQ.html">자주 묻는 질문</a></li>
+                                <li><a href="#">서식 자료실</a></li>
+                                <li><a href="#">온라인 발급 센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="serv_banner">
+                    <span><i class="ico_tel"></i>24시간 무료상담</span>
+                    <ul class="free_serv_list">
+                        <li>
+                            <a href="https://pf.kakao.com/_xkleYT/" target="_blank">카톡 상담</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">전화 상담</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">온라인 상담</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="hamburger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </p>
+            </div>
+        </header>
+        <div class="side_nav">
+            <h2 class="side_logo">사이드 로고</h2>
+            <ul class="S_nav">
+                <li>
+                    감명소개
+                    <ul class="S_nav_drops">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">상담 안내</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>감명 변호사</li>
+                <li>
+                    업무분야
+                    <ul class="S_nav_drops">
+                        <li><a href="#">법인회생</a></li>
+                        <li><a href="#">일반회생</a></li>
+                        <li><a href="#">법인파산</a></li>
+                        <li><a href="#">개인회생/파산</a></li>
+                    </ul>
+                </li>
+                <li>수행사례</li>
+                <li>
+                    고객센터
+                    <ul class="S_nav_drops">
+                        <li><a href="./04_01.onlineconsult.html">온라인 상담</a></li>
+                        <li><a href="./05.FAQ.html">자주 묻는 질문</a></li>
+                        <li><a href="#">서식 자료실</a></li>
+                        <li><a href="#">온라인 발급 센터</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="tel">
+                상담  02-534-2070
+            </p>
+            <ul class="nav_sns">
+                <li>
+                    <a href="https://pf.kakao.com/_xkleYT/" target="_blank">
+                        <span class="ico_sns kakao"></span>
+                        <span>카톡 상담</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blog.naver.com/lawfirmgammyung" target="_blank">
+                        <span class="ico_sns cafe"></span>
+                        <span>카페</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://haneumlaw.com/" target="_blank">
+                        <span class="ico_sns blog"></span>
+                        <span>블로그</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- // 0410 수정 -->
+        <div class="dim"></div>
+        <div class="container introduce lawyer">
+            <div class="sub_top">
+                <!-- 0410 수정 -->
+                <div class="inner">
+                    <h3 class="sub_title">변호사 소개</h3>
+                </div>
+                <!-- // 0410 수정 -->
+                <div class="dim"></div>
+            </div>
+            <div class="sub_con">   
+                <div class="inner">
+                    <ul class="breadcrumb">
+                        <li>홈</li>
+                        <li>감명 소개</li>
+                        <li>인사말</li>
+                    </ul>
+                </div>
+                <div class="big_box">
+                    <div class="big_slider">
+                        <div class="slider_items">
+                            <div class="inner">
+                                <div class="left_box">
+                                    <h4 class="con_tit">도세훈 <span>/ 대표 변호사</span></h4>
+                                    <p class="intro_txt">
+                                        법무법인 감명의 대표변호사 도세훈입니다.<br><br>
+                                        회생·파산제도는 경제적으로 어려움을 겪고 있는 기업과 개인이 다시 온전한 경제주체로 일어서는 데 있어서 매우 효과적인 제도입니다. 경제위기가 상시와 되면서 회생과 파산 제도를 이용하는 기업와 개인의 수는 해가 갈 수록 증가하고 있는 추세입니다.<br><br>
+                                        도산위기의 기업이 회생제도를 통해서 성공적인 재기를 하여 이름을 떨치는 중견기업이 되었다는 이야기. 어쩌면 하나의 미담 같기도 한 이야기가 가능한 이유는 회생·파산제도의 제도적 속성에 기인합니다. 경쟁을 필수적인 요소로 하는 자본주의 사회는 필연적으로 경제적 약자 또는 패자가 발생하기 마련인데, 자본주의가 건전하게 작동하려면 이른바 ‘패자부활전'의 기회인 회생 또는 파산 제도가 반드시 필요합니다.<br><br>
+                                        이와 같이 패자부활전의 기회가 될 수 있는 회생·파산제도의 혜택을 극대화하기 위하여는 경험이 풍부한 도산전문변호사의 조력이 필요합니다.<br><br>
+                                        법무법인 감명은 도산전문변호사를 중심으로 풍부한 경험과 전문성을 갖춘 도산팀의 체계적인 법률서비스를 제공하고 있습니다. 법무법인 감명과 함께 위기를 극복하고 제2의 사업과 인생을 재건하시기 바랍니다.<br><br>
+                                    </p>
+                                </div>
+                                <div class="right_box">
+                                    <img src="../images/sub_people01.jpg" alt="도세훈 변호사">
+                                </div>
+                            </div>
+                            <div class="slider_items_desc clearfix">
+                                <div class="desc_box">
+                                    <h5>자격</h5>
+                                    <span>	• 	사법시험(제47회, 2005)​</span>
+                                    <span>	• 	사법연수원(제37기)​</span>
+                                    <span>	• 	세무사시험(제50회)​</span>
+                                    <span>	• 	미국공인회계사시험(2010)</span>
+                                </div>
+                                <div class="desc_box">
+                                    <h5>학력</h5>
+                                    <span>	• 	상문고등학교​</span>
+                                    <span>	• 	성균관대학교 법학과​</span>
+                                    <span>	• 	성균관대학교 법과대학원(조세법 전공)</span>
+                                </div>
+                                <div class="desc_box">
+                                    <h5>경력</h5>
+                                    <span>	• 	대한법률구조공단 법무관​</span>
+                                    <span>	• 	법무법인 정세 변호사​</span>
+                                    <span>	• 	법무법인 가교 변호사​</span>
+                                    <span>	• 	법무법인 한음 대표변호사​</span>
+                                    <span>	• 	국세청 본청 국선세무대리인​</span>
+                                    <span>	• 	서울세관 징계위원회 위원​</span>
+                                    <span>	• 	한국수자원공사 인사위원회 전문위원​</span>
+                                    <span>	• 	경상남도 법률자문위원​</span>
+                                    <span>	• 	대한변호사협회 도산전문변호사​</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="inner">
+                                <div class="left_box">
+                                    <h4 class="con_tit">이성호 <span>/ 변호사</span></h4>
+                                    <p class="intro_txt">
+                                        법무법인 감명의 이성호 변호사입니다. ​<br><br>
+                                        대한민국은 국제적으로 어엿한 선진국의 반열에 들어서고 있습니다. 하지만 실제 경제활동에 매진하고 있는 개인과 기업들은 현실적인 어려움을 토로하고 있습니다. 도산제도는 그러한 어려움을 겪고 있는 분들에게 제도적 혜택을 통해서 재기의 발판이 되어주고 있습니다. <br><br>
+                                        하지만 회생·파산절차를 통해 성공적인 재기를 위해서는 다소 엄격한 절차를 거쳐야 합니다. 이러한 절차를 원만하게 진행하기 위해서는 단순히 정형화되어 있는 제도상의 서류만으로 진행되는 것이 아닌 다양한 상황에 처해있는 의뢰인 각각의 사안을 철저하게 분석하여 맞춤형 전략을 수립하는 것이 중요합니다. <br><br>
+                                        따라서 법무법인 감명에서는 도산법 전체에 대한 전문적인 지식과 실무경력을 가지고 있는 변호사들이 개개인의 상황에 맞는 맞춤형 전략을 수립하여 경제적 어려움에 처해있는 의뢰인들의 실질적인 재기를 위하여 최선을 다하고 있습니다.<br><br>
+                                    </p>
+                                </div>
+                                <div class="right_box">
+                                    <img src="../images/sub_people02.jpg" alt="이성호 변호사">
+                                </div>
+                            </div>
+                            <div class="slider_items_desc clearfix">
+                                <div class="desc_box">
+                                    <h5>자격</h5>
+                                    <span>	• 	사법시험 (제 50 회 , 2008)</span>
+                                    <span>	• 	사법연수원(제40기)​</span>
+                                </div>
+                                <div class="desc_box">
+                                    <h5>학력</h5>
+                                    <span>	• 	선덕고등학교​</span>
+                                    <span>	• 	건국대학교 토목환경학부​</span>
+                                    <span>	• 	건국대학교 법과대학</span>
+                                </div>
+                                <div class="desc_box">
+                                    <h5>경력</h5>
+                                    <span>	• 	법무법인 정세 변호사</span>
+                                    <span>	• 	법무법인 가교 변호사</span>
+                                    <span>	• 	법무법인 한음 변호사</span>
+                                    <span>	• 	대한변호사협회 사업위원회 위원</span>
+                                    <span>	• 	MBC『 뉴스데스크 』 및 KBS 『 뉴스 9 』 법률자문</span>
+                                    <span>	• 	카이스트(KAIST) 경영대학『 SK 사회적기업가센터 』 고문변호사</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_items">
+                            <div class="inner">
+                                <div class="left_box">
+                                    <h4 class="con_tit">안갑철 <span>/ 변호사</span></h4>
+                                    <p class="intro_txt">
+                                        법무법인 감명의 안갑철 변호사입니다. ​<br><br>
+                                        법인회생제도는 법인을 계속해서 경영했을 때 얻을 수 있는 가치가 청산했을 때의 가치보다 높다는 점을 증명하는 것에서 시작합니다. 이를 확실하게 증명하고 세부적이며 실현 가능한 계획이 있으시다면 법원이 채권자 등 이해관계인의 관계를 중재하여 경영자로 하여금 다시 한번 재기할 기회를 주고 있습니다.​<br><br>
+                                        하지만 법인회생의 과정은 실무로 들어서면 개인이 진행하기에는 매우 복잡하고 엄격하게 진행되기에 개인이 직접 진행하기에는 어려움이 많이 따르는 일입니다. 인터넷이나 비전문가의 조언을 통해서 얻을 수 있는 정보는 단편적이고 추상적인 정보가 대부분이기 때문에 기업마다 다른 부채 현황과 경영상황에 대한 구체적인 자료를 얻기는 어렵습니다. ​<br><br>
+                                        법무법인 감명은 풍부한 실무경험을 통하여 각각의 법인과 개인이 처해있는 상황을 체계적으로 분석하여 도산제도를 충분히 활용할 수 있도록 조력하고 있습니다. 과도한 채무로 인해서 어려운 상황에 놓이셨다면 법무법인 감명이 힘이 되어드릴 것을 약속드립니다. ​<br><br>
+                                    </p>
+                                </div>
+                                <div class="right_box">
+                                    <img src="../images/sub_people03.jpg" alt="안갑철 변호사">
+                                </div>
+                            </div>
+                            <div class="slider_items_desc clearfix">
+                                <div class="desc_box">
+                                    <h5>자격</h5>
+                                    <span>	• 	사법시험 (제 53 회 , 2011)</span>
+                                    <span>	• 	사법연수원(제44기)​</span>
+                                </div>
+                                <div class="desc_box">
+                                    <h5>학력</h5>
+                                    <span>	• 	전남고등학교</span>
+                                    <span>	• 	경희대학교 법과대학 법학과</span>
+                                    <span>	• 	경희대학교 법무대학원 조세법 전공</span>
+                                </div>
+                                <div class="desc_box">
+                                    <h5>경력</h5>
+                                    <span>	• 	법무법인 가교 변호사</span>
+                                    <span>	• 	법무법인 한음 변호사</span>
+                                    <span>	• 	삼정회계법인 TAX2 부 변호사</span>
+                                    <span>	• 	광교세무법인 조세불복팀 변호사</span>
+                                    <span>	• 	서울고등법원 판사시보</span>
+                                    <span>	• 	서울고등법원 가사조정위원</span>
+                                    <span>	• 	서울중앙지방법원 가사조정위원</span>
+                                    <span>	• 	서울동부지방검찰청 검사 직무대리</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_items">
+                           <div class="inner">
+                                <div class="left_box">
+                                    <h4 class="con_tit">신민수 <span>/ 변호사</span></h4>
+                                    <p class="intro_txt">
+                                        법무법인 감명의 신민수 변호사입니다.<br><br>
+                                        세계화가 가속화되면서 국내시장경제의 상황이 변하는 것도 급변을 계속하고 있습니다. 이로 인해서 치열해진 경쟁과 예측할 수 없는 경제 상황으로 인해서 경제적인 어려움을 토로하시는 분들이 많아지고 있습니다. <br><br>
+                                        파산과 회생 제도는「채무자 회생 및 파산에 관한 법률」에 따라 법원이 재판을 통해 결정하는 방식을 취하고 있습니다. 다만 회생이나 파산을 원하는 개인이 그 세세한 내용이나 진행 절차 및 요건 등에 대해서 정확하게 알기는 어렵고 제도적인 지원을 받을 수 있는 조건도 매우 까다로워 이러한 회생 및 파산절차에 대해서는 법률전문가의 조력이 필요합니다.<br><br>
+                                        법무법인 감명은 회생 및 파산제도에 대한 전문적인 지식과 풍부한 실무 경험을 통해서 의뢰인이 처한 상황에 대한 정확한 분석을 통해 회생 및 파산에 대한 실질적인 전략을 제공합니다. 법무법인 감명은 면밀한 진단과 계획을 통해서 경제적 어려움을 해소할 수 있도록 꾸준한 조력을 드릴 것을 약속드릴 수 있습니다.<br><br>
+                                    </p>
+                                </div>
+                                <div class="right_box">
+                                    <img src="../images/sub_people04.jpg" alt="신민수 변호사">
+                                </div>
+                           </div>
+                           <div class="slider_items_desc clearfix">
+                               <div class="desc_box">
+                                   <h5>자격</h5>
+                                   <span>	• 	사법시험 (제55회, 2013)</span>
+                                   <span>	• 	사법연수원(45기)</span>
+                               </div>
+                               <div class="desc_box">
+                                   <h5>학력</h5>
+                                   <span>	• 	부산고등학교</span>
+                                   <span>	• 	부산대학교 법학과</span>
+                               </div>
+                               <div class="desc_box">
+                                   <h5>경력</h5>
+                                   <span>	• 	법무법인 한음 변호사</span>
+                                   <span>	• 	서울중앙지방법원 판사시보</span>
+                                   <span>	• 	서울중앙지방법원 민사조정위원</span>
+                                   <span>	• 	부산지방검찰청 검사직무 대리</span>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="slider_items">
+                           <div class="inner">
+                                <div class="left_box">
+                                    <h4 class="con_tit">장성민 <span>/ 변호사</span></h4>
+                                    <p class="intro_txt">
+                                        세계화가 급속하게 진행되면서 국내의 시장경제뿐만 아니라 해외의 경제 상황에 대해서도 깊은 통찰이 필요한 지금입니다 . 해외시장에 대한 접근성이 높아지면서 개인으로서도 기업으로서도 이전보다 많은 기회를 얻었다고 볼 수도 있지만 전 세계와 경쟁해야 한다는 점에서 더 치열한 경쟁의 나날을 보내고 있습니다.<br><br>
+                                        이러한 경쟁을 이겨낸 수많은 한국의 기업과 개인들이 세계시장에서 인정받고 있는 한편 치열한 경쟁으로 인해서 삶의 여유를 잃고 경제적인 어려움을 겪고 있는 기업이나 개인도 많습니다 . 회생 및 파산은 이러한 어려움에 처한 경제 주체에게 실질적인 도움을 줄 수 있는 법적 절차입니다.<br><br>
+                                        회생 및 파산을 고심하고 계시는 분들은 대부분 도산법에 대한 막연한 지식은 가지고 있지만 , 세부적인 시행절차나 요건에 대해서 정확하게 알기는 어려우므로 회생 및 파산절차에 있어서는 전문가의 도움을 받아야 하는 부분이 많습니다. 회생 및 파산절차는 법률 자체로 보아도 매우 복잡하고 , 법원의 심사는 엄격하고 까다롭습니다.<br><br>
+                                        법무법인 감명은 회생 및 파산의 구체적인 절차와 요건에 대한 구체적이고 다각적인 정보와 경력을 토대로 회생 및 파산을 준비하고 계시는 의뢰인들께 실질적인 조력을 제공할 수 있습니다 . 경제적으로 어려운 나날을 보내고 계신다면 법무법인 감명과 함께하시어 경제적 자유를 되찾아 보시길 바랍니다.<br><br>
+                                    </p>
+                                </div>
+                                <div class="right_box">
+                                    <img src="../images/sub_people05.jpg" alt="장성민 변호사">
+                                </div>
+                           </div>
+                           <div class="slider_items_desc clearfix">
+                               <div class="desc_box">
+                                   <h5>자격</h5>
+                                   <span>	• 	사법시험 (제 52 회 , 2010)</span>
+                                   <span>	• 	사법연수원(42기)</span>
+                               </div>
+                               <div class="desc_box">
+                                   <h5>학력</h5>
+                                   <span>	• 	전주영생고등학교</span>
+                                   <span>	• 	건국대학교 컴퓨터공학과</span>
+                                   <span>	• 	건국대학교 법학과</span>
+                               </div>
+                               <div class="desc_box">
+                                   <h5>경력</h5>
+                                   <span>	• 	법무법인 시대 변호사</span>
+                                   <span>	• 	법무법인 비전 변호사</span>
+                                   <span>	• 	서울동부지방법원 판사시보</span>
+                                   <span>	• 	서울동부지방법원 민사조정위원</span>
+                                   <span>	• 	전주지방검찰청 검사직무 대리</span>
+                                   <span>	• 	대한변호사협회 사업위원회 위원</span>
+                                   <span>	• 	서초경찰서, 한국오라클, 케어링코리아 등 자문변호사</span>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="slider_items">
+                           <div class="inner">
+                                <div class="left_box">
+                                    <h4 class="con_tit">김승선 <span>/ 변호사</span></h4>
+                                    <p class="intro_txt">
+                                        법무법인 감명의 김승선 변호사입니다.<br><br>
+                                        회생·파산제도는 명확하고 실질적인 효과를 보장하는 반면 복잡한 절차와 엄격한 심사를 거치게 되기에 개인이 막상 회생·파산절차를 진행하려고 한다면 선뜻 손쓸 수 없는 막막한 감정에 빠지게 돼 곤합니다. 결국, 충분히 회생 혹은 파산선고를 통해서 큰 도움을 얻을 수 있음에도 불구하고 포기하게 되는 경우가 많습니다.<br><br>
+                                        회생·파산은 신청 단계에서부터 사실관계 및 채권채무관계를 정확하게 파악해야 하며 구체적인 변제계획과 근거가 되는 자료를 통해서 실현 가능한 계획을 수립해야 합니다. 이를 위해서는 관련한 실무에 대한 경력이 풍부한 법률전문가의 컨설팅이 필요할 것입니다.<br><br>
+                                        회생 및 파산제도를 활용해서 새로운 기회를 얻고자 하시지만 막막한 시기를 보내고 계시는 분들께 법무법인 감명이 신속하고 정확한 법률 서비스를 제공하고 있습니다. 수많은 회생·파산에 대한 성공적인 결과를 받아낸 노하우를 바탕으로 경제적 위기에서 벗어날 수 있는 최적의 설루션을 제공하겠습니다.<br><br>
+                                    </p>
+                                </div>
+                                <div class="right_box">
+                                    <img src="../images/sub_people06.jpg" alt="김승선 변호사">
+                                </div>
+                           </div>
+                           <div class="slider_items_desc clearfix">
+                               <div class="desc_box">
+                                   <h5>자격</h5>
+                                   <span>	• 	사법시험(제54회 , 2012)</span>
+                                   <span>	• 	사법연수원(46기)</span>
+                               </div>
+                               <div class="desc_box">
+                                   <h5>학력</h5>
+                                   <span>	• 	전남장흥고등학교</span>
+                                   <span>	• 	고려대학교 법학과</span>
+                               </div>
+                               <div class="desc_box">
+                                   <h5>경력</h5>
+                                   <span>	• 	법무법인 한음 변호사</span>
+                                   <span>	• 	한국예탁결제원 전문기관 연수</span>
+                                   <span>	• 	서울중앙지방법원 판사시보</span>
+                                   <span>	• 	서울중앙지방법원 민사조정위원</span>
+                                   <span>	• 	서울북부지방검찰청 검사 직무대리</span>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_box">
+                    <div class="sub_slider">
+                        <div class="slider_items">
+                            <div class="img_container">
+                                <img src="../images/sub_people_small_01.jpg" alt="도세훈 변호사">
+                            </div>
+                            <p class="img_desc">도세훈 변호사</p>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img_container">
+                                <img src="../images/sub_people_small_02.jpg" alt="이성호 변호사">
+                            </div>
+                            <p class="img_desc">이성호 변호사</p>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img_container">
+                                <img src="../images/sub_people_small_03.jpg" alt="안갑철 변호사">
+                            </div>
+                            <p class="img_desc">안갑철 변호사</p>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img_container">
+                                <img src="../images/sub_people_small_04.jpg" alt="신민수 변호사">
+                            </div>
+                            <p class="img_desc">신민수 변호사</p>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img_container">
+                                <img src="../images/sub_people_small_05.jpg" alt="장성민 변호사">
+                            </div>
+                            <p class="img_desc">장성민 변호사</p>
+                        </div>
+                        <div class="slider_items">
+                            <div class="img_container">
+                                <img src="../images/sub_people_small_06.jpg" alt="김승선 변호사">
+                            </div>
+                            <p class="img_desc">김승선 변호사</p>
+                        </div>
+                    </div> 
+                </div>         
+            </div>
+        </div>
+        <footer>
+            <div class="footer_top">
+                <div class="inner">
+                    <ul class="foot_list">
+                        <li><a href="./00_01.notice01.html">면책공고</a></li>
+                        <li><a href="./00_02.notice02.html">이용약관</a></li>
+                        <li><a href="./00_03.notice03.html">개인정보취급방침</a></li>
+                        <li><a href="./00_04.notice04.html">이메일무단수집거부</a></li>
+                        <li><a href="./00_05.notice05.html">유한책임</a></li>
+                        <li><a href="./01_04.map.html">오시는길</a></li>
+                    </ul>
+                    <div class="foot_fam" name="" id="">
+                        <p>패밀리 사이트</p>
+                        <ul>
+                            <li><a target="_blank" href="http://haneumlaw.com/">통합 홈페이지</a></li>
+                            <li><a target="_blank" href="http://haneum crime.com/">형사</a></li>
+                            <li><a target="_blank" href="http://haneumcriminal.com/">성범죄</a></li>
+                            <li><a target="_blank" href="http://www.haneum ehon.com/">이혼&middot;가사</a></li>
+                            <li><a target="_blank" href="http://haneumlaw.com/business_area.php">민사</a></li>
+                            <li><a target="_blank" href="http://haneumlaw.com/business_area.php">노무&middot;인사</a></li>
+                            <li><a target="_blank" href="http://haneumlaw.com/business_area.php">부동산&middot;건설</a></li>
+                            <li><a target="_blank" href="http://haneumlaw.com/business_area.php">조세</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bot">
+                <div class="inner">
+                    <p class="company_name">법무법인 감명</p>
+                    <address>서울 서초구 서초중앙로 154 화평빌딩 2층<br>상담 02-534-2070</address>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <link rel="stylesheet" href="../../lib/jquery/js/plugin/mCustomScrollBar/mCustomScrollbar.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <script src="../../lib/jquery/js/plugin/mCustomScrollBar/jquery.mCustomScrollbar.min.js"></script>
+    <title>app realese page</title>
+</head>
+<body>
+    <div class="wrap default">
+        <nav class="left-nav">
+            <div class="inner">
+                <h1 class="logo white">
+                    <img src="../../static/images/logo-wh.png" alt="">
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="dash-nav">대시보드</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="active">앱관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정산조회</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">패키지 주문관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">사용자관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <!-- 선택된 main-nav-item 의 a 클래스에 active 클래스명 추가 -->
+                        <a href="javascript:void(0)" class="sdk-nav">SDK 센터</a>
+                        <ul class="sub-nav">
+                            <li class="sub-nav-item">
+                                <!-- 현재 선택된 2뎁스 메뉴에도 sub-nav-item의 a태그에 클래스명 active 추가 -->
+                                <a href="javascript:void(0)" class="active">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">공지사항</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">문의하기</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정보변경</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="left-nav-dim"></div>
+        <div class="content-wrap">
+            <div class="content-header">
+                <div class="inner">
+                    <input type="button" class="btn-hamburger">
+                    <div class="logo white"><img src="../../static/images/logo-wh.png" alt=""></div>
+                    <div class="service-title">
+                        <span class="logo-txt">Toki</span>
+                        <span>개발자센터</span>
+                    </div>
+                    <!-- 유저 정보 박스 -->
+                    <div class="user-info-box">
+                        <p class="user-name">홍길동님</p>
+                        <div class="btn-box">
+                            <input type="button" value="로그아웃" class="input-btn">
+                        </div>
+                    </div>
+                    <!-- // 유저 정보 박스 -->
+                </div>
+            </div>
+            <div class="inner">
+                <p class="section-title">
+                    서비스 범위
+                    <span class="title-desc">서비스 범위를 변경합니다.</span>
+                </p>
+                <div class="btn-tab-box detail-tab mb30">
+                    <div class="btn-box">
+                        <!-- 선택된 페이지의 btn-tab에 active 클래스명 추가 -->
+                        <input type="button" value="등록정보" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="수익설정" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="인앱설정" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="비공개 테스트" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="출시관리" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="서비스범위" class="btn-tab active">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="평점관리" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="API" class="btn-tab">
+                    </div>
+                </div>
+                <div class="table-box">
+                    <table>
+                        <colgroup>
+                            <col class="w15p mw30p">
+                            <col class="w85p mw70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">서비스 범위</span>
+                                </td>
+                                <td class="table-col">
+                                    <label class="input-box dis-ib">
+                                        <input type="radio" name="lang" checked>
+                                        <span class="chk-frame"></span>
+                                        <span class="chk-label">한글</span>
+                                    </label>
+                                    <label class="input-box dis-ib ml24">
+                                        <input type="radio" name="lang">
+                                        <span class="chk-frame"></span>
+                                        <span class="chk-label">영어</span>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-foot-caption">
+                        <p>
+                            <i class="primary-txt">※</i> 서비스 범위는 추가만 가능합니다. 이미 적용한 경우 취소가 불가능합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="btn-box mt40 txt-c">
+                    <input type="button" value="변경하기" class="input-btn btn-primary mx-btn">
+                </div>
+            </div>
+        </div>
+        <footer class="content-footer">
+            <p class="copyright">Copyrifght 2020. Hancom Inc. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

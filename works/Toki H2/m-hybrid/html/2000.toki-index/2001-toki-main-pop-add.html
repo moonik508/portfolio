@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/jquery/swiperJS/swiper.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/swiperJS/swiper.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mytoki main</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            <!-- <header class="m-header">
+                <div class="m-component-box">
+                    <div class="m-header-box">
+                        <input type="button" class="m-input-btn back-btn">
+                        <p class="m-title hd-title">앨범</p>
+                        <div class="m-header-btn-box">
+                            <input type="button" class="m-input-btn btn-user-info">
+                        </div>
+                    </div>
+                </div>
+            </header> -->
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+             -->
+            <!-- 
+                toki-common-item swiper-slide
+                슬라이더가 반복되는 형태
+                마스터계정의 경우 클래스 toki-family-item 에
+                master 를 추가 본인의 경우 me 를 추가
+                마스터계정의 경우 toki-family-title 의 하위자식
+                a 태그를 추가 아닐경우 삭제
+                    toki-content-box 클래스에
+                    사용중 class = robot-connected
+                    대기 class = robot-wait
+                    바쁨 = robot-busy
+                    off = robot-disconnected
+                    에 따라서 클래스 변경
+             -->
+            <div class="m-component-box m-component-box-bg">
+                <div class="toki-common-box swiper-container">
+                    <div class="toki-common-list swiper-wrapper">
+                        <div class="toki-common-item swiper-slide">
+                            <div class="toki-content-box robot-connected">
+                                <div class="toki-top-content-box">
+                                    <div class="toki-top-content-item">
+                                        <div class="toki-top-camera">
+                                            <img src="../../static/m_images/ic-toki-2.png" alt="토키이미지">
+                                            <div class="input-box toki-content-camera-box">
+                                                <input type="button" class="input-btn toki-content-camera-item">
+                                            </div>
+                                        </div>
+                                        <div class="toki-top-text">
+                                            <div class="toki-top-name">
+                                                <p>TOKI</p>
+                                            </div>
+                                            <div class="toki-top-status">
+                                                <p>사용중</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="toki-navigation">
+                                    <ul>
+                                        <li><a href="javascript:void(0)" class="call"><span>전화</span></a></li>
+                                        <li><a href="javascript:void(0)" class="coding"><span>코딩</span></a></li>
+                                        <li><a href="javascript:void(0)" class="wifi"><span>원격제어</span></a></li>
+                                        <li><a href="javascript:void(0)" class="secretary"><span>비서</span></a></li>
+                                        <li><a href="javascript:void(0)" class="album"><span>앨범</span></a></li>
+                                        <li><a href="javascript:void(0)" class="wish"><span>찜목록</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="toki-family">
+                                    <div class="toki-family-title">
+                                        <p class="toki-family-title-text">우리가족 (<span>3</span>명)</p>
+                                        <a href="javascript:void(0)" class="toki-family-title-plus"><img src="../../static/m_images/ic-plus.png" alt=""></a>
+                                    </div>
+                                    <div class="toki-family-item master me">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                            <span class="toki-family-focus right">M</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (마스터)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="toki-family-item">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (그룹회원)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="toki-family-item">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (그룹회원)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toki-common-item swiper-slide">
+                            <div class="toki-content-box robot-wait">
+                                <div class="toki-top-content-box">
+                                    <div class="toki-top-content-item">
+                                        <div class="toki-top-camera">
+                                            <img src="../../static/m_images/ic-toki-2.png" alt="토키이미지">
+                                            <div class="input-box toki-content-camera-box">
+                                                <input type="button" class="input-btn toki-content-camera-item">
+                                            </div>
+                                        </div>
+                                        <div class="toki-top-text">
+                                            <div class="toki-top-name">
+                                                <p>TOKI</p>
+                                            </div>
+                                            <div class="toki-top-status">
+                                                <p>대기</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="toki-navigation">
+                                    <ul>
+                                        <li><a href="javascript:void(0)" class="call"><span>전화</span></a></li>
+                                        <li><a href="javascript:void(0)" class="coding"><span>코딩</span></a></li>
+                                        <li><a href="javascript:void(0)" class="wifi"><span>원격제어</span></a></li>
+                                        <li><a href="javascript:void(0)" class="secretary"><span>비서</span></a></li>
+                                        <li><a href="javascript:void(0)" class="album"><span>앨범</span></a></li>
+                                        <li><a href="javascript:void(0)" class="wish"><span>찜목록</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="toki-family">
+                                    <div class="toki-family-title">
+                                        <p class="toki-family-title-text">우리가족 (<span>3</span>명)</p>
+                                        <a href="javascript:void(0)" class="toki-family-title-plus"><img src="../../static/m_images/ic-plus.png" alt=""></a>
+                                    </div>
+                                    <div class="toki-family-item master">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                            <span class="toki-family-focus right">M</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (마스터)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="toki-family-item">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (그룹회원)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="toki-family-item">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (그룹회원)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toki-common-item swiper-slide">
+                            <div class="toki-content-box robot-busy">
+                                <div class="toki-top-content-box">
+                                    <div class="toki-top-content-item">
+                                        <div class="toki-top-camera">
+                                            <img src="../../static/m_images/ic-toki-2.png" alt="토키이미지">
+                                            <div class="input-box toki-content-camera-box">
+                                                <input type="button" class="input-btn toki-content-camera-item">
+                                            </div>
+                                        </div>
+                                        <div class="toki-top-text">
+                                            <div class="toki-top-name">
+                                                <p>TOKI</p>
+                                            </div>
+                                            <div class="toki-top-status">
+                                                <p>바쁨</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="toki-navigation">
+                                    <ul>
+                                        <li><a href="javascript:void(0)" class="call"><span>전화</span></a></li>
+                                        <li><a href="javascript:void(0)" class="coding"><span>코딩</span></a></li>
+                                        <li><a href="javascript:void(0)" class="wifi"><span>원격제어</span></a></li>
+                                        <li><a href="javascript:void(0)" class="secretary"><span>비서</span></a></li>
+                                        <li><a href="javascript:void(0)" class="album"><span>앨범</span></a></li>
+                                        <li><a href="javascript:void(0)" class="wish"><span>찜목록</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="toki-family">
+                                    <div class="toki-family-title">
+                                        <p class="toki-family-title-text">우리가족 (<span>3</span>명)</p>
+                                        <a href="javascript:void(0)" class="toki-family-title-plus"><img src="../../static/m_images/ic-plus.png" alt=""></a>
+                                    </div>
+                                    <div class="toki-family-item master">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                            <span class="toki-family-focus right">M</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (마스터)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="toki-family-item">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (그룹회원)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="toki-family-item me">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (그룹회원)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toki-common-item swiper-slide">
+                            <div class="toki-content-box robot-disconnected">
+                                <div class="toki-top-content-box">
+                                    <div class="toki-top-content-item">
+                                        <div class="toki-top-camera">
+                                            <img src="../../static/m_images/ic-toki-2.png" alt="토키이미지">
+                                            <div class="input-box toki-content-camera-box">
+                                                <input type="button" class="input-btn toki-content-camera-item">
+                                            </div>
+                                        </div>
+                                        <div class="toki-top-text">
+                                            <div class="toki-top-name">
+                                                <p>TOKI</p>
+                                            </div>
+                                            <div class="toki-top-status">
+                                                <p>오프라인</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="toki-navigation">
+                                    <ul>
+                                        <li><a href="javascript:void(0)" class="call"><span>전화</span></a></li>
+                                        <li><a href="javascript:void(0)" class="coding"><span>코딩</span></a></li>
+                                        <li><a href="javascript:void(0)" class="wifi"><span>원격제어</span></a></li>
+                                        <li><a href="javascript:void(0)" class="secretary"><span>비서</span></a></li>
+                                        <li><a href="javascript:void(0)" class="album"><span>앨범</span></a></li>
+                                        <li><a href="javascript:void(0)" class="wish"><span>찜목록</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="toki-family">
+                                    <div class="toki-family-title">
+                                        <p class="toki-family-title-text">우리가족 (<span>3</span>명)</p>
+                                        <a href="javascript:void(0)" class="toki-family-title-plus"><img src="../../static/m_images/ic-plus.png" alt=""></a>
+                                    </div>
+                                    <div class="toki-family-item master">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                            <span class="toki-family-focus right">M</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (마스터)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="toki-family-item me">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (그룹회원)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                    <div class="toki-family-item">
+                                        <div class="toki-family-item-picture">
+                                            <div class="toki-item-image"></div>
+                                            <span class="toki-family-focus left">나</span>
+                                        </div>
+                                        <div class="toki-family-item-text">
+                                            <p class="toki-family-name">O*O (그룹회원)</p>
+                                            <p class="toki-family-address">pete***irl@hanmail.net</p>
+                                        </div>
+                                        <div class="toki-family-item-mic">
+                                            <a href="javascript:void(0)"><img src="../../static/m_images/ic-record.png" alt=""></a>
+                                        </div>
+                                        <div class="toki-family-item-delete">
+                                            <p>삭제</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 
+                        정보수정 팝업 (전체화면이 아니기에 컨텐츠에 삽입)
+                        팝업이 나오게 되면 스와이프 슬라이드 정지
+                    -->
+                    <div class="m-inner">
+                        <div class="semi-popup-wrap">
+                            <div class="popup-box mid-box">
+                                <div class="popup-content-box mb0">
+                                    <p class="popup-content-title">가족 구성원 추가</p>
+                                    <p class="popup-content-text">구성원을 추가하시면 그룹회원으로 구성되며 추가된 구성원은<br> 보유하신 로봇에 얼굴등록 후 서비스 이용이 가능합니다.</p>
+                                    <div class="popup-content-search-box">
+                                        <p class="popup-content-search-title">아이디 입력</p>
+                                        <input type="text" placeholder="아이디(이메일)을 입력하세요." class="search-txt">
+                                        <input type="button" value="검색" class="search-btn">
+                                    </div>
+                                    <div class="popup-content-row">
+                                        <!-- popup-content-item 클릭시 active 클래스 추가 -->
+                                        <div class="popup-content-item active">
+                                            <p class="user-name">홍*동</p>
+                                            <p class="user-email"><span class="user-email-name">petr***irl</span>@000***.com</p>
+                                            <input type="button" value="선택" class="select-btn">
+                                        </div>
+                                        <div class="popup-content-item">
+                                            <p class="user-name">홍*동</p>
+                                            <p class="user-email"><span class="user-email-name">petr***irl</span>@000***.com</p>
+                                            <input type="button" value="선택" class="select-btn">
+                                        </div>
+                                        <div class="popup-content-item">
+                                            <p class="user-name">홍*동</p>
+                                            <p class="user-email"><span class="user-email-name">petr***irl</span>@000***.com</p>
+                                            <input type="button" value="선택" class="select-btn">
+                                        </div>
+                                        <div class="popup-content-item">
+                                            <p class="user-name">홍*동</p>
+                                            <p class="user-email"><span class="user-email-name">petr***irl</span>@000***.com</p>
+                                            <input type="button" value="선택" class="select-btn">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-content-button-box">
+                                    <input type="button" value="취소" class="input-left-btn w50p">
+                                    <input type="button" value="구성원 추가" class="input-right-btn w50p">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 정보수정 팝업 -->
+                </div>
+            </div>
+        </div>             
+    </div>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: "auto",
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

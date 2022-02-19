@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mypage-detail</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                m-mypage-box - mypage 공통 클래스
+                mypage-gy - mypage 배경 컬러 값에 대한 공통클래스
+             -->
+
+             <div class="m-component-box m-mypage-box mypage-wh">
+                <div class="m-inner">
+                    <!-- 디테일페이지의 각 항목의 컨텐츠는 mypage-detail-content-box에 뿌려지는 형태 -->
+                    <div class="mypage-common-box">
+                        <!-- detail-profile-box -->
+                        <div class="mypage-detail-content-box detail-profile-box">
+                            <div class="profile-pic">
+                                <div class="pic-box"><img src="../../static/m_images/ic-member.png" alt=""></div>
+                                <div class="btn-box btn-add-profile">
+                                    <input type="button" class="m-input-btn btn-profile">
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <p class="user-name">권*준</p>
+                            </div>
+                        </div>
+                        <!-- //detail-profile-box -->
+                    </div>
+
+                    <!-- detail profile 수정 관련 컴포넌트 요소 -->
+                    <div class="mypage-common-box">
+                        <div class="mypage-detail-content-box">
+                            <div class="detail-profile-element readonly">
+                                <p class="mypage-label">아이디</p>
+                                <p class="mypage-input-txt">pet**kwo*@4-lab.com</p>
+                            </div>
+                            <p class="detail-profile-alert-txt">아이디는 수정하실 수 없습니다.</p>
+                            <!-- 화살표가 있는 경우 아래와 같이 more-view 클래스 사용 -->
+                            <div class="detail-profile-element more-view">
+                                <p class="mypage-label">비밀번호</p>
+                                <p class="mypage-input-txt">비밀번호 변경</p>
+                            </div>
+                            <div class="detail-profile-element more-view">
+                                <p class="mypage-label">추가정보</p>
+                                <p class="mypage-input-txt">추가정보 설정</p>
+                            </div>
+                            <div class="btn-box">
+                                <input type="button" value="로그아웃" class="m-input-btn w100p primary">
+                                <input type="button" value="회원탈퇴" class="m-input-btn w100p">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //detail profile 수정 관련 컴포넌트 요소 -->
+
+                </div>
+             </div>             
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/css/reset.css">
+    <link rel="stylesheet" href="./lib/css/common.css">
+    <link rel="stylesheet" href="./lib/css/font.css">
+    <link rel="stylesheet" href="./lib/css/style.css">
+    <script src="./lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="./lib/jquery/js/common.js"></script>
+    <title>mytoki Publish</title>
+    <style>
+        .index{margin: 0 auto; padding: 20px 60px 200px; width: 100%; height: 100%; max-width: 1060px; background: #c52f8c;}
+        .index-title{color: #fff; font-size: 18px; font-weight: 600;}
+        ul{margin: 20px auto 0;}
+        ul li{position: relative; z-index: 10; font-size: 0; border: 1px solid #eee; background: #fff;}
+        ul li+li{border-top: 0;}
+        ul li:hover{z-index: 20;}
+        ul li .index-box{display: inline-block; vertical-align: middle; position: relative; z-index: 100; padding: 20px; width: 70%; height: auto; vertical-align: middle;}
+        ul li .index-box p{padding: 6px 0; color: #333; font-size: 12px; }
+        ul li .img-box{display: inline-block; vertical-align: middle; position: relative; z-index: 100; padding: 10px;  width: 30%; height: 300px; vertical-align: middle;  border-left: 1px solid #eee;}
+        ul li .img-box>img{margin: auto; height: 100%; }
+        ul li .popup-con{display: none; position: absolute; z-index: 120; top: -80px; right: 100%; margin-right: 10px; padding: 20px; border: 1px solid #978989; background: #fff; box-shadow: 0px 4px 8px rgba(0,0,0,0.3);}
+        ul li .popup-con img{width: 500px; border: 1px solid #e5e5e5;}
+        ul li .img-box:hover .popup-con{display: block;}
+    </style>
+</head>
+<body>
+    <div class="index">
+        <p class="index-title">나의토키 퍼블리싱</p>
+        <p style="margin-top:30px; font-size: 0;">
+            <span class="dis-ib w70p" style="color: #fff; font-size: 16px; font-weight: 600;">파일명 &amp; 페이지 이름</span>
+            <span class="dis-ib w30p" style="color: #fff; font-size: 16px; font-weight: 600;">스크린 샷</span>
+        </p>
+        <ul>
+            <li class="index-item">
+                <a href="./html/2000.toki-index/2000-toki-main.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">2000-toki-main.html</p>
+                        <p class="file-name-locale">나의토키 메인</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/2000-toki-main.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/2000-toki-main.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/2000.toki-index/2001-toki-main-pop-add.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">2001-toki-main-pop-add.html</p>
+                        <p class="file-name-locale">나의토키 가족구성원 추가 팝업</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/2001-toki-main-pop-add.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/2001-toki-main-pop-add.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/2000.toki-index/2010-toki-main-pop-picture.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">2010-toki-main-pop-picture.html</p>
+                        <p class="file-name-locale">나의토키 사진선택 팝업</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/2010-toki-main-pop-picture.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/2010-toki-main-pop-picture.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/2000.toki-index/2011-toki-main-pop-name.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">2011-toki-main-pop-name.html</p>
+                        <p class="file-name-locale">나의토키 이름변경 팝업</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/2011-toki-main-pop-name.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/2011-toki-main-pop-name.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/2000.toki-index/2012-toki-main-pop-call.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">2012-toki-main-pop-call.html</p>
+                        <p class="file-name-locale">나의토키 통화선택 팝업</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/2012-toki-main-pop-call.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/2012-toki-main-pop-call.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+<script src="lib/jquery/js/3.1.1/jquery.min.js"></script>
+</html>

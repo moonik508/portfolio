@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/css/reset.css">
+    <link rel="stylesheet" href="./lib/css/common.css">
+    <link rel="stylesheet" href="./lib/css/font.css">
+    <link rel="stylesheet" href="./lib/css/style.css">
+    <script src="./lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="./lib/jquery/js/common.js"></script>
+    <title>mypage Publish</title>
+    <style>
+        .index{margin: 0 auto; padding: 20px 60px 200px; width: 100%; height: 100%; max-width: 1060px; background: #6a9623;}
+        .index-title{color: #fff; font-size: 18px; font-weight: 600;}
+        ul{margin: 20px auto 0;}
+        ul li{position: relative; z-index: 10; font-size: 0; border: 1px solid #eee; background: #fff;}
+        ul li+li{border-top: 0;}
+        ul li:hover{z-index: 20;}
+        ul li .index-box{display: inline-block; vertical-align: middle; position: relative; z-index: 100; padding: 20px; width: 70%; height: auto; vertical-align: middle;}
+        ul li .index-box p{padding: 6px 0; color: #333; font-size: 12px; }
+        ul li .img-box{display: inline-block; vertical-align: middle; position: relative; z-index: 100; padding: 10px;  width: 30%; height: 300px; vertical-align: middle;  border-left: 1px solid #eee;}
+        ul li .img-box>img{margin: auto; height: 100%; }
+        ul li .popup-con{display: none; position: absolute; z-index: 120; top: -80px; right: 100%; margin-right: 10px; padding: 20px; border: 1px solid #978989; background: #fff; box-shadow: 0px 4px 8px rgba(0,0,0,0.3);}
+        ul li .popup-con img{width: 500px; border: 1px solid #e5e5e5;}
+        ul li .img-box:hover .popup-con{display: block;}
+    </style>
+</head>
+<body>
+    <div class="index">
+        <p class="index-title">마이페이지 퍼블리싱</p>
+        <p style="margin-top:30px; font-size: 0;">
+            <span class="dis-ib w70p" style="color: #fff; font-size: 16px; font-weight: 600;">파일명 &amp; 페이지 이름</span>
+            <span class="dis-ib w30p" style="color: #fff; font-size: 16px; font-weight: 600;">스크린 샷</span>
+        </p>
+        <ul>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1000-mypage-main.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1000-mypage-main.html</p>
+                        <p class="file-name-locale">마이페이지 메인</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1000-mypage-main.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1000-mypage-main.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1010-mypage-detail.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1010-mypage-detail.html</p>
+                        <p class="file-name-locale">마이페이지 디테일</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1010-mypage-detail.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1010-mypage-detail.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1011-mypage-detail-pop.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1011-mypage-detail-pop.html</p>
+                        <p class="file-name-locale">마이페이지 디테일 사진수정</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1011-mypage-detail-pop.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1011-mypage-detail-pop.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1012-mypage-detail-pw.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1012-mypage-detail-pw.html</p>
+                        <p class="file-name-locale">마이페이지 비밀번호 수정</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1012-mypage-detail-pw.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1012-mypage-detail-pw.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1013-mypage-detail-addinfo.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1013-mypage-detail-addinfo.html</p>
+                        <p class="file-name-locale">마이페이지 추가정보 입력</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1013-mypage-detail-addinfo.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1013-mypage-detail-addinfo.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1014-mypage-detail-joinout.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1014-mypage-detail-joinout.html</p>
+                        <p class="file-name-locale">마이페이지 회원탈퇴</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1014-mypage-detail-joinout.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1014-mypage-detail-joinout.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1015-mypage-detail-joinout-detail.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1015-mypage-detail-joinout-detail.html</p>
+                        <p class="file-name-locale">마이페이지 회원탈퇴 상세진행</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1015-mypage-detail-joinout-detail.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1015-mypage-detail-joinout-detail.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1016-mypage-detail-pw-chg.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1016-mypage-detail-pw-chg.html</p>
+                        <p class="file-name-locale">마이페이지 비밀번호 변경</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1016-mypage-detail-pw-chg.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1016-mypage-detail-pw-chg.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1030-mypage-alarm-main.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1030-mypage-alarm-main.html</p>
+                        <p class="file-name-locale">마이페이지 알림 메인</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1030-mypage-alarm-main.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1030-mypage-alarm-main.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1031-mypage-alarm-main-none.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1031-mypage-alarm-main-none.html</p>
+                        <p class="file-name-locale">마이페이지 알림 없음</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1031-mypage-alarm-main-none.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1031-mypage-alarm-main-none.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1032-mypage-alarm-main-edit-mode.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1032-mypage-alarm-main-edit-mode.html</p>
+                        <p class="file-name-locale">마이페이지 알림 편집 모드</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1032-mypage-alarm-main-edit-mode.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1032-mypage-alarm-main-edit-mode.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1033-mypage-alarm-main-security.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1033-mypage-alarm-main-security.html</p>
+                        <p class="file-name-locale">마이페이지 경비 알림 탭 활성화</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1033-mypage-alarm-main-security.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1033-mypage-alarm-main-security.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1034-mypage-alarm-main-security-active.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1034-mypage-alarm-main-security-active.html</p>
+                        <p class="file-name-locale">마이페이지 경비 알림 탭 항목 오픈</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1034-mypage-alarm-main-security-active.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1034-mypage-alarm-main-security-active.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1040-mypage-my-qrcode.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1040-mypage-my-qrcode.html</p>
+                        <p class="file-name-locale">마이페이지 마이 QR 코드</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1040-mypage-my-qrcode.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1040-mypage-my-qrcode.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1050-mypage-cscenter.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1050-mypage-cscenter.html</p>
+                        <p class="file-name-locale">마이페이지 고객센터</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1050-mypage-cscenter.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1050-mypage-cscenter.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1051-mypage-cscenter-none.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1051-mypage-cscenter-none.html</p>
+                        <p class="file-name-locale">마이페이지 검색결과 없음</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1051-mypage-cscenter-none.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1051-mypage-cscenter-none.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1052-mypage-cscenter-active.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1052-mypage-cscenter-active.html</p>
+                        <p class="file-name-locale">마이페이지 질문 답변 오픈</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1052-mypage-cscenter-active.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1052-mypage-cscenter-active.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1053-mypage-cscenter-faq.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1053-mypage-cscenter-faq.html</p>
+                        <p class="file-name-locale">마이페이지 자주하는 질문</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1053-mypage-cscenter-faq.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1053-mypage-cscenter-faq.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1054-mypage-cscenter-write.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1054-mypage-cscenter-write.html</p>
+                        <p class="file-name-locale">마이페이지 고객센터 질문작성</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1054-mypage-cscenter-write.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1054-mypage-cscenter-write.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/1000.mypage-index/1055-mypage-cscenter-opinion-write.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">1055-mypage-cscenter-opinion-write.html</p>
+                        <p class="file-name-locale">마이페이지 고객센터 의견보내기</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/1055-mypage-cscenter-opinion-write.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/1055-mypage-cscenter-opinion-write.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+<script src="lib/jquery/js/3.1.1/jquery.min.js"></script>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <link rel="stylesheet" href="../../lib/jquery/js/plugin/mCustomScrollBar/mCustomScrollbar.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <script src="../../lib/jquery/js/plugin/mCustomScrollBar/jquery.mCustomScrollbar.min.js"></script>
+    <title>package - detail</title>
+</head>
+<body>
+    <div class="wrap default">
+        <nav class="left-nav">
+            <div class="inner">
+                <h1 class="logo white">
+                    <img src="../../static/images/logo-wh.png" alt="">
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="dash-nav">대시보드</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">앱관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정산조회</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="active">패키지 주문관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">사용자관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <!-- 선택된 main-nav-item 의 a 클래스에 active 클래스명 추가 -->
+                        <a href="javascript:void(0)" class="sdk-nav">SDK 센터</a>
+                        <ul class="sub-nav">
+                            <li class="sub-nav-item">
+                                <!-- 현재 선택된 2뎁스 메뉴에도 sub-nav-item의 a태그에 클래스명 active 추가 -->
+                                <a href="javascript:void(0)" class="active">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">공지사항</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">문의하기</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정보변경</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="left-nav-dim"></div>
+        <div class="content-wrap">
+            <div class="content-header">
+                <div class="inner">
+                    <input type="button" class="btn-hamburger">
+                    <div class="logo white"><img src="../../static/images/logo-wh.png" alt=""></div>
+                    <div class="service-title">
+                        <span class="logo-txt">Toki</span>
+                        <span>개발자센터</span>
+                    </div>
+                    <!-- 유저 정보 박스 -->
+                    <div class="user-info-box">
+                        <p class="user-name">홍길동님</p>
+                        <div class="btn-box">
+                            <input type="button" value="로그아웃" class="input-btn">
+                        </div>
+                    </div>
+                    <!-- // 유저 정보 박스 -->
+                </div>
+            </div>
+            <div class="inner">
+                <p class="section-title">
+                    패키지 주문관리
+                    <span class="title-desc">패키지주문내역에 대한 확인을 진행합니다.</span>
+                </p>
+                <div class="table-box">
+                    <table>
+                        <colgroup>
+                            <col class="w15p mw30p">
+                            <col class="w85p mw70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">패키지명</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt bold-txt">패키지명</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">패키지 타입</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">교재</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">주문일시</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">2021-03-01 13:00:01</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">교재 발송 타입</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">택배 발송</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">처리일시</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">-</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">아이디</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">mail@mail.com</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">이름</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">김길동</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">연락처</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">010-1234-5678</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">주소</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">서울특별시 송파구 법원로 11길 11 401호</span>
+                                </td>
+                            </tr>
+                            <tr class="tall-line">
+                                <td class="table-head-col">
+                                    <span class="table-txt">배송요청사항</span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">문 앞에 놓아주세요.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="table-desc">
+                        <i class="primary-txt">※</i> 실제 발송처리를 하시고 발송처리버튼을 눌러주세요. 개발자센터에서는 배송관련 업무에 대한 관리를 제공하지 않습니다.
+                    </p>
+                </div>
+                <div class="btn-box mt40 txt-c">
+                    <input type="button" value="목록으로" class="input-btn btn-white">
+                    <input type="button" value="발송처리" class="input-btn btn-primary ml24">
+                </div>
+            </div>
+        </div>
+        <footer class="content-footer">
+            <p class="copyright">Copyrifght 2020. Hancom Inc. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

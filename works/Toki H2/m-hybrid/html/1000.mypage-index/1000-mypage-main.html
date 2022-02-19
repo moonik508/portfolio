@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mypage</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                m-mypage-box - mypage 공통 클래스
+                mypage-gy - mypage 배경 컬러 값에 대한 공통클래스
+             -->
+
+             <div class="m-component-box m-mypage-box mypage-gy">
+                <div class="m-inner">
+                    <!-- 기본적으로 내용은  mypage-common-box 로 감싸고 구획 구분이 필요한 경우 다른 클래스명과 함께 사용 -->
+                    <div class="mypage-common-box">
+                        <!-- 직접적인 컨텐츠는 mypage-title-box와 mypage-content-box에 작성 -->
+                        <!-- profile-box -->
+                        <div class="mypage-content-box profile-box">
+                            <div class="profile-pic">
+                                <div class="pic-box"><img src="../../static/m_images/ic-member.png" alt=""></div>
+                                <div class="btn-box btn-add-profile">
+                                    <input type="button" class="m-input-btn btn-profile">
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <p class="user-name">권*준</p>
+                                <p class="user-mail">pet**kwo*@4-lab.com</p>
+                            </div>
+                            <div class="btn-box btn-more">
+                                <input type="button" class="m-input-btn m-btn-arrow">
+                            </div>
+                        </div>
+                        <!-- //profile-box -->
+                    </div>
+
+                    <div class="mypage-common-box">
+                        <!-- short-cut -->
+                        <div class="mypage-content-box short-cut">
+                            <div class="short-item">
+                                <p class="short-cut-img"><img src="../../static/m_images/ic-qr.png" alt=""></p>
+                                <p class="short-cut-desc">나의 QR</p>
+                            </div>
+                            <div class="short-item">
+                                <p class="short-cut-img"><img src="../../static/m_images/ic-alram.png" alt=""></p>
+                                <p class="short-cut-desc">받은 알림</p>
+                            </div>
+                            <div class="short-item">
+                                <p class="short-cut-img"><img src="../../static/m_images/ic-wish.png" alt=""></p>
+                                <p class="short-cut-desc">찜목록</p>
+                            </div>
+                        </div>
+                        <!-- // short-cut -->
+                    </div>
+
+                    <div class="mypage-common-box">
+                        <!-- 
+                            mypage-title-box 사용시 아래처럼 사용 
+                            desc가 필요 없는 경우 title-desc를 삭제사용
+                        -->
+                        <div class="mypage-title-box">
+                            <p class="mypage-title">
+                                등록된 로봇
+                                <span class="title-desc">총 4대</span>
+                            </p>
+                            <a href="javascript:void(0)" class="mypage-all-view">모두 보기</a>
+                        </div>
+                        <!-- robot-list -->
+                        <div class="mypage-content-box robot-list">
+                            <!-- robot-row 반복 -->
+                            <div class="robot-row">
+                                <div class="ic-robot">
+                                    <img src="../../static/m_images/ic-toki.png" alt="">
+                                </div>
+                                <p class="robot-name">토키원</p>
+                                <!-- 
+                                    robot-stat 와 상태값에 따라 아래 클래스 추가
+                                    사용중 class = robot-connected
+                                    대기 class = robot-wait
+                                    바쁨 = robot-busy
+                                    off = robot-disconnected
+                                 -->
+                                <p class="robot-stat robot-connected">사용중</p>
+                            </div>
+                            <div class="robot-row">
+                                <div class="ic-robot">
+                                    <img src="../../static/m_images/ic-toki.png" alt="">
+                                </div>
+                                <p class="robot-name">토키투</p>
+                                <p class="robot-stat robot-wait">대기</p>
+                            </div>
+                        </div>
+                        <!-- // robot-list -->
+                    </div>
+
+                    <div class="mypage-common-box">
+                        <!-- 
+                            mypage-title-box 사용시 아래처럼 사용 
+                            desc가 필요 없는 경우 title-desc를 삭제사용
+                        -->
+                        <div class="mypage-title-box">
+                            <p class="mypage-title">
+                                최근 받은 알림
+                            </p>
+                            <a href="javascript:void(0)" class="mypage-all-view">모두 보기</a>
+                        </div>
+                        <!-- 
+                            alarm-list 
+                            alarm-list 의 경우 항상 노출이 아닌 최근 받은 알림이 있는 경우 노출
+                        -->
+                        <div class="mypage-content-box alarm-list">
+                            <!-- alarm-item 이 반복 -->
+                            <p class="alarm-item">
+                                <span class="alarm-head-txt">
+                                    <i class="alarm-category">[공지]</i>
+                                    <i class="alarm-date">00-00</i>
+                                </span>
+                                <span class="alarm-txt">앱스토어에 개구진영어가 등록되었습니다.</span>
+                            </p>
+                            <p class="alarm-item">
+                                <span class="alarm-head-txt">
+                                    <i class="alarm-category">[공지]</i>
+                                    <i class="alarm-date">00-00</i>
+                                </span>
+                                <span class="alarm-txt">앱스토어에 개구진영어가 등록되었습니다.</span>
+                            </p>
+                            <p class="alarm-item">
+                                <span class="alarm-head-txt">
+                                    <i class="alarm-category">[공지]</i>
+                                    <i class="alarm-date">00-00</i>
+                                </span>
+                                <span class="alarm-txt">앱스토어에 개구진영어가 등록되었습니다.</span>
+                            </p>
+                        </div>
+                        <!-- // alarm-list -->
+                    </div>
+
+                    <div class="mypage-common-box">
+                        <div class="mypage-title-box">
+                            <p class="mypage-title">
+                                고객센터
+                            </p>
+                        </div>
+                        <!-- 
+                            고객센터 
+                            고객센터와 설정의 경우 예외적으로 mypage-content-box 가 반복
+                        -->
+                        <div class="mypage-content-box cs-item">
+                            <p class="cs-item-title">문의내역</p>
+                            <p class="cs-item-txt"><i>00</i> 건</p>
+                            <a href="javascript:void(0)" class="csitem-all-view">모두 보기</a>
+                        </div>
+                        <div class="mypage-content-box cs-item">
+                            <p class="cs-item-title">자주하는 질문</p>
+                            <a href="javascript:void(0)" class="csitem-all-view">모두 보기</a>
+                        </div>
+                        <div class="mypage-content-box cs-item">
+                            <p class="cs-item-title">의견보내기</p>
+                            <a href="javascript:void(0)" class="csitem-all-view">모두 보기</a>
+                        </div>
+                        <!-- // 고객센터 -->
+                    </div>
+
+                    <div class="mypage-common-box">
+                        <div class="mypage-title-box">
+                            <p class="mypage-title">
+                                설정
+                            </p>
+                        </div>
+                        <!-- 설정 -->
+                        <div class="mypage-content-box cs-item">
+                            <p class="cs-item-title">앱정보설정</p>
+                            <a href="javascript:void(0)" class="csitem-all-view">모두 보기</a>
+                        </div>
+                        <!-- // 설정 -->
+                    </div>
+
+                </div>
+             </div>             
+
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<h2 style="margin: 0; padding-top: 30px; text-align: center;">퍼블리싱 페이지</h2>
+<ul style="margin: 40px auto 0; padding: 0; width: 800px; line-height: 40px; list-style: none;">
+    <li onmouseover="$(this).find('img').addClass('over')" onmouseout="$(this).find('img').removeClass('over')">
+        <a href="html/album-main.html" target="_blank" style="display: block; font-size: 0;">
+            <span>앨범메인 (album-main.html)</span>
+            <img src="sc/album-main.jpeg" alt="">
+        </a>
+    </li>
+    <li onmouseover="$(this).find('img').addClass('over')" onmouseout="$(this).find('img').removeClass('over')">
+        <a href="html/album-empty.html" target="_blank" style="display: block; font-size: 0;">
+            <span>앨범 등록된 파일 없을 시 (album-empty.html)</span>
+            <img src="sc/album-empty.jpeg" alt="">
+        </a>
+    </li>
+    <li onmouseover="$(this).find('img').addClass('over')" onmouseout="$(this).find('img').removeClass('over')">
+        <a href="html/album-main-select.html" target="_blank" style="display: block; font-size: 0;">
+            <span>앨범 사진 선택 (album-main-select.html)</span>
+            <img src="sc/album-main-select.jpeg" alt="">
+        </a>
+    </li>
+    <li onmouseover="$(this).find('img').addClass('over')" onmouseout="$(this).find('img').removeClass('over')">
+        <a href="html/album-popup-sample.html" target="_blank" style="display: block; font-size: 0;">
+            <span>앨범 경고, 컨펌 팝업 샘플 (album-popup-sample.html)</span>
+            <img src="sc/album-popup-sample.jpeg" alt="">
+        </a>
+    </li>
+    <li onmouseover="$(this).find('img').addClass('over')" onmouseout="$(this).find('img').removeClass('over')">
+        <a href="html/album-image-popup.html" target="_blank" style="display: block; font-size: 0;">
+            <span>이미지 선택 확대 팝업 샘플 (album-image-popup.html)</span>
+            <img src="sc/album-image-popup.jpg" alt="">
+        </a>
+    </li>
+</ul>
+
+<script src="robot-appstore/lib/jquery/js/3.1.1/jquery.min.js"></script>
+<style>
+    li {
+        padding: 0 10px; border: 1px solid #ccc; background: #fff;
+    }
+
+    li:nth-child(0) {
+        border-top: 0;
+    }
+
+    li span {
+        display: inline-block; vertical-align: top; width: 25%; font-size: 16px;
+    }
+
+    img {
+        display: inline-block; vertical-align: top; padding: 20px; width: 35%; border-left: 1px solid #ccc; box-sizing: border-box
+    }
+
+    img.over {
+        width: 100%;
+    }
+</style>

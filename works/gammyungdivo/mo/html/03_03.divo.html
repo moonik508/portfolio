@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/js/common.js"></script>
+    <script src="../lib/js/divo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/sub.css">
+    <title>법무법인 감명</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo">logo</h1>
+                <div class="serv_banner">
+                    <span><i class="ico_tel"></i>무료상담 02-534-2070</span>
+                </div>
+                <p class="hamburger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </p>
+            </div>
+        </header>
+        <div class="side_nav">
+            <a href="#" class="btn btn_side_close">닫기</a>
+            <ul class="S_nav">
+                <li class="S_nav_01">
+                    감명 소개
+                </li>
+                <li class="S_nav_drops drops_01">
+                    <a href="#">인사말</a>
+                    <a href="#">상담 안내</a>
+                    <a href="#">오시는 길</a>
+                    <a href="#">언론보도</a>
+                </li>
+                <li onclick="location.href='/m/lawyer_info'">감명 변호사</li><!--onclick이벤트추가-->
+                <li class="S_nav_02">
+                    업무 분야
+                </li>
+                <li class="S_nav_drops drops_02">
+                    <a href="#">이혼</a>
+                    <a href="#">재산과자녀</a>
+                    <a href="#">상간자소송</a>
+                    <a href="#">상속분쟁</a>
+                </li>
+                <li onclick="location.href='/m/board/list?boardName=case'">수행사례</li><!--onclick이벤트추가-->
+                <li class="S_nav_03">
+                    고객 센터
+                </li>
+                <li class="S_nav_drops drops_03">
+                    <a href="./04_01.onlineconsult.html">온라인 상담</a>
+                    <a href="./05.FAQ.html">자주 묻는 질문</a>
+                </li>
+            </ul>
+            <div class="side_bot">
+                <div class="side_menu_img">
+                    <a href="#"><img src="../images/icn-banner.png" alt=""></a>
+                </div>
+                <p class="tel">
+                    상담  02-534-2070
+                </p>
+                <ul class="nav_sns">
+                    <li>
+                        <a href="https://pf.kakao.com/_xkleYT/" target="_blank">
+                            <span class="ico_sns kakao"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/lawfirmgammyung" target="_blank">
+                            <span class="ico_sns blog"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://haneumlaw.com/" target="_blank">
+                            <span class="ico_sns home"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dim"></div>
+        <div class="container divo">
+            <div class="sub_top">
+                <div class="inner">
+                    <h3 class="sub_title">재산과 자녀</h3>
+                </div>
+                <div class="dim"></div>
+            </div>
+            <div class="divo_top">
+                <div class="inner">
+                    <div class="sub_con">
+                        <div class="divo_drops_tit drops01">
+                            <p>상속분쟁</p>
+                        </div>
+                        <ul class="drop_list list01">
+                            <li><a href="./02_01.divo.html">이혼</a></li>
+                            <li><a href="./03_01.divo.html">재산과자녀</a></li>
+                            <li><a href="./04_01.divo.html">상간자소송</a></li>
+                            <li><a href="./05_01.divo.html">상속분쟁</a></li>
+                        </ul>
+                        <div class="divo_drops_tit drops02">
+                            <p>친권, 양육권, 양육비</p>
+                        </div>
+                        <ul class="divo_sort clearfix drop_list d_flx list02">
+                            <li><a href="03_01.divo.html">재산분할</a></li>
+                            <li><a href="03_02.divo.html">위자료</a></li>
+                            <li class="on"><a href="03_03.divo.html">친권, 양육권, 양육비</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="divo_bot">
+                <div class="inner">
+                    <div class="sub_con">
+                        <div class="divo_box clearfix">
+                            <div class="title_box clearfix">
+                                <span class="divo_num">01.</span>
+                                <span class="divo_tit">친권과 양육권은 무슨 차이인가요</span>
+                            </div>
+                            <div class="cont_box">
+                                <div>
+                                    <p>
+                                        친권은 자녀의 신분이나 재산에 관한 법률적인 제반 사항을 결정할 수 있는 권리를 의미하며 양육권은 자녀의 양육에 필요한 사항을 결정하는 권리를 말합니다. 친권은 우리 민법 제909조에서 규정하고 있으며 민법상 양육권을 직접 명시한 규정은 없으나, 민법 제837조에서 부부가 이혼하는 경우에 양육책임에 관한 사항을 규정하여, 양육자의 지정, 양육비의 책정, 면접교섭권의 행사에 관한 법률적 토대를 마련하고 있습니다.                                
+                                    </p>
+                                </div>
+                                <div class="line"></div>
+                                <div>
+                                    <h3>· 친권</h3>
+                                    <p>
+                                        친권자인 부모가 자녀에 대하여 가지는 신분상의 권리는 자녀의 보호, 교양할 권리 및 의무, 이를 위한 장소를 지정할 수 있는 권리 등을 예로 들 수 있으며, 재산상의 권리로는 자녀 명의의 특유재산에 관한 관리권, 자녀의 재산에 관한 법률행위에 대한 대리권, 자녀가 재산과 관련된 행위를 하는 경우 이에 대한 동의권 등을 예로 들 수 있으며, 친권은 부부의 이혼 시 부부일방 또는 공동으로 취득할 수 있습니다.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>· 양육권</h3>
+                                    <p>
+                                        부부가 이혼할 경우, 미성년인 자녀를 누가 양육할 것인가에 대한 권리를 말하며, 민법에서는 부모의 협의로 정하도록 하고 있으나 협의가 이루어지지 않거나 협의할 수 없는 경우에는 가정법원이 직권으로 이를 지정합니다. 이때 가정법원은 자녀의 복리를 최우선으로 두고, 양육환경, 자녀와의 친밀도 및 자녀의 의사를 반영하게 됩니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divo_box clearfix">
+                            <div class="title_box clearfix">
+                                <span class="divo_num">02.</span>
+                                <span class="divo_tit">양육권자를 정하는 기준이 어떻게 되나요</span>
+                            </div>
+                            <div class="cont_box">
+                                <div>
+                                    <p>
+                                        우리 민법 제837조에서는 부부의 이혼 시에 양육자를 부부의 협의로 정하도록 하고 있으나, 협의가 이루어지지 않거나 협의할 수 없는 경우에는 가정법원이 직권으로 양육자를 지정합니다. 따라서 협의이혼 시에는 부부간 협의를 기준으로 하되, 부부간의 협의가 자녀의 복리에 반하는 경우, 협의가 이루어지지 않거나 재판상 이혼을 하는 경우에는 가정법원이 자녀의 복리를 최우선으로 두고, 양육환경, 자녀와의 친밀도 및 자녀의 의사를 반영하여 직권으로 양육권자를 지정하게 됩니다.
+                                    </p>
+                                </div>
+                                <div class="line"></div>
+                                <div>
+                                    <h3>· 양육권 지정의 기준</h3>
+                                    <p>
+                                        법원에서는 양육자를 지정할 때 자녀의 복리를 가장 큰 기준으로 두고, 양육환경과 자녀와의 관계라는 두 가지의 구체적 기준을 적용하여 상황에 따라 판단합니다. 양육환경에는 양육자의 수입, 주거환경(재산분할, 위자료까지 고려했을 때), 양육가능성(양육비를 받지 못할 경우), 정신건강 및 양육보조자의 유무가 포함됩니다. 자녀와의 관계에는 자녀의 마음을 공감할 능력이 있는가, 자녀는 스스로 누구를 원하는가(자녀와의 친밀도), 지금까지 누가 길렀는가, 양육기술에 대한 평가, 아동청소년 발달 단계상 아이가 누구를 원할 때인가, 면접교섭에 대하여 허용적인가, 상대방에 대한 증오심이 남아있는가, 양육의지가 있는가가 포함됩니다. 양육권 지정의 본질은 부모 중 누가 자녀의 복리에 더 도움이 되는가에 있습니다. 따라서 양육환경에 있어서 경제적인 능력도 중요하나 자녀가 어릴수록 자녀와의 친밀도가 중요하며 청소년기의 경우에는 특히 자녀의 의사가 중요하다는 점을 알아두어야 합니다. 이혼소송은 장기화 되는 경우가 많으므로 자녀와의 친밀도를 유지하기 위해서는 소송기간 동안 자녀와 함께 지내는 것이 중요하며, 그럴 수 없는 경우에는 사전처분 등을 통해 면접교섭에 적극적으로 임해야 합니다.
+                                    </p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="divo_box clearfix">
+                            <div class="title_box clearfix">
+                                <span class="divo_num">03.</span>
+                                <span class="divo_tit">상대방이 마음대로 아이를 데려간 경우</span>
+                            </div>
+                            <div class="cont_box">
+                                <div>
+                                    <p>
+                                        이혼 소송 과정에서 또는 이혼 후 양육자의 지정이 이루어지고 나서 어린 자녀를 임의로 데려가버리는 경우가 있습니다. 양육권자가 이미 지정된 때에는 이행명령제도를, 그렇지 않다면 형사고소를 고려해볼 수 있습니다. 
+                                    </p>
+                                </div>
+                                <div class="line"></div>
+                                <div>
+                                    <h3>· 이행명령제도 및 미성년자 약취·유인 고소</h3>
+                                    <p>
+                                        가사소송법 제64조에 규정된 이행명령은 과태료 또는 감치와 같은 제재를 통하여 판결, 심판, 조정조서 등에 따라 확정되어 있는 의무 이행을 촉구하는 제도로서, 비양육자가 유아인 자녀를 임의로 데려가 양육자에게 보내지 않고 양육하는 경우 유아인도청구를 통하여 양육권을 보호받을 수 있습니다. 또한 이혼소송 과정에서 자녀를 데리고 있는 것이 양육권자로 지정되기 유리하다고 생각한 나머지 상대 배우자의 동의도 없이 마음대로 유아를 데려간 경우에는 미성년자 약취, 유인 등에 해당될 수 있으므로 사실관계에 따라 죄질이 매우 불량하다면 형사적으로 대응하는 것도 필요합니다.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>· 강제집행</h3>
+                                    <p>
+                                        국가권력에 의하여 강제적으로 의무를 이행시키는 것으로, 판결문, 조정 및 화해조서 등의 집행권원을 근거로 집행문을 부여받아 상대방 재산을 대상으로 강제집행을 통하여 위자료를 받을 수 있도록 하는 제도입니다. 상대방 소유 부동산의 강제경매나 근로소득에 대한 압류를 예로 들 수 있습니다.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="text_box">
+                                        <h3>제64조(이행 명령)</h3>
+                                        <p>
+                                            ① 가정법원은 판결, 심판, 조정조서, 조정을 갈음하는 결정 또는 양육비부담조서에 의하여 다음
+                                            각 호의 어느 하나에 해당하는 <b>의무를 이행하여야 할 사람이 정당한 이유 없이 그 의무를
+                                            이행하지 아니하는 경우에는 당사자의 신청에 의하여 일정한 기간 내에 그 의무를 이행할 것을
+                                            명</b>할 수 있다.<br>
+                                            1. 금전의 지급 등 재산상의 의무<br>
+                                            2. <b>유아의 인도 의무</b><br>
+                                            3. 자녀와의 면접교섭 허용 의무<br>
+                                            ② 제1항의 명령을 할 때에는 특별한 사정이 없으면 미리 당사자를 심문하고 그 의무를 이행하도록
+                                            권고하여야 하며, 제67조제1항 및 제68조에 규정된 제재를 고지하여야 한다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text_box">
+                                        <h3>제67조(의무 불이행에 대한 제재)</h3>
+                                        <p>
+                                            ① <b>당사자 또는 관계인이 정당한 이유 없이</b> 제29조, 제63조의2제1항, 제63조의3제1항·제2항 또는
+                                            <b>제64조의 명령</b>이나 제62조의 처분을 <b>위반한 경우</b>에는 가정법원, 조정위원회 또는 조정담당판사는 
+                                            <b>직권으로 또는 권리자의 신청</b>에 의하여 결정으로 <b>1천만원 이하의 과태료를 부과</b>할 수 있다
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text_box">
+                                        <h3>제68조(특별한 의무 불이행에 대한 제재)</h3>
+                                        <p>
+                                            ① 제63조의3제4항 또는 <b>제64조의 명령을 받은 사람</b>이 다음 각 호의 어느 하나에 해당하면
+                                            가정법원은 <b>권리자의 신청에 의하여 결정으로 30일의 범위</b>에서 그 <b>의무를 이행할 때까지
+                                            의무자에 대한 감치</b>를 명할 수 있다.<br>
+                                            1. 금전의 정기적 지급을 명령받은 사람이 정당한 이유 없이 3기(期) 이상 그 의무를 이행하지
+                                                아니한 경우<br>
+                                            2. <b>유아의 인도를 명령받은 사람이 제67조제1항에 따른 제재를 받고도 30일 이내에 정당한 
+                                                이유 없이 그 의무를 이행하지 아니한 경우</b><br>
+                                            3. 양육비의 일시금 지급명령을 받은 사람이 30일 이내에 정당한 사유 없이 그 의무를 이행하지
+                                                아니한 경우
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divo_box clearfix">
+                            <div class="title_box clearfix">
+                                <span class="divo_num">04.</span>
+                                <span class="divo_tit">경제력이 없어도 양육권을 가져올 수 있나요</span>
+                            </div>
+                            <div class="cont_box">
+                                <div>
+                                    <p>
+                                        양육자 지정에서 경제력 문제는 특히 전업주부가 고소득 남편을 상대로 양육권을 주장할 때 빈번하게 발생합니다. 남편의 경제력이 떨어지는 경우 아내를 상대로 자녀와의 친밀도와 같은 비교우위성을 주장하기가 어려운 것이 현실이기 때문입니다. 따라서 자신은 경제적 자립이 쉽지 않은 반면 배우자는 높은 소득을 벌어들이는 경우에는 양육자 지정을 유리하게 진행하기 위해서 법률전문가의 조력을 받아야만 합니다.
+                                    </p>
+                                </div>
+                                <div class="line"></div>
+                                <div>
+                                    <h3>· 양육권 지정의 기준</h3>
+                                    <p>
+                                        법원에서는 양육자를 지정할 때 자녀의 복리를 가장 큰 기준으로 두고, 양육환경과 자녀와의 관계라는 두 가지의 구체적 기준을 적용하여 상황에 따라 판단합니다. 양육환경에는 양육자의 수입, 주거환경(재산분할, 위자료까지 고려했을 때), 양육가능성(양육비를 받지 못할 경우), 정신건강 및 양육보조자의 유무가 포함됩니다. 자녀와의 관계에는 자녀의 마음을 공감할 능력이 있는가, 자녀는 스스로 누구를 원하는가(자녀와의 친밀도), 지금까지 누가 길렀는가, 양육기술에 대한 평가, 아동청소년 발달 단계상 아이가 누구를 원할 때인가, 면접교섭에 대하여 허용적인가, 상대방에 대한 증오심이 남아있는가, 양육의지가 있는가가 포함됩니다. 양육권 지정의 본질은 부모 중 자녀의 복리에 누가 더 도움이 되는가에 있습니다. 따라서 양육환경에 있어서 경제적인 능력도 중요하나 자녀가 어릴수록 자녀와의 친밀도가 중요하며 청소년기의 경우에는 특히 자녀의 의사가 중요하다는 점을 알아두어야 합니다. 이혼소송은 특성상 그 기간이 장기화되는 경우가 많으므로 자녀와의 친밀도를 유지하기 위해서는 소송기간동안 자녀와 함께 지내는 것이 중요하며, 그럴 수 없는 경우에는 사전처분 등으로 면접교섭을 적극적으로 활용해야 합니다. 단순히 소득이 없다는 이유만으로 양육권자의 지위를 무조건 박탈당하는 것이 아니므로 유리하게 주장할 수 있는 부분이 무엇인지, 이를 어떻게 입증해야 하는지 전문가와 상의하여 준비해나가야 합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divo_box clearfix">
+                            <div class="title_box clearfix">
+                                <span class="divo_num">05.</span>
+                                <span class="divo_tit">부부 소득에 따라 양육비가 달라지나요</span>
+                            </div>
+                            <div class="cont_box">
+                                <div>
+                                    <p>
+                                        양육비는 통상 부부합산소득을 기준으로 법원의 양육비산정표의 해당 구간에 따라 산정되게 됩니다. 이는 절대적인 법적구속력을 가지는 것은 아니나 특별한 사정이 없는 한 준수되고 있습니다. 양육비를 산정하는 과정에서 법원은 부부의 재산 및 소득을 기준으로 판단하기 때문에 이혼 당사자들은 법률전문가의 조력을 받아 재산명시신청, 재산조회를 위한 각종 신청 등 필요한 조치를 통하여 상대방의 재산에 대하여 정확히 파악하여야 합니다.
+                                    </p>
+                                </div>
+                                <div class="line"></div>
+                                <div>
+                                    <h3>· 위자료 청구대상</h3>
+                                    <p>
+                                        위자료 청구권은 유책당사자에게 정신적 고통에 대한 손해배상책임이 있음을 규정하고 있는 민법 제806조에 그 근거를 두고 있습니다. 민법 제843조에서는 재판상 이혼의 경우에 이를 준용함을 명시하고 있으며, 민법 제806조는 손해배상청구의 대상을 과실 있는 상대방으로, 손해의 범위에는 정신적 고통이 포함됨을 명시하고 있습니다. 따라서 과실 있는 상대방은 혼인관계의 파탄에 책임이 있는 자를 의미하게 됩니다. 그렇기 때문에 배우자 이외의 제3자로 인하여 혼인관계가 파탄나게 된 경우에는 그를 대상으로 위자료를 청구할 수 있습니다.
+                                    </p>
+                                </div>
+                                <div class="table_box">
+                                    <table class="table child-support-table">
+                                        <colgroup>
+                                            <col width="10%">
+                                            <col width="10%">
+                                            <col width="10%">
+                                            <col width="10%">
+                                            <col width="10%">
+                                            <col width="10%">
+                                            <col width="10%">
+                                            <col width="10%">
+                                            <col width="10%">
+                                            <col width="10%">
+                                        </colgroup>
+                                        <tr>
+                                            <td rowspan="2" class="table_row_2">
+                                                <span class="txt_top">부모합산<br>소득<br>(세전)</span>
+                                                <span class="txt_bot">자녀<br>만 나이</span>
+                                            </td>
+                                            <td class="table_row_2_header table_header01"><b>0~199</b>만원</td>
+                                            <td class="table_row_2_header table_header01"><b>200~299</b>만원</td>
+                                            <td class="table_row_2_header table_header01"><b>300~399</b>만원</td>
+                                            <td class="table_row_2_header table_header01"><b>400~499</b>만원</td>
+                                            <td class="table_row_2_header table_header01"><b>500~599</b>만원</td>
+                                            <td class="table_row_2_header table_header01"><b>600~699</b>만원</td>
+                                            <td class="table_row_2_header table_header01"><b>700~799</b>만원</td>
+                                            <td class="table_row_2_header table_header01"><b>800~899</b>만원</td>
+                                            <td class="table_row_2_header table_header01"><b>900</b>만원이상</td>                                    
+                                        </tr>
+                                        <tr>
+                                            <td class="table_row_2_header table_header02">평균양육비(원)<br>양육비 구간</td>
+                                            <td class="table_row_2_header table_header02">평균양육비(원)<br>양육비 구간</td>
+                                            <td class="table_row_2_header table_header02">평균양육비(원)<br>양육비 구간</td>
+                                            <td class="table_row_2_header table_header02">평균양육비(원)<br>양육비 구간</td>
+                                            <td class="table_row_2_header table_header02">평균양육비(원)<br>양육비 구간</td>
+                                            <td class="table_row_2_header table_header02">평균양육비(원)<br>양육비 구간</td>
+                                            <td class="table_row_2_header table_header02">평균양육비(원)<br>양육비 구간</td>
+                                            <td class="table_row_2_header table_header02">평균양육비(원)<br>양육비 구간</td>
+                                            <td class="table_row_2_header table_header02">평균양육비(원)<br>양육비 구간</td>                                    
+                                        </tr>
+                                        <tr>
+                                            <td class="table-row table-row-header">0~2세</td>
+                                            <td class="table-row"><span class="average">532,000</span>219,000<br>~592,000</td>
+                                            <td class="table-row"><span class="average">653,000</span>593,000<br>~735,000</td>
+                                            <td class="table-row"><span class="average">818,000</span>736,000<br>~883,000</td>
+                                            <td class="table-row"><span class="average">948,000</span>884,000<br>~1,026,000</td>
+                                            <td class="table-row"><span class="average">1,105,000</span>1,027,000<br>~1,199,000</td>
+                                            <td class="table-row"><span class="average">1,294,000</span>1,120,000<br>~1,341,000</td>
+                                            <td class="table-row"><span class="average">1,388,000</span>1,342,000<br>~1,487,000</td>
+                                            <td class="table-row"><span class="average">1,587,000</span>1,488,000<br>~1,670,000</td>
+                                            <td class="table-row"><span class="average">1,753,000</span>1,671,000<br>이상</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-row table-row-header">3~5세</td>
+                                            <td class="table-row"><span class="average">546,000</span>223,000<br>~639,000</td>
+                                            <td class="table-row"><span class="average">732,000</span>640,000<br>~814,000</td>
+                                            <td class="table-row"><span class="average">896,000</span>815,000<br>~974,000</td>
+                                            <td class="table-row"><span class="average">1,053,000</span>975,000<br>~1,121,000</td>
+                                            <td class="table-row"><span class="average">1,189,000</span>1,122,000<br>~1,284,000</td>
+                                            <td class="table-row"><span class="average">1,379,000</span>1,285,000<br>~1,477,000</td>
+                                            <td class="table-row"><span class="average">1,576,000</span>1,478,000<br>~1,654,000</td>
+                                            <td class="table-row"><span class="average">1,732,000</span>1,655,000<br>~1,828,000</td>
+                                            <td class="table-row"><span class="average">1,924,000</span>1,829,000<br>이상</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-row  table-row-header">6~11세</td>
+                                            <td class="table-row"><span class="average">623,000</span>244,000<br>~699,000</td>
+                                            <td class="table-row"><span class="average">776,000</span>700,000<br>~864,000</td>
+                                            <td class="table-row"><span class="average">952,000</span>865,000<br>~1,044,000</td>
+                                            <td class="table-row"><span class="average">1,136,000</span>1,045,000<br>~1,219,000</td>
+                                            <td class="table-row"><span class="average">1,302,000</span>1,220,000<br>~1,408,000</td>
+                                            <td class="table-row"><span class="average">1,514,000</span>1,409,000<br>~1,559,000</td>
+                                            <td class="table-row"><span class="average">1,605,000</span>1,560,000<br>~1,717,000</td>
+                                            <td class="table-row"><span class="average">1,830,000</span>1,718,000<br>~1,997,000</td>
+                                            <td class="table-row"><span class="average">2,164,000</span>1,998,000<br>이상</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-row  table-row-header">12~14세</td>
+                                            <td class="table-row"><span class="average">629,000</span>246,000<br>~701,000</td>
+                                            <td class="table-row"><span class="average">774,000</span>702,000<br>~884,000</td>
+                                            <td class="table-row"><span class="average">995,000</span>885,000<br>~1,107,000</td>
+                                            <td class="table-row"><span class="average">1,220,000</span>1,108,000<br>~1,303,000</td>
+                                            <td class="table-row"><span class="average">1,386,000</span>1,304,000<br>~1,484,000</td>
+                                            <td class="table-row"><span class="average">1,582,000</span>1,485,000<br>~1,650,000</td>
+                                            <td class="table-row"><span class="average">1,718,000</span>1,651,000<br>~1,797,000</td>
+                                            <td class="table-row"><span class="average">1,876,000</span>1,798,000<br>~2,143,000</td>
+                                            <td class="table-row"><span class="average">2,411,000</span>2,144,000<br>이상</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-row  table-row-header">15~18세</td>
+                                            <td class="table-row"><span class="average">678,000</span>260,000<br>~813,000</td>
+                                            <td class="table-row"><span class="average">948,000</span>814,000<br>~1,076,000</td>
+                                            <td class="table-row"><span class="average">1,205,000</span>1,077,000<br>~1,290,000</td>
+                                            <td class="table-row"><span class="average">1,376,000</span>1,291,000<br>~1,493,000</td>
+                                            <td class="table-row"><span class="average">1,610,000</span>1,494,000<br>~1,715,000</td>
+                                            <td class="table-row"><span class="average">1,821,000</span>1,716,000<br>~1,895,000</td>
+                                            <td class="table-row"><span class="average">1,970,000</span>1,896,000<br>~2,047,000</td>
+                                            <td class="table-row"><span class="average">2,124,000</span>2,048,000<br>~2,394,000</td>
+                                            <td class="table-row"><span class="average">2,664,000</span>2,395,000<br>이상</td>
+                                        </tr>
+                                    </table>
+                                    <!--<p class="ps">(전국의 양육자녀 2인 가구 기준)</p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divo_box clearfix">
+                            <div class="title_box clearfix">
+                                <span class="divo_num">06.</span>
+                                <span class="divo_tit">이혼 후 상대방이 양육비를 주지 않고 있어요</span>
+                            </div>
+                            <div class="cont_box">
+                                <div>
+                                    <p>
+                                        비양육자자가 고의적으로 양육비를 미지급하는 경우 양육자는 자녀양육의 경제적 고초를 겪게 되며 특히 자녀의 복리가 심각하게 침해됩니다. 비양육자는 자녀가 성년이 되기 전까지 양육비 지급의무를 부담하며, 양육비의 지급 방식에는 제한이 없습니다. 양육비 지급의무를 위반하는 경우에 양육자가 비양육자를 대상으로 양육비 지급을 강제할 수 있는 제도들이 마련되어 있으므로 법률전문가와 상의하여 자신에게 유리한 방식으로 양육비 지급을 강제하는 것이 좋습니다.
+                                    </p>
+                                </div>
+                                <div class="line"></div>
+                                <div>
+                                    <h3>· 이행명령</h3>
+                                    <p>
+                                        양육비 지급의무자가 정당한 사유없이 양육비를 1회라도 지급하지 않는 경우, 법원은 양육권자의 신청이 있으면 양육비 지급의무자에게 양육비 지급을 명하게 되며, 이에 불응하는 경우 1천만원 이하의 과태료를 부과받거나 30일의 범위 내에서 감치되게 됩니다. 
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>· 양육비 직접지급명령</h3>
+                                    <p>
+                                        정기적인 양육비 지급의무자가 정당한 사유 없이 2회 이상 양육비를 지급하지 않는 경우 양육권자는 양육비 지급의무자의 소득세원천징수의무자(직장)를 대상으로 양육비 지급의무자의 급여에서 양육권자에게 양육비를 직접 지급하도록 명하는 제도입니다. 소득세원천징수의무자가 이에 불응하는 경우 1천만원 이하의 과태료를 부과받게 됩니다.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>· 담보제공 및 일시금 지급명령</h3>
+                                    <p>
+                                        양육비 지급의무자가 정당한 사유 없이 양육비를 지급하지 않는 경우, 법원은 양육권자의 신청이 있으면 양육권자의 양육비 확보를 위하여 양육비 지급의무자에게 상당한 담보의 제공을 명하고, 담보제공을 하지 않는 경우에는 양육비의 일시금을 지급하도록 명하는 제도입니다. 이에 불응하는 경우 1천만원 이하의 과태료를 부과받거나 30일의 범위 내에서 감치되게 됩니다.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>· 강제집행</h3>
+                                    <p>
+                                        양육비 지급의무자의 양육비지급의무불이행으로 인한 판결, 조정조서, 화해조서 등의 집행권원을 근거로 강제집행문을 부여받아 양육비 지급의무자의 재산에 강제집행을 신청하여 양육비를 받을 수 있는 제도입니다. 부동산 강제경매 등을 예로 들 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divo_box clearfix">
+                            <div class="title_box clearfix">
+                                <span class="divo_num">07.</span>
+                                <span class="divo_tit">양육비 액수는 한 번 정해지면 바꿀 수 없나요</span>
+                            </div>
+                            <div class="cont_box">
+                                <div>
+                                    <p>
+                                        양육권 지정의 본질은 자녀의 복리에 있기 때문에 양육비 또한 자녀의 성장과 복지의 측면이 고려되어 산정됩니다. 따라서 기존에 협의 또는 판결 등에 의하여 양육비가 산정되었다 하더라도 이후 기존에 산정된 양육비가 여러 가지 측면에서 변경되어야 할 사정이 생긴 경우에 양육자와 비양육자는 상대방을 대상으로 법원에 양육비 변경청구를 통하여 양육비를 변경할 수 있습니다.
+                                    </p>
+                                </div>
+                                <div class="line"></div>
+                                <div>
+                                    <h3>· 양육비 변경청구</h3>
+                                    <p>
+                                        양육비 지급의무자의 경제 사정이 악화되거나 양육권자의 경제 사정이 호전된 경우에는 양육비 지급의무자는 양육비 감액 청구를 할 수 있습니다. 통상적으로 양육비가 부부합산소득을 기준으로 산정된다는 관점에서 양육비 지급의무자가 실직이나 파산 등으로 소득이 감소하고 양육권자가 다양한 사정으로 소득수준이 개선되었다면 이는 사정변경에 해당되기 때문입니다. 반대로, 기존의 양육비 산정시기에 비추어 물가지수가 오르고 자녀 교육에 필요한 비용 등이 증가하거나 불의의 사고로 인하여 양육비의 범위를 초과하는 치료비 기타의 비용이 발생했다면 이 또한 사정변경에 해당하므로 양육자는 자녀의 복리를 위하여 양육비 지급의무자를 상대로 양육비 증액 청구를 할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divo_box clearfix">
+                            <div class="title_box clearfix">
+                                <span class="divo_num">08.</span>
+                                <span class="divo_tit">양육권자는 변경될 수 없나요</span>
+                            </div>
+                            <div class="cont_box">
+                                <div>
+                                    <p>
+                                        양육권자를 지정함에 있어서 법원은 자녀의 복리라는 대원칙을 전제로 양육환경과 자녀와의 친밀도를 감안하여 양육권자를 지정하게 됩니다. 그러나 양육자 지정 당시와 달리 양육환경이나 자녀와 양육자간의 친밀도가 급격히 달라질 수가 있으며, 예컨대 양육권자와 재혼한 자로부터 자녀가 학대를 받은 경우나 양육권자의 경제적·신체적 사정으로 양육이 실질적으로 불가능해진 경우 등을 예로 들 수 있습니다.
+                                    </p>
+                                </div>
+                                <div class="line"></div>
+                                <div>
+                                    <h3>· 양육자 변경청구</h3>
+                                    <p>
+                                        법원은 부모, 자녀, 검사가 양육권자 변경을 청구하는 경우 종합적인 사정을 판단하여 양육권자 변경 여부를 판단하고 있으며 가정법원이 직권으로 양육자를 변경할 수 있습니다. 그러나 양육자를 중도에 변경하는 것 자체가 자녀의 정서적 복리에 긍정적인 요인은 아니므로, 예컨대 자녀 교육에 대한 관점의 차이가 있다거나 단지 양육자가 재혼을 하였다는 등 지엽적이고 중대하지 않은 이유는 법원으로부터 양육자 변경 사유로 채택되기는 어렵다고 하겠습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_top">
+                <div class="inner">
+                    <ul class="foot_list">
+                        <li><a href="./00_01.notice01.html">면책공고</a></li>
+                        <li><a href="./00_02.notice02.html">이용약관</a></li>
+                        <li><a href="./00_03.notice03.html">개인정보취급방침</a></li>
+                        <li><a href="./00_04.notice04.html">이메일무단수집거부</a></li>
+                        <li><a href="./00_05.notice05.html">유한책임</a></li>
+                        <li><a href="./01_03.map.html">오시는길</a></li>
+                    </ul>
+                    <div class="foot_fam" name="" id="">
+                        <p>패밀리 사이트</p>
+                        <ul>
+                            <li><a target="_blank" href="http://haneumlaw.com/">통합 홈페이지</a></li>
+                            <li><a target="_blank" href="http://haneumcriminal.com/">성범죄·형사</a></li>
+                            <li><a target="_blank" href="http://www.seungwon-familylaw.com/">이혼&middot;가사</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bot">
+                <div class="inner">
+                    <p class="company_name">법무법인 감명</p>
+                    <address>서울 서초구 서초중앙로 154 화평빌딩 2층<br>상담 02-534-2070</address>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

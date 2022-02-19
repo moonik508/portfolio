@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <link rel="stylesheet" href="../../lib/jquery/js/plugin/mCustomScrollBar/mCustomScrollbar.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <script src="../../lib/jquery/js/plugin/mCustomScrollBar/jquery.mCustomScrollbar.min.js"></script>
+    <title>in app setting page</title>
+</head>
+<body>
+    <div class="wrap default">
+        <nav class="left-nav">
+            <div class="inner">
+                <h1 class="logo white">
+                    <img src="../../static/images/logo-wh.png" alt="">
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="dash-nav">대시보드</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="active">앱관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정산조회</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">패키지 주문관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">사용자관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <!-- 선택된 main-nav-item 의 a 클래스에 active 클래스명 추가 -->
+                        <a href="javascript:void(0)" class="sdk-nav">SDK 센터</a>
+                        <ul class="sub-nav">
+                            <li class="sub-nav-item">
+                                <!-- 현재 선택된 2뎁스 메뉴에도 sub-nav-item의 a태그에 클래스명 active 추가 -->
+                                <a href="javascript:void(0)" class="active">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">공지사항</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">문의하기</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정보변경</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="left-nav-dim"></div>
+        <div class="content-wrap">
+            <div class="content-header">
+                <div class="inner">
+                    <input type="button" class="btn-hamburger">
+                    <div class="logo white"><img src="../../static/images/logo-wh.png" alt=""></div>
+                    <div class="service-title">
+                        <span class="logo-txt">Toki</span>
+                        <span>개발자센터</span>
+                    </div>
+                    <!-- 유저 정보 박스 -->
+                    <div class="user-info-box">
+                        <p class="user-name">홍길동님</p>
+                        <div class="btn-box">
+                            <input type="button" value="로그아웃" class="input-btn">
+                        </div>
+                    </div>
+                    <!-- // 유저 정보 박스 -->
+                </div>
+            </div>
+            <div class="inner">
+                <p class="section-title">
+                    API
+                    <span class="title-desc">앱에 대한 API를 확인합니다.</span>
+                </p>
+                <div class="btn-tab-box detail-tab mb30">
+                    <div class="btn-box">
+                        <!-- 선택된 페이지의 btn-tab에 active 클래스명 추가 -->
+                        <input type="button" value="등록정보" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="수익설정" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="인앱설정" class="btn-tab active">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="비공개 테스트" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="출시관리" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="서비스범위" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="평점관리" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="API" class="btn-tab">
+                    </div>
+                </div>
+                <div class="table-box">
+                    <div class="table-caption-box no-btn">
+                        <p class="table-caption">평점획득 내역</p>
+                    </div>
+                    <table>
+                        <colgroup>
+                            <col style="width: 15%">
+                            <col style="width: 85%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">서비스 범위</span>
+                                </td>
+                                <td class="table-col">
+                                    <label class="input-box dis-ib w10p">
+                                        <input type="radio" name="lang" checked>
+                                        <span class="chk-frame"></span>
+                                        <span class="chk-label">한글</span>
+                                    </label>
+                                    <label class="input-box dis-ib w10p">
+                                        <input type="radio" name="lang">
+                                        <span class="chk-frame"></span>
+                                        <span class="chk-label">영어</span>
+                                    </label>
+                                    <p class="dis-ib txt-r plain-txt right-desc-txt">
+                                        <a href="javascript:void(0)" class="anchor-txt">패키지란?</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="btn-box mt40 txt-c">
+                    <input type="button" value="변경하기" class="input-btn btn-primary mx-btn">
+                </div>
+                <div class="table-box mt40 hightlight-table fixed-table">
+                    <div class="table-caption-box">
+                        <p class="table-caption">
+                            버전 빌드
+                            <span class="table-caption-desc">상품명을 눌러 인앱을 수정하실 수 있습니다.</span>
+                        </p>
+                        <!-- table-caption에 table-caption-desc 가 있는 경우 table-top-btn 과 line 클래스를 같이 사용해주세요. -->
+                        <div class="btn-box table-top-btn line">
+                            <input type="button" value="상품생성" class="input-btn btn-primary sm-btn">
+                        </div>
+                    </div>
+                    <table>
+                        <colgroup>
+                            <col style="width: 20%">
+                            <col style="width: 16%">
+                            <col style="width: 16%">
+                            <col style="width: 16%">
+                            <col style="width: 16%">
+                            <col style="width: 16%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        상품명
+                                    </span>
+                                </td>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        상품ID
+                                    </span>
+                                </td>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        가격 (KRW)
+                                    </span>
+                                </td>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        가격 (USD)
+                                    </span>
+                                </td>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        생성일
+                                    </span>
+                                </td>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        상태
+                                    </span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-col txt-c">
+                                    <a href="javascript:void(0)" class="anchor-txt">동요팩 1</a>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">pack1</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">13,900</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">-</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">2021-02-02</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt bold-txt">활성</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination-box">
+                    <ul>
+                        <li>
+                            <input type="button" class="btn-page btn-first">
+                        </li>
+                        <li>
+                            <input type="button" class="btn-page btn-prev">
+                        </li>
+                        <li class="active">
+                            <span>1</span>
+                        </li>
+                        <li>
+                            <span>2</span>
+                        </li>
+                        <li>
+                            <span>3</span>
+                        </li>
+                        <li>
+                            <input type="button" class="btn-page btn-next">
+                        </li>
+                        <li>
+                            <input type="button" class="btn-page btn-last">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popup-wrap">
+                <!-- 테이블이 들어가는 큰 팝업의 경우 popup-content 와 mx-content 클래스명을 같이 사용해주세요. -->
+                <div class="popup-content mx-content">
+                    <div class="pop-header">
+                        <p class="pop-hd-title">인앱상품등록</p>
+                        <input type="button" class="btn-pop-close">
+                    </div>
+                    <div class="pop-body">
+                        <div class="table-box">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 15%">
+                                    <col style="width: 85%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="table-head-col">
+                                            <span class="table-txt bold-txt">
+                                                상품명 (한글)
+                                            </span>
+                                        </td>
+                                        <td class="table-col">
+                                            <div class="input-box">
+                                                <input type="text" class="input-txt input-md">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-head-col">
+                                            <span class="table-txt bold-txt">
+                                                상품명 (영어)
+                                            </span>
+                                        </td>
+                                        <td class="table-col">
+                                            <div class="input-box">
+                                                <input type="text" class="input-txt input-md">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-head-col">
+                                            <span class="table-txt">
+                                                상품ID
+                                                <i class="red-txt">*</i>
+                                            </span>
+                                        </td>
+                                        <td class="table-col">
+                                            <div class="input-box">
+                                                <input type="text" class="input-txt input-md" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-head-col">
+                                            <span class="table-txt">
+                                                상품설명
+                                                <i class="red-txt">*</i>
+                                            </span>
+                                        </td>
+                                        <td class="table-col">
+                                            <div class="input-box">
+                                                <textarea class="input-textarea"></textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-head-col">
+                                            <span class="table-txt">
+                                                가격 (KRW)
+                                                <i class="red-txt">*</i>
+                                            </span>
+                                        </td>
+                                        <td class="table-col">
+                                            <div class="input-box">
+                                                <input type="text" class="input-txt input-md">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-head-col">
+                                            <span class="table-txt">
+                                                가격 (USD)
+                                            </span>
+                                        </td>
+                                        <td class="table-col">
+                                            <div class="input-box">
+                                                <input type="text" class="input-txt input-md">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-head-col">
+                                            <span class="table-txt">
+                                                활성화여부
+                                                <i class="red-txt">*</i>
+                                            </span>
+                                        </td>
+                                        <td class="table-col">
+                                            <label class="input-box dis-ib">
+                                                <input type="radio" name="lang">
+                                                <span class="radio-frame"></span>
+                                                <span class="chk-label">활성</span>
+                                            </label>
+                                            <label class="input-box dis-ib ml24">
+                                                <input type="radio" name="lang">
+                                                <span class="radio-frame"></span>
+                                                <span class="chk-label">비활성</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="table-desc">
+                                <i class="primary-txt">※</i> 상품 ID는 숫자 또는 소문자로 시작해야 하며 숫자(0~9), 소문자(a~z), 밑줄(_), 마침표(.)를 포함할 수 있습니다.<br>상품을 만든 다음에는 상품ID를 변경하거나 재사용할 수 없습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pop-footer">
+                        <div class="btn-box">
+                            <input type="button" value="삭제" class="input-btn btn-trans">
+                            <input type="button" value="저장" class="input-btn btn-primary">
+                        </div>
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+        </div>
+        <footer class="content-footer">
+            <p class="copyright">Copyrifght 2020. Hancom Inc. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

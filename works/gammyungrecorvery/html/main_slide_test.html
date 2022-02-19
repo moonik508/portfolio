@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/bxslider/jquery.bxslider.js"></script>
+    <script src="../lib/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../lib/slick-1.8.1/slick/slick-theme.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+        margin:5px 0; 
+        }
+
+        .sliderContainer {
+        position: relative;
+        }
+
+        .slider {
+            position: relative;
+            height: 700px;
+            margin: 0;
+        }
+
+        .slick-slide {
+            position: relative;
+            height: 700px;
+            background: #3a8999;
+            color: white;
+            font-size: 30px;
+            font-family: "Arial", "Helvetica";
+            text-align: center;
+        }
+        .slick-slide .slide_txt{
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            padding-top: 280px;
+            padding-left: 120px;
+            color: #fff;
+            font-size: 42px;
+            text-align: left;
+            line-height: 56px;
+            letter-spacing: -0.6px;
+            font-family: 'Nanum Myeongjo', serif;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 4%, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0) 79%, rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.8) 100%);
+        }
+        .slick-slide .slide_txt i{
+            color: #ffd899;
+        }
+        .slick-slide .slide_sub_txt{
+            position: absolute;
+            z-index: 2;
+            top: 416px;
+            left: 120px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: 0;
+        }
+        
+        .single-item .slick-prev,
+        .single-item .slick-next{
+            position: absolute;
+            top: 50%;
+            z-index: 999;
+            width: 50px;
+            height: 100px;
+            margin-top: -25px;
+            background-color: rgba(0,0,0,0.65);
+        }
+        .single-item .slick-prev{
+            left: 0;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        .single-item .slick-next{
+            right: 0;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        .single-item .slick-prev:before,
+        .single-item .slick-next:before {
+            display: none;
+        }
+
+        .slick-dots {
+        bottom: -30px;
+        }
+
+        .slick-slide:nth-child(odd) {
+            background: #e84a69;
+        }
+
+        .progressBarContainer {
+            position: absolute;
+            left: 120px;
+            bottom: 146px;
+            width:150px;
+            left:150px;
+        }
+
+        .progressBarContainer div {
+            display: block;
+            width: 30%;
+            padding: 0;
+            cursor: pointer;
+            float: left;
+            color: white;
+        }
+
+        .progressBarContainer div:last-child {
+            margin-right: 0;
+        }
+
+        .progressBarContainer div span.progressBar {
+            width: 100%;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.4);
+            display: block;
+        }
+
+        .progressBarContainer div span.progressBar .inProgress {
+            background-color: rgba(255, 255, 255, 1);
+            width: 0%;
+            height: 2px;
+        }
+        .custom_paging li{
+            display: none;
+        }
+        .custom_paging li.slick-active{
+            display: block;
+        }
+        .slide_btn_container{
+            position: absolute;
+            left: 300px;
+            bottom: 137px;
+            overflow: hidden;
+        }
+        .slide_btn_container .btn{
+            display: none;
+            width: 12px;
+            height: 20px;
+            margin: 0;
+            border: 0;
+            cursor: pointer;
+            float: left;
+        }
+        .slide_btn_container .btn.active{
+            display: block;
+        }
+        .slide_btn_container .btn_pause{
+            background: #fff;;
+        }
+        .slide_btn_container .btn_play{
+            background: lime;
+        }
+        .slider .custom_paging{
+            position: absolute;
+            top: 545px;
+            left: 290px;
+            margin: 0;
+            color: #fff;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".slider").slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                infinite: true,
+                arrows: true,
+                dots: false,
+                speed: 800,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                draggable : false,
+                dots: true,
+                dotsClass: 'custom_paging',
+                customPaging : function (slider, i) {
+                    console.log(slider);
+                    return  (i + 1) + '/' + slider.slideCount;
+                }
+            });
+            //play and pause button
+            $(".btn_pause").on("click", function(){
+                $(".btn_play").addClass("active");
+                $(this).removeClass("active");
+                $(".slider").slick('slickPause');
+            });
+            $(".btn_play").on("click", function(){
+                $(".btn_pause").addClass("active");
+                $(this).removeClass("active");
+                $(".slider").slick('slickPlay');
+            });
+
+            //ticking machine
+            var percentTime;
+            var tick;
+            var time = 1;
+            var progressBarIndex = 0;
+
+            $('.progressBarContainer .progressBar').each(function(index) {
+                var progress = "<div class='inProgress inProgress" + index + "'></div>";
+                $(this).html(progress);
+            });
+
+            function startProgressbar() {
+                resetProgressbar();
+                percentTime = 0;
+                tick = setInterval(interval, 10);
+            }
+
+            function interval() {
+                if (($('.slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
+                    progressBarIndex = $('.slider .slick-track div[aria-hidden="false"]').data("slickIndex");
+                    startProgressbar();
+                } else {
+                    percentTime += 1 / (time + 2);
+                    $('.inProgress' + progressBarIndex).css({
+                        width: percentTime + "%"
+                    });
+                    if (percentTime >= 100) {
+                        $('.single-item').slick('slickNext');
+                        progressBarIndex++;
+                        if (progressBarIndex > 2) {
+                            progressBarIndex = 0;
+                        }
+                        startProgressbar();
+                    }
+                }
+            }
+
+            function resetProgressbar() {
+                $('.inProgress').css({
+                    width: 0 + '%'
+                });
+                clearInterval(tick);
+            }
+            startProgressbar();
+            // End ticking machine
+
+            $('.progressBarContainer div').click(function () {
+                clearInterval(tick);
+                var goToThisIndex = $(this).find("span").data("slickIndex");
+                $('.single-item').slick('slickGoTo', goToThisIndex, false);
+                startProgressbar();
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <div class="sliderContainer">
+        <div class="slider single-item">
+          <div>
+              <p class="slide_txt">공인된 <i>회계·세무</i> 자격을<br>겸비한 <i>도산전문변호사</i></p>
+              <p class="slide_sub_txt">법률을 기본으로 회계·재무까지 아우르는 종합적인 솔루션을 통해​<br>경제적 위기에 처한 기업과 개인의 ‘최대 이익’ 실현을 추구합니다.</p>
+          </div>
+          <div>
+              <p class="slide_txt">공인된 <i>회계·세무</i> 자격을<br>겸비한 <i>도산전문변호사</i></p>
+              <p class="slide_sub_txt">법률을 기본으로 회계·재무까지 아우르는 종합적인 솔루션을 통해​<br>경제적 위기에 처한 기업과 개인의 ‘최대 이익’ 실현을 추구합니다.</p>
+          </div>
+          <div>
+              <p class="slide_txt">공인된 <i>회계·세무</i> 자격을<br>겸비한 <i>도산전문변호사</i></p>
+              <p class="slide_sub_txt">법률을 기본으로 회계·재무까지 아우르는 종합적인 솔루션을 통해​<br>경제적 위기에 처한 기업과 개인의 ‘최대 이익’ 실현을 추구합니다.</p>
+          </div>
+        </div>
+        <div class="progressBarContainer">
+          <div>
+            <span data-slick-index="0" class="progressBar"></span>
+          </div>
+          <div>
+            <span data-slick-index="1" class="progressBar"></span>
+          </div>
+          <div>
+            <span data-slick-index="2" class="progressBar"></span>
+          </div>
+        </div>
+        <div class="slide_btn_container">
+            <button class="btn btn_pause active">일시정지</button>
+            <button class="btn btn_play">시작</button>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* layout-layout */
+html, body{height: auto; min-height: 100%;}
+.wrap{overflow-x: hidden; overflow-y: auto; position: relative; height: auto; min-height: 100%; font-family: 'HancomMalangMalang', sans-serif; font-weight: 400; letter-spacing: -0.5px; background: #fff;}
+
+/*  */
+[type=checkbox]{display: none;}
+
+/* common object - library css custom */
+.mCSB_scrollTools{width: 16px !important;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width: 16px !important; border-radius: 0 !important;}
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: #a4a4a4 !important}
+.mCS-dark.mCSB_scrollTools .mCSB_draggerRail{width: 16px !important; border-radius: 0 !important;background-color: #eee !important;}
+
+/* layout - header */
+.header{position: relative; width: 100%;}
+.header.main{position: fixed; z-index: 1200; top: 0; left: 0; right: 0;}
+.hd-title-box{position: relative; z-index: 1050; padding: 40px 45px; width: 100%; height: 132px;}
+.hd-title-box .title{position: relative; z-index: 90; padding: 0; font-size: 41px; text-align: center;}
+.input-btn.back-btn{position: absolute; z-index: 100; top: 40px; left: 45px; width: 53px; min-width: 53px; height: 53px; border: 0; border-radius: 0; background: url("../../static/images/ic-quit.png") no-repeat; background-size: contain;}
+.header-btn-box{position: absolute; z-index: 100;  top: 40px; right: 45px; }
+.header-btn-box .input-btn{opacity: 0.2;}
+.header-btn-box .input-btn.active{opacity: 1}
+.input-btn.btn-pic{display: inline-block; vertical-align: middle; width: 55px; min-width: 55px; height: 52.8px; border: 0; border-radius: 0; background: #fff url("../../static/images/ic-gallery.png") no-repeat; background-size: cover;}
+.input-btn.btn-movie{display: inline-block; vertical-align: middle; margin-left: 33px; width: 59px; min-width: 59px; height: 51px; border: 0; border-radius: 0; background: url("../../static/images/ic-video.png") no-repeat; background-size: cover;}
+.hd-sub-title{font-size: 22px; text-align: center; font-weight: 600;}
+
+/* album - gallery style */
+.component-box.list-container{padding: 20px 140px 0; }
+.list-item.img-none{margin: 65px auto 0; width: 20%; text-align: center; }
+.list-item.img-none img{display: block; width: 100%; }
+.list-item.img-none .desc{margin-top: 26px; color: #6d6d6d; font-size: 30px; font-weight: 600;}
+
+.list-item-box{margin-top: 26px; height: 280px; background: #fff;}
+.list-box .input-btn.btn-item-all-sel{display: none;}
+.list-box.active .input-btn.btn-item-all-sel{display: block;}
+.list-box .input-btn.btn-item-cancel{display: none;}
+.list-box.active .input-btn.btn-item-cancel{display: inline-block;}
+.list-box .input-btn.btn-item-sel{display: inline-block;}
+.list-box.active .input-btn.btn-item-sel{display: none;}
+
+.list-item-row{padding-right: 90px; padding-bottom: 26px;}
+.list-item-row .title{margin-bottom: 18px; padding-left: 18px; padding-bottom: 0; height: 36px; color: #fff; font-size: 20px; line-height: 36px; background: #a4a4a4;}
+.list-item-row .item-img{overflow: hidden; display: inline-block; vertical-align: middle; position: relative; margin-left: 14px; margin-bottom: 14px; width: 134px; height: 100px; border: 0.5px solid #666;}
+.list-item-row .item-img:nth-child(5n+1){margin-left: 0;}
+.list-item-row .item-img img{position: absolute; z-index: 100; top: 50%; left: 50%; width: 120%; height: 120%; transform: translate(-50%, -50%)}
+
+.list-item-row .item-img .img-sel{display: none; overflow: hidden; position: absolute; z-index: 150; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: transparent}
+.list-box.active .img-sel{display: block;}
+.list-item-row .item-img .img-sel .frame{position: absolute; z-index: 150; top: 8px; left: 8px; width: 20px; height: 20px; border-radius: 100%; background: rgba(255, 255, 255, 0.5) url("../../static/images/ic-bg-check-box.png") no-repeat; background-size: cover; }
+.list-item-row .item-img .img-sel .dim{position: absolute; z-index: 100; top: 0; left: 0; right: 0; bottom: 0; transition: background 0.15s; background: rgba(0, 0, 0, 0)}
+.list-item-row .item-img .img-sel :checked~.frame{background: transparent url("../../static/images/ic-bg-check.png") no-repeat; background-size: cover}
+.list-item-row .item-img .img-sel :checked~.dim{background: rgba(0, 0, 0, 0.4)}
+
+/* popup */
+
+
+/* layout - content-wrap */
+.content-wrap{position: relative; height: 100%; min-height: 500px; background: #fff;}
+
+/* layout - detail page */
+.app-info-box{padding: 0 60px;}
+.app-card{width: 740px; height: 320px;}
+.app-card .card-top{position: relative; padding-left: 260px; height: 260px; border-bottom: 2px solid #a4a4a4;}
+.app-card .card-top .thumb{overflow: hidden; position: absolute; z-index: 10; top: 50%; left: 35px; width: 183px; height: 183px; border-radius: 100%; border: 2px solid #a4a4a4; transform: translateY(-50%);}
+.app-card .card-top .thumb img{display: block; width: 100%; height: 100%;}
+.app-card .card-top .app-info-txt{display: inline-block; vertical-align: top; padding-top: 40px; width: 480px; height: 100%; }
+.app-card .card-top .card-title{display: block; margin-bottom: 12px; font-size: 36px;}
+.app-card .card-top .card-sub-title{margin-bottom: 12px; height: 22px; color: #a4a4a4; font-size: 22px; font-weight: 400;}
+.app-card .card-top .card-developer{display: block; height: 30px; font-size: 24px;}
+.app-card .card-top .card-caption{display: block; margin-top: 64px; font-size: 24px; }
+.app-card .card-top .card-caption span{display: inline-block; vertical-align: middle; position: relative; padding-left: 10px;}
+.app-card .card-top .card-caption span:before{content: "·"; display: block; position: absolute; z-index: 5; top: 0; left: 0; bottom: 0; height: 100%; }
+.app-card .card-top .btn-box{display: block; position: absolute; top: 0; left: 100%; margin-left: 280px; width: 100%; height: 100%; text-align: right;}
+.app-card .card-top .btn-box .badge,
+.app-card .card-top .btn-box .input-btn{min-width: 280px; height: 58px; line-height: 56px; border-radius: 29px; }
+.app-card .card-top .btn-box .badge+.badge{margin-left: 12px;}
+.app-card .card-top .btn-box .badge+.input-btn{margin-left: 12px;}
+.app-card .card-top .btn-box .input-btn+.badge{margin-left: 12px;}
+.app-card .card-top .btn-box .input-btn+.input-btn{margin-left: 12px;}
+.app-card .card-bot{text-align: left;}
+.app-card .card-bot .card-desc{overflow: hidden; padding-left: 20px; height: 52px;}
+.app-card .card-bot .card-desc p{display: inline-block; vertical-align: middle; font-size: 24px; text-align: left; line-height: 52px;}
+.app-card .card-bot .card-desc p+p{margin-left: 20px;}
+
+/* 상세페이지 & 상세페이지 팝업 */
+.rating input{display: block;}
+.rating label{display: none;}
+.rating input[type="radio"]:checked~label{display: block; font-size: 50px;}
+.rating-graph p{display: inline-block; vertical-align: middle; width: 15px;}
+.rating-graph img{display: inline-block; vertical-align: middle; margin-left: 40px;}
+
+/* 앱정보 상세페이지 */
+.soft-info-desc{padding: 0 60px;}
+.soft-info-box{padding: 15px 20px; width: 500px; background: #eeeeee;}
+.soft-info-desc .soft-info-row{font-size: 0;}
+.soft-info-desc .soft-info-row span{display: inline-block; vertical-align: top; font-size: 24px; font-weight: 800; line-height: 1.5;}
+.soft-info-desc .soft-info-row span:nth-child(1){width: 50%; text-align: left;}
+.soft-info-desc .soft-info-row span:nth-child(2){width: 50%; text-align: right;}
+
+
+/* 앱 정보 */
+.app-info-desc{padding: 0 60px;}
+.app-info-desc p{font-size: 24px; text-align: left; line-height: 1.5;}
+
+/* 개발자 연락처 */
+.developer-info-desc{padding: 30px 0;}
+.developer-info-desc .info-row{padding-left: 60px; font-size: 0; text-align: left;}
+.developer-info-desc .info-row+.info-row{margin-top: 40px; }
+.developer-info-desc .info-row span{display: inline-block; vertical-align: top; font-size: 24px}
+.developer-info-desc .info-row a{color: #666}
+.developer-info-desc .info-row span:nth-child(1){width: 230px;}
+.developer-info-desc .info-row span:nth-child(2){}
+
+/*2021.03.26 hompage 색상 추가*/
+.developer-info-desc .info-row .homepage{color: #ff8f4a}
+
+/* 평가등록 팝업 */
+.score-box{position: relative; margin: 50px auto 0; width: 660px; height: 160px;}
+.score-box .score-item{height: 160px; transition: background 0.3s; background: url("../../static/images/star/star_other_0.png") no-repeat;}
+.score-box .score-btn{position: absolute; top: 0; width: 130px; height: 120px; background: transparent}
+.score-box .score-btn.score-btn01{left: 0;}
+.score-box .score-btn.score-btn02{left: 130px;}
+.score-box .score-btn.score-btn03{left: 260px;}
+.score-box .score-btn.score-btn04{left: 390px;}
+.score-box .score-btn.score-btn05{left: 520px;}
+.appscore-data01:checked~.score-item{background: url("../../static/images/star/star_other_1.png") no-repeat;}
+.appscore-data02:checked~.score-item{background: url("../../static/images/star/star_other_2.png") no-repeat;}
+.appscore-data03:checked~.score-item{background: url("../../static/images/star/star_other_3.png") no-repeat;}
+.appscore-data04:checked~.score-item{background: url("../../static/images/star/star_other_4.png") no-repeat;}
+.appscore-data05:checked~.score-item{background: url("../../static/images/star/star_other_5.png") no-repeat;}
+
+/* 앱없음 & 결과없음 */
+.not-search{font-size: 56px; line-height: 700px; font-weight: 800;}

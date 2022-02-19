@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lib/css/reset.css">
+  <link rel="stylesheet" href="./lib/css/fonts.css">
+  <link rel="stylesheet" href="./lib/css/common.css">
+  <link rel="stylesheet" href="./lib/css/style.css">
+  <script src="./lib/js/3.1.1/jquery.min.js"></script>
+  <script src="./lib/js/common.js"></script>
+  <title>RISO Convergence</title>
+  <script>
+    $(document).ready(function(){
+
+      //다른페이지에서 넘어올 때
+      var url = $(location).attr("href").split("#");
+      var code = "";
+      if(url[1] != null && url[1] != ""){
+        code = url[1];
+        tablink("platform", code);
+      }
+
+      //해당 페이지에서 사용할 때
+      $(".tab_item a").on('click',function(e){
+        var datacode = $(this).attr("data-code");
+        tablink("platform",datacode);
+        return false;
+      })
+
+      //해당 페이지에서 해당페이지로의 이동 
+      $(".sub_nav_item a").on("click", function(){
+        var thisUrl = $(this).attr("href").split("#");
+        var code = "";
+        if(thisUrl[1] != null && thisUrl[1] != ""){
+          code = thisUrl[1];
+          tablink("platform", code);
+        };
+      });
+    });
+
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <!-- header -->
+    <header class="header">
+
+      <nav class="header_top_nav">
+        <div class="inner">
+          <h1 class="logo">
+            <a href="/">
+              리소 컨버젼스 메인 로고
+            </a>
+          </h1>
+          <a href="javascript:void(0)" class="btn_m_nav">
+            <i></i>
+            <i></i>
+            <i></i>
+          </a>
+          <ul class="main_nav">
+            <li class="main_nav_item">
+              <a href="#">ABOUT US</a>
+
+              <nav class="sub_nav sub01">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./aboutus.html#01">인사말</a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a href="./aboutus.html#02">경영이념</a>
+                  </li>
+                  <!-- <li class="sub_nav_item">
+                    <a href="./aboutus.html#03">보유특허</a>
+                  </li> -->
+                  <li class="sub_nav_item">
+                    <a href="./aboutus.html#03">오시는길</a>
+                  </li>
+                </ul>
+              </nav>
+
+            </li>
+            <li class="main_nav_item">
+              <a href="#">BUSINESS</a>
+
+              <nav class="sub_nav sub02">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./business.html#01">리사이클링</a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a href="./business.html#02">자연정화</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="main_nav_item">
+              <a href="#">PLATFORM</a>
+
+              <nav class="sub_nav sub03">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./platform.html#01">리사이클링 DASHBOARD</a>
+                  </li>
+                  <li class="sub_nav_item">
+                    <a href="./platform.html#02">데이터 융합 A.I</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="main_nav_item">
+              <a href="#">RISO LAB</a>
+
+              <nav class="sub_nav sub04">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./lab.html#01">연구분야</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="main_nav_item">
+              <a href="#">RECRUIT</a>
+
+              <nav class="sub_nav sub05">
+                <ul class="sub_nav_list">
+                  <li class="sub_nav_item">
+                    <a href="./recruit.html#01">채용안내</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+          </ul>
+
+          <ul class="m_main_nav">
+            <li><a href="./aboutus.html">About US</a></li>
+            <li><a href="./business.html">Business</a></li>
+            <li><a href="./platform.html">Platform</a></li>
+            <li><a href="./lab.html">riso lab</a></li>
+            <li><a href="./recruit.html">recruit</a></li>
+          </ul>
+          <div class="dim"></div>
+
+        </div>
+      </nav> 
+
+    </header>
+    <!-- //header -->
+
+    <!-- container -->
+    <div class="container platform">
+
+      <!-- visual box -->
+      <div class="visual_box">
+
+        <div class="inner">
+          <p class="visual_txt">
+            <b class="visual_title">Platform</b>
+            NEW NATURAL CIRCULATION<br>
+            R.I.S.O CONVERGENCE가 SMART DASHBOARD를 제시합니다.
+          </p>
+        </div>
+
+      </div>
+      <!-- // visual box -->      
+      
+      <div class="content">
+        <!-- tab_box -->
+        <div class="tab_box">
+          <div class="inner">
+
+            <ul class="tab_list">
+              <li class="tab_item active"><a data-code="platform01" href="#">리사이클링 DASHBOARD</a></li>
+              <li class="tab_item"><a data-code="platform02" href="#">데이터 융합 A.I</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- // tab_box -->
+
+        <!-- 리사이클링 DASHBOARD -->
+        <div class="content_box" id="platform01">
+
+          <div class="area_box">
+            <div class="inner">
+
+              <div class="txt_box">
+                <p class="main_txt">
+                  Recycling의 <br class="mbr">Smart Dashboard
+                </p>
+                <p class="txt">
+                  Recycle 용품과의 융합을 통해 <br class="mbr">얻을 수 있는 리싸이클링 데이터를 축적합니다. <br class="mbr">축적된 데이터는 1차로 view를 통해 노출하고,<br>
+                  노출된 데이터를 확인하는 반응과 <br class="mbr">활용도에 맞추어 다양한 생산성 데이터를 <br class="mbr">추가 추출하게 됩니다.
+                </p>
+              </div>
+
+              <div class="platform_img_box">
+                <img src="./image/platform/platform_image.png" alt="스마트 대시보드 이미지">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- 리사이클링 DASHBOARD -->
+
+        <!-- 데이터 융합 A.I -->
+        <div class="content_box" id="platform02" style="display: none;">
+
+          <div class="area_box">
+            <div class="inner">
+
+              <div class="txt_box">
+                <p class="main_txt">
+                  데이터 활용을 위한 <br class="mbr">온라인 플랫폼
+                </p>
+                <p class="txt">
+                  Recycle 용품과의 융합이 가능한 축적된 <br class="mbr">리싸이클링 데이터를 활용합니다.<br>
+                  축적된 데이터는 1차로 DASHBOARD를 통해 <br class="mbr">다양한 view를 통해 확인이 가능하고,<br>
+                  다양하게 융합된 가능성 데이터를 학습된 A.I가<br class="mbr"> 2차로 노출하여 재활용, 자연정화, 자원순환 등의 <br class="mbr">연구 데이터로 재활용됩니다.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="area_box gy_box">
+            <div class="inner">
+
+              <div class="platform_img_box graph">
+
+                <div class="graph_txt_box main">
+                  <p class="graph_item_name">소득</p>
+                  <p class="graph_txt green_item"><span class="graph_sub_name">종이</span>12kg</p>
+                  <p class="graph_txt dgreen_item"><span class="graph_sub_name">플라스틱</span>6kg</p>
+                  <p class="graph_txt blue_item"><span class="graph_sub_name">유리병</span>11kg</p>
+                </div>
+
+                <div class="graph_txt_box sub01">
+                  <p class="graph_item_name">분해<br class="pbr"><i>95%</i></p>
+                  <p class="graph_txt green_item"><span class="graph_sub_name">분리</span>43%</p>
+                  <p class="graph_txt dgreen_item"><span class="graph_sub_name">희석</span>100%</p>
+                  <p class="graph_txt blue_item"><span class="graph_sub_name">용해</span>192kg</p>
+                  <ul class="graph_desc_m">
+                    <li>분리</li>
+                    <li>희석</li>
+                    <li>용해</li>
+                  </ul>
+                </div>
+
+                <div class="graph_txt_box sub02">
+                  <p class="graph_item_name">분쇄<br class="pbr"><i>100%</i></p>
+                  <p class="graph_txt green_item"><span class="graph_sub_name">미가용 물질</span>42.7%</p>
+                  <p class="graph_txt dgreen_item"><span class="graph_sub_name">분리1</span>88%</p>
+                  <p class="graph_txt blue_item"><span class="graph_sub_name">분리2</span>67%</p>
+                  <ul class="graph_desc_m">
+                    <li>미가용 물질</li>
+                    <li>분리1</li>
+                    <li>분리2</li>
+                  </ul>
+                </div>
+
+                <div class="graph_txt_box sub03">
+                  <p class="graph_item_name">분쇄<br class="pbr"><i>95%</i></p>
+                  <p class="graph_txt green_item"><span class="graph_sub_name">희석</span>100%</p>
+                  <p class="graph_txt dgreen_item"><span class="graph_sub_name">용해</span>192kg</p>
+                  <p class="graph_txt blue_item"><span class="graph_sub_name">가공</span>22kg</p>
+                  <ul class="graph_desc_m">
+                    <li>희석</li>
+                    <li>용해</li>
+                    <li>가공</li>
+                  </ul>
+                </div>
+
+                <img src="./image/platform/platform_graph.png" class="pc_graph_img" alt="그래프 이미지 피씨">
+                <img src="./image/platform/platform_graph_m.png" class="m_graph_img" alt="그래프 이미지 모바일">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- 데이터 융합 A.I -->
+
+      </div>
+    </div>
+    <!-- //container -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="inner">
+        <address>
+          T: 02.881.5738   F: 02.881.5739  127 Bubwonro, Songpa-gu, Seoul, Daemyoung valleyon knowledge biz center 4F, 403<br>
+          Copyright (C) 2022 R.I.S.O All Rights Reserved.
+        </address>
+      </div>
+    </footer>
+    <!-- //footer -->
+  </div>
+</body>
+</html>

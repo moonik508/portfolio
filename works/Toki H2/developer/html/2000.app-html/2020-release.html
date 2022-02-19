@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <link rel="stylesheet" href="../../lib/jquery/js/plugin/mCustomScrollBar/mCustomScrollbar.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <script src="../../lib/jquery/js/plugin/mCustomScrollBar/jquery.mCustomScrollbar.min.js"></script>
+    <title>app realese page</title>
+</head>
+<body>
+    <div class="wrap default">
+        <nav class="left-nav">
+            <div class="inner">
+                <h1 class="logo white">
+                    <img src="../../static/images/logo-wh.png" alt="">
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="dash-nav">대시보드</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="active">앱관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정산조회</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">패키지 주문관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">사용자관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <!-- 선택된 main-nav-item 의 a 클래스에 active 클래스명 추가 -->
+                        <a href="javascript:void(0)" class="sdk-nav">SDK 센터</a>
+                        <ul class="sub-nav">
+                            <li class="sub-nav-item">
+                                <!-- 현재 선택된 2뎁스 메뉴에도 sub-nav-item의 a태그에 클래스명 active 추가 -->
+                                <a href="javascript:void(0)" class="active">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">공지사항</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">문의하기</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정보변경</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="left-nav-dim"></div>
+        <div class="content-wrap">
+            <div class="content-header">
+                <div class="inner">
+                    <input type="button" class="btn-hamburger">
+                    <div class="logo white"><img src="../../static/images/logo-wh.png" alt=""></div>
+                    <div class="service-title">
+                        <span class="logo-txt">Toki</span>
+                        <span>개발자센터</span>
+                    </div>
+                    <!-- 유저 정보 박스 -->
+                    <div class="user-info-box">
+                        <p class="user-name">홍길동님</p>
+                        <div class="btn-box">
+                            <input type="button" value="로그아웃" class="input-btn">
+                        </div>
+                    </div>
+                    <!-- // 유저 정보 박스 -->
+                </div>
+            </div>
+            <div class="inner">
+                <p class="section-title">
+                    출시관리
+                    <span class="title-desc">앱스토어에 노출되는 버전을 등록합니다.</span>
+                </p>
+                <div class="btn-tab-box detail-tab mb30">
+                    <div class="btn-box">
+                        <!-- 선택된 페이지의 btn-tab에 active 클래스명 추가 -->
+                        <input type="button" value="등록정보" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="수익설정" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="인앱설정" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="비공개 테스트" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="출시관리" class="btn-tab active">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="서비스범위" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="평점관리" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="API" class="btn-tab">
+                    </div>
+                </div>
+                <!-- 
+                    테이블 상단에 하이라이트가 필요한 경우 table-box와 highlight-table 클래스명 동시사용 
+                    highlight-table은 자식요소 thead 가 존재함 
+                -->
+                <div class="table-box hightlight-table fixed-table">
+                    <div class="table-caption-box">
+                        <p class="table-caption">버전 빌드</p>
+                        <div class="btn-box table-top-btn">
+                            <input type="button" value="빌드생성" class="input-btn btn-primary sm-btn">
+                        </div>
+                    </div>
+                    <table>
+                        <colgroup>
+                            <col style="width: 20%">
+                            <col style="width: 20%">
+                            <col style="width: 20%">
+                            <col style="width: 20%">
+                            <col style="width: 20%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        버전
+                                    </span>
+                                </td>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        APK 버전
+                                    </span>
+                                </td>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        등록일
+                                    </span>
+                                </td>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        상태
+                                    </span>
+                                </td>
+                                <td class="table-head-col txt-c">
+                                    <span class="table-txt">
+                                        설정
+                                    </span>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">1.0</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">13</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">2021-02-05</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">심사중</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <div class="btn-box">
+                                        <input type="button" value="심사취소" class="input-btn release-btn">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">0.95</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">12</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">2021-02-05</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">출시</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <div class="btn-box">
+                                        <input type="button" value="출시중지" class="input-btn release-btn">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">0.94</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">11</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">2021-02-05</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                    <span class="table-txt">서비스 중지</span>
+                                </td>
+                                <td class="table-col txt-c">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- pagination의 위치는 component-box의 제일 마지막 자식요소여도 되고 그 뒤의 형제요소여도 무관 -->
+                <div class="pagination-box">
+                    <ul>
+                        <!-- pagination의 버튼을 숨길 경우 li 태그에 클래스명 hidden 추가 -->
+                        <li>
+                            <input type="button" class="btn-page btn-first">
+                        </li>
+                        <li>
+                            <input type="button" class="btn-page btn-prev">
+                        </li>
+                        <li class="active">
+                            <span>1</span>
+                        </li>
+                        <li>
+                            <span>2</span>
+                        </li>
+                        <li>
+                            <span>3</span>
+                        </li>
+                        <li>
+                            <input type="button" class="btn-page btn-next">
+                        </li>
+                        <li>
+                            <input type="button" class="btn-page btn-last">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="content-footer">
+            <p class="copyright">Copyrifght 2020. Hancom Inc. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

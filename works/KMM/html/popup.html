@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".g_nav_cars>a").on("click", function(){
+                $(".sub_depth").slideToggle(300);
+            })
+        });
+    </script>
+    <title>KMM</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container sub">
+            <div class="inner">
+                <div class="box left sub">
+                    <h1 class="logo"><img src="../image/logo.png" alt="kia logo"></h1>
+                    <nav class="g_nav">
+                        <ul class="g_nav_list">
+                            <!-- 해당하는 페이지의 메뉴에 li 태그에 active 클래스를 붙여주세요. -->
+                            <li class="active"><a href="./businesscard.html">Business card</a></li>
+                            <li class="g_nav_cars">
+                                <a href="javascript:void(0)">Company Cars</a>
+                                <ul class="sub_depth">
+                                    <li><a href="javascript:void(0)">Accident Report</a></li>
+                                    <li><a href="javascript:void(0)">Car Maintenance</a></li>
+                                    <li><a href="javascript:void(0)">Pool Car Reservation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0)">Taxi Request</a></li>
+                            <li><a href="javascript:void(0)">IT Devices</a></li>
+                            <li><a href="javascript:void(0)">Post Office</a></li>
+                            <li><a href="javascript:void(0)">System menagement</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="box content_area">
+                    <div class="sub_header">
+                        <div class="sub_head_inner">
+                            <!-- sub top nav -->
+                            <nav class="sub_nav">
+                                <ul>
+                                    <!-- 뱃지로 보여줄 갯수가 있는 경우 li 태그에 alram 클래스명을 추가하면 됩니다. -->
+                                    <li class="alram">
+                                        <i class="badge">1</i>
+                                        <a href="#">
+                                            <img src="../image/bc_icon_01.png" alt="">
+                                            <span>Approval<br>request</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="badge">1</i>
+                                        <a href="#">
+                                            <img src="../image/bc_icon_02.png" alt="">
+                                            <span>Docs to<br>Approve</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="badge">1</i>
+                                        <a href="#">
+                                            <img src="../image/bc_icon_03.png" alt="">
+                                            <span>Completed<br>Docs</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="badge">1</i>
+                                        <a href="#">
+                                            <img src="../image/bc_icon_04.png" alt="">
+                                            <span>Rejected<br>Docs</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="user_box">
+                                <p class="user_info">
+                                   <b>Manager</b> 
+                                   <span>Nadia Lorena Mireless Narvaez</span>
+                                </p>
+                                <input type="button" class="logout" value="logout">
+                                <input type="button" class="setting" value="setting">
+                            </div>
+                            <!-- //sub top nav -->
+                        </div>
+                    </div>
+                    <div class="sub_content">
+                        <div class="sub_inner">
+                            <h2 class="category_title">Request</h2>
+                            <div class="confirm_box">
+
+                                <div class="confirm_item">
+                                    <div class="confirm_tab">
+                                        <span>Head of<br>Section</span>
+                                    </div>
+                                    <div class="confirm_body">
+                                        <span>FRENANDO RANGEL</span>
+                                        <span class="txt confirm">Confirm</span><!-- 승인일 경우 confirm -->
+                                    </div>
+                                </div>
+                                <div class="confirm_item">
+                                    <div class="confirm_tab">
+                                        <span>Head of<br>Department</span>
+                                    </div>
+                                    <div class="confirm_body">
+                                        <span>FRENANDO RANGEL</span>
+                                        <span class="txt reject">Reject</span><!-- 승인 거절일 경우 reject -->
+                                    </div>
+                                </div>
+                                <div class="confirm_item">
+                                    <div class="confirm_tab">
+                                        <span>part1</span>
+                                    </div>
+                                    <div class="confirm_body">
+                                        <span>FRENANDO RANGEL</span>
+                                        <span class="txt reject">Reject</span><!-- 승인 거절일 경우 reject -->
+                                    </div>
+                                </div>
+                                <div class="confirm_item">
+                                    <div class="confirm_tab">
+                                        <span>part2</span>
+                                    </div>
+                                    <div class="confirm_body">
+                                        <span>FRENANDO RANGEL</span>
+                                        <span class="txt reject">Reject</span><!-- 승인 거절일 경우 reject -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_nav">
+                                <a href="javascript:void(0)" class="btn_tab tab01 active">Apply</a>
+                                <a href="javascript:void(0)" class="btn_tab tab02">Lookup</a>
+                            </div>
+                            <div class="content_tab tab01">
+                                <div class="control_box post">
+                                    <input type="button" value="Save" class="btn primary">
+                                    <input type="button" value="Delete" class="btn black">
+                                    <input type="button" value="Request" class="btn black">
+                                    <input type="button" value="Recuest Cancel" class="btn black">
+                                    <input type="button" value="List" class="btn black">
+                                </div>
+                                <div class="sub_frame mb30">
+                                    <p class="sub_title">Basic Info</p>
+                                    <table>
+                                        <colgroup>
+                                            <col width="100px">
+                                            <col width="130px">
+                                            <col width="114px">
+                                            <col width="350px">
+                                            <col width="116px">
+                                            <col width="140px">
+                                            <col width="147px">
+                                            <col width="70px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">User ID</span>
+                                                </th>
+                                                <td>
+                                                   <input type="text" class="kia_input"> 
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Name</span>
+                                                </th>
+                                                <td>
+                                                   <input type="text" class="kia_input">
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Position</span>
+                                                </th>
+                                                <td>
+                                                   <input type="text" class="kia_input"> 
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Department</span>
+                                                </th>
+                                                <td>
+                                                   <input type="text" class="kia_input"> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Request ID</span>
+                                                </th>
+                                                <td>
+                                                   <input type="text" class="kia_input" readonly> 
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Name</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input">
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Position</span>
+                                                </th>
+                                                <td>
+                                                   <input type="text" class="kia_input"> 
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Department</span>
+                                                </th>
+                                                <td>
+                                                   <input type="text" class="kia_input"> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Apply Date</span>
+                                                </th>
+                                                <td>
+                                                   <input type="text" class="kia_input"> 
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Doc No.</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input"> 
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Status</span>
+                                                </th>
+                                                <td>
+                                                   <input type="text" class="kia_input"> 
+                                                </td>
+                                                <th></th>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- <div class="sub_frame mb30">
+                                    <p class="sub_title">Request Info</p>
+                                    <table>
+                                        <colgroup>
+                                            <col width="16%">
+                                            <col width="12%">
+                                            <col width="12%">
+                                            <col width="16%">
+                                            <col width="12%">
+                                            <col width="12%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Area</span>
+                                                </th>
+                                                <td colspan="2">
+                                                    <select name="" id="" class="kia_select"></select>
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Package</span>
+                                                </th>
+                                                <td colspan="2">
+                                                    <select name="" id="" class="kia_select"></select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Pakage Content</span>
+                                                </th>
+                                                <td colspan="2">
+                                                    <input type="text" class="kia_input w90">
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Value of the content</span>
+                                                </th>
+                                                <td colspan="2">
+                                                    <input type="text" class="kia_input w90">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Quantity</span>
+                                                </th>
+                                                <td colspan="2">
+                                                    <select name="" id="" class="kia_select"></select>
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Weight</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input">
+                                                </td>
+                                                <td>
+                                                    <span style="padding-left: 10px; ">cm</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Height</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input">
+                                                </td>
+                                                <td>
+                                                    <span style="padding-left: 10px; ">cm</span>
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Length</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input">
+                                                </td>
+                                                <td>
+                                                    <span style="padding-left: 10px; ">cm</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Volume</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input" readonly>
+                                                </td>
+                                                <td>
+                                                    <span style="padding-left: 10px; ">cm</span>
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Cellphone</span>
+                                                </th>
+                                                <td colspan="2">
+                                                    <input type="text" class="kia_input">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> -->
+                                <div class="sub_frame mb30">
+                                    <p class="sub_title">Request Info</p>
+                                    <table>
+                                        <colgroup>
+                                            <col width="160px">
+                                            <col width="380px">
+                                            <col width="84px">
+                                            <col width="174px">
+                                            <col width="380px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Reason</span>
+                                                </th>
+                                                <td>
+                                                    <select name="" id="" class="kia_select" disabled>
+                                                        <option value="Select">Select</option>
+                                                    </select>
+                                                </td>
+                                                <td></td><!-- 세번째 td 태그는 공백을 위해 넣었습니다. -->
+                                                <th>
+                                                    <span class="item_title">Quantity</span>
+                                                </th>
+                                                <td>
+                                                    <select name="" id="" class="kia_select">
+                                                        <option value="Select">Select</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Name</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input">
+                                                </td>
+                                                <td></td>
+                                                <th>
+                                                    <span class="item_title">한국이름</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Job Title</span>
+                                                </th>
+                                                <td>
+                                                    <select name="" id="" class="kia_select w100" disabled>
+                                                        <option value="Select">Select</option>
+                                                    </select>
+                                                </td>
+                                                <td></td>
+                                                <th>
+                                                    <span class="item_title">Department</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input" value="ER & IR" readonly>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Telephone No.</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input" value="+52 (81) 5998-6031" readonly>
+                                                </td>
+                                                <td></td>
+                                                <th>
+                                                    <span class="item_title">Cellphone No</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input" value="+52 (81) 2022-9040" >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Email</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="kia_input" value="nadia.mireles@kia-mexico.com" readonly>
+                                                </td>
+                                                <td></td>
+                                                <th>
+                                                    <span class="item_title">Card Type</span>
+                                                </th>
+                                                <td>
+                                                    <label class="kia_chk_box">
+                                                        <!-- css 때문에 부득이 id를 사용했습니다. 수정하실경우 알려주세요. -->
+                                                        <input type="checkbox" name="card_type" id="namecard01" class="kia_chk">
+                                                        <span>Printed Card</span>
+                                                    </label>
+                                                    <label class="kia_chk_box">
+                                                        <!-- css 때문에 부득이 id를 사용했습니다. 수정하실경우 알려주세요. -->
+                                                        <input type="checkbox" name="card_type" id="namecard02" class="kia_chk">
+                                                        <span>QR Card</span>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Address</span>
+                                                </th>
+                                                <td colspan="4">
+                                                    <input type="text" class="kia_input" value="Boulevard KIA No.777, C.P. 66679 Pesquería, Nuevo León, Mexico">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="sub_frame mb30">
+                                    <p class="sub_title">Preview Business Card</p>
+                                    <!-- 카드 샘플 영역 -->
+                                </div>
+                                <div class="sub_frame mb30">
+                                    <p class="sub_title">Delivery Info</p>
+                                    <table>
+                                        <colgroup>
+                                            <col width="178px">
+                                            <col width="380px">
+                                            <col width="40px">
+                                            <col width="178px">
+                                            <col width="380px">
+                                        </colgroup>
+                                        <tr>
+                                            <th colspan="2" class="section-title">
+                                                <span>From</span>
+                                            </th>
+                                            <td></td><!-- 세번째 td 태그는 공백을 위해 넣었습니다. -->
+                                            <th colspan="2" class="section-title">
+                                                <span>To</span>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="item_title pz">Name</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input" readonly>
+                                            </td>
+                                            <td></td><!-- 세번째 td 태그는 공백을 위해 넣었습니다. -->
+                                            <th>
+                                                <span class="item_title">Name</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="item_title pz">Division</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input" readonly>
+                                            </td>
+                                            <td></td><!-- 세번째 td 태그는 공백을 위해 넣었습니다. -->
+                                            <th>
+                                                <span class="item_title">Company Address</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="item_title pz">Address</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input" readonly>
+                                            </td>
+                                            <td></td><!-- 세번째 td 태그는 공백을 위해 넣었습니다. -->
+                                            <th>
+                                                <span class="item_title">Address</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="item_title pz">Telephone</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input" readonly>
+                                            </td>
+                                            <td></td><!-- 세번째 td 태그는 공백을 위해 넣었습니다. -->
+                                            <th>
+                                                <span class="item_title">Telephone</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <span class="item_title pz">Email</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input" readonly>
+                                            </td>
+                                            <td></td><!-- 세번째 td 태그는 공백을 위해 넣었습니다. -->
+                                            <th>
+                                                <span class="item_title">Email</span>
+                                            </th>
+                                            <td>
+                                                <input type="text" class="kia_input">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_footer">
+                        <address>©COPYRIGHT. DERECHOS DE AUTOR 2020 KIA MOTORS CORP TODOS LOS DERECHOS RESERVADOS.</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 20201116 팝업 작업 -->
+    <div class="popup">
+        <div class="popup_box">
+            <!-- 검색영역 셋팅 -->
+            <div class="popup_sec_box">
+                <p class="popup_title">Search</p>
+                <div class="search_box">
+                    <input class="kia_input search">
+                    <input type="button" class="kia_input search_btn">
+                </div>
+                <div class="research_box">
+                    <p class="item">list <span class="date_txt">2020.11.16</span></p>
+                    <p class="item">list <span class="date_txt">2020.11.16</span></p>
+                </div>
+            </div>
+
+            <div class="pop_btn_box">
+                <button class="btn btn_confirm">Confirm</button>
+                <button class="btn btn_cancel">cancel</button>
+            </div>
+        </div>
+
+        <!-- 컨펌이나 경고창에 사용 -->
+        <!-- <div class="popup_box">
+            <div class="popup_sec_box">
+                <p>Do you want save?</p>
+            </div>
+
+            <div class="pop_btn_box">
+                <button class="btn btn_confirm">Confirm</button>
+                <button class="btn btn_cancel">cancel</button>
+            </div>
+        </div> -->
+
+        <div class="dim"></div>
+    </div>
+</body>
+</html>

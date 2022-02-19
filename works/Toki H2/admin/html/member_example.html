@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>Toki H2 Admin</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <img src="../static/images/logo.png" alt="한컴로보틱스 로고">
+                </h1>
+                <div class="input-box hamburger">
+                    <img src="../static/images/h_menu.jpg" alt="좌측메뉴보기 버튼" class="more">
+                    <img src="../static/images/m_close.png" alt="좌측메뉴닫기 버튼" class="close">
+                </div>
+                <div class="input-box serch-box main txt-l w50p">
+                    <input type="text" class="input-txt w90p" placeholder="검색하실 키워드 입력 후 검색아이콘을 클릭하세요.">
+                    <input type="button" class="btn main-search">
+                </div>
+                <div class="personal-area txt-c">
+                    <div class="personal-name-box">
+                        <span class="name-txt"><i>홍길동</i> 님 (슈퍼관리자)</span>
+                        <ul class="name-box-list">
+                            <li class="name-box-list-item">
+                                <a href="#">
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li class="name-box-list-item">
+                                <a href="#">
+                                    <span>2</span>
+                                </a>
+                            </li>
+                            <li class="name-box-list-item">
+                                <a href="#">
+                                    <span>3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn logout">로그아웃</a>
+                </div>
+            </div>
+        </header>
+        <aside class="left-nav">
+            <h2 class="nav-logo">
+                <img src="../static/images/toki.png" alt="한컴로보틱스 토키 아이콘">
+            </h2>
+            <nav class="nav-list">
+                <ul class="left-first-depth">
+                    <!-- 선택된 li 태그에 active 클래스 추가 / 하위메뉴 열림-->
+                    <li class="left-item first-depth dashboard">
+                        <a href="#">대시보드</a>
+                    </li>
+                    <li class="left-item first-depth active">
+                        <a href="#">회원관리</a>
+                        <div class="second-depth">
+                            <ul>
+                                <!-- 하위메뉴 선택시 li에 클래스명 on 추가 -->
+                                <li class="on"><span>123</span></li>
+                                <li><span>456</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">로봇관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">A/S관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">주문/배송관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">유통사관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">콘텐츠관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">알림관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">설정</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="content-wrap">
+            <div class="inner">
+                <!-- 페이지 네비게이션 -->
+                <div class="page-nav">
+                    <ul>
+                        <li>관리자홈</li>
+                        <li>회원관리</li>
+                    </ul>
+                </div>
+                <!-- // 페이지 네비게이션 -->
+                <!-- 테이블 외부 검색박스 -->
+                <div class="search-box">
+                    <div class="search-content">
+                        <div class="box select-box">
+                            <select name="" id="">
+                                <option value="">123</option>
+                                <option value="">123</option>
+                            </select>
+                        </div>
+                        <div class="box search-input">
+                            <input type="text" class="input-txt w100p">
+                        </div>
+                        <div class="box search-btn">
+                            <input type="button" class="btn" value="검색">
+                        </div>
+                    </div>
+                </div>
+                <!-- // 테이블 외부 검색박스 -->
+                <!-- 탭메뉴 -->
+                <!-- 탭메뉴가 만약 우측이라면 txt-l 대신 txt-r 을 사용합니다. -->
+                <div class="tab-box txt-l">
+                    <input type="button" class="btn-tab active" value="전체">
+                    <input type="button" class="btn-tab" value="마스터">
+                    <input type="button" class="btn-tab" value="그룹">
+                    <input type="button" class="btn-tab" value="일반">
+                </div>
+                <!-- //탭메뉴 -->
+                <!-- 테이블 -->
+                <!-- 
+                    테이블 컬럼의 합을 100% 로 맞춰서 사용
+                    ex) w20p + w20p + w20p + w20p + w20p = w100p
+                    table-col 안의 p태그가 중복되어 좌우로 정렬되야 할 경우에도 
+                    p태그도 100% 맞춰서 사용
+                 -->
+                <div class="table-box">
+                    <div class="table-head">
+                        <div class="table-row">
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">번호</p>
+                            </div>
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">구분</p>
+                            </div>
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">구분</p>
+                            </div>
+                            <div class="table-col w45p">
+                                <p class="ellipsis w100p">아이디 (이메일)</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">연락처</p>
+                            </div>
+                            <div class="table-col w15p">
+                                <p class="ellipsis w100p">등록일</p>
+                            </div>
+                            <div class="table-col w15p">
+                                <p class="ellipsis w100p">최근 접속일</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <!-- 
+                            hover 시 하이라이팅을 위해 table-row-hover 클래스명 추가해주세요.
+                         -->
+                        <div class="table-row table-row-hover">
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">1</p>
+                            </div>
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">2</p>
+                            </div>
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">3</p>
+                            </div>
+                            <div class="table-col w45p">
+                                <p class="ellipsis w100p">4</p>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">5</p>
+                            </div>
+                            <div class="table-col w15p">
+                                <p class="ellipsis w100p">6</p>
+                            </div>
+                            <div class="table-col w15p">
+                                <p class="ellipsis w100p">7</p>
+                            </div>
+                        </div>
+                        <div class="table-row table-row-hover">
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">1</p>
+                            </div>
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">2</p>
+                            </div>
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">3</p>
+                            </div>
+                            <div class="table-col w45p">
+                                <select name="" id=""></select>
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">5</p>
+                            </div>
+                            <div class="table-col w15p">
+                                <p class="ellipsis w100p">6</p>
+                            </div>
+                            <div class="table-col w15p">
+                                <p class="ellipsis w100p">7</p>
+                            </div>
+                        </div>
+                        <div class="table-row table-row-hover">
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">1</p>
+                            </div>
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">2</p>
+                            </div>
+                            <div class="table-col w5p">
+                                <p class="ellipsis w100p">3</p>
+                            </div>
+                            <div class="table-col w45p">
+                                <!-- 테이블 내부에 가로로 체크박스를 나열해야할 경우 아래와 같이 사용 -->
+                                <div class="chk-container">
+                                    <label class="chk-box">
+                                         <input type="checkbox">
+                                         <span class="chk-label-name">공지사항</span>
+                                    </label>
+                                    <label class="chk-box ml10">
+                                         <input type="checkbox">
+                                         <span class="chk-label-name">FAQ</span>
+                                    </label>
+                                    <label class="chk-box ml10">
+                                         <input type="checkbox">
+                                         <span class="chk-label-name">약관/방침</span>
+                                    </label>
+                                    <label class="chk-box ml10">
+                                         <input type="checkbox">
+                                         <span class="chk-label-name">이용안내</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="table-col w10p">
+                                <p class="ellipsis w100p">5</p>
+                            </div>
+                            <div class="table-col w15p">
+                                <p class="ellipsis w100p">6</p>
+                            </div>
+                            <div class="table-col w15p">
+                                <p class="ellipsis w100p">7</p>
+                            </div>
+                        </div>
+                        <!-- 
+                            210202 추가 검색결과 없을 시 아래 항목 주석해제하여 사용.
+                         -->
+                        <!-- <div class="table-row list-none">
+                            <div class="table-col w100p">
+                                <p class="ellipsis w100p">리스트 값이 존재하지 않습니다.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- // 테이블 -->
+                <!-- 페이징 -->
+                <div class="paging-box">
+                    <!-- 
+                        이전 다음 버튼은 숨겨야할 경우 각각 hidden
+                        선택된 페이지에 active 클래스명 추가하여 사용하면 됩니다.
+                     -->
+                    <a href="#" class="move prev">이전</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#" class="move next">다음</a>
+                </div>
+                <!-- // 페이징 -->
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="copyright">한컴로보틱스 Toki H2 Administrator</p>
+        </footer>
+    </div>
+</body>
+</html>

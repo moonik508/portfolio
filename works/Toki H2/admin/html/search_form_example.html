@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <!-- <link rel="stylesheet" href="../lib/css/font.css"> -->
+    <!-- 폰트 변경건으로 인한 조정 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>Toki H2 Admin</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <img src="../static/images/logo.png" alt="한컴로보틱스 로고">
+                </h1>
+                <div class="input-box hamburger">
+                    <img src="../static/images/h_menu.jpg" alt="좌측메뉴보기 버튼" class="more">
+                    <img src="../static/images/m_close.png" alt="좌측메뉴닫기 버튼" class="close">
+                </div>
+                <div class="input-box serch-box main txt-l w50p">
+                    <input type="text" class="input-txt w90p" placeholder="검색하실 키워드 입력 후 검색아이콘을 클릭하세요.">
+                    <input type="button" class="btn main-search">
+                </div>
+                <div class="personal-area txt-c">
+                    <div class="personal-name-box">
+                        <span class="name-txt"><i>홍길동</i> 님 (슈퍼관리자)</span>
+                        <ul class="name-box-list">
+                            <li class="name-box-list-item">
+                                <a href="#">
+                                    <span>1</span>
+                                </a>
+                            </li>
+                            <li class="name-box-list-item">
+                                <a href="#">
+                                    <span>2</span>
+                                </a>
+                            </li>
+                            <li class="name-box-list-item">
+                                <a href="#">
+                                    <span>3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn logout">로그아웃</a>
+                </div>
+            </div>
+        </header>
+        <aside class="left-nav">
+            <h2 class="nav-logo">
+                <img src="../static/images/toki.png" alt="한컴로보틱스 토키 아이콘">
+            </h2>
+            <nav class="nav-list">
+                <ul class="left-first-depth">
+                    <!-- 선택된 li 태그에 active 클래스 추가 / 하위메뉴 열림-->
+                    <li class="left-item first-depth dashboard">
+                        <a href="#">대시보드</a>
+                    </li>
+                    <li class="left-item first-depth active">
+                        <a href="#">회원관리</a>
+                        <div class="second-depth">
+                            <ul>
+                                <!-- 하위메뉴 선택시 li에 클래스명 on 추가 -->
+                                <li class="on"><span>123</span></li>
+                                <li><span>456</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">로봇관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">A/S관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">주문/배송관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">유통사관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">콘텐츠관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">알림관리</a>
+                    </li>
+                    <li class="left-item first-depth">
+                        <a href="#">설정</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="content-wrap" id="app">
+            <div class="inner">
+                <!-- 페이지 네비게이션 -->
+                <div class="page-nav">
+                    <h3 class="page-title">컴포넌트 사용 예제</h3>
+                    <ul>
+                        <li>관리자홈</li>
+                        <li>폼 & 컴포넌트 예제</li>
+                    </ul>
+                </div>
+                <!-- // 페이지 네비게이션 -->
+
+                <form action="">
+                    <div class="table-box">
+                        <div class="table-body">
+                            <div class="table-row">
+                                <div class="table-col w15p head">
+                                    <p class="w100p">일반 입력 input</p>
+                                </div>
+                                <div class="table-col w35p">
+                                    <input type="text" class="input-txt">
+                                </div>
+                                <div class="table-col w15p head">
+                                    <p class="w100p">라디오버튼</p>
+                                </div>
+                                <div class="table-col w35p">
+                                    <!-- 일반 라디오 버튼의 경우 아래예시대로 사용 -->
+                                    <div class="radio-box">
+                                        <label for="test-radio01" class="input-radio">
+                                            <input type="radio" id="test-radio01" name="test-radio-group">
+                                            <span>123</span>
+                                        </label>
+                                        <label for="test-radio02" class="input-radio">
+                                            <input type="radio" id="test-radio02" name="test-radio-group">
+                                            <span>456</span>
+                                        </label>
+                                        <label for="test-radio03" class="input-radio">
+                                            <input type="radio" id="test-radio03" name="test-radio-group">
+                                            <span>789</span>
+                                        </label>
+                                        <label for="test-radio04" class="input-radio">
+                                            <input type="radio" id="test-radio04" name="test-radio-group" disabled checked>
+                                            <span>0102</span>
+                                        </label>
+                                        <label for="test-radio05" class="input-radio">
+                                            <input type="radio" id="test-radio05" name="test-radio-group" disabled>
+                                            <span>2324</span>
+                                        </label>
+                                    </div>
+                                    <!-- // -->
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col w15p head">
+                                    <p class="w100p">라디오버튼 타입2</p>
+                                </div>
+                                <div class="table-col w35p">
+                                    <!-- 버튼형 라디오 버튼의 경우 아래예시대로 사용 -->
+                                    <div class="radio-box type-btn">
+                                        <label for="test-radio11" class="input-radio">
+                                            <input type="radio" id="test-radio11" name="test-radio-group">
+                                            <span>123</span>
+                                        </label>
+                                        <label for="test-radio12" class="input-radio">
+                                            <input type="radio" id="test-radio12" name="test-radio-group">
+                                            <span>456</span>
+                                        </label>
+                                        <label for="test-radio13" class="input-radio">
+                                            <input type="radio" id="test-radio13" name="test-radio-group">
+                                            <span>789</span>
+                                        </label>
+                                    </div>
+                                    <!-- // -->
+                                </div>
+                                <div class="table-col w15p head">
+                                    <p class="ellipsis w100p">datepicker</p>
+                                </div>
+                                <div class="table-col w35p">
+                                    <div class="input-box">
+                                        <vuejs-datepicker class="w60p"></vuejs-datepicker>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-col w15p head">
+                                    <p class="ellipsis w100p">체크박스</p>
+                                </div>
+                                <div class="table-col w35p">
+                                    <!-- 테이블 내부에 가로로 체크박스를 나열해야할 경우 아래와 같이 사용 -->
+                                    <div class="chk-container">
+                                        <label class="chk-box">
+                                             <input type="checkbox">
+                                             <span class="chk-label-name">공지사항</span>
+                                        </label>
+                                        <label class="chk-box ml10">
+                                             <input type="checkbox">
+                                             <span class="chk-label-name">FAQ</span>
+                                        </label>
+                                        <label class="chk-box ml10">
+                                             <input type="checkbox">
+                                             <span class="chk-label-name">약관/방침</span>
+                                        </label>
+                                        <label class="chk-box ml10">
+                                             <input type="checkbox">
+                                             <span class="chk-label-name">이용안내</span>
+                                        </label>
+                                    </div>
+                                    <!-- // 체크박스 예제 끝 -->
+                                </div>
+                                <div class="table-col w15p head">
+                                    <p class="ellipsis w100p">비밀번호 확인</p>
+                                </div>
+                                <div class="table-col w35p">
+                                    <div class="input-box">
+                                        <input type="password" class="input-txt">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 
+                                2줄이 들어가야하는 경우 
+                                table-row와 two-row를 같이 사용
+                            -->
+                            <div class="table-row two-row">
+                                <div class="table-col w15p head">
+                                    <p class="w100p">두줄일 경우 컴포넌트 나열 예제</p>
+                                </div>
+                                <div class="table-col w85p">
+                                    <div class="input-box w100p">
+                                        <select name="" id="" class="w20p">
+                                            <option value="">대분류 선택</option>
+                                        </select>
+
+                                        <div class="radio-box type-btn ml10">
+                                            <label for="test-radio21" class="input-radio">
+                                                <input type="radio" id="test-radio21" name="test-radio-group">
+                                                <span>오늘</span>
+                                            </label>
+                                            <label for="test-radio22" class="input-radio">
+                                                <input type="radio" id="test-radio22" name="test-radio-group">
+                                                <span>어제</span>
+                                            </label>
+                                            <label for="test-radio23" class="input-radio">
+                                                <input type="radio" id="test-radio23" name="test-radio-group">
+                                                <span>3일</span>
+                                            </label>
+                                            <label for="test-radio24" class="input-radio">
+                                                <input type="radio" id="test-radio24" name="test-radio-group">
+                                                <span>7일</span>
+                                            </label>
+                                            <label for="test-radio25" class="input-radio">
+                                                <input type="radio" id="test-radio25" name="test-radio-group">
+                                                <span>14일</span>
+                                            </label>
+                                            <label for="test-radio26" class="input-radio">
+                                                <input type="radio" id="test-radio26" name="test-radio-group">
+                                                <span>1달</span>
+                                            </label>
+                                            <label for="test-radio27" class="input-radio">
+                                                <input type="radio" id="test-radio27" name="test-radio-group">
+                                                <span>3달</span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="input-box mt10 w50p">
+                                        <vuejs-datepicker class="w40p"></vuejs-datepicker>
+                                        <vuejs-datepicker class="ml10 w40p"></vuejs-datepicker>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // -->
+                            <div class="table-row">
+                                <div class="table-col w15p head">
+                                    <!-- 텍스트가 없는 체크박스를 헤더에 사용시 아래와 같이 사용 -->
+                                    <div class="chk-container none-txt head">
+                                        <label class="chk-box">
+                                             <input type="checkbox">
+                                             <span class="chk-label-name"></span>
+                                        </label>
+                                    </div>                                    
+                                </div>
+                                <div class="table-col w85p">
+                                    <!-- 텍스트가 없는 체크박스를 사용시 아래와 같이 사용 -->
+                                    <div class="chk-container none-txt">
+                                        <label class="chk-box">
+                                             <input type="checkbox">
+                                             <span class="chk-label-name"></span>
+                                        </label>
+                                        <label class="chk-box ml10">
+                                             <input type="checkbox">
+                                             <span class="chk-label-name"></span>
+                                        </label>
+                                        <label class="chk-box ml10">
+                                             <input type="checkbox">
+                                             <span class="chk-label-name"></span>
+                                        </label>
+                                    </div>
+                                    <!-- // 체크박스 예제 끝 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box mt20 mb20 txt-c">
+                        <input type="button" value="비활성" class="btn" disabled>
+                        <input type="button" value="수정" class="btn">
+                        <input type="button" value="삭제" class="btn secondary">
+                    </div>
+                </form>
+                <!-- // 검색 조건 양식폼 -->
+                <!-- 앱스토어 관리자 테이블 -->
+                <div class="store-table-box">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="w40p">
+                                    <p>앱이름</p>
+                                </th>
+                                <th class="w20p">
+                                    <p>개발정보</p>
+                                </th>
+                                <th class="w8p">
+                                    <p>구매수</p>
+                                </th>
+                                <th class="w8p">
+                                    <p>설치수</p>
+                                </th>
+                                <th class="w12p">
+                                    <p>승인일</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w40p">
+                                    <div class="app-detail">
+                                        <!-- 앱 이미지가 여러개라면 아래의 app-snap 을 반복하는 것으로 합니다. -->
+                                        <div class="app-snap mr20">
+                                            <img src="https://via.placeholder.com/150x150" alt="">
+                                        </div>
+                                        <div class="store-txt">
+                                            <span class="txt category-desc">카테고리명</span>
+                                            <span class="txt app-name">앱 이름</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="w20p">
+                                    <div class="store-txt txt-c w100p">
+                                        <span class="txt">개발자명</span>
+                                        <span class="txt">(OOOOO@OOOO.com)</span>
+                                    </div>                                    
+                                </td>
+                                <td class="w8p">
+                                    <p>123</p>
+                                </td>
+                                <td class="w8p">
+                                    <p>123</p>
+                                </td>
+                                <td class="w12p">
+                                    <p>123</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- // 앱스토어 관리자 테이블 -->
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="copyright">한컴로보틱스 Toki H2 Administrator</p>
+        </footer>
+    </div>
+
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuejs-datepicker"></script>
+    <script>
+    const app = new Vue({
+        el: '#app',
+        components: {
+            vuejsDatepicker
+        }
+    })
+    </script> 
+
+</body>
+</html>

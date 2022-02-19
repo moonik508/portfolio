@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".g_nav_cars>a").on("click", function(){
+                $(".sub_depth").slideToggle(300);
+            })
+        });
+    </script>
+    <title>KMM</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container sub">
+            <div class="inner">
+                <div class="box left sub">
+                    <h1 class="logo"><img src="../image/logo.png" alt="kia logo"></h1>
+                    <nav class="g_nav">
+                        <ul class="g_nav_list">
+                            <!-- 해당하는 페이지의 메뉴에 li 태그에 active 클래스를 붙여주세요. -->
+                            <li class="active"><a href="./businesscard.html">Business card</a></li>
+                            <li class="g_nav_cars">
+                                <a href="javascript:void(0)">Company Cars</a>
+                                <ul class="sub_depth">
+                                    <li><a href="javascript:void(0)">Accident Report</a></li>
+                                    <li><a href="javascript:void(0)">Car Maintenance</a></li>
+                                    <li><a href="javascript:void(0)">Pool Car Reservation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0)">Taxi Request</a></li>
+                            <li><a href="javascript:void(0)">IT Devices</a></li>
+                            <li><a href="javascript:void(0)">Post Office</a></li>
+                            <li><a href="javascript:void(0)">System menagement</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="box content_area">
+                    <div class="sub_header">
+                        <div class="sub_head_inner">
+                            <!-- sub top nav -->
+                            <nav class="sub_nav">
+                                <ul>
+                                    <!-- 뱃지로 보여줄 갯수가 있는 경우 li 태그에 alram 클래스명을 추가하면 됩니다. -->
+                                    <li class="alram">
+                                        <i class="badge">1</i>
+                                        <a href="#">
+                                            <img src="../image/bc_icon_01.png" alt="">
+                                            <span>Approval<br>request</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="badge">1</i>
+                                        <a href="#">
+                                            <img src="../image/bc_icon_02.png" alt="">
+                                            <span>Docs to<br>Approve</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="badge">1</i>
+                                        <a href="#">
+                                            <img src="../image/bc_icon_03.png" alt="">
+                                            <span>Completed<br>Docs</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="badge">1</i>
+                                        <a href="#">
+                                            <img src="../image/bc_icon_04.png" alt="">
+                                            <span>Rejected<br>Docs</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="user_box">
+                                <p class="user_info">
+                                   <b>Manager</b> 
+                                   <span>Nadia Lorena Mireless Narvaez</span>
+                                </p>
+                                <input type="button" class="logout" value="logout">
+                                <input type="button" class="setting" value="setting">
+                            </div>
+                            <!-- //sub top nav -->
+                        </div>
+                    </div>
+                    <div class="sub_content">
+                        <div class="sub_inner">
+                            <h2 class="category_title">Request</h2>
+                            <div class="tab_nav">
+                                <a href="javascript:void(0)" class="btn_tab tab01 active">Apply</a>
+                                <a href="javascript:void(0)" class="btn_tab tab02">Lookup</a>
+                            </div>
+                            <div class="content_tab tab01">
+                                <div class="control_box post">
+                                    <input type="button" value="Search" class="btn primary">
+                                    <input type="button" value="Request" class="btn black">
+                                </div>
+                                <div class="sub_frame mb30">
+                                    <table>
+                                        <colgroup>
+                                            <col width="115px">
+                                            <col width="306px">
+                                            <col width="110px">
+                                            <col width="270px">
+                                            <col width="106px">
+                                            <col width="270px">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Department</span>
+                                                </th>
+                                                <td>
+                                                   <input class="kia_input w80"> 
+                                                   <input type="button" class="kia_input search_btn">
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">User ID</span>
+                                                </th>
+                                                <td>
+                                                    <input class="kia_input"> 
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Name</span>
+                                                </th>
+                                                <td>
+                                                   <input class="kia_input"> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="item_title pz">Apply Date</span>
+                                                </th>
+                                                <td>
+                                                   <input class="kia_input w80"> 
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Doc No.</span>
+                                                </th>
+                                                <td>
+                                                    <input class="kia_input"> 
+                                                </td>
+                                                <th>
+                                                    <span class="item_title">Status</span>
+                                                </th>
+                                                <td>
+                                                   <input class="kia_input"> 
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="mb30">
+                                    <!-- 리스트인 경우 테이블에 클래스명 list 추가 -->
+                                    <table class="list">
+                                        <colgroup>
+                                            <col width="102px">
+                                            <col width="86px">
+                                            <col width="90px">
+                                            <col width="300px">
+                                            <col width="108px">
+                                            <col width="100px">
+                                            <col width="156px">
+                                            <col width="145px">
+                                            <col width="105px">
+                                        </colgroup>
+                                        <thead>
+                                            <th class="section-title">
+                                                <span>Apply Date</span>
+                                            </th>
+                                            <th class="section-title">
+                                                <span>User ID</span>
+                                            </th>
+                                            <th class="section-title">
+                                                <span>Request ID</span>
+                                            </th>
+                                            <th class="section-title">
+                                                <span>Name</span>
+                                            </th>
+                                            <th class="section-title">
+                                                <span>Position</span>
+                                            </th>
+                                            <th class="section-title">
+                                                <span>Department</span>
+                                            </th>
+                                            <th class="section-title">
+                                                <span>Doc No.</span>
+                                            </th>
+                                            <th class="section-title">
+                                                <span>Status</span>
+                                            </th>
+                                            <th class="section-title">
+                                                <span>Card Type</span>
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>SAVE</span>
+                                                </td>
+                                                <td>
+                                                    <span>Printed/QR</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>Approve</span>
+                                                </td>
+                                                <td>
+                                                    <span>Printed</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>Standby Confirm</span>
+                                                </td>
+                                                <td>
+                                                    <span>QR</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>SAVE</span>
+                                                </td>
+                                                <td>
+                                                    <span>Printed/QR</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>Approve</span>
+                                                </td>
+                                                <td>
+                                                    <span>Printed</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>Standby Confirm</span>
+                                                </td>
+                                                <td>
+                                                    <span>QR</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>SAVE</span>
+                                                </td>
+                                                <td>
+                                                    <span>Printed/QR</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>Approve</span>
+                                                </td>
+                                                <td>
+                                                    <span>Printed</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>Standby Confirm</span>
+                                                </td>
+                                                <td>
+                                                    <span>QR</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span>08.10.2020</span>
+                                                </td>
+                                                <td>
+                                                    <span>20201111</span>
+                                                </td>
+                                                <td>
+                                                    <span>202021111</span>
+                                                </td>
+                                                <td>
+                                                    <span>Nadia Lorena Mireles Narvaez</span>
+                                                </td>
+                                                <td>
+                                                    <span>Manager</span>
+                                                </td>
+                                                <td>
+                                                    <span>ER & IR</span>
+                                                </td>
+                                                <td>
+                                                    <span>BC-2008100-001</span>
+                                                </td>
+                                                <td>
+                                                    <span>SAVE</span>
+                                                </td>
+                                                <td>
+                                                    <span>Printed/QR</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pagenation">
+                                        <a href="javascript:void(0)" class="page_btn prev">prev</a>
+                                        <a href="javascript:void(0)" class="active">1</a>
+                                        <a href="javascript:void(0)">2</a>
+                                        <a href="javascript:void(0)">3</a>
+                                        <a href="javascript:void(0)">4</a>
+                                        <a href="javascript:void(0)">5</a>
+                                        <a href="javascript:void(0)">6</a>
+                                        <a href="javascript:void(0)">7</a>
+                                        <a href="javascript:void(0)">8</a>
+                                        <a href="javascript:void(0)">9</a>
+                                        <a href="javascript:void(0)">10</a>
+                                        <a href="javascript:void(0)" class="page_btn next">next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub_footer">
+                        <address>©COPYRIGHT. DERECHOS DE AUTOR 2020 KIA MOTORS CORP TODOS LOS DERECHOS RESERVADOS.</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <link rel="stylesheet" href="../../lib/jquery/js/plugin/mCustomScrollBar/mCustomScrollbar.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <script src="../../lib/jquery/js/plugin/mCustomScrollBar/jquery.mCustomScrollbar.min.js"></script>
+    <title>user management page</title>
+</head>
+<body>
+    <div class="wrap default">
+        <nav class="left-nav">
+            <div class="inner">
+                <h1 class="logo white">
+                    <img src="../../static/images/logo-wh.png" alt="">
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="dash-nav">대시보드</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">앱관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정산조회</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">패키지 주문관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="active">사용자관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <!-- 선택된 main-nav-item 의 a 클래스에 active 클래스명 추가 -->
+                        <a href="javascript:void(0)" class="sdk-nav">SDK 센터</a>
+                        <ul class="sub-nav">
+                            <li class="sub-nav-item">
+                                <!-- 현재 선택된 2뎁스 메뉴에도 sub-nav-item의 a태그에 클래스명 active 추가 -->
+                                <a href="javascript:void(0)" class="active">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">공지사항</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">문의하기</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정보변경</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="left-nav-dim"></div>
+        <div class="content-wrap">
+            <div class="content-header">
+                <div class="inner">
+                    <input type="button" class="btn-hamburger">
+                    <div class="logo white"><img src="../../static/images/logo-wh.png" alt=""></div>
+                    <div class="service-title">
+                        <span class="logo-txt">Toki</span>
+                        <span>개발자센터</span>
+                    </div>
+                    <!-- 유저 정보 박스 -->
+                    <div class="user-info-box">
+                        <p class="user-name">홍길동님</p>
+                        <div class="btn-box">
+                            <input type="button" value="로그아웃" class="input-btn">
+                        </div>
+                    </div>
+                    <!-- // 유저 정보 박스 -->
+                </div>
+            </div>
+            <div class="inner">
+                <p class="section-title">
+                    사용자관리
+                    <span class="title-desc">팀을 초대하고 팀을 관리할 수 있습니다. 팀 초대는 최대 3명까지 가능합니다.</span>
+                </p>                
+                
+                <div class="table-box">
+                    <table>
+                        <colgroup>
+                            <col class="w15p mw30p">
+                            <col class="w85p mw70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt bold-txt">
+                                        이메일 주소
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box dis-ib w100p">
+                                        <input type="text" class="input-txt w100p" placeholder="이메일 주소를 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        이름
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box dis-ib w100p">
+                                        <input type="text" class="input-txt w100p" placeholder="이름을 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        소속
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box dis-ib w100p">
+                                        <input type="text" class="input-txt w100p" placeholder="소속을 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        연락처
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box dis-ib w100p">
+                                        <input type="text" class="input-txt w100p" placeholder="연락처를 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="btn-box txt-c mt40">
+                    <input type="button" value="취소" class="input-btn btn-trans">
+                    <input type="button" value="초대하기" class="input-btn btn-primary">
+                </div>   
+
+            </div>
+        </div>
+        <footer class="content-footer">
+            <p class="copyright">Copyrifght 2020. Hancom Inc. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

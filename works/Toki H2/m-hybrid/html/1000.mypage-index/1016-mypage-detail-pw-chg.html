@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mypage pw chg</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                m-mypage-box - mypage 공통 클래스
+                mypage-gy - mypage 배경 컬러 값에 대한 공통클래스
+             -->
+
+             <div class="m-component-box m-mypage-box mypage-wh">
+                <div class="m-inner">
+
+                    <!-- detail profile 수정 관련 컴포넌트 요소 -->
+                    <div class="mypage-common-box">
+                        <div class="mypage-detail-content-box">
+                            <!-- 
+                                타이틀 요소가 있는 경우  
+                                profile-element-title
+                                detail-profile-element 
+                                순서로 사용
+
+                                타이틀안의 desc 사용시 아래와 같이 사용
+                            -->
+                            <p class="profile-element-title">
+                                비밀번호 변경
+                            </p>
+
+                            <div class="detail-input-row">
+                                <input type="password" class="m-input-txt" placeholder="비밀번호를 입력하세요.">
+                            </div>
+
+                            <p class="detail-profile-alert-txt">
+                                변경하실 경우 영문, 숫자, 특수기호를 혼합, 최소 8자리<br>
+                                이상 입력하세요. 입력 시 연속된 숫자 3자리 이상은 피해 주세요.
+                            </p>
+
+                            <div class="detail-input-row">
+                                <input type="password" class="m-input-txt" placeholder="비밀번호를 한 번 더 입력하세요.">
+                            </div>
+
+                            <div class="btn-box">
+                                <input type="button" value="정보수정" class="m-input-btn w100p primary">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //detail profile 수정 관련 컴포넌트 요소 -->
+
+                </div>
+             </div>             
+
+        </div>
+    </div>
+    
+</body>
+</html>

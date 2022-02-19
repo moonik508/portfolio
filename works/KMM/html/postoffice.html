@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".g_nav_cars>a").on("click", function(){
+                $(".sub_depth").slideToggle(300);
+            })
+        });
+    </script>
+    <title>KMM</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container main">
+            <div class="inner">
+                <div class="box left gnav">
+                    <h1 class="logo"><img src="../image/logo.png" alt="kia logo"></h1>
+                    <nav class="g_nav">
+                        <ul class="login_nav">
+                            <li><a href="javascript:void(0)">Login</a></li>
+                            <li><a href="javascript:void(0)">Sign up</a></li>
+                        </ul>
+                        <ul class="g_nav_list">
+                            <li><a href="./businesscard.html">Business card</a></li>
+                            <li class="g_nav_cars">
+                                <a href="javascript:void(0)">Company Cars</a>
+                                <ul class="sub_depth">
+                                    <li><a href="javascript:void(0)">Accident Report</a></li>
+                                    <li><a href="javascript:void(0)">Car Maintenance</a></li>
+                                    <li><a href="javascript:void(0)">Pool Car Reservation</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:void(0)">Taxi Request</a></li>
+                            <li><a href="javascript:void(0)">IT Devices</a></li>
+                            <li><a href="javascript:void(0)">Post Office</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="box content_area">
+                    <!-- sub top nav -->
+                    <nav class="sub_nav">
+                        <ul>
+                            <li class="alram">
+                                <i class="badge">1</i>
+                                <a href="#">
+                                    <span>Approval request</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="badge">1</i>
+                                <a href="#">
+                                    <span>Docs to Approve</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="badge">1</i>
+                                <a href="#">
+                                    <span>Completed Docs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="badge">1</i>
+                                <a href="#">
+                                    <span>Rejected Docs</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <input type="button" class="logout" value="logout">
+                    </nav>
+                    <!-- //sub top nav -->
+                    <div class="sub_inner">
+                        <div class="control_box post">
+                            <input type="button" value="Save" class="btn primary">
+                            <input type="button" value="Delete" class="btn black">
+                            <input type="button" value="Request" class="btn black">
+                            <input type="button" value="Recuest Cancel" class="btn black">
+                            <input type="button" value="List" class="btn black">
+                        </div>
+                        <div class="sub_frame mb30">
+                            <p class="sub_title">Basic Info</p>
+                            <table class="tall_table">
+                                <colgroup>
+                                    <col width="11%">
+                                    <col width="13%">
+                                    <col width="11%">
+                                    <col width="17%">
+                                    <col width="13%">
+                                    <col width="10%">
+                                    <col width="15%">
+                                    <col width="10%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <span class="item_title pz">User ID</span>
+                                        </th>
+                                        <td>
+                                           <input class="kia_input tall"> 
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Name</span>
+                                        </th>
+                                        <td>
+                                           <textarea rows="2" class="kia_input tall"></textarea>
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Position</span>
+                                        </th>
+                                        <td>
+                                           <input class="kia_input tall"> 
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Department</span>
+                                        </th>
+                                        <td>
+                                           <input class="kia_input tall"> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="item_title pz">Requset ID</span>
+                                        </th>
+                                        <td>
+                                           <input class="kia_input tall" readonly> 
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Name</span>
+                                        </th>
+                                        <td>
+                                           <textarea rows="2" class="kia_input tall"></textarea>
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Position</span>
+                                        </th>
+                                        <td>
+                                           <input class="kia_input tall"> 
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Department</span>
+                                        </th>
+                                        <td>
+                                           <input class="kia_input tall"> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="item_title pz">Apply Date</span>
+                                        </th>
+                                        <td>
+                                           <input class="kia_input tall"> 
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Doc No.</span>
+                                        </th>
+                                        <td>
+                                            <input class="kia_input tall"> 
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Status</span>
+                                        </th>
+                                        <td>
+                                           <input class="kia_input tall"> 
+                                        </td>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="sub_frame mb30">
+                            <p class="sub_title">Request Info</p>
+                            <table>
+                                <colgroup>
+                                    <col width="16%">
+                                    <col width="12%">
+                                    <col width="12%">
+                                    <col width="16%">
+                                    <col width="12%">
+                                    <col width="12%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <span class="item_title pz">Area</span>
+                                        </th>
+                                        <td colspan="2">
+                                            <select name="" id="" class="kia_select"></select>
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Package</span>
+                                        </th>
+                                        <td colspan="2">
+                                            <select name="" id="" class="kia_select"></select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="item_title pz">Pakage Content</span>
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" class="kia_input w90">
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Value of the content</span>
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" class="kia_input w90">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="item_title pz">Quantity</span>
+                                        </th>
+                                        <td colspan="2">
+                                            <select name="" id="" class="kia_select"></select>
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Weight</span>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="kia_input">
+                                        </td>
+                                        <td>
+                                            <span style="padding-left: 10px; ">cm</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="item_title pz">Height</span>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="kia_input">
+                                        </td>
+                                        <td>
+                                            <span style="padding-left: 10px; ">cm</span>
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Length</span>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="kia_input">
+                                        </td>
+                                        <td>
+                                            <span style="padding-left: 10px; ">cm</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="item_title pz">Volume</span>
+                                        </th>
+                                        <td>
+                                            <input type="text" class="kia_input" readonly>
+                                        </td>
+                                        <td>
+                                            <span style="padding-left: 10px; ">cm</span>
+                                        </td>
+                                        <th>
+                                            <span class="item_title">Cellphone</span>
+                                        </th>
+                                        <td colspan="2">
+                                            <input type="text" class="kia_input">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

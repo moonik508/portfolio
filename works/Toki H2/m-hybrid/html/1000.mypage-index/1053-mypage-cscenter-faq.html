@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>mypage-detail</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                m-mypage-box - mypage 공통 클래스
+                mypage-gy - mypage 배경 컬러 값에 대한 공통클래스
+             -->
+
+             <div class="m-component-box m-mypage-box mypage-wh">
+
+                    <!-- 디테일페이지의 각 항목의 컨텐츠는 mypage-detail-content-box에 뿌려지는 형태 -->
+                    <!-- 고객센터의 경우는 inner 없이 진행 -->
+                    <div class="mypage-common-box cs-center-box cs-center-top-box">
+                        <p>
+                            <span class="cs-center-title">Toki 고객센터</span>
+                            09:00~18:00, 주말, 공휴일 제외
+                        </p>
+                        <div class="btn-box">
+                            <input type="button" value="0000-0000" class="m-input-btn btn-cs-center">
+                        </div>
+                    </div>
+                    <div class="cs-center-tab-box">
+                        <input type="button" value="문의 내역" class="m-btn-tab active">
+                        <input type="button" value="자주하는 질문" class="m-btn-tab">
+                    </div>
+                    <div class="mypage-common-box cs-center-box cs-center-bot-box">
+
+                        <div class="faq-search-box">
+                            <div class="ico-faq">
+                                <img src="../../static/m_images/ic-search.png" alt="">
+                            </div>
+                            <div class="input-box">
+                                <input type="text" placeholder="제목, 내용, 제목+내용으로 검색하세요.">
+                            </div>
+                        </div>
+
+                        <div class="cs-center-list-box">
+                            <!-- 
+                                선택한 항목에는 active 클래스를 넣어주세요.
+                                자주하는 질문의 항목에는 cs-item에 faq-item 클래스를 같이 사용해주세요.
+                             -->
+                            <div class="cs-item faq-item active">
+                                <div class="cs-border-box">
+                                    <div class="cs-item-top">
+                                        <!-- 답변완료인 경우 status에 answer 클래스를 붙여주세요. -->
+                                        <p class="cs-date-txt">
+                                            00-00 오전 00:00
+                                        </p>
+                                        <p class="cs-center-item-title">등록된 제목이 노출됩니다.</p>
+                                    </div>
+
+                                    <!-- 사용자 질문 영역 -->
+                                    <div class="cs-item-quest-box">
+                                        <p class="cs-quest-txt">
+                                            등록된 내용이 노출됩니다.
+                                        </p>
+                                        <p class="cs-faq-time">00-00 오전 00:00</p>
+                                    </div>
+                                    <!-- // 사용자 질문 영역 -->
+
+                                </div>
+                            </div>
+
+                            <div class="cs-item faq-item">
+                                <div class="cs-border-box">
+                                    <div class="cs-item-top">
+                                        <!-- 답변완료인 경우 status에 answer 클래스를 붙여주세요. -->
+                                        <p class="cs-date-txt">
+                                            00-00 오전 00:00
+                                        </p>
+                                        <p class="cs-center-item-title">등록된 제목이 노출됩니다.</p>
+                                    </div>
+
+                                    <!-- 사용자 질문 영역 -->
+                                    <div class="cs-item-quest-box">
+                                        <p class="cs-quest-txt">
+                                            등록된 내용이 노출됩니다.
+                                        </p>
+                                        <p class="cs-faq-time">00-00 오전 00:00</p>
+                                    </div>
+                                    <!-- // 사용자 질문 영역 -->
+
+                                </div>
+                            </div>
+
+                            <div class="cs-item faq-item">
+                                <div class="cs-border-box">
+                                    <div class="cs-item-top">
+                                        <!-- 답변완료인 경우 status에 answer 클래스를 붙여주세요. -->
+                                        <p class="cs-date-txt">
+                                            00-00 오전 00:00
+                                        </p>
+                                        <p class="cs-center-item-title">등록된 제목이 노출됩니다.</p>
+                                    </div>
+
+                                    <!-- 사용자 질문 영역 -->
+                                    <div class="cs-item-quest-box">
+                                        <p class="cs-quest-txt">
+                                            등록된 내용이 노출됩니다.
+                                        </p>
+                                        <p class="cs-faq-time">00-00 오전 00:00</p>
+                                    </div>
+                                    <!-- // 사용자 질문 영역 -->
+
+                                </div>
+                            </div>
+
+                            <div class="cs-item faq-item">
+                                <div class="cs-border-box">
+                                    <div class="cs-item-top">
+                                        <!-- 답변완료인 경우 status에 answer 클래스를 붙여주세요. -->
+                                        <p class="cs-date-txt">
+                                            00-00 오전 00:00
+                                        </p>
+                                        <p class="cs-center-item-title">등록된 제목이 노출됩니다.</p>
+                                    </div>
+
+                                    <!-- 사용자 질문 영역 -->
+                                    <div class="cs-item-quest-box">
+                                        <p class="cs-quest-txt">
+                                            등록된 내용이 노출됩니다.
+                                        </p>
+                                        <p class="cs-faq-time">00-00 오전 00:00</p>
+                                    </div>
+                                    <!-- // 사용자 질문 영역 -->
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+             </div>             
+
+        </div>
+    </div>
+    
+</body>
+</html>

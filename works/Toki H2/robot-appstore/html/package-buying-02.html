@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <!-- plugin css -->
+    <link rel="stylesheet" href="../lib/jquery/swiperJS/swiper.css">
+    <!-- //plugin css -->
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 
+            패키지 앱 구매 페이지에는 header에 package-process 클래스명을 추가해주세요.
+         -->
+        <header class="header package-process">
+            <div class="component-box">
+                <div class="search-box">
+                    <input type="button" class="input-btn back-btn">
+                    <p class="title hd-title">패키지 앱 구매</p>
+                    
+                    <div class="header-btn-box">
+                        <input type="button" class="input-btn search-btn">
+                        <input type="button" class="input-btn more-btn hidden">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content-wrap">
+            <!-- 개인정보 동의 팝업 -->
+            
+            <div class="package-box">
+                <!-- 추가 팝업 휴대폰번호 입력 -->
+                
+                <div class="package-content">
+                    <div class="package-input-box">
+                        <div class="package-input-row txt-l">
+                            <span class="input-title">이름 *</span>
+                            <div class="package-input-row-box">
+                                <input type="text" class="package-input-txt input-mx">
+                            </div>
+                        </div>
+                        <div class="package-input-row txt-l">
+                            <span class="input-title">이메일 *</span>
+                            <div class="package-input-row-box">
+                                <input type="text" class="package-input-txt input-mx">
+                            </div>
+                        </div>
+                        <div class="package-input-row txt-l">
+                            <span class="input-title">연락처 *</span>
+                            <select class="package-input-select">
+                                <option value="">02</option>
+                            </select>
+                            <input type="text" class="package-input-txt input-xs">
+                            <input type="text" class="package-input-txt input-xs">
+                        </div>
+                        <div class="package-input-row txt-l">
+                            <span class="input-title">주소 *</span>
+                            <div class="package-input-row-box">
+                                <input type="button" value="주소찾기" class="package-input-btn">
+                                <input type="text" class="package-input-txt input-sm">
+                            </div>
+                        </div>
+                        <div class="package-input-row txt-l">
+                            <span class="input-title">주소입력</span>
+                            <div class="package-input-row-box">
+                                <input type="text" class="package-input-txt input-mx">
+                            </div>
+                        </div>
+                        <div class="package-input-row txt-l">
+                            <span class="input-title">배송메모</span>
+                            <div class="package-input-row-box">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- // 추가 팝업 휴대폰번호 입력 -->
+                <div class="btn-box mt40 txt-c">
+                    <input type="button" class="input-btn cancel" value="이전으로">
+                    <input type="button" class="input-btn apply ml30" value="좋아요">
+                </div>
+            </div>
+            
+            <!-- // 개인정보 동의 팝업 -->  
+
+        </div>
+        <!-- 
+        <nav class="global-nav">
+            <div class="component-box">
+                <div class="nav-box">
+                    <div class="nav-item active"><span>카테고리 / 전체</span></div>
+                    <div class="nav-item"><span>패키지</span></div>
+                    <div class="nav-item"><span>찜목록</span></div>
+                    <div class="nav-item"><span>내 앱 목록</span></div>
+                </div>
+            </div>
+        </nav>
+         -->
+    </div>
+
+    <!-- plugin js -->
+    <script src="../lib/jquery/swiperJS/swiper.min.js"></script>
+    <!-- //plugins js -->
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+        el: '.swiper-pagination',
+        },
+    });
+    </script>
+
+</body>
+</html>

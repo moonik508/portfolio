@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>package - main</title>
+</head>
+<body>
+    <div class="wrap default">
+        <nav class="left-nav">
+            <div class="inner">
+                <h1 class="logo white">
+                    <img src="../../static/images/logo-wh.png" alt="">
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="dash-nav">대시보드</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">앱관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정산조회</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="active">패키지 주문관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">사용자관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <!-- 선택된 main-nav-item 의 a 클래스에 active 클래스명 추가 -->
+                        <a href="javascript:void(0)" class="sdk-nav">SDK 센터</a>
+                        <ul class="sub-nav">
+                            <li class="sub-nav-item">
+                                <!-- 현재 선택된 2뎁스 메뉴에도 sub-nav-item의 a태그에 클래스명 active 추가 -->
+                                <a href="javascript:void(0)" class="active">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">공지사항</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">문의하기</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정보변경</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="left-nav-dim"></div>
+        <div class="content-wrap">
+            <div class="content-header">
+                <div class="inner">
+                    <input type="button" class="btn-hamburger">
+                    <div class="logo white"><img src="../../static/images/logo-wh.png" alt=""></div>
+                    <div class="service-title">
+                        <span class="logo-txt">Toki</span>
+                        <span>개발자센터</span>
+                    </div>
+                    <!-- 유저 정보 박스 -->
+                    <div class="user-info-box">
+                        <p class="user-name">홍길동님</p>
+                        <div class="btn-box">
+                            <input type="button" value="로그아웃" class="input-btn">
+                        </div>
+                    </div>
+                    <!-- // 유저 정보 박스 -->
+                </div>
+            </div>
+            <div class="inner">
+                <p class="section-title">
+                    패키지 주문관리
+                    <span class="title-desc">패키지주문내역에 대한 확인을 진행합니다.</span>
+                </p>
+                <!-- 상단 검색박스 -->
+                <div class="top-search-box">
+                    <div class="search-input-box">
+                        <p class="section-title left-round-box primary-txt bg-white border-primary txt-c">앱 검색</p>
+                        <div class="input-box right-round-box">
+                            <input type="text" class="input-search" placeholder="앱 이름을 입력하세요.">
+                            <input type="button" class="btn-search">
+                        </div>
+                    </div>
+                    <div class="btn-box search-btn-box">
+                        <input type="button" value="앱등록" class="input-btn btn-primary">
+                    </div>
+                </div>
+                <!-- //상단 검색박스 -->
+                <!-- 
+                    앱 관리
+                    app-main-box
+                 -->
+                <div class="app-main-box package-main-box">
+                    <div class="app-class-name">
+                        <p>앱 정보</p>
+                        <p>신규주문</p>
+                        <p>패키지타입</p>
+                        <p>최근 주문일</p>
+                    </div>
+                    <!-- 
+                        box-item이 반복
+                     -->
+                    <div class="box-item">
+                        <div class="thumb">
+                            <img src="../../static/images/ic-app-dummy01.png" alt="">
+                        </div>
+                        <div class="item-info">
+                            <div class="app-info-box">
+                                <p class="app-name">앱 이름</p>
+                                <p class="app-id">
+                                    <span>com.nane.app-ID</span>
+                                </p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">1건</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">전자책</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">2021-02-02</p>
+                            </div>
+                        </div>
+                        <div class="dash-btn-box">
+                            <input type="button" value="주문관리" class="ic-input-btn btn-package">
+                        </div>
+                    </div>
+                    <div class="box-item">
+                        <div class="thumb">
+                            <img src="../../static/images/ic-app-dummy02.png" alt="">
+                        </div>
+                        <div class="item-info">
+                            <div class="app-info-box">
+                                <p class="app-name">앱 이름</p>
+                                <p class="app-id">
+                                    <span>com.nane.app-ID</span>
+                                </p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">없음</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">교재</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">2021-02-02</p>
+                            </div>
+                        </div>
+                        <div class="dash-btn-box">
+                            <input type="button" value="주문관리" class="ic-input-btn btn-package">
+                        </div>
+                    </div>
+                    <div class="box-item">
+                        <div class="thumb">
+                            <img src="../../static/images/ic-app-dummy03.png" alt="">
+                        </div>
+                        <div class="item-info">
+                            <div class="app-info-box">
+                                <p class="app-name">앱 이름</p>
+                                <p class="app-id">
+                                    <span>com.nane.app-ID</span>
+                                </p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">3건</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">교재</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">2021-02-02</p>
+                            </div>
+                        </div>
+                        <div class="dash-btn-box">
+                            <input type="button" value="주문관리" class="ic-input-btn btn-package">
+                        </div>
+                    </div>
+                    <div class="box-item">
+                        <div class="thumb">
+                            <img src="../../static/images/ic-app-dummy01.png" alt="">
+                        </div>
+                        <div class="item-info">
+                            <div class="app-info-box">
+                                <p class="app-name">앱 이름</p>
+                                <p class="app-id">
+                                    <span>com.nane.app-ID</span>
+                                </p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">없음</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">전자책</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">2021-02-02</p>
+                            </div>
+                        </div>
+                        <div class="dash-btn-box">
+                            <input type="button" value="주문관리" class="ic-input-btn btn-package">
+                        </div>
+                    </div>
+                    <div class="box-item">
+                        <div class="thumb">
+                            <img src="../../static/images/ic-app-dummy02.png" alt="">
+                        </div>
+                        <div class="item-info">
+                            <div class="app-info-box">
+                                <p class="app-name">앱 이름</p>
+                                <p class="app-id">
+                                    <span>com.nane.app-ID</span>
+                                </p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">없음</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">전자책</p>
+                            </div>
+                            <div class="app-info-box">
+                                <p class="app-info-txt">2021-02-02</p>
+                            </div>
+                        </div>
+                        <div class="dash-btn-box">
+                            <input type="button" value="주문관리" class="ic-input-btn btn-package">
+                        </div>
+                    </div>
+                    <!-- pagination의 위치는 component-box의 제일 마지막 자식요소여도 되고 그 뒤의 형제요소여도 무관 -->
+                    <div class="pagination-box">
+                        <ul>
+                            <!-- pagination의 버튼을 숨길 경우 li 태그에 클래스명 hidden 추가 -->
+                            <li>
+                                <input type="button" class="btn-page btn-first">
+                            </li>
+                            <li>
+                                <input type="button" class="btn-page btn-prev">
+                            </li>
+                            <li class="active">
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <span>2</span>
+                            </li>
+                            <li>
+                                <span>3</span>
+                            </li>
+                            <li>
+                                <input type="button" class="btn-page btn-next">
+                            </li>
+                            <li>
+                                <input type="button" class="btn-page btn-last">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="content-footer">
+            <p class="copyright">Copyrifght 2020. Hancom Inc. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

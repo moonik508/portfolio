@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>calendar main</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            <!-- <header class="m-header">
+                <div class="m-component-box">
+                    <div class="m-header-box">
+                        <input type="button" class="m-input-btn back-btn">
+                        <p class="m-title hd-title">앨범</p>
+                        <div class="m-header-btn-box">
+                            <input type="button" class="m-input-btn btn-user-info">
+                        </div>
+                    </div>
+                </div>
+            </header> -->
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+            -->
+            <div class="m-component-box m-component-box-bg m-component-vh">
+                <div class="m-inner">
+                    <div class="two-select-box">
+                        <div class="input-box float-l">
+                            <input type="button" value="일정" class="input-btn active">
+                        </div>
+                        <div class="input-box float-r">
+                            <input type="button" value="메세지" class="input-btn">
+                        </div>
+                    </div>
+                    <div class="sec-content">
+                        <div class="sec-content-add-box">
+                            <div class="sec-content-add-select">
+                                <div class="input-box dis-ib">
+                                    <input type="button" class="input-btn prev">
+                                </div>
+                                <div class="sec-calendar dis-ib">
+                                    <span>
+                                        2020년 12월
+                                    </span>
+                                </div>
+                                <div class="input-box dis-ib">
+                                    <input type="button" class="input-btn next">
+                                </div>
+                            </div>
+                            <div class="sec-content-add-plus">
+                                <div class="input-box">
+                                    <input type="button" class="input-btn plus">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec-content-box">
+                            <div class="sec-content-list">
+                                <div class="sec-content-item">
+                                    <div class="float-l">
+                                        <p class="sec-content-item-title">
+                                            2020년 12월 31일 (목요일)
+                                        </p>
+                                        <p class="sec-content-item-text">
+                                            14:00 병원예약
+                                        </p>
+                                    </div>
+                                    <div class="float-r">
+                                        <div class="input-box waiting-box">
+                                            <input type="button" value="대기중" class="input-btn waiting">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delete-box active">
+                                    <input type="button" value="삭제" class="input-btn delete">
+                                </div>
+                            </div>
+                            <div class="sec-content-list minus-left">
+                                <div class="sec-content-item">
+                                    <div class="float-l">
+                                        <p class="sec-content-item-title">
+                                            2020년 12월 31일 (목요일)
+                                        </p>
+                                        <p class="sec-content-item-text">
+                                            14:00 병원예약
+                                        </p>
+                                    </div>
+                                    <div class="float-r">
+                                        <div class="input-box waiting-box">
+                                            <input type="button" value="대기중" class="input-btn waiting">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delete-box active">
+                                    <input type="button" value="삭제" class="input-btn delete">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>             
+    </div>
+</body>
+</html>

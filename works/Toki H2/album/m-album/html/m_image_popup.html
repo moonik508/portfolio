@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/jquery/swiperJS/swiper.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <div class="m-content-wrap">
+            <header class="m-header">
+                <div class="m-component-box">
+                    <div class="m-header-box">
+                        <input type="button" class="m-input-btn back-btn">
+                        <p class="m-title hd-title">앨범</p>
+                        <div class="m-header-btn-box">
+                            <input type="button" class="m-input-btn btn-user-info">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+             -->
+             <div class="m-component-box cs-center-box album-box">
+                 
+                <div class="album-search-box mode-edit">
+                    <div class="inner">
+                       <div class="m-input-box">
+                          <input type="text" name="" id="" placeholder="사진, 사람들, 장소 ..." class="m-input-txt">
+                          <input type="button" value="편집" class="m-input-btn btn-edit">
+                          <input type="button" value="취소" class="m-input-btn btn-cancel">
+                       </div>
+                   </div>
+                </div>
+
+                 <div class="album-tab">
+                     <!-- 현재 선택된 탭에 해당하는 버튼에 클래스명 active 추가해주세요. -->
+                    <input type="button" value="전체" class="btn-tab all-item active">
+                    <input type="button" value="사진" class="btn-tab pic-item">
+                    <input type="button" value="영상" class="btn-tab mov-item">
+                    <div class="underline"></div>
+                 </div>
+
+                 <div class="album-status">
+                    <div class="inner">
+                        <p class="txt">스토리지 현황</p>
+                        <div class="album-graph-box">
+                            <p class="album-graph-txt">
+                                <i>74.7</i>GB (<i>75%</i>) 사용중
+                            </p>
+                            <!-- 점유율에 맞게 style 에 width 값을 퍼센트로 넣어주세요 -->
+                            <div class="album-graph" style="width: 75%;"></div>
+                        </div>
+                        <p class="txt graph-label">100GB</p>
+                    </div>
+                 </div>
+
+
+                 <div class="album-group active">
+                     <!-- album-row가 반복 -->
+                     <div class="album-row">
+                         <p class="album-title">2021년 05월 05일</p>
+                         <div class="album-list">
+                            <div class="album-item">
+                                <label class="album-chk">
+                                    <input type="checkbox">
+                                    <span class="chk-frame"></span>
+                                    <div class="chk-dim"></div>
+                                </label>
+                                <img src="../static/m_images/dummy.png" alt="">
+                            </div>
+                            <div class="album-item">
+                                <label class="album-chk">
+                                    <input type="checkbox">
+                                    <span class="chk-frame"></span>
+                                    <div class="chk-dim"></div>
+                                </label>
+                                <img src="../static/m_images/dummy.png" alt="">
+                            </div>
+                            <div class="album-item">
+                                <label class="album-chk">
+                                    <input type="checkbox">
+                                    <span class="chk-frame"></span>
+                                    <div class="chk-dim"></div>
+                                </label>
+                                <img src="../static/m_images/dummy.png" alt="">
+                            </div>
+                            <div class="album-item">
+                                <label class="album-chk">
+                                    <input type="checkbox">
+                                    <span class="chk-frame"></span>
+                                    <div class="chk-dim"></div>
+                                </label>
+                                <img src="../static/m_images/dummy.png" alt="">
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="btn-box album-item-del-box">
+                     <input type="button" value="선택된 사진 삭제" class="btn-album-del">
+                 </div>
+                 
+             </div>
+
+             <div class="m-popup-wrap">
+                 <!-- 토스트 팝업 -->
+                 <!-- <div class="m-toast-pop">
+                     <p>스토리지 동기화 성공</p>
+                 </div> -->
+                 <!-- 토스트 팝업 -->
+                 <div class="more-view-pop-box">
+                     <div class="more-view-header">
+                        <input type="button" class="m-input-btn back-btn">
+                         <p class="date-txt">
+                             0000-00-00
+                             <span class="time-txt">00:00</span>
+                         </p>
+                     </div>
+                     <div class="swiper-container more-view-slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slide-item"><img src="../static/m_images/dummy.png" alt=""></div>
+                          <div class="swiper-slide slide-item">
+                              <video src="../static/m_mov/test.mp4#t=0.001" controls="true" muted playsinline>
+                                <source src="../static/m_mov/test.mp4" type="video/mp4"></video>
+                          </div>
+                        </div>
+                      </div>
+                      
+                     <div class="more-view-footer">
+                         <div class="m-input-box">
+                            <input type="text" class="m-input-txt add-tag-txt w85p" placeholder="해시태그를 추가해주세요.">
+                            <input type="button" class="m-input-btn btn-write">
+                        </div>
+                     </div>
+                 </div>
+                 <div class="dim"></div>
+             </div>
+
+        </div>
+
+        <!-- 하단공통네비는 네이티브로 띄우기로 했습니다. -->
+        <!-- <nav class="m-global-nav"></nav> -->
+    </div>
+    
+    <script src="../lib/jquery/swiperJS/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container');
+    </script>
+</body>
+</html>

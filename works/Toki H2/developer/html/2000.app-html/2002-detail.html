@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <link rel="stylesheet" href="../../lib/jquery/js/plugin/mCustomScrollBar/mCustomScrollbar.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <script src="../../lib/jquery/js/plugin/mCustomScrollBar/jquery.mCustomScrollbar.min.js"></script>
+    <title>app detail</title>
+</head>
+<body>
+    <div class="wrap default">
+        <nav class="left-nav">
+            <div class="inner">
+                <h1 class="logo white">
+                    <img src="../../static/images/logo-wh.png" alt="">
+                </h1>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="dash-nav">대시보드</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)" class="active">앱관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정산조회</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">패키지 주문관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">사용자관리</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <!-- 선택된 main-nav-item 의 a 클래스에 active 클래스명 추가 -->
+                        <a href="javascript:void(0)" class="sdk-nav">SDK 센터</a>
+                        <ul class="sub-nav">
+                            <li class="sub-nav-item">
+                                <!-- 현재 선택된 2뎁스 메뉴에도 sub-nav-item의 a태그에 클래스명 active 추가 -->
+                                <a href="javascript:void(0)" class="active">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                            <li class="sub-nav-item">
+                                <a href="javascript:void(0)">SDK 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">공지사항</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">문의하기</a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="javascript:void(0)">정보변경</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="left-nav-dim"></div>
+        <div class="content-wrap">
+            <div class="content-header">
+                <div class="inner">
+                    <input type="button" class="btn-hamburger">
+                    <div class="logo white"><img src="../../static/images/logo-wh.png" alt=""></div>
+                    <div class="service-title">
+                        <span class="logo-txt">Toki</span>
+                        <span>개발자센터</span>
+                    </div>
+                    <!-- 유저 정보 박스 -->
+                    <div class="user-info-box">
+                        <p class="user-name">홍길동님</p>
+                        <div class="btn-box">
+                            <input type="button" value="로그아웃" class="input-btn">
+                        </div>
+                    </div>
+                    <!-- // 유저 정보 박스 -->
+                </div>
+            </div>
+            <div class="inner">
+                <p class="section-title">
+                    등록정보
+                    <span class="title-desc">앱에 대한 등록정보를 등록/변경하실 수 있습니다. <span class="block-line"><i class="red-txt">*</i> 표시는 필수입력 항목입니다.</span></span>
+                </p>
+                <div class="btn-tab-box detail-tab mb30">
+                    <div class="btn-box">
+                        <!-- 선택된 페이지의 btn-tab에 active 클래스명 추가 -->
+                        <input type="button" value="등록정보" class="btn-tab active">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="수익설정" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="인앱설정" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="비공개 테스트" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="출시관리" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="서비스범위" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="평점관리" class="btn-tab">
+                    </div>
+                    <div class="btn-box">
+                        <input type="button" value="API" class="btn-tab">
+                    </div>
+                </div>
+                <div class="table-box">
+                    <div class="detail-btn-tab-box">
+                        <div class="btn-box dis-ib">
+                            <!-- 
+                                선택된 탭의 btn-tab에 active 클래스명 추가 
+                            -->
+                            <input type="button" value="한국어" class="btn-tab detail-tab active">
+                        </div>
+                        <div class="btn-box dis-ib ml24">
+                            <input type="button" value="English" class="btn-tab detail-tab">
+                        </div>
+                    </div>
+                    <!-- 
+                        table-caption-box 와 table이 한셋트로 반복
+                        테이블 제목 우측에 버튼이 없는 경우 no-btn를 동시사용
+                     -->
+                    <div class="table-caption-box no-btn">
+                        <p class="table-caption">앱 정보 입력</p>
+                    </div>
+                    <table>
+                        <colgroup>
+                            <col class="w15p mw30p">
+                            <col class="w85p mw70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        앱이름
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box">
+                                        <input type="text" class="input-txt input-mx" placeholder="앱 이름이 출력됩니다. 변경도 가능합니다.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        카테고리
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box dis-ib">
+                                        <select class="input-select">
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-box dis-ib ml16">
+                                        <select class="input-select">
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-box dis-ib ml16">
+                                        <select class="input-select">
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        앱 설명
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="show-text-length">
+                                        <textarea class="input-textarea"></textarea>
+                                        <p class="info-length">0 / 4000</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        앱 아이콘
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="btn-file-box">
+                                        <!-- 
+                                            스크린 샷 추가 버튼과 업로드 되어있는 이미지의 공통 클래스는 file-list
+                                            업로드 버튼은 btn-file
+                                            앱 아이콘 추가 버튼은 file-app-btn, 스크린 샷 추가 버튼은 screen-shot-btn
+                                            업로드 되어있는 이미지는 file-upload-box
+                                            업로드 되어있는 앱 아이콘 이미지는 file-app, 업로드 되어있는 스크린샷 이미지는 file-screen
+                                         -->
+                                        <label class="file-list btn-file file-app-btn">
+                                             <input type="file">
+                                             <span class="file-btn-icon"><img src="../../static/images/bg-ic-plus.png" alt=""></span>
+                                        </label>
+                                        <div class="file-list file-upload-box file-app">
+                                            <input type="button" class="btn-file-del">
+                                            <div class="img-box"><img src="../../static/images/ic-app-dummy03.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <p class="app-img-desc">JPEG 또는 32비트 PNG<br>512px * 512px (최대 1mb)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        스크린샷
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="btn-file-box">
+                                        <label class="file-list btn-file screen-shot-btn">
+                                             <input type="file">
+                                             <span class="file-btn-icon"><img src="../../static/images/bg-ic-plus.png" alt=""></span>
+                                        </label>
+                                        <div class="file-list file-upload-box file-screen">
+                                            <input type="button" class="btn-file-del">
+                                            <div class="img-box"><img src="../../static/images/ic-app-dummy03.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <p class="app-img-desc right-desc">스크린샷을 1~8개 업로드 할 수 있습니다.<br>JPEG 또는 24비트 PNG(투명하지 않음)<br>320px ~ 3,480px 사이<br>최대 8mb</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        동영상
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box">
+                                        <input type="text" class="input-txt input-mx">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        개인정보 처리방침
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box">
+                                        <input type="text" class="input-txt input-mx" placeholder="URL을 입력하세요.">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        고객센터 이메일
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box">
+                                        <input type="text" class="input-txt input-mx">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        개발사 홈페이지
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box">
+                                        <input type="text" class="input-txt input-mx">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        이용등급
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <span class="table-txt">
+                                        아직 등급이 정해지지 않았습니다.
+                                    </span>
+                                    <a href="#" class="anchor-txt ml16">등급설정</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        패키지여부
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <label class="input-box dis-ib">
+                                        <input type="radio" name="type">
+                                        <span class="radio-frame"></span>
+                                        <span class="chk-label">패키지</span>
+                                    </label>
+                                    <label class="input-box dis-ib ml16">
+                                        <input type="radio" name="type">
+                                        <span class="radio-frame"></span>
+                                        <span class="chk-label">단일앱</span>
+                                    </label>
+                                    <a href="#" class="anchor-txt right-desc-txt">패키지란?</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="table-caption-box no-btn">
+                        <p class="table-caption">패키지 정보 입력</p>
+                        <p class="dis-ib txt-r plain-txt right-desc-txt">
+                            <i class="primary-txt">※</i> 패키지일 경우 정보입력이 필요합니다.
+                        </p>
+                    </div>
+                    <table>
+                        <colgroup>
+                            <col class="w15p mw30p">
+                            <col class="w85p mw70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        패키지 명
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box">
+                                        <input type="text" class="input-txt input-mx">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        패키지 타입
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box dis-ib">
+                                        <select class="input-select">
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        패키지 배송형태
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box dis-ib">
+                                        <select class="input-select">
+                                            <option>택배배송</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        통신판매신고번호
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box">
+                                        <input type="text" class="input-txt input-mx">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="table-caption-box no-btn">
+                        <p class="table-caption">심사 추가정보</p>
+                    </div>
+                    <table>
+                        <colgroup>
+                            <col class="w15p mw30p">
+                            <col class="w85p mw70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        로그인 필요여부
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <label class="input-box dis-ib">
+                                        <input type="radio" name="log">
+                                        <span class="radio-frame"></span>
+                                        <span class="chk-label">불필요</span>
+                                    </label>
+                                    <label class="input-box dis-ib ml16">
+                                        <input type="radio" name="log">
+                                        <span class="radio-frame"></span>
+                                        <span class="chk-label">필요</span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        테스트 아이디
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box dis-ib w100p">
+                                        <input type="text" class="input-txt input-lg">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        테스트 비밀번호
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <div class="input-box dis-ib w100p">
+                                        <input type="password" class="input-txt input-lg">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-head-col">
+                                    <span class="table-txt">
+                                        심사 추가정보 입력
+                                        <i class="red-txt">*</i>
+                                    </span>
+                                </td>
+                                <td class="table-col">
+                                    <textarea class="input-textarea w60p mw100p"></textarea> 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="btn-box txt-c mt40">
+                    <input type="button" value="취소" class="input-btn btn-trans">
+                    <input type="button" value="저장" class="input-btn btn-primary">
+                </div>
+            </div>
+        </div>
+        <footer class="content-footer">
+            <p class="copyright">Copyrifght 2020. Hancom Inc. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

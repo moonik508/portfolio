@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/3.1.1/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <title>나인에듀</title>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 20211108 헤더 관련 작업, common.js 에 스크립트도 작업됨 -->
+         
+        <header>
+            <div class="inner">
+                <!-- 20211108 pc로고 모바일 로고 분리 -->
+                <h1 class="logo pc"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo.png" alt="대치나인에듀 로고"></a></h1>
+                <h1 class="logo mo"><a href="javascript:void(0)"><img src="../../image/NAINEDU/common/logo_m.png" alt="대치나인에듀 로고"></a></h1>
+                <a href="javascript:void(0)" class="hamburger"></a>
+                <!-- 헤더를 분리하신다면 각 페이지에 맞는 global-nav-item에 클래스명 on을 추가 부탁드립니다. -->
+                <nav class="global-nav">
+                    <a href="javascript:void(0)" class="btn-nav-close">닫기</a>
+                    <ul>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">학원소개</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/intro.html">대치나인에듀학원</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/life.html">학원생활</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/grade.html">성적향상</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/01.intro/notice.html">공지사항</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                            <a href="javascript:void(0)">나인학습 Solution</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-care.html">능력별 CARE</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-blackdown.html">학습관리 블랙다운</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-exactly.html">정확한 대입 관리</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/02.solution/solution-add.html">학습 능력 강화</a></li>
+                                        <!-- <li class="sub-depth-nav-item"><a href="#">학부모 전상서</a></li> -->
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01">
+                             <a href="javascript:void(0)">나인에듀강사진</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/03.teacher/teacher_info.html">강사진</a></li>
+                                        <li class="sub-depth-nav-item"><a href="javascript:void(0)">슬기로운 질의응답</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        <li class="global-nav-item have-sub-01 on">
+                            <a href="javascript:void(0)">모집요강</a>
+                            <nav class="sub-depth-nav sub-depth-01">
+                                <div class="inner">
+                                    <ul>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/basic-recruit.html">2023 수능 기초반</a></li>
+                                        <li class="sub-depth-nav-item on"><a href="/html/04.recruit/ready-recruit.html">2023 수능 준비반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/regular-recruit.html">재수정규반</a></li>
+                                        <li class="sub-depth-nav-item"><a href="/html/04.recruit/medi-recruit.html">2023 영과고 수능 MEDICAL CASTLE</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <a href="javascript:void(0)" class="hamburger"><img src="../../image/NAINEDU/common/hamburger.png" alt=""></a>                
+            </div>
+        </header>
+        <div class="breadcrumb-box">
+            <div class="inner">
+                <ul class="breadcrumb">
+                    <li>HOME</li>
+                    <li>모집요강</li>
+                    <li><span>2023 수능 준비반</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container ready">
+            <div class="visual-box ready-visual">
+                <div class="inner">
+                    <div class="visual-txt"><img src="../../image/NAINEDU/recruit/recruit_banner_txt02.png" alt=""></div>
+                </div>
+            </div>
+            
+            <div class="tab-box">
+                <div class="inner">
+                    <a href="javascript:void(0)" class="btn-tab ready-tab w25p active">모집 요강</a>
+                    <a href="javascript:void(0)" class="btn-tab ready-tab w25p">학습 목적</a>
+                    <a href="javascript:void(0)" class="btn-tab ready-tab w25p">표준 시간표</a>
+                    <a href="javascript:void(0)" class="btn-tab ready-tab w25p">과목별 진도표</a>
+                </div>
+            </div>
+            
+
+            <div class="tab-content">
+                
+                <!-- 모집 요강 -->
+                <div class="basic-content-box inner-tab-box active">
+                    <div class="inner">
+                        <!-- 
+                            section-tit, recruit-row, recruit-tit, recruit-txt 공통 클래스 
+                         -->
+                        <div class="bg-box mt80">
+                            <p class="section-tit ready-tit">수능 기초반 모집요강</p>
+                        </div>
+                        <div class="recruit-row ready-row">
+                            <p class="recruit-tit">개강일</p>
+                            <p class="recruit-txt"><b>2022년 1월 3일(월) 오전 8:00(1차 개강), 1월 11일(월) 오전 8:00(2차 개강)</b></p>
+                        </div>
+                        <div class="recruit-row ready-row">
+                            <p class="recruit-tit">교육기간</p>
+                            <p class="recruit-txt"><b>2022년 1월 4일 ~ 2020년 02월 12일(6주 과정)</b></p>
+                        </div>
+                        <div class="recruit-row ready-row">
+                            <p class="recruit-tit">교육대상</p>
+                            <p class="recruit-txt"><b>2023학년도 상위권 및 의치약한 대학 입학을 준비하는 학생, 수능 정시를 처음 도전하는 학생</b></p>
+                        </div>
+                        <div class="recruit-row ready-row">
+                            <p class="recruit-tit">모집인원</p>
+                            <p class="recruit-txt"><b>4개반 (반당 10명 내외)</b></p>
+                        </div>
+                        <div class="recruit-row ready-row">
+                            <p class="recruit-tit">예약금 입금</p>
+                            <p class="recruit-txt multi">
+                                <span>예약금  <b>: 30만원</b></span>
+                                <span>입금계좌 <b>: 우리은행 1005-581-201362</b></span>
+                                <span>예금주 <b>: 대치나인에듀</b></span>
+                            </p>
+                        </div>
+                        <div class="recruit-row ready-row">
+                            <p class="recruit-tit">수강료</p>
+                            <p class="recruit-txt multi">
+                                <span>수강료 <b>: 208만원</b></span>
+                                <span>교재비 <b>: 대입 기초반 자체 교재</b></span>
+                                <span>모의고사비 <b>: 정규반 시작 때 적용</b></span>
+                                <span class="red-txt">※환불규정 : 교육인적자원부 학원의 설립 운영 및 과외 교습에 관한 법률 시행령 제18조 3항에 근거합니다. </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 모집 요강 -->
+                
+                <!-- 학습 목적 -->
+                <div class="basic-content-box inner-tab-box">
+                    <div class="inner">
+                        <div class="slogan mt120">
+                            <p class="slogan-txt">“수능 기초를 단단하게 다지는 공부하기”</p>
+                        </div>
+                    </div>
+                    <div class="bg-box mt120">
+                        <p class="section-desc">
+                            뿌리 깊은 나무는 가뭄에도 마르지 않습니다. <br>
+                            단단하게 수능 기초를 쌓아 수능을 재미있게 공부하는<br>
+                            똑똑한 <b>수능 준비반</b>
+                        </p>
+                    </div>
+                    <div class="inner">
+                        
+                        <div class="basic-number-box ready-number-box">
+                            <div class="basic-number-tit recruit-number-tit">
+                                <p class="basic-numbering">1</p>
+                                <p class="basic-number-tit-txt">특성화된 학습 커리</p>
+                            </div>
+                            <div class="basic-number-txt-box">
+                                <p class="basic-number-txt">&middot;수능에 필요한 개념을 만나 수능 실전을 만나는 <b>국어</b></p>
+                                <p class="basic-number-txt">&middot;수능에 연계된 중등 수학과 수능 기초를 형성하는 <b>수학</b></p>
+                                <p class="basic-number-txt">&middot;수능 기초인 어휘와 문법을 단문에 적용하는 <b>영어</b></p>
+                                <p class="basic-number-txt">&middot;<b>총정리</b>를 통한 수업의 정리와 확인</p>
+                            </div>
+                        </div>
+
+                        <div class="basic-number-box ready-number-box">
+                            <div class="basic-number-tit recruit-number-tit">
+                                <p class="basic-numbering">2</p>
+                                <p class="basic-number-tit-txt">전문화된 학습 방법</p>
+                            </div>
+                            <div class="basic-number-txt-box">
+                                <p class="basic-number-txt">&middot;<b>메가스터디</b>와 <b>EBS</b> 출신의 대치동 강사진</p>
+                                <p class="basic-number-txt">&middot;강사가 직접 집필한 나인에듀만의 <b>특별한 수제 교재</b></p>
+                                <p class="basic-number-txt">&middot;학습의 집중력 최강 <b>소수반</b></p>
+                                <p class="basic-number-txt">&middot;<b>1:1 클리닉</b>을 통한 나만의 약점 보강</p>
+                                <p class="basic-number-txt">&middot;<b>매일 과제</b>를 통한 공부 습관 형성</p>
+                                <p class="basic-number-txt">&middot;알 때까지 물어보는 강사와의 <b>무한 질의응답</b></p>
+                                <p class="basic-number-txt">&middot;학습과 자습 공간의 분리</p>
+                            </div>
+                        </div>
+                        
+                        <div class="basic-number-box ready-number-box">
+                            <div class="basic-number-tit recruit-number-tit">
+                                <p class="basic-numbering">3 </p>
+                                <p class="basic-number-tit-txt">빈틈없는 생활 관리</p>
+                            </div>
+                            <div class="basic-number-txt-box">
+                                <p class="basic-number-txt">&middot;<b>출결 체크</b> 및 <b>부모 알림 서비스</b></p>
+                                <p class="basic-number-txt">&middot;<b>쉬는 시간 정숙</b>을 보장하는 생활 관리</p>
+                                <p class="basic-number-txt">&middot;독서실 책장 넘기는 소리만 들리는 <b>정숙함</b> 유지</p>
+                                <p class="basic-number-txt">&middot;따돌림이 없는 <b> 교우 관계</b></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- // 학습 목적 -->
+                
+                <!-- 표준 시간표 -->
+                <div class="basic-content-box inner-tab-box">
+                    
+                    <div class="schedule-inner">
+                        
+                        <div class="bg-box mt80 mb80">
+                            <p class="section-tit schedule-tit">기초반 시간표</p>
+                        </div>
+
+                        <div class="schedule-img-box">
+                            <!-- 시간표 이미지 -->
+                            <img src="../../image/NAINEDU/recruit/ready-time.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- // 표준 시간표 -->
+                
+                <!-- 과목별 진도표 -->
+                <div class="basic-content-box inner-tab-box">
+                    
+                    <div class="class-inner">
+                        <div class="bg-box mt80">
+                            <p class="section-tit">2023 똑똑한 수능 준비반 과목별 주차 진도표</p>
+                        </div>
+
+                        <!-- 1과목 -->
+                        <div class="class-box math">
+
+                            <div class="class-tit">
+                                <p class="class-tit-txt">수학</p>
+                                <span class="class-tit-desc">총 주별시수 12T</span>
+                            </div>
+
+                            <div class="class-grid six-time color-green">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">지수와 로그</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">지수함수 / 로그함수</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">지수함수 / 로그함수</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">삼각함수</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">수열</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">수열</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">수학1</p>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                </div>
+                            </div>
+
+                            <div class="class-grid six-time color-turq">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">함수의 극한</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">다항함수의 미분법</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">다항함수의 미분법</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">다항함수의 미분법</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">다항함수의 적분법</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">다항함수의 적분법</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">수학 2</p>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                </div>
+                            </div>
+                            
+                            <div class="class-grid six-time color-grass">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">수열의 극한</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">수열의 극한 미분법</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">미분법</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">미분법</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">미분 / 적분법</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">적분법</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">미적분</p>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                </div>
+                            </div>
+                            
+                            <div class="class-grid six-time color-yellowgreen">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">순열과 조합</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">순열과 조합</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">확률</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">확률</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">통계</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">통계</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">확통</p>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                    <div class="class-col">주별 시수 2T</div>
+                                </div>
+                            </div>
+
+                            <div class="class-grid-bot">
+                                <p>1주차</p>
+                                <p>2주차</p>
+                                <p>3주차</p>
+                                <p>4주차</p>
+                                <p>5주차</p>
+                                <p>6주차</p>
+                            </div>
+
+                            <div class="class-box-desc">
+                                ※ 정규 시간 중 교실 질의 응답 수업 2T 배정<br>
+                                ※ 수학 공식 증명, 이해 수업 후 공식 암기 테스트
+                            </div>
+
+                        </div>
+                        <!-- //1과목 -->
+
+                        <!-- 2과목 -->
+                        <div class="class-box kor">
+
+                            <div class="class-tit">
+                                <p class="class-tit-txt">국어</p>
+                                <span class="class-tit-desc">총 주별시수 8T</span>
+                            </div>
+
+                            <div class="class-grid six-time color-red">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">EBS교재</p>
+                                        <p class="class-desc-txt">연계방식과 출제 유형</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">2021 수능문제</p>
+                                        <p class="class-desc-txt">신유형</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">고전시가</p>
+                                        <p class="class-desc-txt">출제 방식 및 유형</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">현대시</p>
+                                        <p class="class-desc-txt">출제 방식 및 유형</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">고전 소설</p>
+                                        <p class="class-desc-txt">출제 방식 및 유형</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">현대 소설</p>
+                                        <p class="class-desc-txt">출제 방식 및 유형</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">문학</p>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                    <div class="class-col">주별 시수 4T</div>
+                                </div>
+                            </div>
+
+                            <div class="class-grid six-time color-org">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">EBS교재</p>
+                                        <p class="class-desc-txt">연계방식과 출제 유형</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">2021 수능문제</p>
+                                        <p class="class-desc-txt">신유형</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">인문분야</p>
+                                        <p class="class-desc-txt">지문(철학) 분석법</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">사회분야</p>
+                                        <p class="class-desc-txt">지문 분석법 </p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">과학 / 예술</p>
+                                        <p class="class-desc-txt">복합지문</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">기술 / 예술</p>
+                                        <p class="class-desc-txt">복합지문</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">독서</p>
+                                    <div class="class-col">주별 시수 3T</div>
+                                    <div class="class-col">주별 시수 3T</div>
+                                    <div class="class-col">주별 시수 3T</div>
+                                    <div class="class-col">주별 시수 3T</div>
+                                    <div class="class-col">주별 시수 3T</div>
+                                    <div class="class-col">주별 시수 3T</div>
+                                </div>
+                            </div>
+
+                            <div class="class-grid six-time color-semiorg">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">기본 개념</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">기본 개념</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">기본 개념</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">기본 개념</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">기본 개념</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">기본 개념</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">화법과 작문</p>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                </div>
+                            </div>
+
+                            <div class="class-grid six-time color-darkorg">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">음운과 단어</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">음운과 단어</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">음운과 단어</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">품사와 문장범주</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">품사와 문장범주</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">품사와 문장범주</p>
+                                        <p class="class-desc-txt">문제 유형 분석</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">언론과 매체</p>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                    <div class="class-col">주별 시수 0.5T</div>
+                                </div>
+                            </div>
+
+                            <div class="class-grid-bot">
+                                <p>1주차</p>
+                                <p>2주차</p>
+                                <p>3주차</p>
+                                <p>4주차</p>
+                                <p>5주차</p>
+                                <p>6주차</p>
+                            </div>
+
+                            <div class="class-box-desc">
+                                ※ 정규 시간 중 교실 질의 응답 수업 1T 배정
+                            </div>
+
+                        </div>
+                        <!-- //2과목 -->
+
+                        <!-- 3과목 -->
+                        <div class="class-box eng">
+
+                            <div class="class-tit">
+                                <p class="class-tit-txt">영어</p>
+                                <span class="class-tit-desc">총 주별시수 6T</span>
+                            </div>
+
+                            <div class="class-grid six-time color-yellow">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">품사와 문장 성분<br>/ 문장의 기본구조</p>                                        </p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">동사편1</p>
+                                        <p class="class-desc-txt">시제 / 조동사</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">동사편2</p>
+                                        <p class="class-desc-txt">수동태</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">준동사</p>
+                                        <p class="class-desc-txt">부정사 / 동명사 / 분사</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">접속사와 관계사</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">가정법과 기타 구문</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">문법</p>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                </div>
+                            </div>
+
+                            <div class="class-grid six-time color-brown">
+                                <div class="class-row top-row">
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">주제</p>
+                                        <p class="class-desc-txt">문장 분석 연습<br>/수능 유형 맛보기</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">요지/제목</p>
+                                        <p class="class-desc-txt">문장 분석 연습<br>/수능 유형 맛보기</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">순서 / 연결사</p>
+                                        <p class="class-desc-txt">문장 분석 연습<br>/수능 유형 맛보기</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">빈칸1</p>
+                                        <p class="class-desc-txt">문장 분석 연습<br>/수능 유형 맛보기</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">빈칸2</p>
+                                        <p class="class-desc-txt">문장 분석 연습<br>/수능 유형 맛보기</p>
+                                    </div>
+                                    <div class="class-col">
+                                        <p class="class-desc-tit">종합적 실전 독해</p>
+                                        <p class="class-desc-txt">문장 분석 연습<br>/수능 유형 맛보기</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">독해</p>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                    <div class="class-col"></div>
+                                </div>
+                            </div>
+
+                            <div class="class-grid color-seimorg">
+                                <div class="class-row top-row">
+                                    <div class="class-col w100p">
+                                        <p class="class-desc-tit">수능 기본 어휘 정리 (매일 80개)</p>
+                                    </div>
+                                </div>
+                                <div class="class-row bot-row">
+                                    <p class="class-name">어휘</p>
+                                    <div class="class-col w100p">수능 기본 어휘 정리 (매일 80개) / 수능 실전 영어 듣기</div>
+                                </div>
+                            </div>
+                            
+                            <div class="class-grid-bot">
+                                <p>1주차</p>
+                                <p>2주차</p>
+                                <p>3주차</p>
+                                <p>4주차</p>
+                                <p>5주차</p>
+                                <p>6주차</p>
+                            </div>
+
+                            <div class="class-box-desc">
+                                ※ 정규 시간 외 수업 총정리 및 클리닉 수업 실시
+                            </div>
+
+                        </div>
+                        <!-- //3과목 -->
+                        
+                    </div>
+
+                </div>
+                <!-- // 과목별 진도표 -->
+
+            </div>
+
+        </div>
+        <!-- 20211108 푸터변경 -->
+        <footer>
+            <div class="inner">
+                <p class="logo footer"><img src="../../image/NAINEDU/common/footer-logo.png" alt="대치에스학원 하단 로고"></p>
+                <!-- 20211108 footer desc pc, 모바일 추가 -->
+                <article class="footer-desc pc">
+                    <p><span>대치나인에듀 대표: 조범희</span><span>사업자 등록번호 : 624-92-01362</span><span>학원설립 : 서울강남서초 제4691호</span></p>
+                    <p><span>상담문의 : 02-555-3003</span><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+                <article class="footer-desc mo">
+                    <p><span>상담문의 : 02-555-3003</span><span>대치나인에듀 대표: 조범희</span></p>
+                    <p><span>주소 : 서울특별시 강남구 삼성로 221, 2층(대치동)</span></p>
+                    <p><span>사업자 등록번호 : 624-92-01362</span></p>
+                    <p><span>COPYRIGHT NAINEDU CO. LTD. ALL RIGHTS RESERVED</span></p>
+                </article>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

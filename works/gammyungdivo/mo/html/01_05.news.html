@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/js/common.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/sub.css">
+    <title>법무법인 감명</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo">logo</h1>
+                <div class="serv_banner">
+                    <span><i class="ico_tel"></i>무료상담 02-534-2070</span>
+                </div>
+                <p class="hamburger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </p>
+            </div>
+        </header>
+        <div class="side_nav">
+            <a href="#" class="btn btn_side_close">닫기</a>
+            <ul class="S_nav">
+                <li class="S_nav_01">
+                    감명 소개
+                </li>
+                <li class="S_nav_drops drops_01">
+                    <a href="#">인사말</a>
+                    <a href="#">상담 안내</a>
+                    <a href="#">오시는 길</a>
+                    <a href="#">언론보도</a>
+                </li>
+                <li onclick="location.href='/m/lawyer_info'">감명 변호사</li><!--onclick이벤트추가-->
+                <li class="S_nav_02">
+                    업무 분야
+                </li>
+                <li class="S_nav_drops drops_02">
+                    <a href="#">이혼</a>
+                    <a href="#">재산과자녀</a>
+                    <a href="#">상간자소송</a>
+                    <a href="#">상속분쟁</a>
+                </li>
+                <li onclick="location.href='/m/board/list?boardName=case'">수행사례</li><!--onclick이벤트추가-->
+                <li class="S_nav_03">
+                    고객 센터
+                </li>
+                <li class="S_nav_drops drops_03">
+                    <a href="./04_01.onlineconsult.html">온라인 상담</a>
+                    <a href="./05.FAQ.html">자주 묻는 질문</a>
+                </li>
+            </ul>
+            <div class="side_bot">
+                <div class="side_menu_img">
+                    <a href="#"><img src="../images/icn-banner.png" alt=""></a>
+                </div>
+                <p class="tel">
+                    상담  02-534-2070
+                </p>
+                <ul class="nav_sns">
+                    <li>
+                        <a href="https://pf.kakao.com/_xkleYT/" target="_blank">
+                            <span class="ico_sns kakao"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/lawfirmgammyung" target="_blank">
+                            <span class="ico_sns blog"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://haneumlaw.com/" target="_blank">
+                            <span class="ico_sns home"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dim"></div>
+        <div class="container news">
+            <div class="sub_top">
+                <div class="inner">
+                    <h3 class="sub_title">언론보도</h3>
+                </div>
+                <div class="dim"></div>
+            </div>
+            <div class="inner">
+                <div class="sub_con">
+                    <ul class="news_list">
+                        <!-- class="news_item" 이 반복 -->
+                        <li class="news_item">
+                            <span class="news_info">
+                                <b>[헤럴드경제] 형사전문변호사 “지하철성범죄 혐의, 대응에 곤란을 겪을 가능성가능가능가능가능</b>
+                                <span class="news_txt">
+                                    지하철성추행의 경우 주로 출퇴근 시간대에 발생하며 혼잡한 상황을 틈타 다른 사람을 추행하는 경우도 있으나 비좁은 지하철 내에서 발생한 불가피한 신체접촉이 성추행 오해로 번져 지하철성범죄 피의자 입장이 되는 경우도 적지 않은 상황이다. 이런 경우 혐의를 받게될 경우
+                                </span>
+                            </span>
+                            <span class="news_date">2020.02.28</span>
+                        </li>
+                        <li class="news_item">
+                            <span class="news_info">
+                                <b>[로이슈] 형사전문변호사 “카메라등이용촬영죄, 폭 넓게 적용돼”</b>
+                                <span class="news_txt">
+                                    흔히 몰래카메라로 알고 있는 카메라등이용촬영죄는 단순 촬영행위 외에도 범죄행위로 인정되는 폭이 넓은 문제인 만큼 혐의를 받게 된다면 자신의 상황에 대해 법리적으로 검토, 혐의 인정 가능성 등을 종합적으로 따져 대응에 나설 필요가 있다. 카메라등이용촬영죄는 큰 범죄행위로
+                                </span>
+                            </span>
+                            <span class="news_date">2020.02.28</span>
+                        </li>
+                    </ul>
+                    <ul class="board_paging">
+                        <!-- 1페이지에선 클래스명 hide를 사용해서 가리고 2페이지부턴 hide 삭제하여 보이기-->
+                        <li class="btn_prev">
+                            <a href="#">이전</a>
+                        </li>
+                        <li class="on"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li class="btn_next">
+                            <a href="#">다음</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_top">
+                <div class="inner">
+                    <ul class="foot_list">
+                        <li><a href="./00_01.notice01.html">면책공고</a></li>
+                        <li><a href="./00_02.notice02.html">이용약관</a></li>
+                        <li><a href="./00_03.notice03.html">개인정보취급방침</a></li>
+                        <li><a href="./00_04.notice04.html">이메일무단수집거부</a></li>
+                        <li><a href="./00_05.notice05.html">유한책임</a></li>
+                        <li><a href="./01_03.map.html">오시는길</a></li>
+                    </ul>
+                    <div class="foot_fam" name="" id="">
+                        <p>패밀리 사이트</p>
+                        <ul>
+                            <li><a target="_blank" href="http://haneumlaw.com/">통합 홈페이지</a></li>
+                            <li><a target="_blank" href="http://haneumcriminal.com/">성범죄·형사</a></li>
+                            <li><a target="_blank" href="http://www.seungwon-familylaw.com/">이혼&middot;가사</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bot">
+                <div class="inner">
+                    <p class="company_name">법무법인 감명</p>
+                    <address>서울 서초구 서초중앙로 154 화평빌딩 2층<br>상담 02-534-2070</address>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../lib/css/reset.css">
+    <link rel="stylesheet" href="../../lib/css/common.css">
+    <link rel="stylesheet" href="../../lib/css/font.css">
+    <link rel="stylesheet" href="../../lib/css/style.css">
+    <script src="../../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap mobile">
+        <!-- 팝업 호출시 m-header 에 클래스 popup을 추가해주세요. -->
+        <header class="m-header popup">
+            <div class="m-component-box">
+                <div class="m-search-box">
+                    <input type="button" class="m-input-btn back-btn">
+                    <p class="m-title hd-title">앱스토어</p>
+                    <div class="m-header-btn-box">
+                        <input type="button" class="m-input-btn search-btn">
+                        <input type="button" class="m-input-btn more-btn">
+                    </div>
+                </div>
+                <!-- 
+                    connect-robot-info 와 상태값에 따라 아래 클래스 추가
+                    사용중 class = robot-connected
+                    대기 class = robot-wait
+                    바쁨 = robot-busy
+                    off = robot-disconnected
+                 -->
+                <div class="connect-robot-info robot-connected">
+                    <p class="robot-name">Toki#1_hancom</p>
+                </div>
+            </div>
+            <div class="dimmed"></div>
+        </header>
+        <!-- 
+            header 의 more-btn 선택시(클릭시)
+            m-sub-nav 에 클래스명 on 을 추가하게 제이쿼리 작업되어있습니다.
+
+            dimmed 영역 선택시 m-sub-nav 에 클래스명 on 을 제거하게 제이쿼리 작업 되어있습니다. 
+            == common.js
+
+            list-item 선택시 해당하는 메뉴를 제외한 나머지 list-item 은 접게 제이쿼리 되어있습니다.
+         -->
+        <aside class="m-sub-nav">
+            <nav class="m-sub-nav-box">
+                <ul class="nav-depth01">
+                    <li class="list-item">
+                        <span>패키지</span>
+                    </li>
+                    <li class="list-item">
+                        <span>교육</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>퀴즈</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>음악</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>만화</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>건강</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>돌봄</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>게임</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>이용안내</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>이용약관</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>문제신고</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <span>서비스 문의</span>
+                        <ul class="nav-depth02">
+                            <li class="list-item"><span>내 찜 목록</span></li>
+                            <li class="list-item"><span>내 앱 목록</span></li>
+                            <li class="list-item"><span>문의내역</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="dimmed"></div>
+        </aside>
+        <div class="m-content-wrap">
+            <!-- 
+                m-component-box 가 한 영역을 나타냄
+                타입에 따라 type-wide-rec ... 등 클래스를 붙여서 사용
+             -->
+             <div class="m-component-box m-app-detail">
+                 
+                 <div class="m-app-detail-box">
+                    <div class="m-app-info-box">
+                        <div class="m-app-info-top">
+                            <div class="thumb"><img src="../../static/m_images/ic-dummy01.png" alt=""></div>
+                            <div class="m-app-info-txt">
+                                <p class="m-app-info-title">윤선생</p>
+                                <p class="m-app-info-sub-title">앱 부제목</p>
+                                <p class="m-app-info-developer">제작자명</p>
+                            </div>
+                            <div class="m-btn-box detail-btn-box">
+                                <input type="button" value="찜하기" class="m-input-btn add-list-detail">
+                            </div>
+                        </div>
+                        <div class="m-app-info-desc">
+                            <p class="aver-score-desc">
+                                평가 <i>4.0</i>
+                                <span class="aver-score-desc-img"><img src="../../static/m_images/stars/star_050.png" alt=""></span>
+                            </p>
+                            <p class="count-dl"><span>000</span>다운로드</p>
+                            <p class="caption"><span>0세 이상</span>(부모 지도 필요)</p>
+                        </div>
+                    </div>
+                    <div class="m-component-box type-gallery">
+                        <div class="m-item-list">
+                            <div class="m-item-rail">
+                                <div class="m-item-box">
+                                    <div class="m-item-img"><img src="../../static/images/image_none.png" alt=""></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 앱 정보 영역 -->
+                    <div class="m-component-box app-info-detail">
+                        <div class="m-title-box txt-l">
+                            <p class="m-title">앱 정보</p>
+                        </div>
+                        <p class="detail-txt">
+                            앱정보입니다. 최대2000자까지 들어갑니다.
+                        </p>
+                    </div>
+                    <!-- //앱 정보 영역 -->
+
+                    <!-- 업데이트 내역 영역 -->
+                    <div class="m-component-box app-info-detail">
+                        <div class="m-title-box txt-l">
+                            <p class="m-title">업데이트 내역</p>
+                        </div>
+                        <p class="detail-txt">
+                            앱정보입니다. 최대2000자까지 들어갑니다.
+                        </p>
+                    </div>
+                    <!-- //업데이트 내역 영역 -->
+
+                    <!-- 평점 -->
+                    <div class="m-component-box">
+                        <div class="average-box">
+                            <div class="m-title-box txt-l">
+                                <p class="m-title">평점</p>
+                                <input type="button" value="평가등록" class="m-input-btn score-btn">
+                            </div>
+                            <div class="aver-score-box">
+                                <div class="left-box">
+                                    <p class="aver-score">4.9</p>
+                                    <img src="../../static/m_images/stars/star_050.png" alt="">
+                                    <p class="aver-score-desc">000 개</p>
+                                </div>
+                                <!-- 
+                                    각 별점에 대한 그래프 표시량을 graph-line의 style 항목에 넣어주세요.
+                                 -->
+                                <div class="right-box">
+                                    <div class="graph-item">
+                                        <div class="graph-num">1</div>
+                                        <div class="graph-frame">
+                                            <div class="graph-line" style="width: 30%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="graph-item">
+                                        <div class="graph-num">2</div>
+                                        <div class="graph-frame">
+                                            <div class="graph-line" style="width: 40%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="graph-item">
+                                        <div class="graph-num">3</div>
+                                        <div class="graph-frame">
+                                            <div class="graph-line" style="width: 10%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="graph-item">
+                                        <div class="graph-num">4</div>
+                                        <div class="graph-frame">
+                                            <div class="graph-line" style="width: 50%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="graph-item">
+                                        <div class="graph-num">5</div>
+                                        <div class="graph-frame">
+                                            <div class="graph-line" style="width: 20%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 평점 -->
+
+                    <!-- 
+                    개발자의 다른 앱에는 모두보기 화살표 X 
+                    -->
+                     <div class="m-component-box type-semilar">
+                        <div class="m-title-box txt-l">
+                            <p class="m-title">개발자의 다른 앱</p>
+                        </div>
+                        <div class="m-item-list">
+                            <div class="m-item-rail">
+                                <div class="m-item-box">
+                                    <div class="m-item-img">
+                                        <img src="../../static/m_images/ic-dummy01.png" alt="">
+                                    </div>
+                                    <p class="m-item-name">윤선생</p>
+                                    <div class="m-item-desc">
+                                        <div class="m-item-aver-score">
+                                            <p>평가 4.5</p>
+                                            <!-- 
+                                                평점에 맞게 이미지를 교체해주시면 됩니다
+                                                동일 경로에 000, 005, 010, 015, 020, 025, 030, 035, 040, 045, 050 으로 위치
+                                             -->
+                                            <img src="../../static/m_images/stars/star_045.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img">
+                                        <img src="../../static/m_images/ic-dummy01.png" alt="">
+                                    </div>
+                                    <p class="m-item-name">윤선생</p>
+                                    <div class="m-item-desc">
+                                        <div class="m-item-aver-score">
+                                            <p>평가 4.5</p>
+                                            <img src="../../static/m_images/stars/star_045.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img">
+                                        <img src="../../static/m_images/ic-dummy01.png" alt="">
+                                    </div>
+                                    <p class="m-item-name">윤선생</p>
+                                    <div class="m-item-desc">
+                                        <div class="m-item-aver-score">
+                                            <p>평가 4.5</p>
+                                            <img src="../../static/m_images/stars/star_045.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-item-box">
+                                    <div class="m-item-img">
+                                        <img src="../../static/m_images/ic-dummy01.png" alt="">
+                                    </div>
+                                    <p class="m-item-name">윤선생</p>
+                                    <div class="m-item-desc">
+                                        <div class="m-item-aver-score">
+                                            <p>평가 4.5</p>
+                                            <img src="../../static/m_images/stars/star_045.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //개발자의 다른 앱 영역 -->
+
+                    <!-- 개발자 정보 영역 -->
+                    <div class="m-component-box developer-info">
+                        <div class="m-title-box txt-l">
+                            <p class="m-title">개발자 정보</p>
+                        </div>
+                        <div class="develop-data-row">
+                            <p class="row-heading">홈페이지</p>
+                            <p class="row-txt homepage">개발사 홈페이지 바로가기</p>
+                        </div>
+                        <div class="develop-data-row">
+                            <p class="row-heading">이메일</p>
+                            <p class="row-txt">123@gmail.com</p>
+                        </div>
+                        <div class="develop-data-row">
+                            <p class="row-heading">연락처</p>
+                            <p class="row-txt">02-1234-5678</p>
+                        </div>
+                        <div class="develop-data-row">
+                            <p class="row-heading">주소</p>
+                            <p class="row-txt">서울시 송파구 송패다로 201</p>
+                        </div>
+                        <div class="develop-data-row">
+                            <p class="row-heading">개인정보처리방침</p>
+                            <p class="row-txt">http://www.123.com/privacy</p>
+                        </div>
+                    </div>
+                    <!-- //개발자 정보 영역 -->
+
+                    <!-- 콘텐츠 등급 영역 -->
+                    <div class="m-component-box app-info-detail">
+                        <div class="m-title-box txt-l">
+                            <p class="m-title">콘텐츠 등급</p>
+                        </div>
+                        <p class="detail-txt">
+                            +3세 이상
+                        </p>
+                    </div>
+                    <!-- //콘텐츠 등급 영역 -->
+
+                </div>
+
+             </div>
+             <!-- 
+                 검색영역 디테일 상단과 동일하게 사용
+              -->
+            <div class="m-popup-wrap">
+                <div class="m-popup-box">
+                    <div class="m-popup-content">
+                        <p class="m-popup-title">이 앱의 평가를 남겨주세요</p>
+                        <div class="m-popup-score-box">
+                            <input type="radio" name="appscore" id="appscore1" class="m-appscore-data01 hidden">
+                            <input type="radio" name="appscore" id="appscore2" class="m-appscore-data02 hidden">
+                            <input type="radio" name="appscore" id="appscore3" class="m-appscore-data03 hidden">
+                            <input type="radio" name="appscore" id="appscore4" class="m-appscore-data04 hidden">
+                            <input type="radio" name="appscore" id="appscore5" class="m-appscore-data05 hidden">
+                            <label for="appscore1" class="m-score-btn score-btn01"></label>
+                            <label for="appscore2" class="m-score-btn score-btn02"></label>
+                            <label for="appscore3" class="m-score-btn score-btn03"></label>
+                            <label for="appscore4" class="m-score-btn score-btn04"></label>
+                            <label for="appscore5" class="m-score-btn score-btn05"></label>
+                            <div class="m-score-item score00"><img src="../../static/m_images/stars/star_000.png" alt=""></div>
+                            <div class="m-score-item score01"><img src="../../static/m_images/stars/star_010.png" alt=""></div>
+                            <div class="m-score-item score02"><img src="../../static/m_images/stars/star_020.png" alt=""></div>
+                            <div class="m-score-item score03"><img src="../../static/m_images/stars/star_030.png" alt=""></div>
+                            <div class="m-score-item score04"><img src="../../static/m_images/stars/star_040.png" alt=""></div>
+                            <div class="m-score-item score05"><img src="../../static/m_images/stars/star_050.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="btn-box txt-c">
+                        <input type="button" class="m-input-btn apply" value="남기기">
+                        <input type="button" class="m-input-btn cancel" value="취소">
+                    </div>
+                </div>
+                <div class="dim"></div>
+            </div>
+        </div>
+        <!-- 하단공통네비는 네이티브로 띄우기로 했습니다. -->
+        <nav class="m-global-nav"></nav>
+    </div>
+    
+</body>
+</html>

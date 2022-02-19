@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/admin.css">
+    <title>법무법인 감명 관리자 페이지</title>
+</head>
+<body>
+    <nav class="ad_gnb">
+        <h1 class="logo">logo</h1>
+        <ul class="right_nav">
+            <li><a href="#">인사말</a></li>
+            <li><a href="#">변호사</a></li>
+            <li><a href="#">언론보도</a></li>
+            <li><a href="#">수행사례</a></li>
+            <li><a href="#">상담문의</a></li>
+            <li class="on"><a href="#">자주묻는질문</a></li>
+            <li><a href="#">서식자료실</a></li>
+        </ul>
+    </nav>
+    <header class="ad_header">
+        <div class="inner">
+            <nav class="clearfix">
+                <ul>
+                   <li><a href="#">메인</a></li>
+                   <li><a href="#">회생/파산</a></li>
+                   <li><a href="#">이혼/가사</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn_logout">
+                로그아웃
+            </a>    
+        </div>
+    </header>
+    <div class="ad_container">
+        <h2 class="ad_first_title">
+            자주묻는질문
+        </h2>
+        <div class="ad_conBox clearfix">
+            <div class="tableBox">
+                <table>
+                    <colgroup>
+                        <col width="15%">
+                        <col width="*">
+                        <col width="20%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                <select class="select_Case">
+                                    <option>전체</option>
+                                    <option>법인 회생</option>
+                                    <option>일반 회생</option>
+                                    <option>법인 파산</option>
+                                    <option>개인 회생/파산</option>
+                                </select>
+                            </th>
+                            <th>제목</th>
+                            <th>관리</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- table row 갯수는 최대 10개로 해주세요 -->
+                        <tr>
+                            <td class="txtCenter">회생/파산</td>
+                            <td>법인 회생(간이회생) 개시 결정</td>
+                            <td class="mod">
+                                <button class="btn btn_cancel">수정</button>
+                                <button class="btn btn_save_data">삭제</button>            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txtCenter">회생/파산</td>
+                            <td>법인 회생(간이회생) 개시 결정</td>
+                            <td class="mod">
+                                <button class="btn btn_cancel">수정</button>
+                                <button class="btn btn_save_data">삭제</button>            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txtCenter">회생/파산</td>
+                            <td>법인 회생(간이회생) 개시 결정</td>
+                            <td class="mod">
+                                <button class="btn btn_cancel">수정</button>
+                                <button class="btn btn_save_data">삭제</button>            
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btnBox right">
+                    <button class="btn btn_save_data">등록</button>
+                </div>
+                <div class="paging">
+                    <!-- class="arrow"는 페이지가 11개일때부터 hidden을 제거해주세요. -->
+                    <a href="#" class="arrow hidden">&lt;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="arrow hidden">&gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

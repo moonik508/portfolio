@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../lib/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/js/common.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../lib/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <title>법무법인 감명</title>
+    <!-- <script>
+        $(document).ready(function(){
+            //slider
+            $('.bxslider').bxSlider({
+                mode: 'horizontal',
+                moveSlides: 1,
+                slideMargin: 0,
+                infiniteLoop: true,
+                speed: 1000,
+                pause : 3000,
+                touchEnabled: false,
+                auto: true,
+                autoControls: true
+            });
+        });
+    </script> -->
+    
+    <script>
+        $(document).ready(function(){
+            $(".slide_txt").show();
+            $(".slide_sub_txt").show();
+            $(".slider").slick({
+                autoplay: true,
+                autoplaySpeed: 7000,
+                infinite: true,
+                arrows: true,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                draggable : false,
+                dots: true,
+                dotsClass: 'custom_paging',
+                customPaging : function (slider, i) {
+                    return  (i + 1) + ' / ' + slider.slideCount;
+                }
+            });
+
+            var flag = "S";
+            $(".slick-next.slick-arrow").on("click", function(){
+                flag = "B";
+                progressBarIndex = $(".custom_paging .slick-active").text().replace(" / 3","") - 1;
+                if(progressBarIndex == 1){
+                    $('.inProgress0').css({
+                        width: "100%"
+                    });
+                    $('.inProgress1').css({
+                        width: "0%"
+                    });
+                    $('.inProgress2').css({
+                        width: "0%"
+                    });
+                }else if(progressBarIndex == 2){
+                    $('.inProgress0').css({
+                        width: "100%"
+                    });
+                    $('.inProgress1').css({
+                        width: "100%"
+                    });
+                    $('.inProgress3').css({
+                        width: "0%"
+                    });
+                }else{
+                    $('.inProgress0').css({
+                        width: '0%'
+                    });
+                    $('.inProgress1').css({
+                        width: '0%'
+                    });
+                    $('.inProgress2').css({
+                        width: '0%'
+                    });
+                }
+                percentTime = 0;
+            });
+
+            $(".slick-prev.slick-arrow").on("click", function(){
+                flag = "B";
+                progressBarIndex = $(".custom_paging .slick-active").text().replace(" / 3","") - 1;
+                if(progressBarIndex == 1){
+                    $('.inProgress0').css({
+                        width: "100%"
+                    });
+                    $('.inProgress1').css({
+                        width: "0%"
+                    });
+                    $('.inProgress2').css({
+                        width: "0%"
+                    });
+                }else if(progressBarIndex == 0){
+                    $('.inProgress0').css({
+                        width: '0%'
+                    });
+                    $('.inProgress1').css({
+                        width: '0%'
+                    });
+                    $('.inProgress2').css({
+                        width: '0%'
+                    });
+                }else{
+                    $('.inProgress0').css({
+                        width: "100%"
+                    });
+                    $('.inProgress1').css({
+                        width: "100%"
+                    });
+                    $('.inProgress3').css({
+                        width: "0%"
+                    });
+                }
+                percentTime = 0;
+            });
+
+            //play and pause button
+            $(".btn_pause").on("click", function(){
+                $(".btn_play").addClass("active");
+                $(this).removeClass("active");
+                $(".slider").slick('slickPause');
+                clearInterval(tick);
+            });
+            $(".btn_play").on("click", function(){
+                $(".btn_pause").addClass("active");
+                $(this).removeClass("active");
+                $(".slider").slick('slickPlay');
+                startProgressbar();
+            });
+
+            //ticking machine
+            var percentTime;
+            var tick;
+            var time = 1;
+            var tmpIndex = 0;
+            var progressBarIndex = 0;
+
+            $('.progressBarContainer .progressBar').each(function(index) {
+                var progress = "<div class='inProgress inProgress" + index + "'></div>";
+                $(this).html(progress);
+            });
+
+            function startProgressbar() {
+                resetProgressbar();
+                percentTime = 0;
+                tick = setInterval(interval, 10);
+            }
+
+            function interval() {
+
+                if(flag == "S" && tmpIndex != progressBarIndex){
+                    if(progressBarIndex != 0){
+                        $('.inProgress' + tmpIndex).css({
+                            width: "100%"
+                        });
+                    }
+                    percentTime = 0;
+                }
+                tmpIndex = progressBarIndex;
+                flag = "S";
+
+                if (($('.slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').attr("aria-hidden")) === "true") {
+                    progressBarIndex = $('.slider .slick-track div[aria-hidden="false"]').data("slickIndex");
+                    percentTime = 0;
+                } else {
+                    
+                    percentTime += 1 / (time + 6);
+                    $('.inProgress' + progressBarIndex).css({
+                        width: percentTime + "%"
+                    });
+                    if (percentTime >= 100) {
+                        $('.single-item').slick('slickNext');
+                        progressBarIndex++;
+                        if (progressBarIndex > 2) {
+                            progressBarIndex = 0;
+                            $('.inProgress').css({
+                                width: 0 + '%'
+                            });
+                        }
+                    }
+                }
+            }
+
+            function resetProgressbar() {
+                $('.inProgress').css({
+                    width: 0 + '%'
+                });
+                clearInterval(tick);
+            }
+            startProgressbar();
+            // End ticking machine
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap" class="main"> <!--이클립스에서 class=main삭제됨-->
+        <!-- 0410 수정 -->
+        <header>
+            <div class="inner">
+                <h1 class="logo">logo</h1> <!--onclick이벤트 반영x-->
+                <nav class="G_nav clearfix">
+                    <ul>
+                        <li>
+                            <a href="#">감명 소개</a> <!--a태그의 링크는 반영x-->
+                            <ul class="G_nav_drops">
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">상담 안내</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">언론 보도</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">감명 변호사</a>
+                        </li>
+                        <li>
+                            <a href="#">업무분야</a>
+                            <ul class="G_nav_drops">
+                                <li><a href="#">이혼</a></li>
+                                <li><a href="#">재산과자녀</a></li>
+                                <li><a href="#">상간자소송</a></li>
+                                <li><a href="#">상속분쟁</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">수행사례</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <ul class="G_nav_drops">
+                                <li><a href="./04_01.onlineconsult.html">온라인 상담</a></li>
+                                <li><a href="./05.FAQ.html">자주 묻는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="serv_banner">
+                    <span><i class="ico_tel"></i>무료상담 02-534-2070</span> <!--span태그에 onclick이벤트 반영x-->
+                    <ul class="free_serv_list">
+                        <li>
+                            <a href="https://pf.kakao.com/_xkleYT/" target="_blank" class="kakaotalk">카톡 상담</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="coll"></i>전화 상담</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="online"></i>온라인 상담</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="hamburger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </p>
+            </div>
+        </header>
+        <div class="side_nav">
+            <h2 class="side_logo">사이드 로고</h2>
+            <ul class="S_nav">
+                <li>
+                    감명소개
+                    <ul class="S_nav_drops">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">상담 안내</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                        <li><a href="#">언론 보도</a></li>
+                    </ul>
+                </li>
+                <li>감명 변호사</li>
+                <li>
+                    업무분야
+                    <ul class="S_nav_drops">
+                        <li><a href="#">이혼</a></li>
+                        <li><a href="#">재산과자녀</a></li>
+                        <li><a href="#">상간자소송</a></li>
+                        <li><a href="#">상속분쟁</a></li>
+                    </ul>
+                </li>
+                <li>수행사례</li>
+                <li>
+                    고객센터
+                    <ul class="S_nav_drops">
+                        <li><a href="./04_01.onlineconsult.html">온라인 상담</a></li>
+                        <li><a href="./05.FAQ.html">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="side_bot">
+                <div class="side_menu_img">
+                    <a href="#"><img src="../images/icn-banner.png" alt=""></a>
+                </div>
+                <p class="tel">
+                    상담  02-534-2070
+                </p>
+                <ul class="nav_sns">
+                    <li>
+                        <a href="https://pf.kakao.com/_xkleYT/" target="_blank">
+                            <span class="ico_sns kakao"></span>
+                            <span>카톡 상담</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.naver.com/lawfirmgammyung" target="_blank">
+                            <span class="ico_sns blog"></span>
+                            <span>블로그</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://haneumlaw.com/" target="_blank">
+                            <span class="ico_sns home"></span>
+                            <span>감명 통합</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- // 0410 수정 -->
+        <div class="dim"></div> <!--header.jsp부분에 붙어있음-->
+        <div class="container">
+            <div class="sliderContainer">
+                <div class="slider single-item">
+                  <div class="slide01">
+                      <p class="slide_txt" style="display: none;">최상의 결과를 향한 집념이<br>전문가의 품격을 만듭니다.</p>
+                      <p class="slide_sub_txt" style="display: none;">수많은 성공 사례 데이터로 통계화된 <i>사안별 최적의 대응 모델</i>,<br>전담 변호사들의 <i>입체적 협업</i>을 통해 수립한 최선의 전략,<br>감명이 다른 이유입니다.</p>
+                  </div>
+                  <div class="slide02">
+                      <p class="slide_txt" style="display: none;">당신의 삶을 더 가치있게</p>
+                      <p class="slide_sub_txt" style="display: none;">감명은 당면한 분쟁해결을 넘어 사건종결 후의<br><i>건강한 삶</i>까지 설계하며 의뢰인을 위한<br>진정한 동반자이자 조력자가 되어드립니다.</p>
+                  </div>
+                  <div class="slide03">
+                      <p class="slide_txt" style="display: none;">고객과의 공감과 동행</p>
+                      <p class="slide_sub_txt" style="display: none;">감명은 고객의 <i>완벽한 만족을 추구</i>하며<br>고객 모두에게 <i>최상의 서비스</i>가 통일적으로 제공될 수 있도록<br>상담 초기부터 사건종결 까지 <i>체계적인 운용방침</i>을 마련하고 있습니다.</p>
+                  </div>
+                </div>
+                <div class="progressBarContainer">
+                  <div>
+                    <span data-slick-index="0" class="progressBar"></span>
+                  </div>
+                  <div>
+                    <span data-slick-index="1" class="progressBar"></span>
+                  </div>
+                  <div>
+                    <span data-slick-index="2" class="progressBar"></span>
+                  </div>
+                </div>
+                <div class="slide_btn_container">
+                    <button class="btn btn_pause active">일시정지</button>
+                    <button class="btn btn_play">시작</button>
+                </div>
+            </div>
+            <div class="divorce">
+                <div class="inner">
+                    <div class="main_divo divorce01">
+                        <a href="#">
+                            <h5>상간자 소송</h5>
+                            <p>이혼없이 불륜 상대방에게만 위자료 청구<br>합법적인 외도 증거수집</p>
+                        </a>
+                        <img src="../images//main_img01.jpg" alt="">
+                    </div>
+                    <div class="main_divo divorce02">
+                        <a href="#">
+                            <h5>황혼 이혼</h5>
+                            <p>건강한 황혼과 진정한 독립<br>합리적 재산분할 대응</p>
+                        </a>
+                        <img src="../images//main_img02.jpg" alt="">
+                    </div>
+                    <div class="main_divo divorce03">
+                        <a href="#">
+                            <h5>여성의 이혼</h5>
+                            <p>여성을 위한 이혼 준비<br>전업주부의 이혼</p>
+                        </a>
+                        <img src="../images//main_img03.jpg" alt="">
+                    </div>
+                    <div class="main_divo divorce04">
+                        <a href="#">
+                            <h5>남성의 이혼</h5>
+                            <p>유책배우자의 이혼<br>남성이 이혼을 유리하게 진행하기 위해서는</p>
+                        </a>
+                        <img src="../images//main_img04.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="Cont_Box response">
+                <div class="inner">
+                    <h3>상황별 대응 전략</h3>
+                    <ul class="clearfix">
+                        <li><a href="#"><p>이혼이 가능한 경우</p></a></li>
+                        <li><a href="#"><p>이혼결심 후 준비해야 할 것들</p></a></li>
+                        <li><a href="#"><p>이혼없이 불륜 상대방에게 <br>위자료 청구</p></a></li>
+                        <li><a href="#"><p>황혼이혼에서 재산분할</p></a></li>
+                        <li><a href="#"><p>전업주부의 이혼</p></a></li>
+                        <li><a href="#"><p>이혼 소장을 받은 후 해야할 것<br> / 하지말아야 할 것</p></a></li>
+                        <li><a href="#"><p>배우자의 외도를 알게 된 경우</p></a></li>
+                        <li><a href="#"><p>남편과 별거 중인 경우</p></a></li>
+                        <li><a href="#"><p>폭언·폭행을 당한 경우</p></a></li>
+                        <li><a href="#"><p>재산분할 비율 문의</p></a></li>
+                        <li><a href="#"><p>배우자 명의 재산을<br> 정확히 모르는 경우</p></a></li>
+                        <li><a href="#"><p>남편의 사업 재산<br> 분할 가능 여부 문의</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Cont_Box solution">
+                <div class="inner">
+                    <h3>감명의 솔루션</h3>
+                    <ul>
+                        <li>
+                            <img src="../images/icn-solution-01.png" alt="">
+                            <h4>사례별로 구축된 대응 모델</h4>
+                            <p>수많은 성공사례들을 데이터로<br>통계화해 최적의 대응모델 구축</p>
+                        </li>
+                        <li>
+                            <img src="../images/icn-solution-02.png" alt="">
+                            <h4>변호사들의 입체적 협력</h4>
+                            <p>다양한 시각을 가진 전담 변호사들의<br>치밀한 논의로 최선의 전략 도출</p>
+                        </li>
+                        <li>
+                            <img src="../images/icn-solution-03.png" alt="">
+                            <h4>고객을 편안하게</h4>
+                            <p>고객과의 지속적인 소통으로<br>고객의 완벽한 만족을 추구</p>
+                        </li>
+                        <li>
+                            <img src="../images/icn-solution-04.png" alt="">
+                            <h4>최상의 결과와 건강한 삶</h4>
+                            <p>최고의 솔류션을 통한 압도적 결과<br>사건종결 후 삶의 도약까지 대비하는 시스템</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Cont_Box Example">
+                <div class="inner">
+                    <h3>수행 사례</h3>
+                    <p class="tit_semi">회생전담팀의 경험과 결과가 담긴 수행 사례입니다.</p>
+                    <ul class="Exam_List clearfix">
+                        <li>
+                            <a href="#">
+                                <h4 class="Exam_List_Tit">개인 회생</h4>
+                                <p class="Exam_List_Semitit">회생계획 인가결정</p>
+                                <p class="Exam_List_Context">2019. 10. 경 개최된 관계인집회에서 회생채권자조 다수의 동의율 확보(66.7% 이상 확보) 채무자..</p>
+                                <span class="Exam_Writter">도세훈 변호사</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4 class="Exam_List_Tit">법인 파산</h4>
+                                <p class="Exam_List_Semitit">법인 파산</p>
+                                <p class="Exam_List_Context">채무규모에 의거하여 법인파산 사건에서 간이파산으로 전환하며 이에 대한 파산부의 선고결정</p>
+                                <span class="Exam_Writter">도세훈 변호사</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4 class="Exam_List_Tit">법인 회생</h4>
+                                <p class="Exam_List_Semitit">법인회생(간이회생) 회생계획 인가결정</p>
+                                <p class="Exam_List_Context">2019. 9. 경 개최된 관계인집회에서 회생담보권자조 및 회생채권자조의 동의율 확보</p>
+                                <span class="Exam_Writter">도세훈 변호사</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4 class="Exam_List_Tit">개인 회생</h4>
+                                <p class="Exam_List_Semitit">회생계획 인가결정</p>
+                                <p class="Exam_List_Context">회생계획 인가를 위한 가결요건 충족 (회생채권자조 66.7% 이상 동의율 확보)</p>
+                                <span class="Exam_Writter">도세훈 변호사</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4 class="Exam_List_Tit">법인 회생</h4>
+                                <p class="Exam_List_Semitit">법인회생(간이회생) 개시결정</p>
+                                <p class="Exam_List_Context">2019. 10. 경 개최된 관계인집회에서 회생채권자조 다수의 동의율 확보(66.7% 이상 확보) 채무자..</p>
+                                <span class="Exam_Writter">도세훈 변호사</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4 class="Exam_List_Tit">법인 회생</h4>
+                                <p class="Exam_List_Semitit">법인회생(간이회생) 개시결정</p>
+                                <p class="Exam_List_Context">세부 사업내용: 무역업, 농자재 제조업, 농자재 도.소매업 등</p>
+                                <span class="Exam_Writter">도세훈 변호사</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="btn_more" href="#">더 알아보기</a>
+                </div>
+            </div>
+            <div class="Cont_Box youtube clearfix">
+                <div class="inner">
+                    <div class="yt_txt">
+                        <h3>감명 유튜브</h3>
+                        <p>감명의 소식을<br>영상으로 만나보세요.</p>
+                    </div>
+                    <div class="media_box">
+                        <input type="radio" id="media_slide01" name="media_slide" checked>
+                        <input type="radio" id="media_slide02" name="media_slide">
+                        <input type="radio" id="media_slide03" name="media_slide">
+                        <input type="radio" id="media_slide04" name="media_slide">
+                        <input type="radio" id="media_slide05" name="media_slide">
+                        <input type="radio" id="media_slide06" name="media_slide">
+                        <input type="radio" id="media_slide07" name="media_slide">
+                        <input type="radio" id="media_slide08" name="media_slide">
+                        <input type="radio" id="media_slide09" name="media_slide">
+                        <div class="btn_box">
+                            <label for="media_slide09" class="slide_btn btn01 prev">to slide09</label>
+                            <label for="media_slide02" class="slide_btn btn01 next">to slide02</label>
+                            <label for="media_slide01" class="slide_btn btn02 prev">to slide01</label>
+                            <label for="media_slide03" class="slide_btn btn02 next">to slide03</label>
+                            <label for="media_slide02" class="slide_btn btn03 prev">to slide02</label>
+                            <label for="media_slide04" class="slide_btn btn03 next">to slide04</label>
+                            <label for="media_slide03" class="slide_btn btn04 prev">to slide03</label>
+                            <label for="media_slide05" class="slide_btn btn04 next">to slide05</label>
+                            <label for="media_slide04" class="slide_btn btn05 prev">to slide04</label>
+                            <label for="media_slide06" class="slide_btn btn05 next">to slide06</label>
+                            <label for="media_slide05" class="slide_btn btn06 prev">to slide05</label>
+                            <label for="media_slide07" class="slide_btn btn06 next">to slide07</label>
+                            <label for="media_slide06" class="slide_btn btn07 prev">to slide06</label>
+                            <label for="media_slide08" class="slide_btn btn07 next">to slide08</label>
+                            <label for="media_slide07" class="slide_btn btn08 prev">to slide07</label>
+                            <label for="media_slide09" class="slide_btn btn08 next">to slide09</label>
+                            <label for="media_slide08" class="slide_btn btn09 prev">to slide08</label>
+                            <label for="media_slide01" class="slide_btn btn09 next">to slide01</label>
+                        </div>
+                        <div class="media_slide_frame">
+                            <ul class="media_slide_box">
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li> 
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li> 
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li>
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li> 
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li> 
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li> 
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li> 
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li> 
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li>
+                                <li><a href="#"><img src="" alt=""><h5>상간자 소송에서 반드시 이기기 위하여 (원고편2)</h5><p>2020.05.08</p></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_top">
+                <div class="inner">
+                    <ul class="foot_list">
+                        <li><a href="./00_01.notice01.html">면책공고</a></li>
+                        <li><a href="./00_02.notice02.html">이용약관</a></li>
+                        <li><a href="./00_03.notice03.html">개인정보취급방침</a></li>
+                        <li><a href="./00_04.notice04.html">이메일무단수집거부</a></li>
+                        <li><a href="./00_05.notice05.html">유한책임</a></li>
+                        <li><a href="./01_04.map.html">오시는길</a></li>
+                    </ul>
+                    <div class="foot_fam" name="" id="">
+                        <p>패밀리 사이트</p>
+                        <ul class="foot_fam_ul">
+                            <li class="foot_fam_li"><a target="_blank" href="http://haneumlaw.com/">통합</a></li> <!--class=foot_fam_li추가-->
+                            <li class="foot_fam_li"><a target="_blank" href="http://haneumcriminal.com/">성범죄&middot;형사</a></li>
+                            <li class="foot_fam_li"><a target="_blank" href="http://www.haneumrecover.com/">회생&middot;파산</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bot">
+                <div class="inner">
+                    <p class="company_name">법무법인 감명</p>
+                    <address>서울 서초구 서초중앙로 154 화평빌딩 2층<br>상담 02-534-2070</address>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

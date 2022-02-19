@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/css/reset.css">
+    <link rel="stylesheet" href="./lib/css/common.css">
+    <link rel="stylesheet" href="./lib/css/font.css">
+    <link rel="stylesheet" href="./lib/css/style.css">
+    <script src="./lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="./lib/jquery/js/common.js"></script>
+    <title>calendar Publish</title>
+    <style>
+        .index{margin: 0 auto; padding: 20px 60px 200px; width: 100%; height: 100%; max-width: 1060px; background: #fa7d43;}
+        .index-title{color: #fff; font-size: 18px; font-weight: 600;}
+        ul{margin: 20px auto 0;}
+        ul li{position: relative; z-index: 10; font-size: 0; border: 1px solid #eee; background: #fff;}
+        ul li+li{border-top: 0;}
+        ul li:hover{z-index: 20;}
+        ul li .index-box{display: inline-block; vertical-align: middle; position: relative; z-index: 100; padding: 20px; width: 70%; height: auto; vertical-align: middle;}
+        ul li .index-box p{padding: 6px 0; color: #333; font-size: 12px; }
+        ul li .img-box{display: inline-block; vertical-align: middle; position: relative; z-index: 100; padding: 10px;  width: 30%; height: 300px; vertical-align: middle;  border-left: 1px solid #eee;}
+        ul li .img-box>img{margin: auto; height: 100%; }
+        ul li .popup-con{display: none; position: absolute; z-index: 120; top: -80px; right: 100%; margin-right: 10px; padding: 20px; border: 1px solid #978989; background: #fff; box-shadow: 0px 4px 8px rgba(0,0,0,0.3);}
+        ul li .popup-con img{width: 500px; border: 1px solid #e5e5e5;}
+        ul li .img-box:hover .popup-con{display: block;}
+    </style>
+</head>
+<body>
+    <div class="index">
+        <p class="index-title">일정 퍼블리싱</p>
+        <p style="margin-top:30px; font-size: 0;">
+            <span class="dis-ib w70p" style="color: #fff; font-size: 16px; font-weight: 600;">파일명 &amp; 페이지 이름</span>
+            <span class="dis-ib w30p" style="color: #fff; font-size: 16px; font-weight: 600;">스크린 샷</span>
+        </p>
+        <ul>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3000-sec-main.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3000-toki-main.html</p>
+                        <p class="file-name-locale">일정 메인</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3000-sec-main.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3000-sec-main.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3010-sec-main-time.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3010-sec-main-time.html</p>
+                        <p class="file-name-locale">일정 날짜와 시간 선택 페이지</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3010-sec-main-time.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3010-sec-main-time.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3020-sec-main-alarm.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3020-sec-main-alarm.html</p>
+                        <p class="file-name-locale">일정 알람 선택 페이지</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3020-sec-main-alarm.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3020-sec-main-alarm.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3030-sec-main-category.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3030-sec-main-category.html</p>
+                        <p class="file-name-locale">일정 카테고리 페이지</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3030-sec-main-category.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3030-sec-main-category.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3031-sec-main-category-detail-anniversary.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3031-sec-main-category-anniversary.html</p>
+                        <p class="file-name-locale">일정 카테고리 디테일 페이지</p>
+                        <p class="file-name-locale">(기념일)</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3031-sec-main-category-detail-anniversary.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3031-sec-main-category-detail-anniversary.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3032-sec-main-category-detail-entertainment.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3032-sec-main-category-entertainment.html</p>
+                        <p class="file-name-locale">일정 카테고리 디테일 페이지</p>
+                        <p class="file-name-locale">(엔터테인먼트)</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3032-sec-main-category-detail-entertainment.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3032-sec-main-category-detail-entertainment.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3033-sec-main-category-detail-sports.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3033-sec-main-category-sports.html</p>
+                        <p class="file-name-locale">일정 카테고리 디테일 페이지</p>
+                        <p class="file-name-locale">(스포츠)</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3033-sec-main-category-detail-sports.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3033-sec-main-category-detail-sports.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3034-sec-main-category-detail-trip.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3034-sec-main-category-detail-trip.html</p>
+                        <p class="file-name-locale">일정 카테고리 디테일 페이지</p>
+                        <p class="file-name-locale">(여행)</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3034-sec-main-category-detail-trip.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3034-sec-main-category-detail-trip.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3035-sec-main-category-detail-hospital.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3035-sec-main-category-detail-hospital.html</p>
+                        <p class="file-name-locale">일정 카테고리 디테일 페이지</p>
+                        <p class="file-name-locale">(병원)</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3035-sec-main-category-detail-hospital.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3035-sec-main-category-detail-hospital.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3036-sec-main-category-detail-schedule.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3036-sec-main-category-detail-schedule.html</p>
+                        <p class="file-name-locale">일정 카테고리 디테일 페이지</p>
+                        <p class="file-name-locale">(개인일정)</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3036-sec-main-category-detail-schedule.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3036-sec-main-category-detail-schedule.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="index-item">
+                <a href="./html/3000.sec-index/3040-sec-main-confirm.html" target="_blank">
+                    <div class="index-box">
+                        <p class="file-name">3040-sec-main-confirm.html</p>
+                        <p class="file-name-locale">일정 확인 페이지</p>
+                    </div>
+                    <div class="img-box">
+                        <img src="./sc/3040-sec-main-confirm.png" alt="">
+                        <div class="popup-con">
+                            <img src="./sc/3040-sec-main-confirm.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+<script src="lib/jquery/js/3.1.1/jquery.min.js"></script>
+</html>

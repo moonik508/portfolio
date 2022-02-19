@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimal-ui, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <!-- plugin css -->
+    <link rel="stylesheet" href="../lib/jquery/swiperJS/swiper.css">
+    <!-- //plugin css -->
+    <link rel="stylesheet" href="../lib/css/reset.css">
+    <link rel="stylesheet" href="../lib/css/common.css">
+    <link rel="stylesheet" href="../lib/css/font.css">
+    <link rel="stylesheet" href="../lib/css/style.css">
+    <script src="../lib/jquery/js/3.1.1/jquery.min.js"></script>
+    <script src="../lib/jquery/js/common.js"></script>
+    <title>index</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="component-box">
+                <div class="search-box">
+                    <input type="button" class="input-btn back-btn">
+                    <p class="title hd-title">카테고리 선택</p>
+                    
+                    <div class="header-btn-box">
+                        <input type="button" class="input-btn search-btn">
+                        <input type="button" class="input-btn more-btn hidden">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content-wrap">
+
+            <div class="component-box">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <!-- 
+                            swiper-slide 내부에 category-item 은 8개까지 
+                            9개인 경우는 
+                            swiper-slide를 1개 더 생성하여 사용하면 됩니다.
+                         -->
+
+                         <div class="category-box swiper-slide">
+        
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">패키지</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">교육</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">퀴즈</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">음악</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">만화</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">건강</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">돌봄</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">게임</span>
+                                </a>
+                            </div>
+        
+                        </div>
+
+
+                        <div class="category-box swiper-slide">
+        
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">패키지</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">교육</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">퀴즈</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">음악</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">만화</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">건강</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">돌봄</span>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a href="#">
+                                    <span class="category-nametag">게임</span>
+                                </a>
+                            </div>
+        
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+        <nav class="global-nav">
+            <div class="component-box">
+                <div class="nav-box">
+                    <!-- 
+                        선택된 메뉴의 nav-item에 active 클래스 추가
+                     -->
+                    <div class="nav-item active"><span>카테고리 / 전체</span></div>
+                    <div class="nav-item"><span>패키지</span></div>
+                    <div class="nav-item"><span>찜목록</span></div>
+                    <div class="nav-item"><span>내 앱 목록</span></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- plugin js -->
+    <script src="../lib/jquery/swiperJS/swiper.min.js"></script>
+    <!-- //plugins js -->
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+        el: '.swiper-pagination',
+        },
+    });
+    </script>
+
+</body>
+</html>
