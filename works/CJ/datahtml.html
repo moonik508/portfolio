@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+	<meta name="wrap" content="width=device-width, initial-scale=1.0">
+	<title>CJ API Portal</title>
+	<link href="./css/common.css" rel="stylesheet" type="text/css">
+	<script src="./jquery/js/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function() {
+				$('.header').css({left: 0 - $(this).scrollLeft()});
+				$('.footer').css({left: 0 - $(this).scrollLeft()});
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="wrap sub">
+		<!-- header -->
+		<div class="header">
+			<div class="inner ">
+				<h1>
+					<a href="#">
+						<img src="./image/logo.png" alt="">
+					</a>
+				</h1>
+				<div class="navbar-wrapper">
+					<ul>
+						<li><a href="#"><span>플랫폼 소개</span></a></li>
+						<li class="havechild">
+							<a href="#">
+								<span>API 리스트</span>
+							</a>
+							<div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav01">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>API 패키지</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav02">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+                        <li class="havechild">
+							<a href="#"><span>이용안내</span></a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav03">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>자료실</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav04">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+					</ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="검색어 입력">
+                    <button><img src="image/icon_search.png" alt=""></button>
+                </div>
+			</div>
+		</div>
+		<!-- //header -->
+
+		<!-- top -->
+		<aside>
+			<a href="#"><img src="./image/top.png" alt=""></a>
+		</aside>
+		<!-- //top -->
+
+        <!-- fluid -->
+		<div class="subtop-menu">
+            <div class="inner">
+                <div class="top-menu"><p class="top-m-tit">홈 > <span class="top-m-color">자료실</span></p></div>
+            </div>
+		</div>
+        <!-- //fluid -->
+
+		<!-- contents -->
+		<div class="container-box">
+			<div class="inner">
+                <div class="sub-title">
+					<h5>API LIST</h5>
+				</div>
+				<div class="api-wrap">
+					<div class="apibox box_01">
+						<div class="table-box title-box">
+							<div class="table-cell api-num"><span>No.</span></div>
+							<div class="table-cell api-name">API 유형</div>
+							<div class="table-cell api-name">명칭</div>
+							<div class="table-cell api-name">설명</div>
+							<div class="table-cell api-name">API 그룹</div>
+							<div class="table-cell api-name">바로가기</div>
+						</div>
+					</div>
+					<div class="apibox">
+						<div class="table-box cont-box">
+							<div class="table-cell api-num">04</div>
+							<div class="table-cell api-name"><p class="rest cloud">REST</p></div>
+							<div class="table-cell api-name">crdits</div>
+							<div class="table-cell api-name">카드 정보 조회</div>
+							<div class="table-cell api-name">PRODUCTION</div>
+							<div class="table-cell api-name"><a href="#">세부 정보 보기 >></a></div>
+						</div>
+					</div>
+					<div class="apibox">
+						<div class="table-box cont-box">
+							<div class="table-cell api-num">03</div>
+							<div class="table-cell api-name"><p class="rest cloud">REST</p></div>
+							<div class="table-cell api-name">customers</div>
+							<div class="table-cell api-name">고객 정보 조회</div>
+							<div class="table-cell api-name">BETA</div>
+							<div class="table-cell api-name"><a href="#">세부 정보 보기 >></a></div>
+						</div>
+					</div>
+					<div class="apibox">
+						<div class="table-box cont-box">
+							<div class="table-cell api-num">02</div>
+							<div class="table-cell api-name"><p class="rest cloud">REST</p></div>
+							<div class="table-cell api-name">01SandBoxAPI</div>
+							<div class="table-cell api-name">개발용</div>
+							<div class="table-cell api-name">PRODUCTION</div>
+							<div class="table-cell api-name"><a href="#">세부 정보 보기 >></a></div>
+						</div>
+					</div>
+					<div class="apibox">
+						<div class="table-box cont-box">
+							<div class="table-cell api-num">01</div>
+							<div class="table-cell api-name"><p class="rest cloud">REST</p></div>
+							<div class="table-cell api-name">customerCredit</div>
+							<div class="table-cell api-name">고객의 카드정보 조회</div>
+							<div class="table-cell api-name">BETA</div>
+							<div class="table-cell api-name"><a href="#">세부 정보 보기 >></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //contents -->
+		
+		<!-- footer -->
+		<div class="footer sub">
+			<div class="inner">
+				<div class="table-box">
+					<div class="table-cell text-left" >
+						<p>CJ대한통운(주)사업자등록번호 : 110-81-05034 대표자: 박근희 | 주소 : 서울특별시 중구 세종대로 9길 53 택배고객센터 : 1588-1255 (월~금 09:00 ~ 18:00 / 토 09:00 ~ 13:00)</p>
+						<p class="copyright">COPYRIGHT 2020 BY CJ Logistics Corporation ALL RIGHT RESERVED.</p>
+					</div>
+					<div class="table-cell text-right link-wrap">
+						<!-- <a href="#" class="personal-info">개인정보처리방침</a> -->
+						<a href="#">약관 및 운영방침</a>
+						<a href="#">CJ대한통운 홈페이지</a>
+						<!-- <select>
+							<option>그룹 계열사 바로가기</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+						</select> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+</html>

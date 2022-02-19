@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+	<meta name="wrap" content="width=device-width, initial-scale=1.0">
+	<title>CJ API Portal</title>
+	<link href="./css/common.css" rel="stylesheet" type="text/css">
+	<script src="./jquery/js/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function() {
+				$('.header').css({left: 0 - $(this).scrollLeft()});
+				$('.footer').css({left: 0 - $(this).scrollLeft()});
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="wrap sub">
+		<!-- header -->
+		<div class="header">
+			<div class="inner ">
+				<!-- 영문 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_eng hidden">
+					<a href="#">
+						<img src="./image/CJ_logo.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<!-- 한국어 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_kor">
+					<a href="#">
+						<img src="./image/CJ_logo_ko.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<div class="navbar-wrapper">
+					<ul>
+						<li><a href="#"><span>플랫폼 소개</span></a></li>
+						<li class="havechild">
+							<a href="#">
+								<span>API 리스트</span>
+							</a>
+							<div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav01">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>API 패키지</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav02">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+                        <li class="havechild">
+							<a href="#"><span>이용안내</span></a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav03">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>자료실</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav04">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+					</ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="검색어 입력">
+                    <button><img src="image/icon_search.png" alt=""></button>
+                </div>
+			</div>
+		</div>
+		<!-- //header -->
+		
+		<!-- top -->
+		<aside>
+			<a href="#"><img src="./image/top.png" alt=""></a>
+		</aside>
+		<!-- //top -->
+
+
+        <!-- fluid -->
+		<div class="subtop-menu">
+            <div class="inner">
+				<div class="top-menu"><p class="top-m-tit">홈 > <span class="top-m-color">플랫폼 소개</span></p></div>            
+			</div>
+		</div>
+        <!-- //fluid -->
+
+		<!-- contents -->		
+		<div class="container-box">
+			<div class="inner">
+                <div class="sub-title">
+					<h5>플랫폼 소개</h5>
+                </div>
+            </div>
+			<div class="about-wrap">
+				<div class="about-top">
+					<div class="inner">
+						<div class="top-title">
+							<p class="title"><span>API PORTAL 플랫폼</span>은 CJ대한통운 물류 서비스를 사용하는 국내 외 기업에게<br>제공하는 <span>Open API를 손쉽게 개발</span> 할 수 있도록 지원하는 서비스 입니다.</p>
+							<p class="desc">물류 서비스 사용하는 국내 외 기업은 API PORTAL 플랫폼이 제공하는 물류 관련 API서비스를 활용하여 신속한 연결, 개발비용 감소 및 혁신을 가속화 해 나갈 수 있습니다.</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-con">
+					<div class="inner">
+						<div class="obj-box">
+							<p><img src="image/CJ_logo.png" alt=""/></p>
+							<p>에서 제공하는 <span>빠르고 안정적인 OpenAPI 서비스</span>를 통해</p>
+							<p><span>쉽고 스마트하게 비즈니스 가치를 창출</span>하십시오!</p>
+						</div>					
+						<div class="about-box">
+							<div class="about-img-box">
+								<div class="aib-left">
+									<img src="image/abou_l_bg.png" alt=""/>
+								</div>
+								<div class="aib-center">
+									<img src="image/about_image.png" alt=""/>
+									<div class="aib-cneter-box"> 
+										<p class="aib-cneter-box-a">CJ대한통운<br>계약(예정) 기업</p>
+										<p class="aib-cneter-box-b">CJ대한통운 물류 서비스<br>연계 APPLICATION<br>(Mobile,WEB)</p>
+										<p class="aib-cneter-box-c">개발 기간 단축</p>
+										<p class="aib-cneter-box-d">신속한 물류<br>서비스 이용</p>
+										<p class="aib-cneter-box-e">다양한 환경에서<br>서비스 연계</p>
+									</div>
+								</div>
+								<div class="aib-right">
+									<img src="image/about_r_bg.png" alt=""/>
+								</div>
+							</div>
+						</div>	
+					</div>		
+				</div>
+			</div>
+		</div>
+		<!-- //contents -->
+		
+		<!-- footer -->
+		<!-- 210127 서브페이지 footer는 클래스명 sub를 넣어주세요 -->
+		<div class="footer sub">
+			<div class="inner">
+				<div class="table-box">
+					<div class="table-cell text-left" >
+						<p>CJ대한통운(주)사업자등록번호 : 110-81-05034 대표자: 박근희 | 주소 : 서울특별시 중구 세종대로 9길 53 택배고객센터 : 1588-1255 (월~금 09:00 ~ 18:00 / 토 09:00 ~ 13:00)</p>
+						<p class="copyright">COPYRIGHT 2020 BY CJ Logistics Corporation ALL RIGHT RESERVED.</p>
+					</div>
+					<div class="table-cell text-right link-wrap">
+						<!-- <a href="#" class="personal-info">개인정보처리방침</a> -->
+						<a href="#">약관 및 운영방침</a>
+						<a href="#">CJ대한통운 홈페이지</a>
+						<!-- <select>
+							<option>그룹 계열사 바로가기</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+						</select> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+</html>

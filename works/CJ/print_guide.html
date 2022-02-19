@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <meta name="wrap" content="width=device-width, initial-scale=1.0">
+    <title>CJ API Portal</title>
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <script src="./jquery/js/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() {
+                $('.header').css({left: 0 - $(this).scrollLeft()});
+                $('.footer').css({left: 0 - $(this).scrollLeft()});
+            });
+        })
+    </script>
+</head>
+<body>
+	<div class="wrap sub">
+		<!-- header -->
+		<div class="header">
+			<div class="inner ">
+				<!-- 영문 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_eng hidden">
+					<a href="#">
+						<img src="./image/CJ_logo.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<!-- 한국어 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_kor">
+					<a href="#">
+						<img src="./image/CJ_logo_ko.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<div class="navbar-wrapper">
+					<ul>
+						<li><a href="#"><span>플랫폼 소개</span></a></li>
+						<li class="havechild">
+							<a href="#">
+								<span>API 리스트</span>
+							</a>
+							<div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav01">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>API 패키지</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav02">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+                        <li class="havechild">
+							<a href="#"><span>이용안내</span></a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav03">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>자료실</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav04">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+					</ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="검색어 입력">
+                    <button><img src="image/icon_search.png" alt=""></button>
+                </div>
+			</div>
+		</div>
+        <!-- //header -->
+
+		<!-- top -->
+		<aside>
+			<a href="#"><img src="./image/top.png" alt=""></a>
+		</aside>
+		<!-- //top -->
+
+        <!-- fluid -->
+		<div class="subtop-menu">
+            <div class="inner">
+                <div class="top-menu"><p class="top-m-tit">홈 > <span class="top-m-color">이용약관</span></p></div>
+            </div>
+		</div>
+        <!-- //fluid -->
+        
+		<!-- contents -->		
+		<div class="container-box">
+			<div class="inner">
+                <div class="sub-title">
+					<h5>프린터 출력 관련 안내</h5>
+                    <p class="sub-title-desc">[NPLUS] TEC 프린터 드라이버 & 사용자 설명서 & A4운송장(대체송장) & TSC 드라이버 </p>
+				</div>
+                <div class="support-wrap">
+                    <ul class="support-box">
+                        
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>1. 출력관련 문의사항</span></a>
+                            <div class="answer">
+                                <div class="manual-row">
+                                    <p class="guide-title">1-1. 프린터 출력관련 문의사항</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                                <div class="manual-row">
+                                    <p class="guide-title">1-2. 프린터 장비 초기화방법</p>
+                                    <p class="guide-txt">
+                                        <span>[해결방법]</span>
+                                        1. 프린터 장비에서 용지를 완전히 제거 한 후 다시 재셋팅을 해서 출력하는 방법<br>
+                                        2. 프린터 장비를 초기화 하는 방법
+                                    </p>
+                                    <p class="guide-txt">
+                                        <span>[프린터 장비별 조치방법]</span>
+                                        프린터 장비는 크게 모델별로  3종류로 분류가 됩니다.  [TEC] , [TSC] , [LUKHAN] 
+                                    </p>
+                                    <p class="guide-txt">
+                                        <span>[TEC 모델]</span>
+                                        1. TEC 452 모델인 경우<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;프린터장비를 off 한후 pause 버튼을 누른상태에서 전원을 on 하신후 LED점등에 불빛이 깜박일때 버튼에서 손을 떼신후 버튼을 누르시면 용지가 배출됩니다.<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;용지배출후 전원을 off , on 한 후 프로그램에서 출력을 시작합니다.<br>
+                                        2. TEC SV4, EV4 모델인 경우<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;프린터 장비를 off 한후 Feed 버튼을 누른상태에서 전원을 on 하신면 LED점등에서 불빛이 깜박입니다.<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;LED점등 순서 [연두색LED 깜빡임] -> [적색LED 깜빡임] -> [주황색LED 깜빡임] -> [주황색LED] <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;주황색LED에서 누르고 계신 Feed 버튼에서 손을 떼시면 프린터에서 라벨용지가 2~3장 배출합니다.<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;전원 off , on 한후 프로그램에서 출력을 시작합니다.
+                                    </p>
+                                    <p class="guide-txt">
+                                        <span>[TSC 모델] --> 11번, 7번 진행합니다.</span>
+                                        1. 프린터 장비를 off 한 후 Feed 버튼을 누른상태에서 전원을 on 하시면 LEC점등에서 불빛이 <i>11번</i> 깜박일때 버튼에서<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;손을 떼신후 LED점등에 불빛이 녹색으로 멈추면 전원을 다시 off 합니다.<br>
+                                        2. 프린터 장비가 off 되어 있는 상태에서 Feed 버튼을 누른상태에서 전원을 on 하시면  LEC점등에서 불빛이 <i>7번</i> 깜박일때 버튼에서<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;손을 떼신후 LED점등에 불빛이 녹색으로 멈추면 전원을 다시 off 한 후 on 하신후 사용을 하시면 됩니다.  
+                                    </p>
+                                    <p class="guide-txt">
+                                        <span>[LUKHAN 모델] </span>
+                                         1. 프린터 장비를 off 한후 Feed 버튼을 누른상태에서 on 하시면 용지가 자동으로 배출을 합니다. 용지가 멈추면 장비를 off , on 한 후 프로그램에서 출력을 하시면 되겠습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>2. TEC 장비</span></a>
+                            <div class="answer">
+                                <div class="manual-row">
+                                    <p class="guide-title">2-1. TEC 프린터 드라이버 (윈도우XP)</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                                <div class="manual-row">
+                                    <p class="guide-title">2-1. TEC 프린터 드라이버 (윈도우Vista 및 윈도우7)</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>3. TSC 장비</span></a>
+                            <div class="answer">
+                                <div class="manual-row">
+                                    <p class="guide-title">3-1. TSC 프린터 드라이버</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>4. 빅솔론 장비</span></a>
+                            <div class="answer">
+                                <div class="manual-row">
+                                    <p class="guide-title">4-1. SLP-D420프린트 드라이버</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                                <div class="manual-row">
+                                    <p class="guide-title">4-2. SLP-D420 프린터 USB포트 설치 설명서</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                                <div class="manual-row">
+                                    <p class="guide-title">4-3. RP-352Ⅲ(POS프린터) 프린터 드라이버</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>5. Zebra 장비</span></a>
+                            <div class="answer">
+                                <div class="manual-row">
+                                    <p class="guide-title">5-1. Zebra 프린터 드라이버 (Z6M 모델만 사용가능)</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>6. LUKHAN 장비</span></a>
+                            <div class="answer">
+                                <div class="manual-row">
+                                    <p class="guide-title">6-1. LUKHAN LK-B30[2.53] 프린터 드라이버</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                                <div class="manual-row">
+                                    <p class="guide-title">6-2. LUKHAN LK-B30[2.91] 프린터 드라이버 (WIN 7,8)</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>7. WOOSIM 장비</span></a>
+                            <div class="answer">
+                                <div class="manual-row">
+                                    <p class="guide-title">7-1. WSP-R350 프린터 드라이버(WINXP,7,10)</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>8. A4운송장출력</span></a>
+                            <div class="answer">
+                                <div class="manual-row">
+                                    <p class="guide-title">8-1. A4운송장 & 대체 운송장 출력이 안될 경우</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                                <div class="manual-row">
+                                    <p class="guide-title">8-2. 숨긴폴더보기가 안될경우 (A4,대체 운송장 출력이 안되는 경우)</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                                <div class="manual-row">
+                                    <p class="guide-title">8-3. 8-3. 출력 report 툴 설치파일</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>9. DOT 프린터 용지 설정</span></a>
+                            <div class="answer">
+                                <div class="manual-row">
+                                    <p class="guide-title">9-1. WinXP에서 DOT 용지크기 설정방법</p>
+                                    <a href="#" class="dl-btn"><img src="./image/download.png" alt="다운로드"><span>다운로드</span></a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <p class="manual-support-txt guide">
+                        <span>※ A4 관련하여 출력 안될경우 확인사항</span>
+                        1. [상품추적]에서 운송장 번호 입력 후 조회한 다음 오른쪽 상단 [출력] 버튼을 클릭<br><br>
+                        1) 미리보기가 나타나지 않는 경우 -> 첨부파일 7-3번 다운/설치 (VSreport.zip)<br><br>
+                        2) 미리보기가 정상적으로 나타나나 바코드가 보이지 않는 경우<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;-> 첨부파일 7-1번 다운/설치 (cabinstall2.zip)<br><br>
+                        3) 바코드가 정상적으로 보이나 A4출력시 출력이 안되는 경우<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;-> 숨김폴더/파일 속성 적용 후 숨김폴더 보이는지 확인<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 안보일경우 첨부파일 7-2번 다운/실행 (del_kxvo.zip) -> 바이러스 문제
+                    </p>
+                </div>
+			</div>
+			
+		</div>
+		<!-- //contents -->
+
+		
+		<!-- footer -->
+		<div class="footer sub">
+			<div class="inner">
+				<div class="table-box">
+					<div class="table-cell text-left" >
+						<p>CJ대한통운(주)사업자등록번호 : 110-81-05034 대표자: 박근희 | 주소 : 서울특별시 중구 세종대로 9길 53 택배고객센터 : 1588-1255 (월~금 09:00 ~ 18:00 / 토 09:00 ~ 13:00)</p>
+						<p class="copyright">COPYRIGHT 2020 BY CJ Logistics Corporation ALL RIGHT RESERVED.</p>
+					</div>
+					<div class="table-cell text-right link-wrap">
+						<!-- <a href="#" class="personal-info">개인정보처리방침</a> -->
+						<a href="#">약관 및 운영방침</a>
+						<a href="#">CJ대한통운 홈페이지</a>
+						<!-- <select>
+							<option>그룹 계열사 바로가기</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+						</select> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+</html>

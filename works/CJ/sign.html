@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <meta name="wrap" content="width=device-width, initial-scale=1.0">
+    <title>CJ API Portal</title>
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <script src="./jquery/js/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() {
+                $('.header').css({left: 0 - $(this).scrollLeft()});
+                $('.footer').css({left: 0 - $(this).scrollLeft()});
+            });
+        })
+    </script>
+</head>
+<body>
+	<div class="wrap sub">
+		<!-- header -->
+		<div class="header">
+			<div class="inner ">
+				<!-- 영문 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_eng hidden">
+					<a href="#">
+						<img src="./image/CJ_logo.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<!-- 한국어 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_kor">
+					<a href="#">
+						<img src="./image/CJ_logo_ko.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<div class="navbar-wrapper">
+					<ul>
+						<li><a href="#"><span>플랫폼 소개</span></a></li>
+						<li class="havechild">
+							<a href="#">
+								<span>API 리스트</span>
+							</a>
+							<div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav01">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>API 패키지</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav02">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+                        <li class="havechild">
+							<a href="#"><span>이용안내</span></a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav03">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>자료실</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav04">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+					</ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="검색어 입력">
+                    <button><img src="image/icon_search.png" alt=""></button>
+                </div>
+			</div>
+		</div>
+        <!-- //header -->
+
+		<!-- top -->
+		<aside>
+			<a href="#"><img src="./image/top.png" alt=""></a>
+		</aside>
+		<!-- //top -->
+
+        <!-- fluid -->
+		<div class="subtop-menu">
+            <div class="inner">
+                <div class="top-menu"><p class="top-m-tit">홈 > <span class="top-m-color">회원가입</span></p></div>
+            </div>
+		</div>
+        <!-- //fluid -->
+
+		<!-- contents -->		
+		<div class="container-box">
+            <div class="inner">
+                <div class="sign-wrap">
+                    <div class="sub-title">
+                        <h5>OPEN API 회원가입</h5>
+                    </div>
+                    <div class="sign-user">
+                        <h3><span class="b-color">사용 용도</span>를 선택해 주세요.</h3>
+                        <div class="sign-select">
+                            <div class="radios">
+                                <input type="radio" name="signuser" id="signuser01" checked>
+                                <label for="signuser01">개인용</label>
+                            </div>
+                            <div class="radios">
+                                <input type="radio" name="signuser" id="signuser02">
+                                <label for="signuser02">상업용</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sign-container">
+                        <h5><span class="b-color">*</span> 표시는 필수 입력 항목입니다.</h5>
+                        <div class="sign-title">
+                            <p>01</p>
+                            <h3>이용약관 동의</h3>
+                        </div>
+                        <div class="sign-t-con">
+                            <div class="sign-row">
+                                <div class="sign-b-tit">
+                                    <h5>이용약관 <span class="b-color">*</span></h5>
+                                    <div class="sign-body">
+                                        이용약관
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sign-row">
+                                <div class="sign-b-tit">
+                                    <h5>개인정보 수집 및 이용 동의 <span class="b-color">*</span></h5>
+                                </div>
+                                <div class="sign-body">
+                                    <table class="sign-table">
+                                        <colgroup>
+                                            <col width="33%">
+                                            <col width="33%">
+                                            <col width="34%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>수집 및 이용목적</th>
+                                                <th>수집 및 이용항목</th>
+                                                <th>보유기간</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>회원가입 및 관리</td>
+                                                <td>이메일주소 <span class="b-color">*</span>, 비밀번호 <span class="b-color">*</span></td>
+                                                <td>회원 탈퇴 시까지<br>(단, 관련 법령에 별도의 규정이<br>있는 경우에는 그 기간을 따름)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="sign-row">
+                                <div class="sign-checks clearfix">
+                                    <div class="checks">
+                                        <input type="checkbox" id="signchecks" name="signchecks">
+                                        <label for="signchecks"><div class="input-back"></div><span class="b-color">이용 약관 및 개인정보 동의 내용을 확인</span>하였으며, 위 내용에 동의합니다. (만 14세 미만 아동의 회원가입을 제한합니다.)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sign-title">
+                            <p>02</p>
+                            <h3>정보 입력</h3>
+                        </div>
+                        <div class="sign-cont">
+                            <div class="input-con">
+                                <div class="input-group clearfix">
+                                    <div class="input-g-tit">
+                                        <p>이메일계정 <span class="b-color">*</span></p>
+                                    </div> 
+                                    <div class="input-box">
+                                        <div class="input-add e-mail"><input type="text"></div>
+                                        <button>인증번호 발송</button>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="input-add e-mail-num"><input type="text" placeholder="인증번호 입력"></div>
+                                        <button>인증하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-con">
+                                <div class="input-group clearfix">
+                                    <div class="input-g-tit">
+                                        <p>비밀번호 <span class="b-color">*</span></p>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="input-add pass"><input type="password"></div>
+                                    </div>
+                                </div>
+                                <div class="input-group clearfix">
+                                    <div class="input-g-tit">
+                                        <p>비밀번호 확인 <span class="b-color">*</span></p>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="input-add pass"><input type="password"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-con">
+                                <div class="input-group clearfix">
+                                    <div class="input-g-tit">
+                                        <p>회사명 <span class="b-color">*</span></p>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="input-add compay"><input type="text"></div>
+                                    </div>
+                                </div>
+                                <div class="input-group clearfix">
+                                    <div class="input-g-tit">
+                                        <p>사업자등록번호 <span class="b-color">*</span></p>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="input-add compay-num"><input type="text"></div>
+                                        <button>검증</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-con">
+                                <div class="input-group clearfix">
+                                    <div class="input-g-tit">
+                                        <p>사용목적 <span class="b-color">*</span></p>
+                                    </div>
+                                    <div class="input-box">
+                                        <div class="input-add purpose"><input type="text"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-group">
+                            <p>회원가입 결과는 이메일로 전달됩니다.</p>
+                            <p>* 기타 문의 사항은 <span class="b-color">OpenAPI@cjlogistics.com</span> 으로 문의 바랍니다.</p>
+                        </div>
+                        <div class="sign-actions">
+                            <button type="button" class="cen-btn">취소하기</button>
+                            <button type="button" class="sign-btn">가입하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- //contents -->
+        
+		<!-- footer -->
+		<div class="footer sub">
+			<div class="inner">
+				<div class="table-box">
+					<div class="table-cell text-left" >
+						<p>CJ대한통운(주)사업자등록번호 : 110-81-05034 대표자: 박근희 | 주소 : 서울특별시 중구 세종대로 9길 53 택배고객센터 : 1588-1255 (월~금 09:00 ~ 18:00 / 토 09:00 ~ 13:00)</p>
+						<p class="copyright">COPYRIGHT 2020 BY CJ Logistics Corporation ALL RIGHT RESERVED.</p>
+					</div>
+					<div class="table-cell text-right link-wrap">
+						<!-- <a href="#" class="personal-info">개인정보처리방침</a> -->
+						<a href="#">약관 및 운영방침</a>
+						<a href="#">CJ대한통운 홈페이지</a>
+						<!-- <select>
+							<option>그룹 계열사 바로가기</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+						</select> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+
+    </body>
+</html>

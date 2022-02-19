@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <meta name="wrap" content="width=device-width, initial-scale=1.0">
+    <title>CJ API Portal</title>
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <script src="./jquery/js/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() {
+                $('.header').css({left: 0 - $(this).scrollLeft()});
+                $('.footer').css({left: 0 - $(this).scrollLeft()});
+            });
+        })
+    </script>
+</head>
+<body>
+	<div class="wrap sub">
+		<!-- header -->
+		<div class="header">
+			<div class="inner ">
+				<!-- 영문 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_eng hidden">
+					<a href="#">
+						<img src="./image/CJ_logo.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<!-- 한국어 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_kor">
+					<a href="#">
+						<img src="./image/CJ_logo_ko.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<div class="navbar-wrapper">
+					<ul>
+						<li><a href="#"><span>플랫폼 소개</span></a></li>
+						<li class="havechild">
+							<a href="#">
+								<span>API 리스트</span>
+							</a>
+							<div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav01">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>API 패키지</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav02">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+                        <li class="havechild">
+							<a href="#"><span>이용안내</span></a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav03">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>자료실</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav04">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+					</ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="검색어 입력">
+                    <button><img src="image/icon_search.png" alt=""></button>
+                </div>
+			</div>
+		</div>
+        <!-- //header -->
+
+		<!-- top -->
+		<aside>
+			<a href="#"><img src="./image/top.png" alt=""></a>
+		</aside>
+		<!-- //top -->
+
+        <!-- fluid -->
+		<div class="subtop-menu">
+            <div class="inner">
+                <div class="top-menu"><p class="top-m-tit">홈 > <span class="top-m-color">이용약관</span></p></div>
+            </div>
+		</div>
+        <!-- //fluid -->
+        
+		<!-- contents -->		
+		<div class="container-box">
+			<div class="inner">
+                <div class="sub-title">
+					<h5>이용안내</h5>
+				</div>
+                <div class="support-wrap">
+                    <ul class="support-box">
+                        <li>
+                            <!-- click시 active되게 넣어주시면 됩니다.  -->
+                            <a class="link active"><span>1.개발자환경 구성가이드</span></a>
+                            <div class="answer">
+                                <div class="answer-img pictogram01">
+                                    <div class="answer-img-box answer-img-bg-b">
+                                        <h5 class="answer-img-b-w">회원가입</h5>
+                                        <div class="answer-img-box-box answer-img-b-w answer-img-box-bg-a">
+                                            <p>개발자포털 접속</p>
+                                            <p>회원가입</p>
+                                            <p>API 선택</p>
+                                            <p>API Token 발급</p>
+                                        </div>
+                                    </div>
+                                    <div class="answer-img-box answer-img-bg-w">
+                                        <h5 class="answer-img-b-b">API<br>TEST</h5>
+                                        <div class="answer-img-box-box answer-img-b-b answer-img-box-bg-b">
+                                            <p>포털내 테스트</p>
+                                            <p>API 호출 테스트</p>
+                                            <p class="two-text">고객코드 등록<br><span class="answer-img-span-black">(실 계약 코드)</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="answer-img-box answer-img-bg-b">
+                                        <h5 class="answer-img-b-w">운영API<br>승인요청</h5>
+                                        <div class="answer-img-box-box answer-img-b-w answer-img-box-bg-c">
+                                            <p>테스트 완료</p>
+                                            <p>운영 API 인증 요청</p>
+                                        </div>
+                                    </div>
+                                    <div class="answer-img-box answer-img-bg-w">
+                                        <h5 class="answer-img-b-b">승인</h5>
+                                        <div class="answer-img-box-box answer-img-b-b answer-img-box-bg-d">
+                                            <p>인증키 수신</p>
+                                            <p>운영 프로그램 적용</p>
+                                            <p>운영 준비</p>
+                                        </div>
+                                    </div>
+                                    <div class="answer-img-box answer-img-bg-b">
+                                        <h5 class="answer-img-b-w">운영API<br>적용</h5>
+                                        <div class="answer-img-box-box answer-img-b-w answer-img-box-bg-e">
+                                            <p class="two-text">1Day Token 발급<br>(계약 코드 기준)</p>
+                                            <p>API 서비스 콜</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>2.회원가입</span></a>
+                            <div class="answer">
+                                <div class="answer-img pictogram01">
+                                    <div class="answer-img-box answer-img-bg-b">
+                                        <h5 class="answer-img-b-w">회원가입</h5>
+                                        <div class="answer-img-box-box answer-img-b-w answer-img-box-bg-a">
+                                            <p>개발자포털 접속</p>
+                                            <p>회원가입</p>
+                                            <p>API 선택</p>
+                                            <p>API Token 발급</p>
+                                        </div>
+                                    </div>
+                                    <div class="answer-img-box answer-img-bg-w">
+                                        <h5 class="answer-img-b-b">API<br>TEST</h5>
+                                        <div class="answer-img-box-box answer-img-b-b answer-img-box-bg-b">
+                                            <p>포털내 테스트</p>
+                                            <p>API 호출 테스트</p>
+                                            <p class="two-text">고객코드 등록<br><span class="answer-img-span-black">(실 계약 코드)</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="answer-img-box answer-img-bg-b">
+                                        <h5 class="answer-img-b-w">운영API<br>승인요청</h5>
+                                        <div class="answer-img-box-box answer-img-b-w answer-img-box-bg-c">
+                                            <p>테스트 완료</p>
+                                            <p>운영 API 인증 요청</p>
+                                        </div>
+                                    </div>
+                                    <div class="answer-img-box answer-img-bg-w">
+                                        <h5 class="answer-img-b-b">승인</h5>
+                                        <div class="answer-img-box-box answer-img-b-b answer-img-box-bg-d">
+                                            <p>인증키 수신</p>
+                                            <p>운영 프로그램 적용</p>
+                                            <p>운영 준비</p>
+                                        </div>
+                                    </div>
+                                    <div class="answer-img-box answer-img-bg-b">
+                                        <h5 class="answer-img-b-w">운영API<br>적용</h5>
+                                        <div class="answer-img-box-box answer-img-b-w answer-img-box-bg-e">
+                                            <p class="two-text">1Day Token 발급<br>(계약 코드 기준)</p>
+                                            <p>API 서비스 콜</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>3.비밀번호 분실</span></a>
+                            <div class="answer">
+                                <div class="answer-img pictogram02">
+                                    <div class="answer-img-box answer-img-gb-a">
+                                        <p>택배 API 서비스 품질 향상, 자료의 정확성을 위하여, API 사용 가능한 Token Key 발급을 일별(1Day Token) 방식을 적용합니다. 택배 예약 접수, 상품추적 서비스, 주소정제 서비스 등 택배 API SVC를 이용하기 위하여, 1Day Token Key 발급 처리 후 택배 API 사용이 가능합니다.</p>
+                                    </div>
+                                    <div class="answer-img-box answer-img-gb-b">
+                                        <div class="answer-img02-box"><p class=" answer-img02-box-w">1Day<br>Token Key<br>요청</p></div>
+                                        <div class="answer-img02-box"><p class=" answer-img02-box-o">1Day<br>Token Key<br>수신</p></div>
+                                        <div class="answer-img02-box"><p class=" answer-img02-box-w">택배API<br>SVC 사용</p></div>
+                                    </div>
+                                    <div class="answer-img-box answer-img-gb-c">
+                                        <div class="answer-img02-box"><p>로그인</p></div>
+                                        <div class="answer-img02-box"><p>API 갤러리<br>검색</p></div>
+                                        <div class="answer-img02-box"><p>API 선택</p></div>
+                                        <div class="answer-img02-box"><p>API KEY<br>신청</p></div>
+                                        <div class="answer-img02-box"><p>KEY 수신<br>(E-Mail)</p></div>
+                                        <div class="answer-img02-box"><p>포털내<br>내 환경<br>확인</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>4.로그인 후 Portal 영문으로 나올 경우</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>5.API 세부 정보 확인</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>6.API 갤러리 - API 사용 Key 발급(무료 테스트 API)</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>7.API 패키지</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>8.API 사용 Key 해지</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>9.발급받은 API 사용 Key 해지</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>10.SDK 다운로드</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>11.대시보드</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>12.프로필 페이지 : 회원정보(비밀번호 등) 변경 & 언어 설정</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link active"><span>13.회원 탈퇴</span></a>
+                            <div class="answer">
+                                <div class="answer-box">
+                                    <h5>1) 개요</h5>
+                                    <p>본 가이드는 CJLOGISTICS의 정보를 활용하기 위한 Open API 개발 가이드 입니다.<br>
+                                        본 개발가이드는 많은 개발방법 중 한 가지 예시이며, 일반적인 웹서비스 클라이언트 개발과는 어느정도 차이가 있음을 알려드립니다.</p>
+                                </div>
+                                <div class="answer-box">
+                                    <h5>2) 환경구성</h5>
+                                    <p>브라우저(browser) 지원 버전</p>
+                                    <div class="answer-img-box">
+                                        <img src="image/browser.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        J2EE 기반의 Open API Client 개발을 위한 개발 환경은 아래와 같습니다.<br>
+                                        개발 Platform : Eclipse Neon 3 Release (4.6.3) 이상<br>
+                                        JDK : 1.6 이상<br>
+                                        추가적으로 아래의 Library(라이브러리) 파일이 필요합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+			</div>
+			
+		</div>
+		<!-- //contents -->
+
+		
+		<!-- footer -->
+		<div class="footer sub">
+			<div class="inner">
+				<div class="table-box">
+					<div class="table-cell text-left" >
+						<p>CJ대한통운(주)사업자등록번호 : 110-81-05034 대표자: 박근희 | 주소 : 서울특별시 중구 세종대로 9길 53 택배고객센터 : 1588-1255 (월~금 09:00 ~ 18:00 / 토 09:00 ~ 13:00)</p>
+						<p class="copyright">COPYRIGHT 2020 BY CJ Logistics Corporation ALL RIGHT RESERVED.</p>
+					</div>
+					<div class="table-cell text-right link-wrap">
+						<!-- <a href="#" class="personal-info">개인정보처리방침</a> -->
+						<a href="#">약관 및 운영방침</a>
+						<a href="#">CJ대한통운 홈페이지</a>
+						<!-- <select>
+							<option>그룹 계열사 바로가기</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+						</select> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+</html>

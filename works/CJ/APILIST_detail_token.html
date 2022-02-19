@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <meta name="wrap" content="width=device-width, initial-scale=1.0">
+    <title>CJ API Portal</title>
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <script src="./jquery/js/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function() {
+                $('.header').css({left: 0 - $(this).scrollLeft()});
+                $('.footer').css({left: 0 - $(this).scrollLeft()});
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="dim"></div>
+    <div class="layer-pop">
+        <div class="layer-box">
+            <div class="layer-tit">
+                <h5>API 액세스 Token 요청</h5>
+                <p>개인 설정 액세스 토큰을 이메일로 수신하려면 아래에 필요한 정보를 제공하십시오.</p>
+            </div>
+            <div class="layer-cont">
+                <div class="layer-cont-box">
+                    <h5>애플리케이션 이름</h5>
+                    <div class="input-txt-box">
+                        <input type="text" placeholder="애플리케이션 이름 입력">
+                    </div>
+                </div>
+                <div class="layer-cont-box">
+                    <h5>애플리케이션 이름</h5>
+                    <h5>고객코드</h5>
+                    <div class="input-txt-box">
+                        <textarea name="" id="" placeholder="고객코드를 입력하세요"></textarea>
+                    </div>
+                    <div class="input-txt-btn">
+                        <button>검증</button>
+                    </div>
+                </div>
+                <div class="layer-cont-box">
+                    <h5>애플리케이션 리디렉션 URL</h5>
+                    <div class="input-txt-box">
+                        <input type="text" placeholder="애플리케이션 리디렉션 URL 입력">
+                    </div>
+                </div>
+                <div class="layer-cont-box clearfix">
+                    <div class="layer-end-btn token"><a href="#">Token 요청</a></div>
+                    <div class="layer-end-btn closer"><a href="#">닫기</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="wrap sub">
+		<!-- header -->
+		<div class="header">
+			<div class="inner ">
+				<!-- 영문 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_eng hidden">
+					<a href="#">
+						<img src="./image/CJ_logo.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<!-- 한국어 로고 클래스명 hidden 추가시 가려짐-->
+				<h1 class="logo_kor">
+					<a href="#">
+						<img src="./image/CJ_logo_ko.png" alt="">
+					</a>
+					<span><img src="./image/logo.png" alt=""></span>
+				</h1>
+				<div class="navbar-wrapper">
+					<ul>
+						<li><a href="#"><span>플랫폼 소개</span></a></li>
+						<li class="havechild">
+							<a href="#">
+								<span>API 리스트</span>
+							</a>
+							<div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav01">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>API 패키지</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav02">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+                        <li class="havechild">
+							<a href="#"><span>이용안내</span></a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav03">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+                        <li class="havechild">
+                            <a href="#">
+                                <span>자료실</span>
+                            </a>
+                            <div class="depth02-wrapper">
+								<div class="inner">
+									<ul class="depth02-nav depth02-nav04">
+										<li><a href="#"><span>전체</span></a></li>
+										<li><a href="#"><span>E-FLEX</span></a></li>
+										<li><a href="#"><span>택배</span></a></li>
+									</ul>
+								</div>
+							</div>
+                        </li>
+					</ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="검색어 입력">
+                    <button><img src="image/icon_search.png" alt=""></button>
+                </div>
+			</div>
+		</div>
+        <!-- //header -->
+
+        <!-- fluid -->
+		<div class="subtop-menu">
+            <div class="inner">
+                <div class="top-menu"><p class="top-m-tit">홈 > API리스트 > <span class="top-m-color">01SandBoxAPI</span></p></div>
+            </div>
+		</div>
+        <!-- //fluid -->
+        
+		<!-- contents -->
+		<div class="container-box">
+			<div class="inner">				
+                <div class="api-details">
+                    <div class="api-left">
+                        <div class="code-list">
+                            <a href="#" class="code-title active">시작하기</a>
+                            <ul>
+                                <li><a href="#">정보 01SandBoxAPI</a></li>
+                            </ul>
+                        </div>
+                        <div class="code-list">
+                            <a href="#" class="code-title active">API 세부 정보</a>
+                            <ul>
+                                <li><a href="#">API 리소스</a></li>
+                                <li><a href="#">API 문서</a></li>
+                                <li><a href="#">API 정책</a></li>
+                                <li><a href="#">액세스 API</a></li>
+                            </ul>
+                        </div>
+                        <div class="code-list">
+                            <a href="#" class="code-title active">추가정보</a>
+                            <ul>
+                                <li><a href="#">최근 게시물</a></li>
+                                <li><a href="#">API 시도</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="api-center">
+                        <div class="api-title">
+                            <h3>01SandBoxAPI</h3>
+                            <p>REST</p>
+                            <div class="icon-box">
+                                <a href="#"><img src="image/facebook.png" alt=""></a>
+                                <a href="#"><img src="image/google.png" alt=""></a>
+                                <a href="#"><img src="image/mail.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="api-c-box">
+                            <h5>정보 <span class="color">01SandBoxAPI</span></h5>
+                            <p>개발용</p>
+                        </div>
+                        <div class="api-c-box">
+                            <h5>API 리소스</h5>
+                            <p>API에서 사용할 수 있는 리소스의 목록입니다. 더 자세한 사항을 보려면 각 리소스를 <span class="deco">클릭</span>하십시오.</p>
+                            <div class="team-box clearfix">
+                                <a href="#" class="team">/team01</a>
+                                <a href="#" class="sample">샌드박스샘플</a>
+                            </div>
+                        </div>
+                        <div class="api-c-box">
+                            <h5>API 문서</h5>
+                            <p>API에 대한 모든 문서의 목록입니다.</p>
+                            <div class="download">
+                                <a href="#">01SandBoxAPI_openapi.json</a>
+                                <a href="#">01SandBoxAPI_swagger.json</a>
+                                <a href="#">01SandBoxAPI.raml</a>
+                            </div>
+                        </div>
+                        <div class="api-c-box">
+                            <h5>API 정책</h5>
+                        </div>
+                        <div class="api-c-box">
+                            <h5>액세스 API</h5>
+                        </div>
+                    </div>
+                    <div class="api-right clearfix">
+                        <div class="sand-search">
+                            <p>샌드박스</p>
+                            <select name="" id="">
+                                <option value="">DEV</option>
+                            </select>
+                        </div>
+                        <div class="table-cell help">
+                            <div class="code-list">
+                                <a href="#" class="code-title">다음은 무엇입니까?</a>
+                                <ul>
+                                    <li><a href="#">지원 포럼</a></li>
+                                    <li><a href="#">액세스 토큰 얻기</a></li>
+                                    <li><a href="#">다른 이름으로 API 내보내기</a></li>
+                                    <li><a href="#">Client SDK 다운로드</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grade-container">
+                            <div class="grade-box">
+                                <div class="grade-title clearfix">
+                                    <a href="#">이 API 등급 지정</a>
+                                    <p><span>0</span></p>
+                                </div>
+                                <div class="grade-cont">
+                                    <ul class="clearfix">
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                        <li>★</li>
+                                    </ul>
+                                    <p>등급없음</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </div>
+        <!-- //contents -->
+		
+		<!-- footer -->
+		<div class="footer sub">
+			<div class="inner">
+				<div class="table-box">
+					<div class="table-cell text-left" >
+						<p>CJ대한통운(주)사업자등록번호 : 110-81-05034 대표자: 박근희 | 주소 : 서울특별시 중구 세종대로 9길 53 택배고객센터 : 1588-1255 (월~금 09:00 ~ 18:00 / 토 09:00 ~ 13:00)</p>
+						<p class="copyright">COPYRIGHT 2020 BY CJ Logistics Corporation ALL RIGHT RESERVED.</p>
+					</div>
+					<div class="table-cell text-right link-wrap">
+						<!-- <a href="#" class="personal-info">개인정보처리방침</a> -->
+						<a href="#">약관 및 운영방침</a>
+						<a href="#">CJ대한통운 홈페이지</a>
+						<!-- <select>
+							<option>그룹 계열사 바로가기</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+							<option>FAMILY SITE</option>
+						</select> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+</html>
