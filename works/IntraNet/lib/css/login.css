@@ -1,0 +1,25 @@
+/* login css */
+.container.login{margin: 0; padding: 0; width: 100%;}
+.container.login .inner_frame{position: relative; height: 100vh; min-height: 700px; all: initial;}
+.container.login .box.login{position: absolute; top: 50%; left: 50%; width: 460px; min-height: auto; transform: translate(-50%, -50%); border-radius: 6px;}
+.box.login .box_header{justify-content: center; height: 110px; border-top-right-radius: 6px; border-top-left-radius: 6px; background: #30303a}
+.box.login .box_header .logo{width: 80px;}
+.box.login .box_header .logo img{display: block; width: 100%}
+.box.login .box_header .logo_txt{color: #fff; font-size: 36px; font-weight: 900;}
+.box.login .box_header .box_title{font-size: 0}
+
+.box.login .box_body{padding: 0 30px;}
+
+.box.login .input_table_box{padding-top: 30px}
+.box.login .input_table_box table{border-bottom: 0;}
+.box.login .input_table_box table tr{border: 0;}
+.box.login .input_table_box table th,
+.box.login .input_table_box table td{padding: 0; height: 60px; text-align: left; border: 0; background: #fff;}
+.box.login .input_table_box table tr:last-of-type th,
+.box.login .input_table_box table tr:last-of-type td{height: 48px;} 
+
+.box.login .chk_box{margin-left: 0; }
+.box.login .input_txt{height: 45px;}
+.box.login .btn_box .btn{min-width: initial; width: 190px; font-size: 16px; height: 45px;}
+
+.login_footer{position: absolute; z-index: 500; top: 100%; left: 0; right: 0; margin-top: 30px; color: #30303a; text-align: center; font-size: 12px;}

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../lib/css/reset5.0.min.css">
+  <link rel="stylesheet" href="../lib/css/fonts.css">
+  <link rel="stylesheet" href="../lib/css/common.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+  <link rel="stylesheet" href="../lib/css/preset_disable.css">
+  <script src="../lib/jQuery/jQuery1.7.min.js"></script>
+  <title>IntraNetSub</title>
+  <script>
+    $(document).ready(function(){
+      $(".nav_txt").on("click", function(){
+        $(".nav_txt").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".depth_txt02").on("click", function(){
+        $(".depth_txt02").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".depth_txt03").on("click", function(){
+        $(".depth_txt03").removeClass("active");
+        $(this).addClass("active");
+      });
+    })
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Left -->
+    <aside class="left_nav">
+      <a href="javascript: void(0)" class="main_logo">
+        <img src="../images/logo.png" alt="메인 로고">
+      </a>
+      <!-- Nav -->
+      <nav class="main_nav">
+
+        <ul class="nav_list">
+          <!-- use Flex -->
+          <li class="nav_item desk">
+
+
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>마이 데스크</span>
+            </a>
+
+            <!-- 2Depth -->
+            <ul class="main_depth02">
+
+              <li class="depth_item02">
+
+
+                <a href="javascript:void(0)" class="depth_txt02">
+                  <span>Item 01</span>
+                </a>
+
+
+                <!-- 3Depth -->
+                <ul class="main_depth03">
+
+                  <li class="depth_item03">
+                    <a href="javascript:void(0)" class="depth_txt03">
+                      <span>subItem01</span>
+                    </a>
+                  </li>
+                  <li class="depth_item03">
+                    <a href="javascript:void(0)" class="depth_txt03">
+                      <span>subItem02</span>
+                    </a>
+                  </li>
+
+                </ul>
+                <!-- //3Depth -->
+
+              </li>
+
+
+              <li class="depth_item02">
+                
+                <a href="javascript:void(0)" class="depth_txt02">
+                  <span>Item 02</span>
+                </a>
+
+              </li>
+
+            </ul>
+            <!-- //2Depth -->
+
+          </li>
+          <li class="nav_item approval">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>업무결재</span>
+            </a>
+          </li>
+          <li class="nav_item manage">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>프로젝트 관리</span>
+            </a>
+          </li>
+          <li class="nav_item sales">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>영업관리</span>
+            </a>
+          </li>
+          <li class="nav_item support">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>업무지원</span>
+            </a>
+          </li>
+          <li class="nav_item document">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>문서함</span>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+      <!-- //Nav -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="inner">
+          <b class="company_name">
+            FOURLAB Intranet
+          </b>
+          <address class="copyright">
+            Copyright © 2022 FOURLAB<br>All Rights Reserved.
+          </address>
+        </div>
+      </footer>
+      <!-- footer -->
+
+    </aside>
+    <!-- //Left -->
+
+    <!-- header -->
+    <header class="header">
+
+      <div class="inner">
+        
+        <nav class="head_nav">
+
+          <div class="title_wrapper">
+            <a href="javascript: void(0)" class="location_title">인트라넷</a>
+            <p class="page_title">마이 데스크</p>
+          </div>
+  
+          <div class="private_wrapper">
+            <a href="#" class="private_item calendar">일정</a>
+            <!-- 알람이 있을 경우 alram에 active 클래스 추가 -->
+            <a href="#" class="private_item alarm">알람</a>
+            <a href="#" class="private_item profile">사용자 이미지</a>
+            <div class="profile_txtbox">
+              <!-- 사용자 이름 영역 -->
+              <span class="user_name">홍길동</span>
+              <!-- //사용자 이름 영역 -->
+              님
+              <a href="#" class="drop_arrow"><img src="../images/ico_btn_drops.png" alt=""></a>
+            </div>
+          </div>
+        
+        </nav>
+
+      </div>
+
+    </header>
+    <!-- //header -->
+
+    <!-- Container -->
+    <div class="container">
+      <div class="inner_frame">
+        
+        <div class="left_frame w64p">
+
+          <div class="box">
+
+            <!-- boxheader 영역 -->
+            <div class="box_header">
+
+              <div class="box_header_left">
+
+                <p class="box_title">
+                  <i class="box_title_ico"><img src="../images/ico_tv.png" alt=""></i>
+                  <span class="box_title_txt">마이 데스크</span>
+                </p>
+
+              </div>
+    
+              <div class="box_header_right">
+
+                <div class="btn_box">
+                  <button class="btn btn_primary btn_md">등록</button>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- //boxheader 영역 -->
+
+            <!-- boxbody 영역 -->
+            <div class="box_body">
+
+              <!-- table -->
+              <div class="table_box">
+
+                <table class="table">
+
+                  <colgroup>
+                    <col class="w8p">
+                    <col class="w54p">
+                    <col class="w14p">
+                    <col class="w24p">
+                  </colgroup>
+
+                  <thead>
+                    <tr>
+                      <th><span>번호</span></th>
+                      <th><span>업무일지 제목</span></th>
+                      <th><span>직원명</span></th>
+                      <th><span>등록일</span></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2021-12-33</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-03</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-03</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-13</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                    <tr>
+                      <td><span>999</span></td>
+                      <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                      <td><span>홍길동</span></td>
+                      <td><span>2022-01-23</span> <b>18:28:20</b></td>
+                    </tr>
+
+                  </tbody>
+
+                </table>
+
+              </div>
+              <!-- //table -->
+
+            </div>
+            <!-- //boxbody 영역 -->
+
+            <!-- box_footer 영역 -->
+            <div class="box_footer">
+
+              <div class="pagination">
+                <a href="javascript:void(0)" class="page_btn btn_first">맨처음으로</a>
+                <a href="javascript:void(0)" class="page_btn btn_prev">이전으로</a>
+                <a href="javascript:void(0)" class="active">1</a>
+                <a href="javascript:void(0)">2</a>
+                <a href="javascript:void(0)">3</a>
+                <a href="javascript:void(0)">4</a>
+                <a href="javascript:void(0)">5</a>
+                <a href="javascript:void(0)">6</a>
+                <a href="javascript:void(0)">7</a>
+                <a href="javascript:void(0)">8</a>
+                <a href="javascript:void(0)">9</a>
+                <a href="javascript:void(0)">10</a>
+                <a href="javascript:void(0)" class="page_btn btn_next active">다음으로</a>
+                <a href="javascript:void(0)" class="page_btn btn_last active">맨끝으로</a>
+              </div>
+
+            </div>
+            <!-- //box_footer 영역 -->
+
+          </div>
+
+        </div>
+        
+        <div class="right_frame w33p">
+
+        <!-- 우측 패널 -->
+          <div class="sum_panel">
+
+            <div class="panel_full_box box">
+
+              <div class="panel_full_left">
+
+                <p class="panel_title full_title">
+                  <i class="title_ico"><img src="../images/ico_vacation.png" alt=""></i>
+                  <span class="title_txt">연차 계획</span>
+                </p>
+
+              </div>
+    
+              <div class="panel_full_right">
+                <b class="rest_date_txt">2022-01-03 ~ 2023-01-02 (365일간)</b>
+              </div>
+
+            </div>
+
+            <div class="sum_panel_detail">
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>프로젝트</b>
+                </div>
+                <p class="panel_count primary_txt">1</p>
+              </div>
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>완료업무</b>
+                </div>
+                <p class="panel_count red_txt">1</p>
+              </div>
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>진행업무</b>
+                </div>
+                <p class="panel_count primary_txt">1</p>
+              </div>
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>대기업무</b>
+                </div>
+                <p class="panel_count">1</p>
+              </div>
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>받은지시</b>
+                </div>
+                <p class="panel_count">1</p>
+              </div>
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>업무기안</b>
+                </div>
+                <p class="panel_count">1</p>
+              </div>
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>업무보고</b>
+                </div>
+                <p class="panel_count">1</p>
+              </div>
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>업무요청</b>
+                </div>
+                <p class="panel_count">1</p>
+              </div>
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>업무협조</b>
+                </div>
+                <p class="panel_count">1</p>
+              </div>
+              <div class="sum_panel_item_box box">
+                <div class="panel_title">
+                  <b>참조</b>
+                </div>
+                <p class="panel_count">1</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- // 우측 패널 -->
+
+        </div>
+
+      </div>
+    </div>
+    <!-- //Container -->
+
+  </div>
+</body>
+</html>

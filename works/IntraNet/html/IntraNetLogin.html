@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../lib/css/reset5.0.min.css">
+  <link rel="stylesheet" href="../lib/css/fonts.css">
+  <link rel="stylesheet" href="../lib/css/common.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+  <link rel="stylesheet" href="../lib/css/preset_disable.css">
+  <link rel="stylesheet" href="../lib/css/login.css">
+  <script src="../lib/jQuery/jQuery1.7.min.js"></script>
+  <title>IntraNetLogin</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Container -->
+    <div class="container login">
+      <div class="inner_frame">
+
+        <div class="box login">
+          <form name="sForm" method="post" action="" onSubmit="return false">
+            <input type="hidden" id="RSAModulus" value="${RSAModulus}"/>
+            <input type="hidden" id="RSAExponent" value="${RSAExponent}"/>  
+
+            <!-- boxheader 영역 -->
+            <div class="box_header">
+              <div class="box_header_left">
+                <p class="logo"></p>
+              </div>
+              <div class="box_header_right">
+                <p class="box_title">로그인</p>
+              </div>
+            </div>
+            <!-- //boxheader 영역 -->
+            
+            <!-- boxbody 영역 -->
+            <div class="box_body">
+              <!-- 상세 입력 테이블 -->
+              <div class="input_table_box">
+                <table class="table">
+                  <colgroup>
+                    <col class="w100p">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="input_box w100p">
+                          <input type="text" name="loginId" id="loginId" placeholder="아이디를 입력하세요." class="input_txt" value="ygmoon">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input_box w100p">
+                          <input type="password" name="loginPw" id="loginPw" placeholder="비밀번호를 입력하세요." class="input_txt" value="0000">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <label class="input_box dis_ib chk_box">
+                            <input type="checkbox" id="cb_saveId">
+                            <span>아이디 저장하기</span>
+                          </label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- // 상세 입력 테이블 -->
+            </div>
+            <!-- //boxbody 영역 -->
+            <div class="btn_box center_box mt50 pb30">
+              <button class="btn btn_primary" onclick="goLogin()">로그인</button>
+              <button class="btn btn_secondary ml10">회원가입</button>
+            </div>
+            
+            <address class="login_footer">Copyright © 2022 FOURLAB All Rights Reserved.</address>
+          </form>
+          
+        <!-- 달력영역 -->
+        </div>
+
+      </div>
+    </div>
+    <!-- //Container -->
+
+  </div>
+</body>
+</html>

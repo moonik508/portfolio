@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../lib/css/reset5.0.min.css">
+  <link rel="stylesheet" href="../lib/jQuery/plugin/mCustomScrollbar/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../lib/css/fonts.css">
+  <link rel="stylesheet" href="../lib/css/common.css">
+  <link rel="stylesheet" href="../lib/css/style.css">
+  <link rel="stylesheet" href="../lib/css/preset_disable.css">
+  <script src="../lib/jQuery/jquery-3.1.0.min.js"></script>
+  <script src="../lib/jQuery/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <title>IntraNetMain</title>
+  <script>
+    $(document).ready(function(){
+      $(".nav_txt").on("click", function(){
+        $(".nav_txt").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".depth_txt02").on("click", function(){
+        $(".depth_txt02").removeClass("active");
+        $(this).addClass("active");
+      });
+      $(".depth_txt03").on("click", function(){
+        $(".depth_txt03").removeClass("active");
+        $(this).addClass("active");
+      });
+    })
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- Left -->
+    <aside class="left_nav">
+      <a href="javascript: void(0)" class="main_logo">
+        <img src="../images/logo.png" alt="메인 로고">
+      </a>
+      <!-- Nav -->
+      <nav class="main_nav">
+
+        <ul class="nav_list">
+          <!-- use Flex -->
+          <li class="nav_item desk">
+
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>마이 데스크</span>
+            </a>
+
+            <!-- 2Depth -->
+            <ul class="main_depth02">
+
+              <li class="depth_item02">
+
+
+                <a href="javascript:void(0)" class="depth_txt02">
+                  <span>Item 01</span>
+                </a>
+
+
+                <!-- 3Depth -->
+                <ul class="main_depth03">
+
+                  <li class="depth_item03">
+                    <a href="javascript:void(0)" class="depth_txt03">
+                      <span>subItem01</span>
+                    </a>
+                  </li>
+                  <li class="depth_item03">
+                    <a href="javascript:void(0)" class="depth_txt03">
+                      <span>subItem02</span>
+                    </a>
+                  </li>
+
+                </ul>
+                <!-- //3Depth -->
+
+              </li>
+
+
+              <li class="depth_item02">
+                
+                <a href="javascript:void(0)" class="depth_txt02">
+                  <span>Item 02</span>
+                </a>
+
+              </li>
+
+            </ul>
+            <!-- //2Depth -->
+
+          </li>
+          <li class="nav_item approval">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>업무결재</span>
+            </a>
+          </li>
+          <li class="nav_item manage">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>프로젝트 관리</span>
+            </a>
+          </li>
+          <li class="nav_item sales">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>영업관리</span>
+            </a>
+          </li>
+          <li class="nav_item support">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>업무지원</span>
+            </a>
+          </li>
+          <li class="nav_item document">
+            <a href="javascript: void(0)" class="nav_txt">
+              <i class="nav_ico"></i>
+              <span>문서함</span>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+      <!-- //Nav -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="inner">
+          <b class="company_name">
+            FOURLAB Intranet
+          </b>
+          <address class="copyright">
+            Copyright © 2022 FOURLAB<br>All Rights Reserved.
+          </address>
+        </div>
+      </footer>
+      <!-- footer -->
+
+    </aside>
+    <!-- //Left -->
+
+    <!-- header -->
+    <header class="header">
+
+      <div class="inner">
+        
+        <nav class="head_nav">
+
+          <div class="title_wrapper">
+            <p class="page_title">인트라넷</p>
+          </div>
+  
+          <div class="private_wrapper">
+            <a href="#" class="private_item calendar">일정</a>
+            <!-- 알람이 있을 경우 alram에 active 클래스 추가 -->
+            <a href="#" class="private_item alarm">알람</a>
+            <a href="#" class="private_item profile">사용자 이미지</a>
+            <div class="profile_txtbox">
+              <!-- 사용자 이름 영역 -->
+              <span class="user_name">홍길동</span>
+              <!-- //사용자 이름 영역 -->
+              님
+              <a href="#" class="drop_arrow"><img src="../images/ico_btn_drops.png" alt=""></a>
+            </div>
+          </div>
+        
+        </nav>
+
+      </div>
+
+    </header>
+    <!-- //header -->
+
+    <!-- Container -->
+    <div class="container">
+      <div class="inner_frame">
+
+        <div class="box calendar_box">
+
+          <!-- boxheader 영역 -->
+          <div class="box_header">
+
+            <div class="box_header_left">
+
+              <p class="box_title">
+                <i class="box_title_ico"><img src="../images/ico_date_calendar.png" alt=""></i>
+                <span class="box_title_txt">나의 일정표</span>
+              </p>
+
+            </div>
+  
+            <div class="box_header_right">
+
+              <select name="" id="" class="select calendar_sort">
+                <option>일</option>
+                <option>주</option>
+                <option selected>월</option>
+              </select>
+
+            </div>
+
+          </div>
+          <!-- //boxheader 영역 -->
+
+          달력영역
+        </div>
+
+        <div class="box mt40">
+
+          <!-- boxheader 영역 -->
+          <div class="box_header">
+
+            <div class="box_header_left">
+
+              <p class="box_title">
+                <i class="box_title_ico"><img src="../images/ico_work_list.png" alt=""></i>
+                <span class="box_title_txt">나의 업무목록</span>
+              </p>
+
+            </div>
+  
+            <div class="box_header_right">
+
+              <a href="#" class="btn_more">업무목록 바로가기</a>
+
+            </div>
+
+          </div>
+          <!-- //boxheader 영역 -->
+
+          <!-- boxbody 영역 -->
+          <div class="box_body">
+
+            <!-- table -->
+            <div class="table_box">
+
+              <table class="table">
+
+                <colgroup>
+                  <col class="w5p">
+                  <col class="w22p">
+                  <col class="w30p">
+                  <col class="w9p">
+                  <col class="w9p">
+                  <col class="w9p">
+                  <col class="w9p">
+                  <col class="w7p">
+                </colgroup>
+
+                <thead>
+                  <tr>
+                    <th><span>번호</span></th>
+                    <th><span>프로젝트명</span></th>
+                    <th><span>업무명</span></th>
+                    <th><span>예상시작일</span></th>
+                    <th><span>예상종료일</span></th>
+                    <th><span>진행일</span></th>
+                    <th><span>종료예정일</span></th>
+                    <th><span>상태</span></th>
+                  </tr>
+                </thead>
+
+                <tbody>
+
+                  <tr>
+                    <td><span>01</span></td>
+                    <td><span>포랩 인트라넷 디자인</span></td>
+                    <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                    <td><span>2021-12-30</span></td>
+                    <td><span>2022-01-03</span></td>
+                    <td><span>2022-01-03</span></td>
+                    <td><span>2022-01-03</span></td>
+                    <td><span class="status_txt red_txt">완료</span></td>
+                  </tr>
+
+                  <tr>
+                    <td><span>02</span></td>
+                    <td><span>포랩 인트라넷 디자인</span></td>
+                    <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                    <td><span>2022-01-04</span></td>
+                    <td><span>2022-01-06</span></td>
+                    <td><span>2022-01-06</span></td>
+                    <td><span>2022-01-06</span></td>
+                    <td><span class="status_txt primary_txt">진행중</span></td>
+                  </tr>
+
+                  <tr>
+                    <td><span>03</span></td>
+                    <td><span>RISO</span></td>
+                    <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                    <td><span>2022-01-07</span></td>
+                    <td><span>2022-01-13</span></td>
+                    <td><span>2022-01-13</span></td>
+                    <td><span>2022-01-13</span></td>
+                    <td><span class="status_txt">대기</span></td>
+                  </tr>
+
+                  <tr>
+                    <td><span>04</span></td>
+                    <td><span>슈퍼샷</span></td>
+                    <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                    <td><span>2022-01-14</span></td>
+                    <td><span>2022-01-20</span></td>
+                    <td><span>2022-01-20</span></td>
+                    <td><span>2022-01-20</span></td>
+                    <td><span class="status_txt">대기</span></td>
+                  </tr>
+
+                  <tr>
+                    <td><span>05</span></td>
+                    <td><span>슈퍼샷</span></td>
+                    <td class="left_txt"><span>등록된 업무명이 노출됩니다.</span></td>
+                    <td><span>2022-01-21</span></td>
+                    <td><span>2022-01-30</span></td>
+                    <td><span>2022-01-30</span></td>
+                    <td><span>2022-01-30</span></td>
+                    <td><span class="status_txt">대기</span></td>
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+            <!-- //table -->
+
+          </div>
+          <!-- //boxbody 영역 -->
+
+        </div>
+
+      </div>
+    </div>
+    <!-- //Container -->
+    <script>
+      (function($){
+        $(window).load(function(){
+          $.mCustomScrollbar.defaults.axis="yx"; //enable 2 axis scrollbars by default
+          $(".main_nav").mCustomScrollbar({
+            theme:"minimal"
+          });
+        });
+      })(jQuery);
+    </script>
+  </div>
+</body>
+</html>
