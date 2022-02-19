@@ -55,6 +55,7 @@ a{text-decoration: none;}
 .exp_list .exp_item .exp_period:before,
 .exp_list .exp_item .exp_period:after{content:""; position: absolute; border-radius: 100%;}
 .exp_list .exp_item .exp_period:before{top: 3px; left: -20px; width: 10px; height: 10px; border: 2px solid var(--main-bk-color, #212121);}
+.exp_list .exp_item .exp_period:after{top: 7px; left: -16px; width: 6px; height: 6px; background-color: #bbb}
 .exp_list .exp_item:first-child .exp_period:after{top: 7px; left: -16px; width: 6px; height: 6px; background-color: var(--active-txt-color, #f60)}
 
 .exp_list .exp_item .exp_company_nm{font-size: 16px;}
