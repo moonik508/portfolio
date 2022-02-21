@@ -42,10 +42,11 @@ a{text-decoration: none;}
 .info{position: relative; width: 50%; height: 28.125rem; transition: all 0.3s;}
 .info.edu{height: 16.875rem}
 .info.wide{height: 100%;}
+.info.wide .info_box{flex-direction: column; align-items: center; justify-content: center; height: 100%;}
 .info .info_bar.after{right: 0; animation: workBarWidth 1s ease 0.5s forwards;}
 .info .info_bar.before{right: 0; animation: workBarHeight 1s ease 0.75s forwards;}
 .info.wide .info_bar.before{display: none;}
-.info_inner{padding: 2rem; height: 100%;}
+.info_inner{overflow: hidden; padding: 2rem; height: 100%;}
 .info_title{color:  var(--main-bk-color, #212121); font-size: 20px; font-weight: 800; }
 
 .box_body.infos{position: relative; flex-direction: column; height: 45rem;}
@@ -62,7 +63,7 @@ a{text-decoration: none;}
 .exp_list .exp_item .exp_period:after{top: 7px; left: -16px; width: 6px; height: 6px; background-color: #bbb}
 .exp_list .exp_item:first-child .exp_period:after{background-color: var(--active-txt-color, #f60)}
 
-.exp_list .exp_item .exp_company_nm{font-size: 1rem;}
+.exp_list .exp_item .exp_company_nm{font-size: 1rem; word-break: keep-all;}
 .exp_list .exp_item .exp_company_class{color: #444; font-size: 1rem;}
 
 .info_box.educate .exp_list{justify-content: flex-start}
@@ -71,7 +72,7 @@ a{text-decoration: none;}
 /* skills */
 .progress_box{display: flex; flex-direction: row; align-items: center; justify-content: space-evenly; flex-wrap: wrap; margin: 1.6rem auto 0;}
 .progress_box .circle{position: relative; display: flex; flex-direction: row; align-items: center; justify-content: center; margin: 2rem; width: 10rem; height: 10rem; border: 1rem solid #ccc; border-radius: 100%;}
-.progress_box .circle .half_line{position: absolute; top: -1rem; bottom: -1rem; overflow: hidden; width: calc(50% + 1rem);  height: calc(100% + 2rem);}
+.progress_box .circle .half_line{position: absolute; top: -1rem; bottom: -1rem; overflow: hidden; width: calc(50% + 1rem);}
 .progress_box .circle .half_line.left{left: -1rem;}
 .progress_box .circle .half_line.right{right: -1rem;}
 .progress_box .circle .half_line .bar{width: 100%; height: 100%; border: 1rem solid #f60; transition: initial;;}
@@ -148,6 +149,8 @@ a{text-decoration: none;}
 }
 
 @media screen and (max-width: 767px) {
+  .exp_list .exp_item .exp_company_nm{font-size: 2.4vw;}
+  .exp_list .exp_item .exp_company_class{font-size: 2vw;}
   .skill_name{font-size: 1.2rem;}
   .progress_box .circle{margin: 1.3rem 0;}
 }
@@ -162,24 +165,51 @@ a{text-decoration: none;}
 }
 @media screen and (max-width: 479px) {
   .header .main_txt{font-size: 7vw;}
+
+  .box_title{font-size: 10vw;}
+  .btn_more{font-size: 4.2vw;}
+
   .info{width: 100%; height: auto;}
   .box_body.infos{height: 100%;}
 
+  
+  .exp_list .exp_item .exp_period{font-size: 6vw;}
   .info .info_bar.before{display: none;}
-  .exp_list .exp_item:not(:last-child):before{height: calc(100% - 10px);}
+  .exp_list .exp_item{}
+  .exp_list .exp_item+.exp_item{padding-top: 3vw;}
+  .exp_list .exp_item:not(:last-child):before{height: calc(100% + 2vw);}
+  .exp_list .exp_item .exp_company_nm{font-size: 5vw;}
+  .exp_list .exp_item .exp_company_class{font-size: 4.4vw;}
+  .exp_list .exp_item .exp_period:before{top: 2.5vw}
+  .exp_list .exp_item .exp_period:after{top: 3.4vw}
+
+  .info.edu{height: auto;}
+
   .progress_box{justify-content: space-between; width: 100%;}
   .progress_box .circle{margin: 1rem 0;}
 
-  /* .progress_box .circle .half_line{top: -4vw; bottom: -4vw; width: calc(50% + 4vw); height: calc(100% + 8vw)}
-  .progress_box .circle .half_line.left{left: -4vw;}
-  .progress_box .circle .half_line.right{right: -4vw;}
-  .progress_box .circle .half_line.left .bar{border-top-left-radius: 19vw; border-bottom-left-radius: 19vw;}
-  .progress_box .circle .half_line.right .bar{border-top-right-radius: 19vw; border-bottom-right-radius: 19vw;} */
+  .progress_box .circle{width: 24vw; height: 24vw; border-width: 2vw;}
+  .progress_box .circle .half_line{top: -2vw; bottom: -2vw; width: calc(50% + 2vw)}
+  .progress_box .circle .half_line.left{left: -2vw;}
+  .progress_box .circle .half_line.right{right: -2vw;}
+  .progress_box .circle .half_line .bar{border-width: 2vw;}
+  .progress_box .circle .half_line.left .bar{border-top-left-radius: 12vw; border-bottom-left-radius: 12vw;}
+  .progress_box .circle .half_line.right .bar{border-top-right-radius: 12vw; border-bottom-right-radius: 12vw;}
+  .skill_name{font-size: 4vw;}
+  .skill_desc{font-size: 5.6vw;}
 
   .work{width: 100%; height: auto;}
   .work .work_bar.before{display: none;}
-  .work_info .work_title{font-size: 6.25vw;}
-  .work_info .work_period{margin-top: 10vw}
+  .work_info .work_title{font-size: 6vw;}
+  .work_info .work_title .desc{font-size: 4vw;}
+  .work_info .work_period{margin-top: 10vw; font-size: 3.61vw;}
+  .work_info .work_client{font-size: 4vw;}
+  .work_info .work_used .work_type{margin: 0 1vw; padding: 0; width: 5.6vw; height: 5.6vw; font-size: 0;}
+  
+  .work_info .work_used .work_type.html,
+  .work_info .work_used .work_type.jquery,
+  .work_info .work_used .work_type.jsp,
+  .work_info .work_used .work_type.vue{background-size: cover;}
 }
 
 
