@@ -28,27 +28,27 @@ a{text-decoration: none;}
 .nav_list .nav_item .nav_txt.active span{font-weight: 700;}
 
 /* nav ico setting */
-.nav_list .nav_item.desk .nav_ico{background: transparent url("../images/ico_desk.png") no-repeat center; background-size: 22px 18.75px;}
-.nav_list .nav_item.approval .nav_ico{background: transparent url("../images/ico_approval.png") no-repeat center; background-size: 18.75px 18px;}
-.nav_list .nav_item.manage .nav_ico{background: transparent url("../images/ico_manage.png") no-repeat center; background-size: 19.5px 19px;}
-.nav_list .nav_item.sales .nav_ico{background: transparent url("../images/ico_sales.png") no-repeat center; background-size: 19.5px 21px;}
-.nav_list .nav_item.support .nav_ico{background: transparent url("../images/ico_support.png") no-repeat center; background-size: 20.87px 20px;}
-.nav_list .nav_item.document .nav_ico{background: transparent url("../images/ico_document.png") no-repeat center; background-size: 22.5px 18.5px;}
+.nav_list .nav_item.desk .nav_ico{background: transparent url("../../images/ico_desk.png") no-repeat center; background-size: 22px 18.75px;}
+.nav_list .nav_item.approval .nav_ico{background: transparent url("../../images/ico_approval.png") no-repeat center; background-size: 18.75px 18px;}
+.nav_list .nav_item.manage .nav_ico{background: transparent url("../../images/ico_manage.png") no-repeat center; background-size: 19.5px 19px;}
+.nav_list .nav_item.sales .nav_ico{background: transparent url("../../images/ico_sales.png") no-repeat center; background-size: 19.5px 21px;}
+.nav_list .nav_item.support .nav_ico{background: transparent url("../../images/ico_support.png") no-repeat center; background-size: 20.87px 20px;}
+.nav_list .nav_item.document .nav_ico{background: transparent url("../../images/ico_document.png") no-repeat center; background-size: 22.5px 18.5px;}
 
 /* 220209 */
 /* nav ico act setting */
 .nav_list .nav_item.desk :hover .nav_ico,
-.nav_list .nav_item.desk .active .nav_ico{background: transparent url("../images/ico_desk_act.png") no-repeat center; background-size: 22px 18.75px;}
+.nav_list .nav_item.desk .active .nav_ico{background: transparent url("../../images/ico_desk_act.png") no-repeat center; background-size: 22px 18.75px;}
 .nav_list .nav_item.approval :hover .nav_ico,
-.nav_list .nav_item.approval .active .nav_ico{background: transparent url("../images/ico_approval_act.png") no-repeat center; background-size: 18.75px 18px;}
+.nav_list .nav_item.approval .active .nav_ico{background: transparent url("../../images/ico_approval_act.png") no-repeat center; background-size: 18.75px 18px;}
 .nav_list .nav_item.manage :hover .nav_ico,
-.nav_list .nav_item.manage .active .nav_ico{background: transparent url("../images/ico_manage_act.png") no-repeat center; background-size: 19.5px 19px;}
+.nav_list .nav_item.manage .active .nav_ico{background: transparent url("../../images/ico_manage_act.png") no-repeat center; background-size: 19.5px 19px;}
 .nav_list .nav_item.sales :hover .nav_ico,
-.nav_list .nav_item.sales .active .nav_ico{background: transparent url("../images/ico_sales_act.png") no-repeat center; background-size: 19.5px 21px;}
+.nav_list .nav_item.sales .active .nav_ico{background: transparent url("../../images/ico_sales_act.png") no-repeat center; background-size: 19.5px 21px;}
 .nav_list .nav_item.support :hover .nav_ico,
-.nav_list .nav_item.support .active .nav_ico{background: transparent url("../images/ico_support_act.png") no-repeat center; background-size: 20.87px 20px;}
+.nav_list .nav_item.support .active .nav_ico{background: transparent url("../../images/ico_support_act.png") no-repeat center; background-size: 20.87px 20px;}
 .nav_list .nav_item.document :hover .nav_ico,
-.nav_list .nav_item.document .active .nav_ico{background: transparent url("../images/ico_document_act.png") no-repeat center; background-size: 22.5px 18.5px;}
+.nav_list .nav_item.document .active .nav_ico{background: transparent url("../../images/ico_document_act.png") no-repeat center; background-size: 22.5px 18.5px;}
 /* // 220209 */
 
 /* nav Depth 02 */
@@ -73,17 +73,17 @@ a{text-decoration: none;}
 .head_nav .title_wrapper{display: flex; flex-direction: row; overflow: hidden;}
 .head_nav .title_wrapper .location_title,
 .head_nav .title_wrapper .page_title{display: inline-block; position: relative; height: 100%; line-height: 64px;}
-.head_nav .title_wrapper .location_title{z-index: 150; padding-right: 20px; min-width: 100px; color: #a0a0aa; font-size: 18px; font-weight: 300; background: url("../images/bg_main_title.png") no-repeat; background-size: contain; background-position: top right;}
+.head_nav .title_wrapper .location_title{z-index: 150; padding-right: 20px; min-width: 100px; color: #a0a0aa; font-size: 18px; font-weight: 300; background: url("../../images/bg_main_title.png") no-repeat; background-size: contain; background-position: top right;}
 .head_nav .title_wrapper .location_title+.location_title{padding-left: 20px; min-width: 120px;}
 .head_nav .title_wrapper .page_title{z-index: 100; color: #4a5fac; font-weight: 700;}
 .head_nav .title_wrapper .location_title+.page_title{padding-left: 20px;}
 
 .head_nav .private_wrapper{display: flex; flex-direction: row; align-items: center; height: 100%;}
 .head_nav .private_wrapper .private_item{position: relative; display: inline-block; margin-right: 16px; width: 24px; height: 24px; font-size: 0; background: #fc0;}
-.head_nav .private_wrapper .private_item.calendar{background: url("../images/ico_calendar.png") no-repeat; background-position: center center; background-size: 20px 22px}
-.head_nav .private_wrapper .private_item.alarm{background: url("../images/ico_alram_base.png") no-repeat; background-position: center center; background-size: 18px 21px}
+.head_nav .private_wrapper .private_item.calendar{background: url("../../images/ico_calendar.png") no-repeat; background-position: center center; background-size: 20px 22px}
+.head_nav .private_wrapper .private_item.alarm{background: url("../../images/ico_alram_base.png") no-repeat; background-position: center center; background-size: 18px 21px}
 .head_nav .private_wrapper .private_item.alarm.active:after{content: ""; position: absolute; top: 0px; right: 0px; width: 7px; height: 7px; border: 2px solid #fff; border-radius: 100%; background: #e90d08; }
-.head_nav .private_wrapper .private_item.profile{background: url("../images/ico_default_profile.png") no-repeat; background-position: center center; background-size: 20px 20px}
+.head_nav .private_wrapper .private_item.profile{background: url("../../images/ico_default_profile.png") no-repeat; background-position: center center; background-size: 20px 20px}
 .head_nav .private_wrapper .profile_txtbox{display: inline-block; color: #30303a; font-size: 14px; font-weight: 600; cursor: pointer}
 .head_nav .private_wrapper .profile_txtbox .user_name{font-weight: 300;}
 .head_nav .private_wrapper .profile_txtbox .user_name a{color: #30303a;}
@@ -164,7 +164,7 @@ input[type='number'] {
 }
 
 /* input component design setting */
-.select{padding: 0 28px 0 10px; height: 32px; color: #30303a; font-size: 14px; font-weight: 300; border: 1px solid #d9dce0; border-radius: 4px; background: #fff url("../images/ico_select_drops.png") no-repeat; background-size: 8px 4px; background-position: 85% center; }
+.select{padding: 0 28px 0 10px; height: 32px; color: #30303a; font-size: 14px; font-weight: 300; border: 1px solid #d9dce0; border-radius: 4px; background: #fff url("../../images/ico_select_drops.png") no-repeat; background-size: 8px 4px; background-position: 85% center; }
 .select.calendar_sort{height: 36px;}
 .select.select_reg{width: 148px;}
 .select:disabled{background: #eeeeea !important}
@@ -207,7 +207,7 @@ input[type=file]{display: none;}
 
 .input_txt{padding: 0 10px; width: 100%; height: 32px; outline: 0; border: 1px solid #d9dce0; border-radius: 4px;}
 .input_txt.input_txt_reg{width: 395px;}
-.input_box.datePicker .input_txt{padding-right: 30px; width: 146px; background: url("../images/ico_datePicker.png") no-repeat; background-size: 14px 16px; background-position: 122px center}
+.input_box.datePicker .input_txt{padding-right: 30px; width: 146px; background: url("../../images/ico_datePicker.png") no-repeat; background-size: 14px 16px; background-position: 122px center}
 
 .chk_box{margin-left: 20px;}
 .radio_box{margin-left: 20px;}
@@ -215,15 +215,15 @@ input[type=file]{display: none;}
 .radio_box+.radio_box{margin-left: 10px;}
 .chk_box span,
 .radio_box span{display: block; padding-left: 24px; color: #30303a; font-size: 14px; line-height: 16px;}
-.chk_box span{background: url("../images/ico_chk_frame.png") no-repeat; background-position: left center; background-size: 16px 16px;}
-.radio_box span{background: url("../images/ico_radio_frame.png") no-repeat; background-position: left center; background-size: 16px 16px;}
-.chk_box :checked+span{background: url("../images/ico_chk_enb.png") no-repeat; background-position: left center; background-size: 16px 16px;}
-.radio_box :checked+span{background: url("../images/ico_radio_enb.png") no-repeat; background-position: left center; background-size: 16px 16px;}
+.chk_box span{background: url("../../images/ico_chk_frame.png") no-repeat; background-position: left center; background-size: 16px 16px;}
+.radio_box span{background: url("../../images/ico_radio_frame.png") no-repeat; background-position: left center; background-size: 16px 16px;}
+.chk_box :checked+span{background: url("../../images/ico_chk_enb.png") no-repeat; background-position: left center; background-size: 16px 16px;}
+.radio_box :checked+span{background: url("../../images/ico_radio_enb.png") no-repeat; background-position: left center; background-size: 16px 16px;}
 
 .textarea{padding: 10px; width: 100%; outline: none; border: 1px solid #d9dce0; border-radius: 4px; resize: none !important; box-sizing: border-box;  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; letter-spacing: -0.2px;}
 
 /* component */
-.btn_more{display: inline-block; vertical-align: middle; padding-right: 14px; color: #30303a; font-size: 14px; font-weight: 300; background: url("../images/ico_btn_txt_more.png") no-repeat; background-size: 4px 8px; background-position: center right;}
+.btn_more{display: inline-block; vertical-align: middle; padding-right: 14px; color: #30303a; font-size: 14px; font-weight: 300; background: url("../../images/ico_btn_txt_more.png") no-repeat; background-size: 4px 8px; background-position: center right;}
 .btn_more:hover{text-decoration: underline;}
 .red_txt{color: #ac4a4a !important}
 .primary_txt{color: #4a5fac !important}
@@ -322,18 +322,18 @@ table .file_name .file_delete img{display: block; width: 100%;}
 .pagination a:not(.page_btn):hover,
 .pagination a:not(.page_btn).active{color: #4a5fac; font-weight: 700; border-bottom: 2px solid #4a5fac}
 .pagination .page_btn{font-size: 0;}
-.pagination .page_btn.btn_prev{background: url("../images/ico_btn_prev_dis.png") no-repeat; background-size: contain; background-position: center center;}
-.pagination .page_btn.btn_next{background: url("../images/ico_btn_next_dis.png") no-repeat; background-size: contain; background-position: center center;}
-.pagination .page_btn.btn_first{background: url("../images/ico_btn_first_dis.png") no-repeat; background-size: contain; background-position: center center;}
-.pagination .page_btn.btn_last{background: url("../images/ico_btn_last_dis.png") no-repeat; background-size: contain; background-position: center center;}
+.pagination .page_btn.btn_prev{background: url("../../images/ico_btn_prev_dis.png") no-repeat; background-size: contain; background-position: center center;}
+.pagination .page_btn.btn_next{background: url("../../images/ico_btn_next_dis.png") no-repeat; background-size: contain; background-position: center center;}
+.pagination .page_btn.btn_first{background: url("../../images/ico_btn_first_dis.png") no-repeat; background-size: contain; background-position: center center;}
+.pagination .page_btn.btn_last{background: url("../../images/ico_btn_last_dis.png") no-repeat; background-size: contain; background-position: center center;}
 .pagination .page_btn.btn_prev.active,
-.pagination .page_btn.btn_prev:hover{background: url("../images/ico_btn_prev_act.png") no-repeat; background-size: contain; background-position: center center;}
+.pagination .page_btn.btn_prev:hover{background: url("../../images/ico_btn_prev_act.png") no-repeat; background-size: contain; background-position: center center;}
 .pagination .page_btn.btn_next.active,
-.pagination .page_btn.btn_next:hover{background: url("../images/ico_btn_next_act.png") no-repeat; background-size: contain; background-position: center center;}
+.pagination .page_btn.btn_next:hover{background: url("../../images/ico_btn_next_act.png") no-repeat; background-size: contain; background-position: center center;}
 .pagination .page_btn.btn_first.active,
-.pagination .page_btn.btn_first:hover{background: url("../images/ico_btn_first_act.png") no-repeat; background-size: contain; background-position: center center;}
+.pagination .page_btn.btn_first:hover{background: url("../../images/ico_btn_first_act.png") no-repeat; background-size: contain; background-position: center center;}
 .pagination .page_btn.btn_last.active,
-.pagination .page_btn.btn_last:hover{background: url("../images/ico_btn_last_act.png") no-repeat; background-size: contain; background-position: center center;}
+.pagination .page_btn.btn_last:hover{background: url("../../images/ico_btn_last_act.png") no-repeat; background-size: contain; background-position: center center;}
 .pagination .page_btn.btn_prev,
 .pagination .page_btn.btn_next{margin: 0 6px; padding: 0 5px; width: 14px; height: 8px;}
 .pagination .page_btn.btn_first,
