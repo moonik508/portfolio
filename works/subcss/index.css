@@ -10,3 +10,11 @@
 .idx_list li .img_box{width: 100%;}
 .idx_list li .img_box img{display: block;  width: 100%;}
 .idx_list li .idx_page_nm{display: block; padding-top: 10px; color: #303030; font-size: 16px; font-weight: 400; line-height: 30px;}
+
+@media screen and (max-width: 650px){
+    .wrapper{min-width: initial}
+    .idx_inner{max-width: initial;}    
+    .idx_list{flex-direction: column;}
+    .idx_list li{width: 100%;}
+    .idx_list li:nth-child(2n){border-left: 1px solid #ddd}
+}
