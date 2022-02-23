@@ -243,6 +243,7 @@ a{text-decoration: none;}
   .work_info .work_used .work_type{margin: 0 1vw; padding: 0; width: 5.6vw; height: 5.6vw; font-size: 0;}
   
   .work_info .work_used .work_type.html,
+  .work_info .work_used .work_type.css,
   .work_info .work_used .work_type.jquery,
   .work_info .work_used .work_type.jsp,
   .work_info .work_used .work_type.vue{background-size: cover;}
