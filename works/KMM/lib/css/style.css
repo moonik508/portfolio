@@ -1,8 +1,8 @@
 /* common setting */
 html, body { width: 100%; height: 100%; }
 .wrap{display: block; min-width: 1280px; overflow: hidden; width: 100%; height: 100%; }
-.container{width: 100%; height: 100%; font-family: "Kia_Gothic", sans-serif ; background: url('/images/gasc/bg_pattern.gif');}
-.container.login{background: url('/images/gasc/bg.jpg') no-repeat; background-size: cover}
+.container{width: 100%; height: 100%; font-family: "Kia_Gothic", sans-serif ; background: url('../../image/bg_pattern.gif');}
+.container.login{background: url('../../image/bg.jpg') no-repeat; background-size: cover}
 .inner{position: relative; margin: 0 auto; width: 1440px; height: auto;}
 .inner:after{content: ""; display: block; clear: both;}
 .hidden{display: none !important;}
@@ -21,39 +21,33 @@ textarea{font-size: 14px; padding: 5px;}
 textarea[readonly]{color: #777; border: 1px solid #666666; background: #ccc;}
 textarea[disabled]{color: #777; border: 1px solid #666666; background: #ccc;}
 
-/* 20201116 而댄룷�꼳�듃 愿��젴 �넻�씪 �닔�젙 */
+
 .kia_input[readonly]{color: #777; border: 1px solid #666666; background: #ccc;}
 .kia_input[disabled]{color: #777; border: 1px solid #666666; background-color: #ccc;}
 .kia_input.white{color: #777; border: 1px solid #cccccc; background: #fff;}
 
-/* // 20201116 而댄룷�꼳�듃 愿��젴 �넻�씪 �닔�젙 */
 textarea.kia_input{resize: none !important; line-height: 30px;}
 
-.search_btn{margin-left: 10px; width: 26px; height: 26px; cursor: pointer; border: 0; background: url('/images/gasc/search.png') no-repeat; background-size: cover;}
+.search_btn{margin-left: 10px; width: 26px; height: 26px; cursor: pointer; border: 0; background: url('../../image/search.png') no-repeat; background-size: cover;}
 
 /* select */
-/* Select box �뒪���씪 珥덇린�솕 */ 
 .kia_select {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
 }
-
-/* IE �뿉�꽌 Select box �솕�궡�몴 �젣嫄� */ 
 .kia_select::-ms-expand { display: none; }
-.kia_select{display: inline-block; vertical-align: middle; width: 100%; height: 26px; outline: 0; padding-left: 10px; color: #777; font-size: 12px; font-weight: 200; border: 1px solid #ccc; background: #fff url('/images/gasc/select.png') no-repeat; background-size: 14px 8px; background-position: 95% 9px; }
+.kia_select{display: inline-block; vertical-align: middle; width: 100%; height: 26px; outline: 0; padding-left: 10px; color: #777; font-size: 12px; font-weight: 200; border: 1px solid #ccc; background: #fff url('../../images/select.png') no-repeat; background-size: 14px 8px; background-position: 95% 9px; }
 .kia_select:disabled{color: #7e8083; border: 1px solid #666666; background-color: #ccc;}
 .kia_select.w100{width: 100%; }
 
-/* 泥댄겕諛뺤뒪 */
 .kia_chk_box{display: inline-block; vertical-align: middle; width: auto; }
 .kia_chk_box+.kia_chk_box{margin-left: 12px;}
 .kia_chk_box>input{display: none;}
 .kia_chk_box span{display: block; position: relative; padding-left: 36px; height: 28px; color: #333; font-size: 12px; line-height: 28px;}
-.kia_chk_box span:before{content: ""; display: block; position: absolute; top: 0; left: 0; width: 28px; height: 28px; transition: background 0.3s; background: url('/images/gasc/checkbox.png') no-repeat; background-size: cover; }
-.kia_chk_box :checked+span:before{background: url('/images/gasc/checkbox_check.png') no-repeat; background-size: cover;}
+.kia_chk_box span:before{content: ""; display: block; position: absolute; top: 0; left: 0; width: 28px; height: 28px; transition: background 0.3s; background: url('../../image/checkbox.png') no-repeat; background-size: cover; }
+.kia_chk_box :checked+span:before{background: url('../../image/checkbox_check.png') no-repeat; background-size: cover;}
 
-/* 媛꾧꺽�샃�뀡 */
 .mb10{margin-bottom: 10px !important;}
 .mb20{margin-bottom: 20px !important;}
 .mb30{margin-bottom: 30px !important;}
@@ -61,12 +55,10 @@ textarea.kia_input{resize: none !important; line-height: 30px;}
 .mb50{margin-bottom: 50px !important;}
 .mt100{margin-top: 100px !important;}
 
-/* 踰꾪듉 */
 .btn{display: inline-block; padding: 0 20px; min-width: 90px; height: 30px; color: #fff; font-size: 14px; font-weight: 400; line-height: 30px; letter-spacing: -0.5px; border: 0; cursor: pointer; }
 .btn.black{background: #58595b;}
 .btn.primary{background: #bb162b}
 
-/* 踰꾪듉諛뺤뒪 */
 .control_box{margin: 15px 0; font-size: 0; text-align: right;}
 .control_box .btn+.btn{margin-left: 5px; }
 
@@ -93,10 +85,10 @@ table.list span{font-size: 12px; font-weight: 200;}
 .pagenation a+a{border-left: 0;}
 .pagenation a.active{color: #fff; border-color: #bb162b; background: #bb162b}
 .pagenation a.page_btn{font-size: 0; }
-.pagenation a.page_btn.prev{background: url('/images/gasc/ic-page-prev.png') no-repeat; background-position: center center;}
-.pagenation a.page_btn.next{background: url('/images/gasc/ic-page-next.png') no-repeat; background-position: center center;}
-.pagenation a.page_btn.first{background: url('/images/gasc/ic-page-first.png') no-repeat; background-position: center center;}
-.pagenation a.page_btn.last{background: url('/images/gasc/ic-page-last.png') no-repeat; background-position: center center;}
+.pagenation a.page_btn.prev{background: url('../../image/ic-page-prev.png') no-repeat; background-position: center center;}
+.pagenation a.page_btn.next{background: url('../../image/ic-page-next.png') no-repeat; background-position: center center;}
+.pagenation a.page_btn.first{background: url('../../image/ic-page-first.png') no-repeat; background-position: center center;}
+.pagenation a.page_btn.last{background: url('../../image/ic-page-last.png') no-repeat; background-position: center center;}
 
 /* login */
 .logo.login{margin: 30px auto 54px; width: 72px; height: 36px;}
@@ -135,8 +127,6 @@ table.list span{font-size: 12px; font-weight: 200;}
 .g_nav_list>li:hover>a,
 .g_nav_list>li.active>a{color: #c5182d}
 
-
-
 /* in gnav sub nav */
 .g_nav_list .sub_depth{display: none; margin-top: 30px; padding: 20px 0; width: 100%; background: #f7f7f7;}
 .g_nav_list .sub_depth li:not(:last-child){margin-bottom: 12px; }
@@ -150,7 +140,7 @@ footer address{position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 6
 .design_txt{position: absolute; top: 50%; left: 50%; margin-top: -70px; font-size: 24px; transform: translate(-50%, -50%)}
 
 /* center */
-.main.container .center{background: url("/images/gasc/bg.jpg") no-repeat; background-size: cover; background-position: center center;}
+.main.container .center{background: url("../..//image/bg.jpg") no-repeat; background-size: cover; background-position: center center;}
 .cover_box{display: block; position: absolute; top: 50%; left: 50%; width: 420px; font-size: 0; transform: translate(-50%, -50%)}
 .cover_box .content_box{display: inline-block; vertical-align: middle; position: relative; margin-left: 20px; margin-bottom: 20px; width: 200px; height: 150px; }
 .cover_box .content_box a{display: block; height: 100%;}
@@ -171,7 +161,7 @@ footer address{position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 6
 .content_box.show .badge{display: block;}
 
 /* notice */
-.content_box.full .bg{width: 100%; height: 20px; background: url('/images/gasc/notice_box_top.png') no-repeat; background-size: contain; background-position: 0 0 ;}
+.content_box.full .bg{width: 100%; height: 20px; background: url('../../image/notice_box_top.png') no-repeat; background-size: contain; background-position: 0 0 ;}
 .noti_con{position: relative; padding: 0 30px;  height: 120px; background: rgba(255, 255, 255, 0.8);}
 .tit.notice{position: absolute; top: -14px; left: 28px; color: #333; font-size: 17px; font-weight: 600; letter-spacing: -1px;}
 .noti_more{position: absolute; top: -15px; right: 10px; color: #333; font-size: 11px; font-weight: 200; letter-spacing: -0.5px; line-height: 16px;}
@@ -230,8 +220,8 @@ footer address{position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 6
 .user_box .user_info b:before{content: ""; position: absolute; top: 0; left: 0; margin-top: 2px; width: 4px; height: 12px; background: #bb162b;}
 .user_box .user_info span{margin-top: 6px; font-size: 14px; font-weight: 200; letter-spacing: -0.5px; line-height: 14px; }
 .user_box [type="button"]{display: inline-block; vertical-align: middle; border: 0; cursor: pointer;}
-.user_box .logout{margin-left: 29px; width: 28px; height: 25px; background: url('/images/gasc/logout.png') no-repeat; background-size: cover}
-.user_box .setting{margin-left: 22px; width: 28px; height: 28px; background: url('/images/gasc/setting.png') no-repeat; background-size: cover}
+.user_box .logout{margin-left: 29px; width: 28px; height: 25px; background: url('../../image/logout.png') no-repeat; background-size: cover}
+.user_box .setting{margin-left: 22px; width: 28px; height: 28px; background: url('../../image/setting.png') no-repeat; background-size: cover}
 
 /* sub_tab */
 .tab_nav{padding: 0 30px; text-align: left; border-bottom: 2px solid #f2f2f2;}
