@@ -96,7 +96,7 @@ a{text-decoration: none;}
 .box_body.works{position: relative; justify-content: left;}
 .work{position: relative; width: calc(100% / 3); height: 300px; transition: all 0.3s; background-color: transparent}
 .work .txt{color: var(--main-bk-color, #212121)}
-.btn_pop{position: absolute; top:0; left: 0; right: 0; bottom:0; width: 100%; height: 100%; background-color: transparent}
+.btn_pop{position: absolute; top:0; left: 0; right: 0; bottom:0; width: 100%; height: 100%; background-color: transparent; cursor: pointer;}
 
 .work_bar.bar.after{left: 0; animation: workBarWidth 1s ease 0.5s forwards;}
 .work_bar.bar.before{right: 0; animation: workBarHeight 1s ease 0.75s forwards;}
