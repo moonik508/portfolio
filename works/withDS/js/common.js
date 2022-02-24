@@ -16,6 +16,11 @@ $(document).ready(function(){
             $(this).addClass("on")
         }
     })
+    // 과목별 onoff
+    $(".btn-subject").on("click", function(){
+        var subjId = $(this).attr("id");
+        subjectChg(subjId);
+    })
     // 선생님 정보 펼치기 
     $(".teacher-pic").on("click", function(){
         var box = $(this).parent(".teacher-item");
@@ -31,3 +36,7 @@ $(document).ready(function(){
         $(".teacher-item").removeClass("on");
     });
 })
+function subjectChg(sub){
+    $(".teach-section.content").removeClass("active");
+    $(".teach-section.content." + sub).addClass("active");
+}

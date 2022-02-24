@@ -190,7 +190,8 @@ footer .footer-desc p span.pc-none{border: 0;}
 
 /* 선생님페이지 */
 .teach-section.top{}
-.teach-section.content{overflow: hidden; font-family: "Noto_Sans_KR", sans-serif;}
+.teach-section.content{display: none; overflow: hidden; font-family: "Noto_Sans_KR", sans-serif;}
+.teach-section.content.active{display: block;}
 
 .teacher-sub-nav{width: 100%; height: 50px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; background: #f9f9f9;}
 .teacher-sub-nav ul{overflow: hidden; }
