@@ -219,7 +219,7 @@ a{text-decoration: none;}
   .ref_url_list li a{margin-left: 0; font-size: 4.2vw; line-height: 1.5}
 
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 499px) {
   .header .main_txt{font-size: 7vw;}
 
   .box_title{font-size: 10vw;}
