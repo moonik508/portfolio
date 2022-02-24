@@ -113,7 +113,7 @@ a{text-decoration: none;}
 .work_info{display: flex; flex-direction: column; justify-content: space-between; width: 50%; height: 100%}
 .work_info.detail{text-align: right;}
 
-.work_info .work_title{font-size: 2.25rem; font-weight: 600}
+.work_info .work_title{font-size: 2.25rem; font-weight: 600; word-break: keep-all;}
 .work_info .work_title .desc{font-size: 16px;}
 .work_info .work_period{font-size: 1rem; font-weight: 400}
 .work_info .work_client{font-size: 1rem; font-weight: 400}
