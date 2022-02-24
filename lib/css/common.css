@@ -142,8 +142,7 @@ a{text-decoration: none;}
 .popup_wrap .popup_box .frame.pc{margin: 0 auto; width: 100%; max-width: 720px;}
 .popup_wrap .popup_box .frame.pc .img_box{width: 100%;}
 
-.popup_wrap .popup_box .frame.mo{position: relative; top: 20rem; left: 6rem; z-index: 1000; width: 185px;}
-.popup_wrap .popup_box .frame.mo{} 
+.popup_wrap .popup_box .frame.mo{position: relative; z-index: 1000; margin: 0 auto; width: 185px;}
 .popup_wrap .popup_box .frame.mo img{display: block; width: 100%;}
 
 .popup_wrap .popup_box .frame.pc .frame.mo{position: absolute; top: initial; bottom: 0; left: -2rem;}
