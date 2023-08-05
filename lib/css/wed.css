@@ -43,7 +43,7 @@ h2{
     font-weight: bold;
 }
 .wrap.wed .table_box{
-    /* display: none; */
+    display: none;
     width: 100%;
 }
 .wrap.wed .table_box table{
