@@ -4,9 +4,298 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/css/reset5.0.min.css">
+    <link rel="stylesheet" href="./lib/css/fonts.css">
+    <link rel="stylesheet" href="./lib/css/wed.css">
+    <script src="./lib/js/jquery3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.wed_item').on('click', function(){
+                $(this).children('.table_box').slideToggle(300)
+            })
+        })
+    </script>
     <title>예식장 견적</title>
 </head>
 <body>
-    
+    <div class="wrap wed">
+        <h2>예식장 목록</h2>
+        <ul>
+            <!-- 벨라마리에 -->
+            <li class="wed_item">
+                <span class="title">벨라마리에</span>
+                <div class="table_box">
+                    <div class="mobile_desc">
+                        좌우로 넘겨서 확인해보세요
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>예식장 이름 / 비고</th>
+                                <th>항목명</th>
+                                <th>가격</th>
+                                <th>변동가격범위</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th rowspan="17" class="main_cell">
+                                    <span class="table_title">
+                                        벨라마리에<br>하우스웨딩
+                                    </span>
+                                    <span class="table_desc">
+                                        * 단독 예식 3시간 대관<br>
+                                        * 영통 입구 위치
+                                    </span>
+                                    <span class="table_desc">
+                                        * 음식은 예식기준<br>
+                                        30분 전부터<br>
+                                        식사 가능
+                                    </span>
+                                </th>
+                                <th>대관료</th>
+                                <td class="price">2,500,000</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>식대</th>
+                                <td class="price">5,300,000</td>
+                                <td>-</td>
+                                <td rowspan="3">
+                                    식대 : 100인 기준 1인 53,000 * 100 = 5,300,000<br>
+                                    약 120명까지 커버가능<br>
+                                    주류 및 아동 금액 별도 / 오버차지 있음
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>스드메</th>
+                                <td class="price">2,800,000</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>기본항목 합계 (A)</th>
+                                <td class="price">10,600,000</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>옵션비용</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <th>BBQ</th>
+                                <td class="price">1,000,000</td>
+                                <td class="price">0 ~ 1,200,000</td>
+                                <td>옵션이며 참치로 선택시 1,200,000</td>
+                            </tr>
+                            <tr>
+                                <th>헬퍼</th>
+                                <td class="price">400,000</td>
+                                <td></td>
+                                <td>촬영 / 본식 총 2회 금액</td>
+                            </tr>
+                            <tr>
+                                <th>사진원본</th>
+                                <td class="price">480,000</td>
+                                <td></td>
+                                <td>본식 원본 150,000 + 스튜디오 원본 330,000</td>
+                            </tr>
+                            <tr>
+                                <th>혼주헤/메</th>
+                                <td class="price">420,000</td>
+                                <td></td>
+                                <td>양가 어머님 (180,000 * 2) + 아버님 (60,000)</td>
+                            </tr>
+                            <tr>
+                                <th>한복</th>
+                                <td class="price">800,000</td>
+                                <td></td>
+                                <td>양가 어머님 최대 금액 400,000*2로 계산</td>
+                            </tr>
+                            <tr>
+                                <th>맞춤정장대여</th>
+                                <td class="price">300,000</td>
+                                <td></td>
+                                <td>맞춤정장 20~30 / 무료는 신랑이 너무 못나보임</td>
+                            </tr>
+                            <tr>
+                                <th>옵션항목 합계 (B)</th>
+                                <td class="price">3,400,000</td>
+                                <td></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4"></th>
+                            </tr>
+                            <tr>
+                                <th>총 금액 (C = A + B)</th>
+                                <td class="price red">14,000,000</td>
+                                <td></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>최저금액</th>
+                                <td class="price blue">12,600,000</td>
+                                <td></td>
+                                <td>BBQ 제외 한복 금액 조정 및 신랑 맞춤정장 제외</td>
+                            </tr>
+                            <tr>
+                                <th>계약금 (C에 포함)</th>
+                                <td class="price">1,000,000</td>
+                                <td></td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th>기타</th>
+                                <td colspan="4">주차공간 웨딩홀로부터 도보 10분 이내 위치 및 근방 도로 주차 가능</td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+            </li>
+            <!-- 벨라마리에 -->
+            
+            <!-- 아인스웨딩 -->
+            <li class="wed_item">
+                <span class="title">아인스웨딩</span>
+                <div class="table_box">
+                    <div class="mobile_desc">
+                        좌우로 넘겨서 확인해보세요
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>예식장 이름 / 비고</th>
+                                <th>항목명</th>
+                                <th>가격</th>
+                                <th>변동가격범위</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th rowspan="16" class="main_cell">
+                                    <span class="table_title">
+                                        아인스<br>하우스웨딩
+                                    </span>
+                                    <span class="table_desc">
+                                        * 단독 예식 2시간 대관
+                                    </span>
+                                    <span class="table_desc">
+                                        * 100인 예약이<br>
+                                        보장될 경우<br>
+                                        뷔페석 160석<br>
+                                        활용 약속
+                                    </span>
+                                </th>
+                                <th>대관료</th>
+                                <td class="price">1,500,000</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>식대</th>
+                                <td class="price">4,300,000</td>
+                                <td>-</td>
+                                <td rowspan="3">
+                                    식대 : 100인 기준 1인 43,000 * 100 = 4,300,000<br>
+                                    약 120명까지 커버가능<br>
+                                    주류 및 아동 금액 별도 / 오버차지 있음
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>스드메</th>
+                                <td class="price">2,500,000</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>기본항목 합계 (A)</th>
+                                <td class="price">8,300,000</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>옵션비용</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <th>헬퍼</th>
+                                <td class="price">200,000</td>
+                                <td></td>
+                                <td>본식 기준 / 촬영시엔 스튜디오에서 도와주는 것으로 예상</td>
+                            </tr>
+                            <tr>
+                                <th>사진원본</th>
+                                <td class="price">440,000</td>
+                                <td></td>
+                                <td>본식 원본 + 스튜디오 원본 (상세 불명 / 금액 오차범위 예상)</td>
+                            </tr>
+                            <tr>
+                                <th>혼주헤/메</th>
+                                <td class="price">350,000</td>
+                                <td></td>
+                                <td>양가 어머님 (150,000 * 2) + 아버님 (50,000)</td>
+                            </tr>
+                            <tr>
+                                <th>한복</th>
+                                <td class="price">450,000</td>
+                                <td class="price">300,000</td>
+                                <td>식장에서 대여시 각 150,000 / 기혼 자매 대여시 + 150,000 로 계산</td>
+                            </tr>
+                            <tr>
+                                <th>맞춤정장대여</th>
+                                <td class="price">-</td>
+                                <td></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>옵션항목 합계 (B)</th>
+                                <td class="price">1,440,000</td>
+                                <td></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4"></th>
+                            </tr>
+                            <tr>
+                                <th>총 금액 (C = A + B)</th>
+                                <td class="price red">9,740,000</td>
+                                <td></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>최저금액</th>
+                                <td class="price blue">9,390,000</td>
+                                <td></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <th>계약금 (C에 포함)</th>
+                                <td class="price">500,000</td>
+                                <td></td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th>기타</th>
+                                <td colspan="4">주차공간 웨딩홀 건물 바로 옆 화서역 환승 공용주차장 이용 가능 (약 400석)</td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+            </li>
+            <!-- 아인스웨딩 -->
+        </ul>
+
+    </div>
 </body>
 </html>

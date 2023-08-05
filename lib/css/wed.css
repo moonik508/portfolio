@@ -1,0 +1,114 @@
+
+*{
+    font-family: "myfontfamily", sans-serif;
+}
+.wrap.wed{
+    margin: 20px auto;
+    max-width: 1024px;
+}
+h2{
+    margin: 16px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+.mobile_desc{
+    display: none;
+    margin: 10px 0;
+}
+.wrap.wed ul{}
+.wrap.wed ul li{
+    position: relative;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+.wrap.wed ul li:after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 100;
+    width: 14px;
+    height: 14px;
+    border-right: 2px solid #555;
+    border-bottom: 2px solid #555;
+    transform: rotate(45deg);
+}
+.wrap.wed ul li:last-of-type{
+    border-bottom: 1px solid #ddd;
+}
+.wrap.wed ul .title{
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.wrap.wed .table_box{
+    /* display: none; */
+    width: 100%;
+}
+.wrap.wed .table_box table{
+    width: 100%;
+}
+.table_title{
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+}
+.table_desc{
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    color: #777;
+    font-weight: bold;
+}
+.price{
+    text-align: right;
+}
+.wrap.wed .table_box table tr{
+    height: 40px;
+    border: 1px solid #bbb;
+}
+.wrap.wed .table_box thead tr th{
+    vertical-align: middle;
+    padding: 0 10px; 
+    border-left: 1px solid #bbb;
+    background-color: #b0def7;
+}
+.wrap.wed .table_box tbody tr th,
+.wrap.wed .table_box tbody tr td{
+    vertical-align: middle;
+    padding: 0 10px;
+    border-left: 1px solid #bbb;
+}
+.wrap.wed .table_box tfoot tr th,
+.wrap.wed .table_box tfoot tr td{
+    vertical-align: middle;
+
+}
+.main_cell{
+    vertical-align: top;
+    width: 20%;
+}
+.red{
+    color: rgb(168, 16, 16);
+    font-weight: bold;
+}
+.blue{
+    color: rgb(42, 66, 170);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px){
+    .wrap.wed{
+        width: 95vw
+    }
+    .mobile_desc{
+        display: block;
+    }
+    .wrap.wed .table_box{
+        overflow-x: auto;
+    }
+    .wrap.wed .table_box table{
+        width: 900px;
+    }
+}
